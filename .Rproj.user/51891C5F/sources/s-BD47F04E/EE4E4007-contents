@@ -1,17 +1,17 @@
-baseURL = "/"
+baseURL = "https://github.com/foreverstas/GenomicsLabProtocols/"
 languageCode = "en-US"
 defaultContentLanguage = "en"
 
-title = "Hugo Learn Documentation"
+title = "Genomics Lab Protocols"
 theme = "hugo-theme-learn"
 themesdir = "./themes"
 metaDataFormat = "yaml"
 defaultContentLanguageInSubdir= true
 
 [params]
-  editURL = "https://github.com/matcornic/hugo-theme-learn/edit/master/exampleSite/content/"
-  description = "Documentation for Hugo Learn Theme"
-  author = "Mathieu Cornic"
+  editURL = "https://github.com/foreverstas/GenomicsLabProtocols/content/"
+  description = "Protocols for epigenetics and genomics"
+  author = "Romanov Stanialsv"
   showVisitedLinks = true
   disableBreadcrumb = false
   disableNextPrev = false
@@ -24,32 +24,9 @@ defaultContentLanguageInSubdir= true
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
 
-[menu]
-[[menu.shortcuts]] 
-name = "<i class='fab fa-github'></i> Github repo"
-identifier = "ds"
-url = "https://github.com/matcornic/hugo-theme-learn"
-weight = 10
-
-[[menu.shortcuts]]
-name = "<i class='fas fa-camera'></i> Showcases"
-url = "/"
-weight = 11
-
-[[menu.shortcuts]]
-name = "<i class='fas fa-bookmark'></i> Hugo Documentation"
-identifier = "hugodoc"
-url = "https://gohugo.io/"
-weight = 20
-
-[[menu.shortcuts]]
-name = "<i class='fas fa-bullhorn'></i> Credits"
-url = "/"
-weight = 30
-
 [Languages]
 [Languages.en]
-title = "Documentation for Hugo Learn Theme"
+title = "Protocols for epigenetics and genomics"
 weight = 1
 languageName = "English"
 landingPageURL = "/en"

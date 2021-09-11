@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on Documentation for Hugo Learn Theme</title>
-    <link>/</link>
-    <description>Recent content in Home on Documentation for Hugo Learn Theme</description>
+    <title>Home on Protocols for epigenetics and genomics</title>
+    <link>https://github.com/foreverstas/GenomicsLabProtocols/</link>
+    <description>Recent content in Home on Protocols for epigenetics and genomics</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-US</language><atom:link href="https://github.com/foreverstas/GenomicsLabProtocols/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Credits</title>
-      <link>/credits/</link>
+      <link>https://github.com/foreverstas/GenomicsLabProtocols/credits/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/credits/</guid>
+      <guid>https://github.com/foreverstas/GenomicsLabProtocols/credits/</guid>
       <description>Благодарности Сделаю, когда наберется несколько протоколов
 Полезные ссылки  R blogdown - the iconic font and CSS framework LEARN - мануал к Blogdown для создания блогов в среде RStudio  Полезные интсрументы  Hugo - инструмент для создания статичных HTML страниц  </description>
     </item>
