@@ -6,5 +6,15 @@
     <description>Recent content in Home on Documentation for Hugo Learn Theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Credits</title>
+      <link>/credits/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/credits/</guid>
+      <description>Благодарности Сделаю, когда наберется несколько протоколов
+Полезные ссылки  R blogdown - the iconic font and CSS framework LEARN - мануал к Blogdown для создания блогов в среде RStudio  Полезные интсрументы  Hugo - инструмент для создания статичных HTML страниц  </description>
+    </item>
+    
   </channel>
 </rss>

@@ -1,0 +1,31 @@
+---
+title: "Реактивы для мЭСК"
+author: "Romanov Stanislav"
+date: "10 09 2021"
+output: html_document
+lang: russian
+---
+
+### Реактивы для работы с мышиными ЭСК
+
+1.  Список реактивов, обязательных для работы с эмбриональными стволовыми клетками мышей:
+
+    1.  *Минимальная среда (G-MEM).* Мы используем Glasgow Minimal Essential Medium, G-MEM (**Gibco 11710-035**)
+
+        ![](./index_image/gibco_G-MEM.jpg "G-MEM"){width="300"}
+
+2.  *Фетальная телячья сыворотка, пригодная для ЭСК (ES-FBS)*. По нашему опыту лучшими являются:
+
+    -   HyClone FBS DEFINED Murine ESC Screened (**HyClone SH30070.03**)
+
+        ![](./index_image/HyClone_ESFBS.jpg "HyClone_ESFBS"){width="300"}
+
+    -   Capricorn FBS ES Pretested (**Capricorn FBS-ES-12A**)
+
+        ![](./index_image/Capricorn_ESFBS.jpg "Capricorn-ES-FBS"){width="300"}
+
+```{r echo=FALSE}
+blogdown::shortcode("notice","note" ,.content = "Сыворотки хранятся на -20 градусах. Перед использованием белки системы комплемента в сыворотке должны быть инактивированы. Это достигается нагреванием FBS до 56 градусов в водяной бане в течение 30 минут. После инактивации сыворотку аликвотируют по 40-45 мл в фальконы на 50. Далее фальконы помечают инициалами \"iES-FBS\" и замораживают в вертикальном положении. Перед аликвотированием стоит дождаться, когда на дно бутылки полностью выпадет осадок.")
+```
+
+1.  
