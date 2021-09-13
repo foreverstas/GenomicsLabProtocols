@@ -87,8 +87,8 @@ sub {
 
 img {
   border: 0;
-  max-width:100px
-  object-fit: contain; }
+  max-width:20%
+  max-height:20%}
 
 svg:not(:root) {
   overflow: hidden; }
