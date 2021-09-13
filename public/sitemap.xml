@@ -2,23 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://github.com/foreverstas/GenomicsLabProtocols/labreagents/</loc>
+    <loc>/labreagents/</loc>
     <lastmod>2021-09-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://github.com/foreverstas/GenomicsLabProtocols/</loc>
+    <loc>/</loc>
     <lastmod>2021-09-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://github.com/foreverstas/GenomicsLabProtocols/labreagents/sephadex/</loc>
+    <loc>/labreagents/sephadex/</loc>
     <lastmod>2021-09-13T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://github.com/foreverstas/GenomicsLabProtocols/categories/</loc>
+    <loc>/categories/</loc>
   </url><url>
-    <loc>https://github.com/foreverstas/GenomicsLabProtocols/credits/</loc>
+    <loc>/credits/</loc>
   </url><url>
-    <loc>https://github.com/foreverstas/GenomicsLabProtocols/es-protocols/es-medium/</loc>
+    <loc>/es-protocols/esmedium/</loc>
   </url><url>
-    <loc>https://github.com/foreverstas/GenomicsLabProtocols/tags/</loc>
+    <loc>/tags/</loc>
   </url><url>
-    <loc>https://github.com/foreverstas/GenomicsLabProtocols/es-protocols/</loc>
+    <loc>/es-protocols/</loc>
+  </url><url>
+    <loc>/es-protocols/esreagents/</loc>
   </url>
 </urlset>

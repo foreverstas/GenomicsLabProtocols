@@ -1,10 +1,34 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Протоколы для мЭСК on Protocols for epigenetics and genomics</title>
-    <link>https://github.com/foreverstas/GenomicsLabProtocols/es-protocols/</link>
-    <description>Recent content in Протоколы для мЭСК on Protocols for epigenetics and genomics</description>
+    <title>Протоколы для мЭСК on Epigenetic and Genomics Protocols</title>
+    <link>/es-protocols/</link>
+    <description>Recent content in Протоколы для мЭСК on Epigenetic and Genomics Protocols</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language><atom:link href="https://github.com/foreverstas/GenomicsLabProtocols/es-protocols/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-US</language><atom:link href="/es-protocols/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ES-среда</title>
+      <link>/es-protocols/esmedium/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/es-protocols/esmedium/</guid>
+      <description>Стандартная среда для ES-клеток Рецепт, проверенный экспертами😀
+Чисто технически, можно заменить G-MEM на DMEM. В таком случае клетки не будут чувствовать себя хуже, но скорость роста несколько снизится.
+    Компонент 50 мл на 500мл банку среды     G-MEM 43 мл 500 мл   GlutaMAX 0.5 мл 0.58 мл   Sodium Pyruvate 0.5 мл 0.58 мл   MEM-NEAA 0.5 мл 0.58 мл   Pen/Strep 0.</description>
+    </item>
+    
+    <item>
+      <title>Реактивы для мЭСК</title>
+      <link>/es-protocols/esreagents/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/es-protocols/esreagents/</guid>
+      <description>Ниже для ознакомления указаны реактивы, с которыми нужно будет иметь дело при работе с мЭСК.
+Реактивы для работы с мышиными ЭСК Список реактивов, обязательных для работы с эмбриональными стволовыми клетками мышей:
+  Минимальная среда (G-MEM). Мы используем Glasgow Minimal Essential Medium, G-MEM (Gibco 11710-035)
+Gibco G-MEM  Фетальная телячья сыворотка, пригодная для ЭСК (ES-FBS). По нашему опыту лучшими являются:
+  HyClone FBS DEFINED Murine ESC Screened (HyClone SH30070.</description>
+    </item>
+    
   </channel>
 </rss>

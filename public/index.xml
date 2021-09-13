@@ -1,20 +1,55 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on Protocols for epigenetics and genomics</title>
-    <link>https://github.com/foreverstas/GenomicsLabProtocols/</link>
-    <description>Recent content in Home on Protocols for epigenetics and genomics</description>
+    <title>Home on Epigenetic and Genomics Protocols</title>
+    <link>/</link>
+    <description>Recent content in Home on Epigenetic and Genomics Protocols</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Mon, 13 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://github.com/foreverstas/GenomicsLabProtocols/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sephadex-G50</title>
+      <link>/labreagents/sephadex/</link>
+      <pubDate>Mon, 13 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/labreagents/sephadex/</guid>
+      <description>Смола Sephadex G-50 Для очистки секвенирующих реакций мы используем Sephadex G50 fine. Согласно инструкции эта смола используется для отделения молекул &amp;gt;30 кДа от молекул &amp;lt;1500 Да. Мелкие молекулы задерживаются в шариках смолы, что позволяет очищать реакционные смеси от невключившихся меченых неуклеотидов.
+Банка с Sephadex G-50Подробное описание физических принципов метода эксклюзионной хроматографии с использованием Sephadex можно прочитать в прикрепленном файле.
+  Эксцизионная хроматография   Size_Exlusion_Chromatography.pdf  (2611 kb)   Рецепт 5% смолы для очистки секвенирующих реакций.</description>
+    </item>
+    
     <item>
       <title>Credits</title>
-      <link>https://github.com/foreverstas/GenomicsLabProtocols/credits/</link>
+      <link>/credits/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://github.com/foreverstas/GenomicsLabProtocols/credits/</guid>
+      <guid>/credits/</guid>
       <description>Благодарности Сделаю, когда наберется несколько протоколов
 Полезные ссылки  R blogdown - the iconic font and CSS framework LEARN - мануал к Blogdown для создания блогов в среде RStudio  Полезные интсрументы  Hugo - инструмент для создания статичных HTML страниц  </description>
+    </item>
+    
+    <item>
+      <title>ES-среда</title>
+      <link>/es-protocols/esmedium/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/es-protocols/esmedium/</guid>
+      <description>Стандартная среда для ES-клеток Рецепт, проверенный экспертами😀
+Чисто технически, можно заменить G-MEM на DMEM. В таком случае клетки не будут чувствовать себя хуже, но скорость роста несколько снизится.
+    Компонент 50 мл на 500мл банку среды     G-MEM 43 мл 500 мл   GlutaMAX 0.5 мл 0.58 мл   Sodium Pyruvate 0.5 мл 0.58 мл   MEM-NEAA 0.5 мл 0.58 мл   Pen/Strep 0.</description>
+    </item>
+    
+    <item>
+      <title>Реактивы для мЭСК</title>
+      <link>/es-protocols/esreagents/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/es-protocols/esreagents/</guid>
+      <description>Ниже для ознакомления указаны реактивы, с которыми нужно будет иметь дело при работе с мЭСК.
+Реактивы для работы с мышиными ЭСК Список реактивов, обязательных для работы с эмбриональными стволовыми клетками мышей:
+  Минимальная среда (G-MEM). Мы используем Glasgow Minimal Essential Medium, G-MEM (Gibco 11710-035)
+Gibco G-MEM  Фетальная телячья сыворотка, пригодная для ЭСК (ES-FBS). По нашему опыту лучшими являются:
+  HyClone FBS DEFINED Murine ESC Screened (HyClone SH30070.</description>
     </item>
     
   </channel>

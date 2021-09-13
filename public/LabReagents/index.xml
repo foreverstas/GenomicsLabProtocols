@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Растворы и реактивы on Protocols for epigenetics and genomics</title>
-    <link>https://github.com/foreverstas/GenomicsLabProtocols/labreagents/</link>
-    <description>Recent content in Растворы и реактивы on Protocols for epigenetics and genomics</description>
+    <title>Растворы и реактивы on Epigenetic and Genomics Protocols</title>
+    <link>/labreagents/</link>
+    <description>Recent content in Растворы и реактивы on Epigenetic and Genomics Protocols</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Mon, 13 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://github.com/foreverstas/GenomicsLabProtocols/labreagents/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 13 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="/labreagents/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Sephadex-G50</title>
+      <link>/labreagents/sephadex/</link>
+      <pubDate>Mon, 13 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/labreagents/sephadex/</guid>
+      <description>Смола Sephadex G-50 Для очистки секвенирующих реакций мы используем Sephadex G50 fine. Согласно инструкции эта смола используется для отделения молекул &amp;gt;30 кДа от молекул &amp;lt;1500 Да. Мелкие молекулы задерживаются в шариках смолы, что позволяет очищать реакционные смеси от невключившихся меченых неуклеотидов.
+Банка с Sephadex G-50Подробное описание физических принципов метода эксклюзионной хроматографии с использованием Sephadex можно прочитать в прикрепленном файле.
+  Эксцизионная хроматография   Size_Exlusion_Chromatography.pdf  (2611 kb)   Рецепт 5% смолы для очистки секвенирующих реакций.</description>
+    </item>
+    
   </channel>
 </rss>
