@@ -87,15 +87,14 @@ sub {
 
 img {
   border: 0;
-  max-width:100%;
-  object-fit: contain; }
+  width: 10 cm;
+  height: auto; }
 
 svg:not(:root) {
   overflow: hidden; }
 
 figure {
-  width 100 px; 
-  height auto; }
+  margin: 1em 40px; }
 
 hr {
   height: 0; }
