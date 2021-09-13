@@ -86,7 +86,7 @@ sub {
   bottom: -0.25em; }
 
 img {
-  width:  1 em;
+  max-width:  10%;
   height: auto;}
 
 svg:not(:root) {
