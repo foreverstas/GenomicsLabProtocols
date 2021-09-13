@@ -10,7 +10,7 @@ lang: russian
 
 Для очистки секвенирующих реакций мы используем Sephadex G50 fine. Согласно инструкции эта смола используется для отделения молекул \>30 кДа от молекул \<1500 Да. Мелкие молекулы задерживаются в шариках смолы, что позволяет очищать реакционные смеси от невключившихся меченых неуклеотидов.
 
-![](/LabReagents/sephadex_files/sephadex.jpg)
+![](/LabReagents/sephadex_files/sephadex.jpg?classes=shadow&width=10pc)
 
 
 Подробное описание физических принципов метода эксклюзионной хроматографии с использованием Sephadex можно прочитать в [прикрепленном файле](https://drive.google.com/file/d/1tryYeTF0Tmvm5igTkCK21lIqQSYiOahi/view?usp=sharing).
