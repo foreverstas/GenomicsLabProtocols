@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Эксперимент on Epigenetic and Genomics Protocols</title>
+    <link>/tags/%D1%8D%D0%BA%D1%81%D0%BF%D0%B5%D1%80%D0%B8%D0%BC%D0%B5%D0%BD%D1%82/</link>
+    <description>Recent content in Эксперимент on Epigenetic and Genomics Protocols</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language><atom:link href="/tags/%D1%8D%D0%BA%D1%81%D0%BF%D0%B5%D1%80%D0%B8%D0%BC%D0%B5%D0%BD%D1%82/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Проекты</title>
+      <link>/projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/projects/</guid>
+      <description>В этом разделе выкладываются примеры исследовательских проектов. Примеры выкладываются по инициативе создателей и многие моменты здесь не являются бесспорными. Основная цель этого раздела - продемонстрировать ключевые моменты, которые необходимо учитывать и документировать на стадии планирования экспериментов, чтобы максимально ускорить рабочий процесс.</description>
+    </item>
+    
+  </channel>
+</rss>

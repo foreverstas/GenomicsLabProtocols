@@ -5,11 +5,15 @@
     <loc>/labreagents/</loc>
     <lastmod>2021-09-13T00:00:00+00:00</lastmod>
   </url><url>
+    <loc>/projects/</loc>
+  </url><url>
     <loc>/</loc>
     <lastmod>2021-09-13T00:00:00+00:00</lastmod>
   </url><url>
     <loc>/labreagents/sephadex/</loc>
     <lastmod>2021-09-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>/pcrtechnique/inhibitors/</loc>
   </url><url>
     <loc>/tags/2i/</loc>
   </url><url>
@@ -29,8 +33,16 @@
   </url><url>
     <loc>/tags/</loc>
   </url><url>
+    <loc>/pcrtechnique/</loc>
+  </url><url>
+    <loc>/tags/%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80%D1%8B/</loc>
+  </url><url>
+    <loc>/tags/%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B/</loc>
+  </url><url>
     <loc>/es-protocols/</loc>
   </url><url>
     <loc>/es-protocols/esreagents/</loc>
+  </url><url>
+    <loc>/tags/%D1%8D%D0%BA%D1%81%D0%BF%D0%B5%D1%80%D0%B8%D0%BC%D0%B5%D0%BD%D1%82/</loc>
   </url>
 </urlset>
