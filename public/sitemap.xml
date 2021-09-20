@@ -33,6 +33,8 @@
   </url><url>
     <loc>/tags/</loc>
   </url><url>
+    <loc>/dnaextaction/</loc>
+  </url><url>
     <loc>/pcrtechnique/</loc>
   </url><url>
     <loc>/tags/%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80%D1%8B/</loc>
@@ -44,5 +46,7 @@
     <loc>/es-protocols/esreagents/</loc>
   </url><url>
     <loc>/tags/%D1%8D%D0%BA%D1%81%D0%BF%D0%B5%D1%80%D0%B8%D0%BC%D0%B5%D0%BD%D1%82/</loc>
+  </url><url>
+    <loc>/dnaextaction/peg/</loc>
   </url>
 </urlset>

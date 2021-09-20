@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Очистка ДНК и РНК on Epigenetic and Genomics Protocols</title>
+    <link>/dnaextaction/</link>
+    <description>Recent content in Очистка ДНК и РНК on Epigenetic and Genomics Protocols</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language><atom:link href="/dnaextaction/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Экстракция c PEG</title>
+      <link>/dnaextaction/peg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/dnaextaction/peg/</guid>
+      <description>Экстракция c полиэтиленгликолем (ПЭГ, PEG) является быстрым и сравнительно простым методом очистки дцДНК из реакционных смесей, таких как ПЦР и реакции рестрикции. Преимуществом метода является возможность удалять фрагменты ДНК малого размера в процессе очистки. Изменяя концентрацию ПЭГ, можно регулировать диапазон осажденных фрагментов ДНК.
+ Полимер PEG способен вытеснять молекулы ДНК из водных растворов в присутствии катионов Na, K или Mg. Опуская физическую природу явления, кратко этот эффект можно объяснить следующим образом: полимер PEG заполняет объем реакционной смеси, выталкивая ДНК в оставшееся пространство (больше PEG - меньше свободного пространства).</description>
+    </item>
+    
+  </channel>
+</rss>
