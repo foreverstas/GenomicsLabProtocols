@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Этанол on Epigenetic and Genomics Protocols</title>
+    <link>/tags/%D1%8D%D1%82%D0%B0%D0%BD%D0%BE%D0%BB/</link>
+    <description>Recent content in Этанол on Epigenetic and Genomics Protocols</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language><atom:link href="/tags/%D1%8D%D1%82%D0%B0%D0%BD%D0%BE%D0%BB/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Переосаждение ДНК этанолом</title>
+      <link>/dnaextaction/ethextr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/dnaextaction/ethextr/</guid>
+      <description>Переосаждение нуклеиновых кислот спиртами используется для концентрирования и/или очистки образцов от солей, нуклеотидтрифосфатов, ферментов, других растворимых в спирте молекул и, в какой то степени, от одноцепочечных олигонуклеотидов. Осаждение спиртами основано на том факте, что нуклеиновые кислоты менее растворимы в спирте, чем в более полярной воде. Добавление соли и снижение температуры дополнительно понижает растворимость из-за конкуренции за диполи воды. Подробнее на википедии.
+Протокол переосаждения ДНК этанолом  Добавить 1/10 объема 3M ацетата натрия, pH 5,2 или 1/2 объема 5M ацетата аммония 3 объема 96% этанола или 2 объема 100% этанола.</description>
+    </item>
+    
+  </channel>
+</rss>
