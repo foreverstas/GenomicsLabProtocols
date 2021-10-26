@@ -3,7 +3,7 @@
     "path": "C:/Users/stasw/Desktop/GitHub/GenomicsLabProtocols_home_control/content/LabReagents/Enzymes/ProteinaseK/_index.Rmd",
     "project_path": "content/LabReagents/Enzymes/ProteinaseK/_index.Rmd",
     "type": "r_markdown",
-    "hash": "3985051528",
+    "hash": "0",
     "contents": "",
     "dirty": false,
     "created": 1635249473551.0,
@@ -12,19 +12,19 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "19,92",
+        "cursorPosition": "29,55",
         "scrollLine": "12",
         "rmdVisualMode": "true",
-        "rmdVisualModeLocation": "1409:482",
+        "rmdVisualModeLocation": "1796:400",
         "rmdVisualWrapConfigured": "true",
         "docOutlineVisible": "1"
     },
     "folds": "",
-    "lastKnownWriteTime": 1635250875,
+    "lastKnownWriteTime": 1635251084,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1635250875148,
+    "last_content_update": 1635251084075,
     "read_only": false,
     "read_only_alternatives": []
 }

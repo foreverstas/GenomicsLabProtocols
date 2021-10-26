@@ -20,7 +20,7 @@ tags: ["Протеиназа К"]
 
     |                                                          | 1 ml      | 2 ml       | 4 ml         | 5ml      |
     |----------------------------------------------------------|-----------|------------|--------------|----------|
-    | [**1M Tris-HCl pH8**](/public/LabReagents/Buffers/Tris/) | 200 mkl   | 400 mkl    | 800 mkl      | 1000 mkl |
+    | [**1M Tris-HCl pH8**](labreagents/buffers/tris/)         | 200 mkl   | 400 mkl    | 800 mkl      | 1000 mkl |
     | [**2.5M CaCl<sub>2</sub>**](/labreagents/buffers/сacl2/) | 1.2 mkl   | 2.4 mkl    | 4.8 mkl      | 6 mkl    |
     | **mQ**                                                   | 798.8 mkl | 1597.6 mkl | 3195\. 2 mkl | 3994 mkl |
 
