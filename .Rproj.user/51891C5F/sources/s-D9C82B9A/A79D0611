@@ -3,7 +3,7 @@
     "path": "C:/Users/stasw/Desktop/GitHub/GenomicsLabProtocols_home_control/content/DNAextaction/PEG.Rmd",
     "project_path": "content/DNAextaction/PEG.Rmd",
     "type": "r_markdown",
-    "hash": "0",
+    "hash": "3854663613",
     "contents": "",
     "dirty": false,
     "created": 1635278029210.0,
@@ -12,20 +12,20 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "31,40",
+        "cursorPosition": "25,47",
         "scrollLine": "0",
         "rmdVisualMode": "true",
-        "rmdVisualModeLocation": "1170:524",
+        "rmdVisualModeLocation": "1170:455",
         "rmdVisualWrapConfigured": "true",
         "docOutlineVisible": "1",
         "docOutlineSize": "122"
     },
     "folds": "",
-    "lastKnownWriteTime": 1635278361,
+    "lastKnownWriteTime": 1635278960,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1635278361331,
+    "last_content_update": 1635278960445,
     "read_only": false,
     "read_only_alternatives": []
 }
