@@ -13,7 +13,7 @@ blogdown::shortcode("notice", "info",.content = "РНКаза А - это энд
 
 ```
 
-![](https://pubs.rsc.org/image/article/2016/ob/c6ob01163b/c6ob01163b-s1.gif?width=10pc "Механизм гидролиза РНК под действием РНКазы А")
+![](https://pubs.rsc.org/image/article/2016/ob/c6ob01163b/c6ob01163b-s1.gif?classes=shadow&width=40pc "Механизм гидролиза РНК под действием РНКазы А")
 
 ```{r echo=FALSE}
 
