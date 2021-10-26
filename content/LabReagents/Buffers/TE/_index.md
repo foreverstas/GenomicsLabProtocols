@@ -47,3 +47,5 @@ Cостав 10 mM Tris-HCl (pH 7.5-8.5), 1 mM EDTA (pH 8.0).
 {{% notice "info" %}}
 Чтобы избежать ингибирования ЭДТА, в некоторых протоколых используется 0.1-кратный ТЕ, или ТЕ с 0.1мМ ЭДТА.
 {{% /notice %}}
+
+[рецепт TE на OpenWetWare](https://openwetware.org/wiki/TE)
