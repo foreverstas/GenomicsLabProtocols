@@ -15,6 +15,8 @@ blogdown::shortcode("notice", "warning",.content = "Работать с РНКа
 
 ```
 
+![](https://pubs.rsc.org/image/article/2016/ob/c6ob01163b/c6ob01163b-s1.gif?width=10pc "Механизм гидролиза РНК под действием РНКазы А")
+
 ### Стоковый раствор РНКазы (10 мг/мл)
 
 -   Растворить фермент в mQ из расчета 20 мг РНКазы на мл
