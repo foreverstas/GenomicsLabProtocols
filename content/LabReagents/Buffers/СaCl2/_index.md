@@ -1,5 +1,5 @@
 ---
-title: "Хлорид кальция"
+title: CaCl2
 author: "Romanov Stanislav"
 date: "26 10 2021"
 tags: ["Хлорид кальция","CaCl2"]

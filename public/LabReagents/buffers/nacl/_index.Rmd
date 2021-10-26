@@ -1,5 +1,5 @@
 ---
-title: "Стоковые растворы"
+title: "NaCl"
 author: "Romanov Stanislav"
 date: "21 10 2021"
 tags: ["NaCl","Хлорид натрия"]
