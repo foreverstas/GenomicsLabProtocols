@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TAE on Epigenetic and Genomics Protocols</title>
+    <link>/tags/tae/</link>
+    <description>Recent content in TAE on Epigenetic and Genomics Protocols</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language><atom:link href="/tags/tae/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TAE</title>
+      <link>/labreagents/buffers/tae/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/labreagents/buffers/tae/</guid>
+      <description>50xTAE Трис-ацетат-ЭДТА буфер является наиболее популярной средой для электрофореза нуклеиновых кислот. TAE хорошо разделяет фрагменты &amp;gt;2kb. Борная кислота в TBE является ингибитором множества лабораторных ферментов, так что TAE является более предпочтительным для разделения ДНК перед элюцией из геля. В качестве стока используется 50-кратный раствор.
+ Рецепт:
+  Насыпать 242 g Tris base в 1л бутылку
+  Добавить mQ до 750 мл, растворить соль
+  Добавить 57.1 ml ледяной уксусной кислоты (glacial acetic acid)</description>
+    </item>
+    
+  </channel>
+</rss>

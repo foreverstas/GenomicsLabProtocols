@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TBE on Epigenetic and Genomics Protocols</title>
+    <link>/tags/tbe/</link>
+    <description>Recent content in TBE on Epigenetic and Genomics Protocols</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language><atom:link href="/tags/tbe/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TBE</title>
+      <link>/labreagents/buffers/tbe/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/labreagents/buffers/tbe/</guid>
+      <description>10xTBE Трис-борат-ЭДТА буфер является одной из наиболее популярных сред для электрофореза нуклеиновых кислот. TBE хорошо разделяет фрагменты &amp;lt;2kb и хорошо подходит для разделения РНК. ТВЕ обладает большей буферной емкостью в сравнении с ТАЕ, поэтому больше подходит для продолжительных форезов и выдерживает больше запусков электрофореза. Борная кислота в TBE является ингибитором множества лабораторных ферментов, так что не стоит использовать TBE для элюции из геля. В качестве стока используется 10-кратный раствор.
+ Рецепт:</description>
+    </item>
+    
+  </channel>
+</rss>

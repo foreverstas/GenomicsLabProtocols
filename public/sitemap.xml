@@ -17,6 +17,8 @@
   </url><url>
     <loc>/tags/2i/</loc>
   </url><url>
+    <loc>/tags/cacl2/</loc>
+  </url><url>
     <loc>/categories/</loc>
   </url><url>
     <loc>/tags/chir/</loc>
@@ -25,7 +27,11 @@
   </url><url>
     <loc>/tags/edta/</loc>
   </url><url>
+    <loc>/labreagents/buffers/edta/</loc>
+  </url><url>
     <loc>/tags/egta/</loc>
+  </url><url>
+    <loc>/labreagents/buffers/egta/</loc>
   </url><url>
     <loc>/tags/es-cells/</loc>
   </url><url>
@@ -33,19 +39,63 @@
   </url><url>
     <loc>/tags/hepes/</loc>
   </url><url>
+    <loc>/labreagents/buffers/hepes/</loc>
+  </url><url>
+    <loc>/labreagents/buffers/kcl/</loc>
+  </url><url>
     <loc>/tags/licl/</loc>
+  </url><url>
+    <loc>/labreagents/buffers/licl/</loc>
   </url><url>
     <loc>/tags/lif/</loc>
   </url><url>
+    <loc>/tags/mgcl2/</loc>
+  </url><url>
+    <loc>/labreagents/buffers/mgcl2/</loc>
+  </url><url>
     <loc>/tags/nacl/</loc>
+  </url><url>
+    <loc>/tags/naoac/</loc>
+  </url><url>
+    <loc>/labreagents/buffers/naoac/</loc>
+  </url><url>
+    <loc>/tags/naoh/</loc>
+  </url><url>
+    <loc>/labreagents/buffers/naoh/</loc>
+  </url><url>
+    <loc>/tags/nh4oac/</loc>
+  </url><url>
+    <loc>/labreagents/buffers/nh4oac/</loc>
+  </url><url>
+    <loc>/tags/pbs/</loc>
+  </url><url>
+    <loc>/labreagents/buffers/pbs/</loc>
   </url><url>
     <loc>/tags/pd/</loc>
   </url><url>
+    <loc>/tags/stocks/</loc>
+  </url><url>
+    <loc>/tags/tae/</loc>
+  </url><url>
+    <loc>/labreagents/buffers/tae/</loc>
+  </url><url>
     <loc>/tags/</loc>
+  </url><url>
+    <loc>/tags/tbe/</loc>
+  </url><url>
+    <loc>/labreagents/buffers/tbe/</loc>
   </url><url>
     <loc>/tags/tris/</loc>
   </url><url>
+    <loc>/labreagents/buffers/tris/</loc>
+  </url><url>
+    <loc>/tags/%D0%B0%D0%BC%D0%BC%D0%BE%D0%BD%D0%B8%D1%8F-%D0%B0%D1%86%D0%B5%D1%82%D0%B0%D1%82/</loc>
+  </url><url>
+    <loc>/tags/%D0%B0%D1%86%D0%B5%D1%82%D0%B0%D1%82-%D0%BD%D0%B0%D1%82%D1%80%D0%B8%D1%8F/</loc>
+  </url><url>
     <loc>/tags/%D0%B8%D0%B7%D0%BE%D0%BF%D1%80%D0%BE%D0%BF%D0%B0%D0%BD%D0%BE%D0%BB/</loc>
+  </url><url>
+    <loc>/tags/%D0%BA%D1%81l/</loc>
   </url><url>
     <loc>/dnaextaction/</loc>
   </url><url>
@@ -73,11 +123,29 @@
   </url><url>
     <loc>/labreagents/buffers/</loc>
   </url><url>
+    <loc>/labreagents/buffers/nacl/</loc>
+  </url><url>
     <loc>/tags/%D1%82%D1%80%D0%B8%D1%81/</loc>
   </url><url>
     <loc>/tags/%D1%84%D0%B5%D0%BD%D0%BE%D0%BB/</loc>
   </url><url>
     <loc>/dnaextaction/phenolchl/</loc>
+  </url><url>
+    <loc>/tags/%D1%84%D0%B5%D0%BD%D0%BE%D0%BB%D1%85%D0%BB%D0%BE%D1%80%D0%BE%D1%84%D0%BE%D1%80%D0%BC/</loc>
+  </url><url>
+    <loc>/labreagents/buffers/phenol/</loc>
+  </url><url>
+    <loc>/tags/%D1%85%D0%BB%D0%BE%D1%80%D0%B8%D0%B4-%D0%BA%D0%B0%D0%BB%D0%B8%D1%8F/</loc>
+  </url><url>
+    <loc>/tags/%D1%85%D0%BB%D0%BE%D1%80%D0%B8%D0%B4-%D0%BA%D0%B0%D0%BB%D1%8C%D1%86%D0%B8%D1%8F/</loc>
+  </url><url>
+    <loc>/labreagents/buffers/%D1%81acl2/</loc>
+  </url><url>
+    <loc>/tags/%D1%85%D0%BB%D0%BE%D1%80%D0%B8%D0%B4-%D0%BB%D0%B8%D1%82%D0%B8%D1%8F/</loc>
+  </url><url>
+    <loc>/tags/%D1%85%D0%BB%D0%BE%D1%80%D0%B8%D0%B4-%D0%BC%D0%B0%D0%B3%D0%BD%D0%B8%D1%8F/</loc>
+  </url><url>
+    <loc>/tags/%D1%85%D0%BB%D0%BE%D1%80%D0%B8%D0%B4-%D0%BD%D0%B0%D1%82%D1%80%D0%B8%D1%8F/</loc>
   </url><url>
     <loc>/tags/%D1%85%D0%BB%D0%BE%D1%80%D0%BE%D1%84%D0%BE%D1%80%D0%BC/</loc>
   </url><url>
@@ -92,5 +160,7 @@
     <loc>/tags/%D1%8D%D0%BA%D1%81%D1%82%D1%80%D0%B0%D0%BA%D1%86%D0%B8%D1%8F-%D0%B4%D0%BD%D0%BA-%D1%84%D0%B5%D0%BD%D0%BE%D0%BB%D0%BE%D0%BC/</loc>
   </url><url>
     <loc>/tags/%D1%8D%D1%82%D0%B0%D0%BD%D0%BE%D0%BB/</loc>
+  </url><url>
+    <loc>/tags/%D1%81%D1%82%D0%BE%D0%BA%D0%B8/</loc>
   </url>
 </urlset>
