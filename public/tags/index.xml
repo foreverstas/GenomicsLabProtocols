@@ -25,11 +25,47 @@
     </item>
     
     <item>
+      <title>EDTA</title>
+      <link>/tags/edta/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/edta/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>EGTA</title>
+      <link>/tags/egta/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/egta/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>ES-cells</title>
       <link>/tags/es-cells/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/tags/es-cells/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>HEPES</title>
+      <link>/tags/hepes/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/hepes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>LiCl</title>
+      <link>/tags/licl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/licl/</guid>
       <description></description>
     </item>
     
@@ -43,11 +79,29 @@
     </item>
     
     <item>
+      <title>NaCl</title>
+      <link>/tags/nacl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/nacl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>PD</title>
       <link>/tags/pd/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/tags/pd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tris</title>
+      <link>/tags/tris/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/tris/</guid>
       <description></description>
     </item>
     
@@ -106,6 +160,15 @@
     </item>
     
     <item>
+      <title>Трис</title>
+      <link>/tags/%D1%82%D1%80%D0%B8%D1%81/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%D1%82%D1%80%D0%B8%D1%81/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Фенол</title>
       <link>/tags/%D1%84%D0%B5%D0%BD%D0%BE%D0%BB/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -120,6 +183,24 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/tags/%D1%85%D0%BB%D0%BE%D1%80%D0%BE%D1%84%D0%BE%D1%80%D0%BC/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ЭГТА</title>
+      <link>/tags/%D1%8D%D0%B3%D1%82%D0%B0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%D1%8D%D0%B3%D1%82%D0%B0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ЭДТА</title>
+      <link>/tags/%D1%8D%D0%B4%D1%82%D0%B0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%D1%8D%D0%B4%D1%82%D0%B0/</guid>
       <description></description>
     </item>
     
