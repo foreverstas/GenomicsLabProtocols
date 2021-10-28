@@ -20,7 +20,7 @@ blogdown::shortcode("notice", "info",.content = "Трис-ацетат-ЭДТА 
 
 3.  Добавить 57.1 ml ледяной уксусной кислоты (glacial acetic acid)
 
-4.  Добавить 100 ml 0.5 M ЭДТА (pH 8.0)
+4.  Добавить 100 ml [0.5 M ЭДТА (pH 8.0)](/labreagents/buffers/edta)
 
 5.  Добавить mQ до 1л, размешать. Хранить при КТ
 

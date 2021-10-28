@@ -20,7 +20,7 @@ blogdown::shortcode("notice", "info",.content = "Трис-борат-ЭДТА б
 
 3.  Добавить mQ до 750 мл
 
-4.  Добавить 40 ml 0.5 M EDTA (pH 8.0)
+4.  Добавить 40 ml [0.5 M EDTA (pH 8.0)](/labreagents./buffers/tbe)
 
 5.  Добавить mQ до 1л, размешать. Хранить при КТ
 

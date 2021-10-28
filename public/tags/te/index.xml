@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TE on Epigenetic and Genomics Protocols</title>
+    <link>/tags/te/</link>
+    <description>Recent content in TE on Epigenetic and Genomics Protocols</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language><atom:link href="/tags/te/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TE</title>
+      <link>/labreagents/buffers/te/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/labreagents/buffers/te/</guid>
+      <description>ТЕ буфер (Трис-ЭДТА) используется для хранения ДНК и РНК, а также для приготовления реакционных буферов. EDTA в TE хелатирует катионы магния, кальция и других двухвалентных металлов, необходимых для большинства ферментов деградации ДНК и РНК. Для хранения ДНК используют Tris с pH 8, для РНК pH 7,5. Слабощелочной pH, поддерживаемый Трис, защищает ДНК от апуринизации и последующей бета-элиминации. Для стабильности РНК необходим более нейтральный pH.
+ 10xTE Cостав 100 mM Tris-HCl (pH 7.</description>
+    </item>
+    
+  </channel>
+</rss>

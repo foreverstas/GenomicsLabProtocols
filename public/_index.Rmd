@@ -16,6 +16,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```{r echo=FALSE}
 
-blogdown::shortcode("notice", "info",.content = "Пожалуйста, если вы заметили ошибку, или хотеле бы видеть протоколы более подробными, обратитесь к Романову Станиславу Евгеньевичу в рабочее время или по почте (romanov@mcb.nsc.ru)." )
+blogdown::shortcode("notice", "info",.content = "Пожалуйста, если вы заметили ошибку или хотели бы видеть протоколы более подробными, обратитесь к Романову Станиславу Евгеньевичу в рабочее время или по почте (romanov@mcb.nsc.ru)." )
 
 ```
+
+![](https://42796r1ctbz645bo223zkcdl-wpengine.netdna-ssl.com/wp-content/uploads/2012/03/epigenetics.png)

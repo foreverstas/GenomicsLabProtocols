@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Очистка ДНК на колонках on Epigenetic and Genomics Protocols</title>
+    <link>/tags/%D0%BE%D1%87%D0%B8%D1%81%D1%82%D0%BA%D0%B0-%D0%B4%D0%BD%D0%BA-%D0%BD%D0%B0-%D0%BA%D0%BE%D0%BB%D0%BE%D0%BD%D0%BA%D0%B0%D1%85/</link>
+    <description>Recent content in Очистка ДНК на колонках on Epigenetic and Genomics Protocols</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language><atom:link href="/tags/%D0%BE%D1%87%D0%B8%D1%81%D1%82%D0%BA%D0%B0-%D0%B4%D0%BD%D0%BA-%D0%BD%D0%B0-%D0%BA%D0%BE%D0%BB%D0%BE%D0%BD%D0%BA%D0%B0%D1%85/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Буфер L</title>
+      <link>/labreagents/buffers/bufferl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/labreagents/buffers/bufferl/</guid>
+      <description>Буфер L применяется для щелочного лизиса бактериальных клеток c последующей очисткой плазмидной ДНК на колонках с силикой.
+ Буфер L  Смешать стоковые растворы      Содержание 50 мл 100 мл 150 мл 200 мл 250 мл 1 л     10% SDS 1% 5 мл 10 мл 15 мл 20 мл 25 мл 100 мл   10N NaOH 0.2 N 1 мл 2 мл 3 мл 4 мл 5 мл 20 мл   mQ  44 мл 88 мл 132 мл 176 мл 220 мл 880 мл     Хранить при комнатной температуре  SDS в буфере L может выпадать в осадок в случае охлаждения.</description>
+    </item>
+    
+    <item>
+      <title>Буфер N</title>
+      <link>/labreagents/buffers/buffern/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/labreagents/buffers/buffern/</guid>
+      <description>Буфер N применяется для нейтрализации раствора с лизированными бактериями c последующей очисткой плазмидной ДНК на колонках с силикой.
+ Необходимые компоненты   Изотиоционат гуанидина или гуанидин гидрохлорид
+  Ацетат калия (potassium acetate)
+  Ледяная уксусная кислота
+  mQ
+  pH-метр
+  Буфер N Содержание50 мл100 мл150 мл200 мл250 мл1 лGuSCN (Mw 118.</description>
+    </item>
+    
+    <item>
+      <title>Буфер R</title>
+      <link>/labreagents/buffers/bufferr/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/labreagents/buffers/bufferr/</guid>
+      <description>Буфер R применяется для ресуспендирования осажденных бактериальных клеток перед щелочным лизисом c последующей очисткой плазмидной ДНК на колонках с силикой.
+ Буфер R  Смешать стоковые растворы  Содержание50 мл100 мл150 мл200 мл250 мл1 л1M Tris-HCl (pH 7.4)25 мМ1.25 мл2.5 мл3.75 мл5 мл6.25 мл25 мл0.5М ЭДТА (pH 8.</description>
+    </item>
+    
+  </channel>
+</rss>

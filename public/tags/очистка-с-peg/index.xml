@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Очистка с PEG on Epigenetic and Genomics Protocols</title>
+    <link>/tags/%D0%BE%D1%87%D0%B8%D1%81%D1%82%D0%BA%D0%B0-%D1%81-peg/</link>
+    <description>Recent content in Очистка с PEG on Epigenetic and Genomics Protocols</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language><atom:link href="/tags/%D0%BE%D1%87%D0%B8%D1%81%D1%82%D0%BA%D0%B0-%D1%81-peg/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Экстракция c PEG</title>
+      <link>/dnaextaction/peg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/dnaextaction/peg/</guid>
+      <description>Экстракция c полиэтиленгликолем (ПЭГ, PEG) является быстрым и сравнительно простым методом очистки дцДНК из реакционных смесей, таких как ПЦР и реакции рестрикции, от ферметнтов, dNTPs и праймеров. Преимуществом метода является возможность избавляться от фрагментов дцДНК малого размера, например, праймеровых димеров, что труднодостижимо при очистке на колонках или переосаждении спиртом. Изменяя концентрацию ПЭГ, можно регулировать диапазон длины исключенных из препарата фрагментов ДНК.
+Эффективность осаждения с PEG в присутствии MgCl2 сильно падает, когда концентрация ДНК в растворе меньше 10 нг/мкл.</description>
+    </item>
+    
+  </channel>
+</rss>
