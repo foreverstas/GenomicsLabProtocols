@@ -45,4 +45,4 @@ tags: ["Буфер M","Элюция из геля","Очистка ДНК на �
 Окраска готового раствора должна быть как на фотографии ниже.
 {{% /notice %}}
 
-<img src="_index.files/BufferM.jpg" class="shadow" style="width" />
+<img src="_index.files/BufferM.jpg?classes=shadow&amp;width=30pc" class="shadow" style="width" />

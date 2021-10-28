@@ -52,4 +52,4 @@ blogdown::shortcode("notice", "info",.content = "Буфер M применяет
 blogdown::shortcode("notice", "tip",.content = "Окраска готового раствора должна быть как на фотографии ниже.")
 ```
 
-![](_index.files/BufferM.jpg){.shadow style="width"}
+![](_index.files/BufferM.jpg?classes=shadow&width=30pc){.shadow style="width"}
