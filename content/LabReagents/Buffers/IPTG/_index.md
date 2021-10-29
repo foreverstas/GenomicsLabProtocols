@@ -13,7 +13,11 @@ tags: ["IPTG","ИПТГ","Сине-белая селекция"]
 
 ![Аллолактоза](https://upload.wikimedia.org/wikipedia/commons/d/d9/Allolactose.png?classes=shadow&width=15pc)
 
+*Аллолактоза*
+
 ![ИПТГ](https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/IPTG2.svg/1024px-IPTG2.svg.png?classes=shadow&width=15pc)
+
+*ИПТГ*
 
 ### Альтернативные названия
 

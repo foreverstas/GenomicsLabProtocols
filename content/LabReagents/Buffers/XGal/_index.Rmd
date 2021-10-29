@@ -13,9 +13,13 @@ blogdown::shortcode("notice", "info",.content = "X-gal - органическо�
 
 ```
 
-![Формула XGal](https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/X-Gal.svg/1280px-X-Gal.svg.png?classes=shadow&width=15pc)
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/X-Gal.svg/1280px-X-Gal.svg.png?classes=shadow&width=15pc)
 
-![X-gal расщепляется β-галактозидазами, при этом образуется галактоза и 5-бромо-4-хлоро-3-гидроксииндол (1). Последний окисляется в 5,5'-дибромо-4,4'-дихлоро-индиго (2), нерастворимый окрашенный продукт.](https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/X-Gal_reaction.png/1920px-X-Gal_reaction.png?classes=shadow&width=15pc)
+*Формула XGal*
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/X-Gal_reaction.png/1920px-X-Gal_reaction.png?classes=shadow&width=50pc)
+
+*X-gal расщепляется β-галактозидазами, при этом образуется галактоза и 5-бромо-4-хлоро-3-гидроксииндол (1). Последний окисляется в 5,5'-дибромо-4,4'-дихлоро-индиго (2), нерастворимый окрашенный продукт.*
 
 ### Альтернативные названия
 
