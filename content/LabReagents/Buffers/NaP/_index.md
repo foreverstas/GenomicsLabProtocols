@@ -2,7 +2,7 @@
 title: "Натрий фосфат 0.5M (pH 8.5)"
 author: "Romanov Stanislav"
 date: "21 10 2021"
-tags: [ "PBS"]
+tags: [ "Phoshpate buffer","NaP","Sodium Phosphate","Фосфатный буфер","Na2HPO4","NaH2PO4"]
 ---
 
 {{% notice "info" %}}
