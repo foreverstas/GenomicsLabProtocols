@@ -182,7 +182,7 @@ tags: [ "Phoshpate buffer","NaP","Sodium Phosphate","Фосфатный буфе
 </tbody>
 </table>
 
--   Довести до выбранного объема добавлением mQ. oH будет в районе 4-6.
+-   Довести до выбранного объема добавлением mQ. pH будет в районе 4-6.
 
 [Описание от SIgma](https://www.sigmaaldrich.com/deepweb/assets/sigmaaldrich/product/documents/156/560/s5136pis.pdf)
 
