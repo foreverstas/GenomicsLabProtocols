@@ -88,4 +88,16 @@ tags: ["IPTG","ИПТГ","Сине-белая селекция"]
 
 -   Хранить при -20С
 
+### Описание IPTG и протоколы сине-белой селекции
+
+Концентрации стоков и рабочих растворов могут варьировать от протокола к протоколу. Лучше ориентироваться на собственный опыт.
+
+[Описание X-gal и протокол от Sigma](https://www.sigmaaldrich.com/deepweb/assets/sigmaaldrich/product/documents/184/862/b6024pis.pdf)
+
+[Протоколы сине-белой селекции от GoldBio](https://www.goldbio.com/uploads/documents/4ea54f373a66e61d9bdd2b95b1a940e2.pdf)
+
 [Подробнее о IPTG](https://agscientific.com/blog/2019/05/iptg-facts-protocols/)
+
+[Протокол сине-белой селекции от ProtocolsIO](https://www.protocols.io/view/Blue-White-Screening-of-Bacterial-Colonies-X-Gal-I-j93uid?step=3)
+
+[Описание X-Gal и протокол селекции от Meridian](https://www.bioline.com/mwdownloads/download/link/id/2695/)
