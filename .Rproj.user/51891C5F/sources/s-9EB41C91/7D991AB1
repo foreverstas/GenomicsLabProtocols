@@ -3,7 +3,7 @@
     "path": "C:/Users/stasw/Desktop/GitHub/GenomicsLabProtocols_home_control/content/LabReagents/Buffers/IPTG/_index.Rmd",
     "project_path": "content/LabReagents/Buffers/IPTG/_index.Rmd",
     "type": "r_markdown",
-    "hash": "0",
+    "hash": "2330183689",
     "contents": "",
     "dirty": false,
     "created": 1635497576872.0,
@@ -12,19 +12,19 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "23,0",
+        "cursorPosition": "11,69",
         "scrollLine": "2",
         "rmdVisualMode": "true",
-        "rmdVisualModeLocation": "538:1126",
+        "rmdVisualModeLocation": "325:137",
         "rmdVisualWrapConfigured": "true",
         "docOutlineVisible": "1"
     },
     "folds": "",
-    "lastKnownWriteTime": 1635508763,
+    "lastKnownWriteTime": 1635508810,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1635508763407,
+    "last_content_update": 1635508810109,
     "read_only": false,
     "read_only_alternatives": []
 }
