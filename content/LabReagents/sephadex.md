@@ -2,8 +2,7 @@
 title: "Sephadex-G50"
 author: "Stanislav Romanov"
 date: '2021-09-13'
-output: html_document
-lang: russian
+tags: ["Очистка сефадексом","Секвенирующие реакции", "Sephadex G-50","Sephadex"]
 ---
 
 ### Смола Sephadex G-50
