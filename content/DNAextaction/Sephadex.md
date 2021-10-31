@@ -7,7 +7,7 @@ tags: ["Очистка сефадексом","Секвенирующие реа�
 
 Для очистки секвенирующих реакций мы используем:
 
--   [Переосаждение этанолом](/dnaextraction/ethextr)
+-   [Переосаждение этанолом](/dnaextaction/ethextr/)
 
 -   Очистку смолой [BigDye XTerminator Purification Kit](https://www.tcd.ie/medicine/psychiatry/assets/doc/BDx-Protocol-Summary.pdf)
 
