@@ -7,7 +7,7 @@ tags: ["Очистка сефадексом","Секвенирующие реа�
 
 Для очистки секвенирующих реакций мы используем:
 
--   Очистку этанолом (описана в [мануале BigDye](https://assets.thermofisher.com/TFS-Assets/LSG/manuals/cms_081527.pdf), главы 4-2/4-3)
+-   Очистку этанолом (описана в [мануале BigDye](https://assets.thermofisher.com/TFS-Assets/LSG/manuals/cms_081527.pdf), главы 4-2/4-3, или на [protocols.io](https://www.protocols.io/view/dye-terminator-dna-sequencing-bhxmj7k6?step=10))
 
 -   Очистку смолой [BigDye XTerminator Purification Kit](https://www.tcd.ie/medicine/psychiatry/assets/doc/BDx-Protocol-Summary.pdf)
 
