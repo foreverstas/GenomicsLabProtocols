@@ -3,7 +3,7 @@
     "path": "C:/Users/stasw/Desktop/GitHub/GenomicsLabProtocols_home_control/content/DNAextaction/Sephadex.Rmd",
     "project_path": "content/DNAextaction/Sephadex.Rmd",
     "type": "r_markdown",
-    "hash": "0",
+    "hash": "1080079190",
     "contents": "",
     "dirty": false,
     "created": 1635685497171.0,
@@ -12,19 +12,19 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "49,51",
+        "cursorPosition": "9,119",
         "scrollLine": "0",
         "rmdVisualMode": "true",
-        "rmdVisualModeLocation": "1235:785",
+        "rmdVisualModeLocation": "299:204",
         "rmdVisualWrapConfigured": "true",
         "docOutlineVisible": "1"
     },
     "folds": "",
-    "lastKnownWriteTime": 1635690000,
+    "lastKnownWriteTime": 1635690124,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1635690000920,
+    "last_content_update": 1635690124120,
     "read_only": false,
     "read_only_alternatives": []
 }
