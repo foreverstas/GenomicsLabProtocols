@@ -2,7 +2,7 @@
 title: "PBS"
 author: "Romanov Stanislav"
 date: "21 10 2021"
-tags: [ "PBS"]
+tags: [ "PBS","Na2HPO4","KCl","NaCl"]
 ---
 
 ### PBS

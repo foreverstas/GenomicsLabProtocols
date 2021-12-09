@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TOP10 on Epigenetic and Genomics Protocols</title>
+    <link>/tags/top10/</link>
+    <description>Recent content in TOP10 on Epigenetic and Genomics Protocols</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language><atom:link href="/tags/top10/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Приготовление электрокомпетентных клеток TOP10</title>
+      <link>/cloning/top10/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/cloning/top10/</guid>
+      <description>Приготовление электрокомпетентных клеток - это простая, но трудоемкая процедура, вся суть которой заключается в том, чтобы нарастить клетки в питательной среде до фазы экспоненциального роста, затем отмыть клетки суперчистой водой и ресуспендировать в буфере для заморозки. Проблема заключается в том, что компетентность клеток E.coli в результате электропорации зависит от огромного количества факторов. В первую очередь, это (1) клеточный штамм, (2) температурный режим, (3) плотность культуры на старте отмывки, (4) качество отмывки, (5) плотность замороженных клеток.</description>
+    </item>
+    
+  </channel>
+</rss>

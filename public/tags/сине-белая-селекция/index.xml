@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Сине-белая селекция on Epigenetic and Genomics Protocols</title>
+    <link>/tags/%D1%81%D0%B8%D0%BD%D0%B5-%D0%B1%D0%B5%D0%BB%D0%B0%D1%8F-%D1%81%D0%B5%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D1%8F/</link>
+    <description>Recent content in Сине-белая селекция on Epigenetic and Genomics Protocols</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language><atom:link href="/tags/%D1%81%D0%B8%D0%BD%D0%B5-%D0%B1%D0%B5%D0%BB%D0%B0%D1%8F-%D1%81%D0%B5%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D1%8F/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>IPTG</title>
+      <link>/labreagents/buffers/iptg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/labreagents/buffers/iptg/</guid>
+      <description>ИПТГ, изопропил-бета-D-1-тиогалактопиранозид - аналог аллолактозы, метаболита лактозы, который запускает транскрипцию lac-оперона путем связывания и ингибирования репрессора. Наличие атома серы в ИПТГ предотвращает разложение индуктора. Для индукции лактозного оперона ИПТГ используют в концентрациях от 0,1 до 2 мМ.
+ Аллолактоза
+ИПТГ
+Альтернативные названия   IPTG
+  Isopropyl-β-D-thiogalactopyranoside
+  Isopropyl β-D-1-thiogalactopyranoside
+  Isopropyl-β-D-thiogalactoside
+  Isopropyl β-thiogalactoside
+  В лабораторной практике чаще всего используют 0.1М сток (1000-кратный).</description>
+    </item>
+    
+    <item>
+      <title>X-Gal</title>
+      <link>/labreagents/buffers/xgal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/labreagents/buffers/xgal/</guid>
+      <description>X-gal - органическое соединение, состоящее из галактозы, соединенной с индолом. X-gal расщепляется бета-галактозидазами c образованием нерастворимого синего пигмента. X-gal используется для идентификации галактозидазы в клетках бактерий и эукариот. X-gal позволяет визуально определить, какие из колоний E. coli трансформированы нужным вектором. В норме в клетках E. coli фермент, закодированный геном lacZ синтезируется под действием индуктора IPTG, а синее окрашивание теряется у клеток, содержащих генно-инженерную конструкцию, в которой ген lacZ нарушен в результате генетической вставки.</description>
+    </item>
+    
+  </channel>
+</rss>

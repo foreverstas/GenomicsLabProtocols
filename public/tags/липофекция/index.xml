@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Липофекция on Epigenetic and Genomics Protocols</title>
+    <link>/tags/%D0%BB%D0%B8%D0%BF%D0%BE%D1%84%D0%B5%D0%BA%D1%86%D0%B8%D1%8F/</link>
+    <description>Recent content in Липофекция on Epigenetic and Genomics Protocols</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language><atom:link href="/tags/%D0%BB%D0%B8%D0%BF%D0%BE%D1%84%D0%B5%D0%BA%D1%86%D0%B8%D1%8F/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Трансфекция с липофектамином</title>
+      <link>/celltechniques/lipofection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/celltechniques/lipofection/</guid>
+      <description>Липофекция (lipofection) — перенос в эукариотические клетки ДНК, РНК или других компонентов, инкапсулированных в липосомы. Метод липофекции основан на взаимодействии между положительно заряженными молекулами фосфолипидов, из которых состоят липосомы, и отрицательно заряженными молекулами нуклеиновых кислот.
+Общая информация В настоящее время липофекцию мы проводим с помощью набора реагентов Lipofectamine 3000, который состоит из двух компонентов: Lipofectamine 3000 и энзансер трансфекции P3000. Хотя детального описания этой системы найти не удается, по всей видимости Липофектамин 3000 представляет собой cмесь липидов, а P3000 - это рекомбинантный таргетный катионный полипептид.</description>
+    </item>
+    
+  </channel>
+</rss>

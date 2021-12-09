@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>KCl on Epigenetic and Genomics Protocols</title>
+    <link>/tags/kcl/</link>
+    <description>Recent content in KCl on Epigenetic and Genomics Protocols</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language><atom:link href="/tags/kcl/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PBS</title>
+      <link>/labreagents/buffers/pbs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/labreagents/buffers/pbs/</guid>
+      <description>PBS  Натрий-фосфатный буфер - распространенный буферный изотонический раствор, применяемый для отмывки клеток, растворения реактивов, приготовления реакционных смесей и пр.
+ Для приготовления PBS используется двузамещенный гидрофосфат натрия. Монозамещенный фосфат натрия не подходит для данного рецепта.
+ Рецепт 10xPBS
+ Взвесить следующие компоненты  Концентрация50 мл, г100 мл, г200 мл, г250 мл, г500 мл, г1 л, гNaCl (Mw58.</description>
+    </item>
+    
+  </channel>
+</rss>

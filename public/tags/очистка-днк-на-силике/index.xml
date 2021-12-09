@@ -13,13 +13,30 @@
       
       <guid>/labreagents/buffers/bufferm/</guid>
       <description>Буфер M применяется для элюции ДНК из агарозного геля на колонках с силикой.
- Необходимые компоненты   Изотиоционат гуанидина
+ Необходимые компоненты   Изотиоционат гуанидина GuSCN
   Краситель Крезоловый красный
   mQ
   1М Трис-HCl pH 7.4
   0,5M EDTA, pH 8.0
   3M NaOAc, pH 5.0
-  Буфер N     Содержание 50 мл 100 мл 150 мл 200 мл 250 мл 1 л     GuSCN (Mw 118.</description>
+  Буфер M     Содержание 50 мл 100 мл 150 мл 200 мл 250 мл 1 л     GuSCN (Mw 118.</description>
+    </item>
+    
+    <item>
+      <title>Буфер Y</title>
+      <link>/labreagents/buffers/buffery/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/labreagents/buffers/buffery/</guid>
+      <description>Буфер Y применяется для очистки ДНК из реакционных смесей на колонках с силикой.
+ Необходимые компоненты   Гидрохлорид гуанидина GuHCl
+  Изопропанол
+  Краситель Крезоловый красный
+  mQ
+  1М Трис-HCl pH 7.4
+  0,5M EDTA, pH 8.0
+  3M NaOAc, pH 5.0
+  Буфер M     Содержание 50 мл 100 мл 150 мл 200 мл 250 мл 1 л     GuHCl (Mw 95.</description>
     </item>
     
   </channel>

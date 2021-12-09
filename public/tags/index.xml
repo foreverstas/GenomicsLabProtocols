@@ -8,6 +8,42 @@
     <language>en-US</language>
     <lastBuildDate>Mon, 13 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Sephadex</title>
+      <link>/tags/sephadex/</link>
+      <pubDate>Mon, 13 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/sephadex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sephadex G-50</title>
+      <link>/tags/sephadex-g-50/</link>
+      <pubDate>Mon, 13 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/sephadex-g-50/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Очистка сефадексом</title>
+      <link>/tags/%D0%BE%D1%87%D0%B8%D1%81%D1%82%D0%BA%D0%B0-%D1%81%D0%B5%D1%84%D0%B0%D0%B4%D0%B5%D0%BA%D1%81%D0%BE%D0%BC/</link>
+      <pubDate>Mon, 13 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%D0%BE%D1%87%D0%B8%D1%81%D1%82%D0%BA%D0%B0-%D1%81%D0%B5%D1%84%D0%B0%D0%B4%D0%B5%D0%BA%D1%81%D0%BE%D0%BC/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Секвенирующие реакции</title>
+      <link>/tags/%D1%81%D0%B5%D0%BA%D0%B2%D0%B5%D0%BD%D0%B8%D1%80%D1%83%D1%8E%D1%89%D0%B8%D0%B5-%D1%80%D0%B5%D0%B0%D0%BA%D1%86%D0%B8%D0%B8/</link>
+      <pubDate>Mon, 13 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%D1%81%D0%B5%D0%BA%D0%B2%D0%B5%D0%BD%D0%B8%D1%80%D1%83%D1%8E%D1%89%D0%B8%D0%B5-%D1%80%D0%B5%D0%B0%D0%BA%D1%86%D0%B8%D0%B8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Ферменты</title>
       <link>/tags/%D1%84%D0%B5%D1%80%D0%BC%D0%B5%D0%BD%D1%82%D1%8B/</link>
       <pubDate>Mon, 13 Sep 2021 00:00:00 +0000</pubDate>
@@ -26,6 +62,15 @@
     </item>
     
     <item>
+      <title>Accutase</title>
+      <link>/tags/accutase/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/accutase/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>CaCl2</title>
       <link>/tags/cacl2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -40,6 +85,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/tags/chir/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>EB</title>
+      <link>/tags/eb/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/eb/</guid>
       <description></description>
     </item>
     
@@ -80,6 +134,24 @@
     </item>
     
     <item>
+      <title>IPTG</title>
+      <link>/tags/iptg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/iptg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>KCl</title>
+      <link>/tags/kcl/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/kcl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>LiCl</title>
       <link>/tags/licl/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -98,6 +170,15 @@
     </item>
     
     <item>
+      <title>Lipofectamine 3000</title>
+      <link>/tags/lipofectamine-3000/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/lipofectamine-3000/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>MgCl2</title>
       <link>/tags/mgcl2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -107,11 +188,29 @@
     </item>
     
     <item>
+      <title>Na2HPO4</title>
+      <link>/tags/na2hpo4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/na2hpo4/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>NaCl</title>
       <link>/tags/nacl/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/tags/nacl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NaH2PO4</title>
+      <link>/tags/nah2po4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/nah2po4/</guid>
       <description></description>
     </item>
     
@@ -134,11 +233,29 @@
     </item>
     
     <item>
+      <title>NaP</title>
+      <link>/tags/nap/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/nap/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>NH4OAc</title>
       <link>/tags/nh4oac/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/tags/nh4oac/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>P3000</title>
+      <link>/tags/p3000/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/p3000/</guid>
       <description></description>
     </item>
     
@@ -170,11 +287,56 @@
     </item>
     
     <item>
+      <title>Phoshpate buffer</title>
+      <link>/tags/phoshpate-buffer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/phoshpate-buffer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>RNAse A</title>
       <link>/tags/rnase-a/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/tags/rnase-a/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Size selection</title>
+      <link>/tags/size-selection/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/size-selection/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Sodium Phosphate</title>
+      <link>/tags/sodium-phosphate/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/sodium-phosphate/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SPRI</title>
+      <link>/tags/spri/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/spri/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SPRI beads</title>
+      <link>/tags/spri-beads/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/spri-beads/</guid>
       <description></description>
     </item>
     
@@ -215,11 +377,47 @@
     </item>
     
     <item>
+      <title>TOP10</title>
+      <link>/tags/top10/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/top10/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Tris</title>
       <link>/tags/tris/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/tags/tris/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>X-Gal</title>
+      <link>/tags/x-gal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/x-gal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>XGal</title>
+      <link>/tags/xgal/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/xgal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Аккутаза</title>
+      <link>/tags/%D0%B0%D0%BA%D0%BA%D1%83%D1%82%D0%B0%D0%B7%D0%B0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%D0%B0%D0%BA%D0%BA%D1%83%D1%82%D0%B0%D0%B7%D0%B0/</guid>
       <description></description>
     </item>
     
@@ -238,6 +436,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/tags/%D0%B0%D1%86%D0%B5%D1%82%D0%B0%D1%82-%D0%BD%D0%B0%D1%82%D1%80%D0%B8%D1%8F/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Буфер E</title>
+      <link>/tags/%D0%B1%D1%83%D1%84%D0%B5%D1%80-e/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%D0%B1%D1%83%D1%84%D0%B5%D1%80-e/</guid>
       <description></description>
     </item>
     
@@ -278,6 +485,33 @@
     </item>
     
     <item>
+      <title>Буфер W</title>
+      <link>/tags/%D0%B1%D1%83%D1%84%D0%B5%D1%80-w/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%D0%B1%D1%83%D1%84%D0%B5%D1%80-w/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Буфер Y</title>
+      <link>/tags/%D0%B1%D1%83%D1%84%D0%B5%D1%80-y/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%D0%B1%D1%83%D1%84%D0%B5%D1%80-y/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ИПТГ</title>
+      <link>/tags/%D0%B8%D0%BF%D1%82%D0%B3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%D0%B8%D0%BF%D1%82%D0%B3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Изопропанол</title>
       <link>/tags/%D0%B8%D0%B7%D0%BE%D0%BF%D1%80%D0%BE%D0%BF%D0%B0%D0%BD%D0%BE%D0%BB/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -296,6 +530,60 @@
     </item>
     
     <item>
+      <title>Липофектамин</title>
+      <link>/tags/%D0%BB%D0%B8%D0%BF%D0%BE%D1%84%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8%D0%BD/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%D0%BB%D0%B8%D0%BF%D0%BE%D1%84%D0%B5%D0%BA%D1%82%D0%B0%D0%BC%D0%B8%D0%BD/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Липофекция</title>
+      <link>/tags/%D0%BB%D0%B8%D0%BF%D0%BE%D1%84%D0%B5%D0%BA%D1%86%D0%B8%D1%8F/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%D0%BB%D0%B8%D0%BF%D0%BE%D1%84%D0%B5%D0%BA%D1%86%D0%B8%D1%8F/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Магнитные шары</title>
+      <link>/tags/%D0%BC%D0%B0%D0%B3%D0%BD%D0%B8%D1%82%D0%BD%D1%8B%D0%B5-%D1%88%D0%B0%D1%80%D1%8B/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%D0%BC%D0%B0%D0%B3%D0%BD%D0%B8%D1%82%D0%BD%D1%8B%D0%B5-%D1%88%D0%B0%D1%80%D1%8B/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Молекулярное клонирование</title>
+      <link>/tags/%D0%BC%D0%BE%D0%BB%D0%B5%D0%BA%D1%83%D0%BB%D1%8F%D1%80%D0%BD%D0%BE%D0%B5-%D0%BA%D0%BB%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%D0%BC%D0%BE%D0%BB%D0%B5%D0%BA%D1%83%D0%BB%D1%8F%D1%80%D0%BD%D0%BE%D0%B5-%D0%BA%D0%BB%D0%BE%D0%BD%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Олигонуклеотиды</title>
+      <link>/tags/%D0%BE%D0%BB%D0%B8%D0%B3%D0%BE%D0%BD%D1%83%D0%BA%D0%BB%D0%B5%D0%BE%D1%82%D0%B8%D0%B4%D1%8B/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%D0%BE%D0%BB%D0%B8%D0%B3%D0%BE%D0%BD%D1%83%D0%BA%D0%BB%D0%B5%D0%BE%D1%82%D0%B8%D0%B4%D1%8B/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Очистка ДНК из реакционных смесей</title>
+      <link>/tags/%D0%BE%D1%87%D0%B8%D1%81%D1%82%D0%BA%D0%B0-%D0%B4%D0%BD%D0%BA-%D0%B8%D0%B7-%D1%80%D0%B5%D0%B0%D0%BA%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D1%85-%D1%81%D0%BC%D0%B5%D1%81%D0%B5%D0%B9/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%D0%BE%D1%87%D0%B8%D1%81%D1%82%D0%BA%D0%B0-%D0%B4%D0%BD%D0%BA-%D0%B8%D0%B7-%D1%80%D0%B5%D0%B0%D0%BA%D1%86%D0%B8%D0%BE%D0%BD%D0%BD%D1%8B%D1%85-%D1%81%D0%BC%D0%B5%D1%81%D0%B5%D0%B9/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Очистка ДНК на колонках</title>
       <link>/tags/%D0%BE%D1%87%D0%B8%D1%81%D1%82%D0%BA%D0%B0-%D0%B4%D0%BD%D0%BA-%D0%BD%D0%B0-%D0%BA%D0%BE%D0%BB%D0%BE%D0%BD%D0%BA%D0%B0%D1%85/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -310,6 +598,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/tags/%D0%BE%D1%87%D0%B8%D1%81%D1%82%D0%BA%D0%B0-%D0%B4%D0%BD%D0%BA-%D0%BD%D0%B0-%D1%81%D0%B8%D0%BB%D0%B8%D0%BA%D0%B5/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Очистка на магнитных шарах</title>
+      <link>/tags/%D0%BE%D1%87%D0%B8%D1%81%D1%82%D0%BA%D0%B0-%D0%BD%D0%B0-%D0%BC%D0%B0%D0%B3%D0%BD%D0%B8%D1%82%D0%BD%D1%8B%D1%85-%D1%88%D0%B0%D1%80%D0%B0%D1%85/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%D0%BE%D1%87%D0%B8%D1%81%D1%82%D0%BA%D0%B0-%D0%BD%D0%B0-%D0%BC%D0%B0%D0%B3%D0%BD%D0%B8%D1%82%D0%BD%D1%8B%D1%85-%D1%88%D0%B0%D1%80%D0%B0%D1%85/</guid>
       <description></description>
     </item>
     
@@ -350,6 +647,15 @@
     </item>
     
     <item>
+      <title>Праймеры</title>
+      <link>/tags/%D0%BF%D1%80%D0%B0%D0%B9%D0%BC%D0%B5%D1%80%D1%8B/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%D0%BF%D1%80%D0%B0%D0%B9%D0%BC%D0%B5%D1%80%D1%8B/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Примеры</title>
       <link>/tags/%D0%BF%D1%80%D0%B8%D0%BC%D0%B5%D1%80%D1%8B/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -386,6 +692,24 @@
     </item>
     
     <item>
+      <title>Разведение олигонуклеотидов</title>
+      <link>/tags/%D1%80%D0%B0%D0%B7%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BE%D0%BB%D0%B8%D0%B3%D0%BE%D0%BD%D1%83%D0%BA%D0%BB%D0%B5%D0%BE%D1%82%D0%B8%D0%B4%D0%BE%D0%B2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%D1%80%D0%B0%D0%B7%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%BE%D0%BB%D0%B8%D0%B3%D0%BE%D0%BD%D1%83%D0%BA%D0%BB%D0%B5%D0%BE%D1%82%D0%B8%D0%B4%D0%BE%D0%B2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Сине-белая селекция</title>
+      <link>/tags/%D1%81%D0%B8%D0%BD%D0%B5-%D0%B1%D0%B5%D0%BB%D0%B0%D1%8F-%D1%81%D0%B5%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D1%8F/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%D1%81%D0%B8%D0%BD%D0%B5-%D0%B1%D0%B5%D0%BB%D0%B0%D1%8F-%D1%81%D0%B5%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D1%8F/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>ТЕ</title>
       <link>/tags/%D1%82%D0%B5/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -418,6 +742,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/tags/%D1%84%D0%B5%D0%BD%D0%BE%D0%BB%D1%85%D0%BB%D0%BE%D1%80%D0%BE%D1%84%D0%BE%D1%80%D0%BC/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Фосфатный буфер</title>
+      <link>/tags/%D1%84%D0%BE%D1%81%D1%84%D0%B0%D1%82%D0%BD%D1%8B%D0%B9-%D0%B1%D1%83%D1%84%D0%B5%D1%80/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%D1%84%D0%BE%D1%81%D1%84%D0%B0%D1%82%D0%BD%D1%8B%D0%B9-%D0%B1%D1%83%D1%84%D0%B5%D1%80/</guid>
       <description></description>
     </item>
     
@@ -517,6 +850,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/tags/%D1%8D%D0%BA%D1%81%D1%82%D1%80%D0%B0%D0%BA%D1%86%D0%B8%D1%8F-%D0%BF%D0%BB%D0%B0%D0%B7%D0%BC%D0%B8%D0%B4%D0%BD%D0%BE%D0%B9-%D0%B4%D0%BD%D0%BA/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Электрокомпетентные клетки</title>
+      <link>/tags/%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BA%D0%BE%D0%BC%D0%BF%D0%B5%D1%82%D0%B5%D0%BD%D1%82%D0%BD%D1%8B%D0%B5-%D0%BA%D0%BB%D0%B5%D1%82%D0%BA%D0%B8/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%D1%8D%D0%BB%D0%B5%D0%BA%D1%82%D1%80%D0%BE%D0%BA%D0%BE%D0%BC%D0%BF%D0%B5%D1%82%D0%B5%D0%BD%D1%82%D0%BD%D1%8B%D0%B5-%D0%BA%D0%BB%D0%B5%D1%82%D0%BA%D0%B8/</guid>
       <description></description>
     </item>
     

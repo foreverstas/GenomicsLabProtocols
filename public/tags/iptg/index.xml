@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>IPTG on Epigenetic and Genomics Protocols</title>
+    <link>/tags/iptg/</link>
+    <description>Recent content in IPTG on Epigenetic and Genomics Protocols</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language><atom:link href="/tags/iptg/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>IPTG</title>
+      <link>/labreagents/buffers/iptg/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/labreagents/buffers/iptg/</guid>
+      <description>ИПТГ, изопропил-бета-D-1-тиогалактопиранозид - аналог аллолактозы, метаболита лактозы, который запускает транскрипцию lac-оперона путем связывания и ингибирования репрессора. Наличие атома серы в ИПТГ предотвращает разложение индуктора. Для индукции лактозного оперона ИПТГ используют в концентрациях от 0,1 до 2 мМ.
+ Аллолактоза
+ИПТГ
+Альтернативные названия   IPTG
+  Isopropyl-β-D-thiogalactopyranoside
+  Isopropyl β-D-1-thiogalactopyranoside
+  Isopropyl-β-D-thiogalactoside
+  Isopropyl β-thiogalactoside
+  В лабораторной практике чаще всего используют 0.1М сток (1000-кратный).</description>
+    </item>
+    
+  </channel>
+</rss>

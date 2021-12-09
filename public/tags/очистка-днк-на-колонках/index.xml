@@ -7,6 +7,16 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language><atom:link href="/tags/%D0%BE%D1%87%D0%B8%D1%81%D1%82%D0%BA%D0%B0-%D0%B4%D0%BD%D0%BA-%D0%BD%D0%B0-%D0%BA%D0%BE%D0%BB%D0%BE%D0%BD%D0%BA%D0%B0%D1%85/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Буфер E (EB)</title>
+      <link>/labreagents/buffers/buffere/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/labreagents/buffers/buffere/</guid>
+      <description>Буфер E применяется для элюции ДНК из колонок с силикой. Слабощелочной pH и низкая ионная сила способствуют высвобождению ДНК с поверхности диоксида кремния. pH буфер препятствует апуринизации и бета-элиминированию ДНК, что увеличивает срок хранения образцов. Буфер не содержит ЭДТА, поэтому не ингибирует ПЦР.
+ Необходимые компоненты  1М TrisHCl (pH 8.5) mQ  Буфер E  Развести 1 M TrisHCl (pH 8.5) до 10 мМ (в 100 раз) с помощью mQ Стерилизовать автоклавированием или фильтрацией, расфасовать Хранить при комнатной температуре   Буфер EB из набора Qiagen Mini/Midi/MaxiPrep имеет аналогичный состав.</description>
+    </item>
+    
+    <item>
       <title>Буфер L</title>
       <link>/labreagents/buffers/bufferl/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -39,6 +49,16 @@
       <guid>/labreagents/buffers/bufferr/</guid>
       <description>Буфер R применяется для ресуспендирования осажденных бактериальных клеток перед щелочным лизисом c последующей очисткой плазмидной ДНК на колонках с силикой.
  Буфер R  Смешать стоковые растворы  Содержание50 мл100 мл150 мл200 мл250 мл1 л1M Tris-HCl (pH 7.4)25 мМ1.25 мл2.5 мл3.75 мл5 мл6.25 мл25 мл0.5М ЭДТА (pH 8.</description>
+    </item>
+    
+    <item>
+      <title>Буфер W</title>
+      <link>/labreagents/buffers/bufferw/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/labreagents/buffers/bufferw/</guid>
+      <description> Буфер W применяется для отмывки ДНК на колонках с силикой.
+ Необходимые компоненты  96% этанол 0.5М Натрий Фосфат (pH 8.5)  Буфер W  Развести 0.5 M Натрий Фосфат (pH 8.5) до 5 мМ (в 100 раз) с помощью mQ. Это 5-кратный концентрат буфера W. Чтобы получить буфер W нужно смешать 1 объем концентрата и 4 объема этанола. Хранить при комнатной температуре  </description>
     </item>
     
   </channel>

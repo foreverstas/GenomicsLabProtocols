@@ -7,6 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language><atom:link href="/tags/%D0%BE%D1%87%D0%B8%D1%81%D1%82%D0%BA%D0%B0-%D1%81-peg/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Очистка на магнитных шарах</title>
+      <link>/dnaextaction/ampure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/dnaextaction/ampure/</guid>
+      <description>Твердофазные шарики с обратимой иммобилизацией (Solid Phase Reversible Immobilisation beads, SPRI) были разработаны в Институте Уайтхеда (DeAngelis et al, 1995) в качестве дешевого, быстрого и эффективного метода очистки ПЦР. Гранулы (шарики) SPRI являются парамагнитными (магнитные свойства проявляются только в магнитном поле), что предотвращает их слипание и выпадение из раствора. Каждая гранула сделана из полистирола, окруженного слоем магнетита, который покрыт карбоксильными группами. Именно они обратимо связывают ДНК в присутствии «вытесняющего агента» - полиэтиленгликоля (ПЭГ) и соли (20% ПЭГ, 2,5 М NaCl).</description>
+    </item>
+    
+    <item>
       <title>Экстракция c PEG</title>
       <link>/dnaextaction/peg/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

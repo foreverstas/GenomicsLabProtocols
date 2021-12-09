@@ -7,6 +7,33 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language><atom:link href="/dnaextaction/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Очистка на магнитных шарах</title>
+      <link>/dnaextaction/ampure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/dnaextaction/ampure/</guid>
+      <description>Твердофазные шарики с обратимой иммобилизацией (Solid Phase Reversible Immobilisation beads, SPRI) были разработаны в Институте Уайтхеда (DeAngelis et al, 1995) в качестве дешевого, быстрого и эффективного метода очистки ПЦР. Гранулы (шарики) SPRI являются парамагнитными (магнитные свойства проявляются только в магнитном поле), что предотвращает их слипание и выпадение из раствора. Каждая гранула сделана из полистирола, окруженного слоем магнетита, который покрыт карбоксильными группами. Именно они обратимо связывают ДНК в присутствии «вытесняющего агента» - полиэтиленгликоля (ПЭГ) и соли (20% ПЭГ, 2,5 М NaCl).</description>
+    </item>
+    
+    <item>
+      <title>Очистка секвенирующих реакций сефадексом</title>
+      <link>/dnaextaction/sephadex/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/dnaextaction/sephadex/</guid>
+      <description>Для очистки секвенирующих реакций мы используем:
+  Очистку этанолом/EDTA (описана в мануале BigDye, главы с 4-2 по 4-9, или на protocols.io)
+  Очистку смолой BigDye XTerminator Purification Kit
+  Очистку с помощью 5% смолы Sephadex G-50
+  Очистка от невключившихся меченых нуклеотидов с помощью Sephadex Время работы
+1 час
+Необходимые расходники
+  5% смола Sephadex G-50. Перед использованием взболтать.
+  mQ
+  Ножницы</description>
+    </item>
+    
+    <item>
       <title>Переосаждение ДНК этанолом</title>
       <link>/dnaextaction/ethextr/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

@@ -17,3 +17,8 @@ knitr::opts_chunk$set(echo = TRUE)
 blogdown::shortcode("notice", "info",.content = "Пожалуйста, если вы заметили ошибку, или хотеле бы видеть протоколы более подробными, обратитесь к Романову Станиславу Евгеньевичу в рабочее время или по почте (romanov@mcb.nsc.ru)." )
 
 ```
+
+```{r echo=FALSE}
+
+blogdown::shortcode("children", style="h4", depth="1")
+```
