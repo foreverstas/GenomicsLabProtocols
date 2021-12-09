@@ -10,4 +10,4 @@ lang: russian
 
 В этом разделе будут публиковаться протоколы и полезные советы по работе с эмбриональными стволовыми клетками мышей.
 
-![](https://pics.me.me/the-onion-lab-mouse-nervous-for-first-day-of-new-13093557.png)
+![](/ES-protocols/_index.files/image.png)
