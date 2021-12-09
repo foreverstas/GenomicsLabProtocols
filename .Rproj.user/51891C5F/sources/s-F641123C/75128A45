@@ -3,7 +3,7 @@
     "path": "C:/Users/stasw/Desktop/GitHub/GenomicsLabProtocols_home_control/content/CellTechniques/Lipofection.Rmd",
     "project_path": "content/CellTechniques/Lipofection.Rmd",
     "type": "r_markdown",
-    "hash": "2473678393",
+    "hash": "0",
     "contents": "",
     "dirty": false,
     "created": 1639048220229.0,
@@ -12,19 +12,19 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "37,38",
-        "scrollLine": "27",
+        "cursorPosition": "38,142",
+        "scrollLine": "28",
         "rmdVisualMode": "false",
         "rmdVisualModeLocation": "3403:1393",
         "rmdVisualWrapConfigured": "true",
         "docOutlineVisible": "1"
     },
     "folds": "",
-    "lastKnownWriteTime": 1639049135,
+    "lastKnownWriteTime": 1639049714,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1639049135898,
+    "last_content_update": 1639049714357,
     "read_only": false,
     "read_only_alternatives": []
 }
