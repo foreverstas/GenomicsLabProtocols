@@ -9,4 +9,4 @@ tags: ["Биоинформатика"]
 
 Этот раздел посвящен основным биоинформатическим инструментам, с которыми мы имеем дело в ходе геномных исследований.
 
-![](/Bioinformatics/_index.files/image.png?width=40pc)
+![](/Bioinformatics/_index.files/image.jpg?width=40pc)
