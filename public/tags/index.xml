@@ -71,11 +71,38 @@
     </item>
     
     <item>
+      <title>bowtie</title>
+      <link>/tags/bowtie/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/bowtie/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bowtie2</title>
+      <link>/tags/bowtie2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/bowtie2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>CaCl2</title>
       <link>/tags/cacl2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/tags/cacl2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ChIP-seq</title>
+      <link>/tags/chip-seq/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/chip-seq/</guid>
       <description></description>
     </item>
     
@@ -121,6 +148,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/tags/es-cells/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Fastq alignment</title>
+      <link>/tags/fastq-alignment/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/fastq-alignment/</guid>
       <description></description>
     </item>
     
@@ -440,6 +476,15 @@
     </item>
     
     <item>
+      <title>Биоинформатика</title>
+      <link>/tags/%D0%B1%D0%B8%D0%BE%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%D0%B1%D0%B8%D0%BE%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Буфер E</title>
       <link>/tags/%D0%B1%D1%83%D1%84%D0%B5%D1%80-e/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -553,6 +598,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/tags/%D0%BC%D0%B0%D0%B3%D0%BD%D0%B8%D1%82%D0%BD%D1%8B%D0%B5-%D1%88%D0%B0%D1%80%D1%8B/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Множественное выравнивание</title>
+      <link>/tags/%D0%BC%D0%BD%D0%BE%D0%B6%D0%B5%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B5-%D0%B2%D1%8B%D1%80%D0%B0%D0%B2%D0%BD%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%D0%BC%D0%BD%D0%BE%D0%B6%D0%B5%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B5-%D0%B2%D1%8B%D1%80%D0%B0%D0%B2%D0%BD%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5/</guid>
       <description></description>
     </item>
     

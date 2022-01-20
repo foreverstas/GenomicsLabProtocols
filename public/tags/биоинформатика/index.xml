@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Биоинформатика on Epigenetic and Genomics Protocols</title>
+    <link>/tags/%D0%B1%D0%B8%D0%BE%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0/</link>
+    <description>Recent content in Биоинформатика on Epigenetic and Genomics Protocols</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language><atom:link href="/tags/%D0%B1%D0%B8%D0%BE%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Биоинформатика</title>
+      <link>/bioinformatics/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/bioinformatics/</guid>
+      <description>Этот раздел посвящен основным биоинформатическим инструментам, с которыми мы имеем дело в ходе геномных исследований.</description>
+    </item>
+    
+  </channel>
+</rss>

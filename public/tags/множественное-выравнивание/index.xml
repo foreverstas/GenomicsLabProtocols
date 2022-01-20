@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Множественное выравнивание on Epigenetic and Genomics Protocols</title>
+    <link>/tags/%D0%BC%D0%BD%D0%BE%D0%B6%D0%B5%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B5-%D0%B2%D1%8B%D1%80%D0%B0%D0%B2%D0%BD%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5/</link>
+    <description>Recent content in Множественное выравнивание on Epigenetic and Genomics Protocols</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language><atom:link href="/tags/%D0%BC%D0%BD%D0%BE%D0%B6%D0%B5%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B5-%D0%B2%D1%8B%D1%80%D0%B0%D0%B2%D0%BD%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bowtie2</title>
+      <link>/bioinformatics/bowtie2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/bioinformatics/bowtie2/</guid>
+      <description>Bowtie 2 — это наиболее популярный инструмент для выравнивания коротких фрагментов ДНК на эталонные последовательности. Он особенно хорош для выравнивания ридов длиной от 50 до 100-1000bp на длинные референсные геномы (в т.ч. млекопитающих). Достаточно высокая скорость и эффективное использование оперативной памяти в Bowtie 2 достигается за счет преобразования генома в матрицу ссылочных последовательностей с помощью FM-индекса (на основе преобразования Барроуза — Уилера, Burrows-Wheeler transform. Bowtie2 поддерживает режимы выравнивания с пропусками (gapped alignment), локальное выравнивание (local alignment) и выравнивание парных ридов (paired-end alignment).</description>
+    </item>
+    
+  </channel>
+</rss>
