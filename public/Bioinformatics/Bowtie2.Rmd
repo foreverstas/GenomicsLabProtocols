@@ -51,7 +51,7 @@ blogdown::shortcode("notice","warning" ,.content = "Не следует пута
 
 Наиболее простой способ - установить с помощью Anaconda:
 
-``` {.toml}
+``` toml
 conda install -c bioconda bowtie2
 ```
 
@@ -73,19 +73,19 @@ blogdown::shortcode("notice","note" ,.content = "Готовые геномные
 
 Обычно в качестве референса предоставляется fasta-файл. Вслед за fasta-файлом требуется префикс для файлов индексированного референса:
 
-``` {.bash}
+``` bash
 bowtie2-build -f путь_к_fasta Префикс
 ```
 
 Параметр `-f` не обязателен. Он указывает, что рефернс представляет из себя fasta-файл. Можно предоставлять список fasta-файлов через запятую без пробелов:
 
-``` {.bash}
+``` bash
 bowtie2-build -f путь_к_fasta_1,путь_к_fasta_2,путь_к_fasta_3 Префикс
 ```
 
 Вместо Fasta-файла может быть список последовательностей через запятую без пробелов:
 
-``` {.bash}
+``` bash
 bowtie2-build -c GGTCATCCT,ACGGGTCGT,CCGTTCTATGCGGCTTA Префикс
 ```
 
@@ -97,7 +97,7 @@ blogdown::shortcode("notice","note" ,.content = "Файлы индексиров
 
 Для ускоренного индексирования следует активировать многопоточный режим, добавив параметр `–treads n`.
 
-``` {.bash}
+``` bash
 bowtie2-build --threads 25 -f путь_к_fasta Префикс
 ```
 
