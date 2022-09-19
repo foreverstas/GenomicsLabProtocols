@@ -335,7 +335,7 @@ Bowtie2 способен выравнивать последовательнос
 
 `--phred33` или `--phred64` - кодировка Phred-score в таблице ASCII. Зависит от платформы секвенирования. В Illumina MiSeq - phred33. Тип платформы можно опрделенить при помощи [fastqc](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/). Соответствие между платформой и Phred-score можно определить по картинке ниже:
 
-### <img src="Bowtie2.files/qualityscore.png" width="571" />.
+![](/Bioinformatics/Bowtie2.files/qualityscore.png)
 
 ### Параметры вывода
 
