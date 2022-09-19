@@ -2,11 +2,13 @@
     "tempName": "Untitled1",
     "source_window_id": "",
     "Source": "Source",
-    "cursorPosition": "37,262",
-    "scrollLine": "0",
+    "cursorPosition": "409,264",
+    "scrollLine": "336",
     "rmdVisualMode": "true",
-    "rmdVisualModeLocation": "198:0",
+    "rmdVisualModeLocation": "5109:21972",
     "rmdVisualWrapConfigured": "true",
     "docOutlineVisible": "1",
-    "rmdVisualCollapsedChunks": ""
+    "rmdVisualCollapsedChunks": "",
+    "last_setup_crc32": "A38D4FF5bb338d19",
+    "docOutlineSize": "136"
 }

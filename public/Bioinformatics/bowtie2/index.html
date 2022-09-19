@@ -12,22 +12,22 @@
     <title>Bowtie2 :: Epigenetic and Genomics Protocols</title>
 
     
-    <link href="/css/nucleus.css?1662975638" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1662975638" rel="stylesheet">
-    <link href="/css/hybrid.css?1662975638" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1662975638" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1662975638" rel="stylesheet">
-    <link href="/css/auto-complete.css?1662975638" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1662975638" rel="stylesheet">
-    <link href="/css/theme.css?1662975638" rel="stylesheet">
-    <link href="/css/tabs.css?1662975638" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1662975638" rel="stylesheet">
+    <link href="/css/nucleus.css?1663631105" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1663631105" rel="stylesheet">
+    <link href="/css/hybrid.css?1663631105" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1663631105" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1663631105" rel="stylesheet">
+    <link href="/css/auto-complete.css?1663631105" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1663631105" rel="stylesheet">
+    <link href="/css/theme.css?1663631105" rel="stylesheet">
+    <link href="/css/tabs.css?1663631105" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1663631105" rel="stylesheet">
     
-    <link href="/css/theme-green.css?1662975638" rel="stylesheet">
+    <link href="/css/theme-green.css?1663631105" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1662975638"></script>
+    <script src="/js/jquery-3.3.1.min.js?1663631105"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -53,14 +53,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1662975638"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1662975638"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1663631105"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1663631105"></script>
 <script type="text/javascript">
     
         var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1662975638"></script>
+<script type="text/javascript" src="/js/search.js?1663631105"></script>
 
     
   </div>
@@ -1604,12 +1604,27 @@
       <ul>
         <li><a href="#референсные-публикации">Референсные публикации</a></li>
         <li><a href="#официальные-материалы">Официальные материалы</a></li>
-        <li><a href="#принцип-работы">Принцип работы</a></li>
-        <li><a href="#установка">Установка</a></li>
-        <li><a href="#инструменты-bowtie2">Инструменты Bowtie2</a></li>
-        <li><a href="#индексирование-генома-с-помощью-bowtie2-build">Индексирование генома с помощью bowtie2-build</a></li>
+      </ul>
+    </li>
+    <li><a href="#принцип-работы">Принцип работы</a></li>
+    <li><a href="#установка">Установка</a></li>
+    <li><a href="#инструменты-bowtie2">Инструменты Bowtie2</a></li>
+    <li><a href="#индексирование-генома-с-помощью-bowtie2-build">Индексирование генома с помощью bowtie2-build</a></li>
+    <li><a href="#множественное-выравнивание-с-помощью-bowtie2">Множественное выравнивание с помощью <em>bowtie2</em></a>
+      <ul>
         <li><a href="#режимы-выравнивания">Режимы выравнивания</a></li>
-        <li><a href="#рецепты">Рецепты</a></li>
+        <li><a href="#виды-несовпадений">Виды несовпадений</a></li>
+        <li><a href="#функции"><strong>Функции</strong></a></li>
+        <li><a href="#оценка-выравнивания">Оценка выравнивания</a></li>
+        <li><a href="#число-выравниваний-для-каждого-рида">Число выравниваний для каждого рида</a></li>
+        <li><a href="#cлучаный-режим">Cлучаный режим</a></li>
+        <li><a href="#выравнивание-парных-ридов">Выравнивание парных ридов</a></li>
+        <li><a href="#параметры-выравнивания">Параметры выравнивания</a></li>
+        <li><a href="#параметры-ввода">Параметры ввода</a></li>
+        <li><a href="#img-srcbowtie2filesqualityscorepng-width571-"><img src="Bowtie2.files/qualityscore.png" width="571" />.</a></li>
+        <li><a href="#параметры-вывода">Параметры вывода</a></li>
+        <li><a href="#быстродействие">Быстродействие</a></li>
+        <li><a href="#сводка-по-выравниванию">Сводка по выравниванию</a></li>
       </ul>
     </li>
   </ul>
@@ -1679,24 +1694,24 @@
 <p>Архив <a href="https://benlangmead.github.io/aws-indexes/bowtie">геномных индексов</a> Bowtie2 и Bowtie</p>
 </li>
 </ul>
-<h3 id="принцип-работы">Принцип работы</h3>
+<h2 id="принцип-работы">Принцип работы</h2>
 <p>Подробно о алгоритме преобразования BWT, FM-индексе и связанных с этим алгоритмах можно познакомиться в <a href="https://www.youtube.com/watch?v=P3ORBMon8aw">видео-лекции</a>, <a href="https://www.cs.jhu.edu/~langmea/resources/lecture_notes/bwt_and_fm_index.pdf">презентации</a> или <a href="https://www.cs.cmu.edu/~15451-f18/lectures/lec25-bwt.pdf">конспекте</a>.</p>
 <p>Если говорить подробно, то для каждого рида Bowtie2 производит вычисления в четыре шага. На шаге 1 <em><strong>(Extract seed)</strong></em> Bowtie2 извлекает из рида и комплементарной к нему последовательности (не путать с <em>mait-pair</em>) “затравочные” подстроки (<em>seeds</em>). На шаге 2 <strong>(<em>Align with FM-Index</em>)</strong> затравочные подстроки выравниваются на референсный геном без пропусков (<em>ungapped, без делеций и инсерций</em>) с использованием FM-индекса, в результате чего получаются интервалы Барроуза-Уиллера <em>(BW ranges),</em> которые указывают на строки в матрице, полученной путем трансформации генома с помощью BWT. На шаге 3 <em><strong>(Prioritize, resolve)</strong></em> Bowtie2 извлекает из BW-матрицы строки, соответствующие полученным интервалам, и каждая строка приобретает приоритет <em>(prioritize)</em>, при этом чем меньше интервал - тем выше приоритет. Далее, учитывая приоритет строк, с помощью FM-индекса и алгоритма “walk-left” Bowtie2 определяется смещение <em>(<a href="https://ru.wikipedia.org/wiki/%D0%A1%D0%BC%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D0%B5_(%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0)#:~:text=%D0%92%20%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B5%2C%20%D1%81%D0%BC%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B2%D0%BD%D1%83%D1%82%D1%80%D0%B8%20%D0%BC%D0%B0%D1%81%D1%81%D0%B8%D0%B2%D0%B0,%D0%BE%D0%B4%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%B8%20%D1%82%D0%BE%D0%B3%D0%BE%20%D0%B6%D0%B5%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0.">offset</a>)</em> выбранных строк, и таким образом получает координаты затравочных последовательностей в геноме <em>(Extention candidates).</em> Иными словами, Bowtie2 разрешает <em>(resolve)</em> затравочные выравнивания. На шаге 4 <em>(<strong>Extend</strong>)</em> Bowtie2 берет приоритетные разрешенные затравочные выравнивания из шага 3 и расширяет выравнивание рида на всю окрестность вблизи затравки. Выравнивание на данном этапе ускоряется за счет использования динамического программирования SIMD (<a href="https://ru.wikipedia.org/wiki/SIMD">Single Instruction Multiple Data</a>). Выравнивание продолжается до тех пор, пока не будут проанализированы все разрешенные затравки <em>(seed hits)</em>, пока не будет изучено достаточное количество выравниваний, или пока не будет достигнут предел трудоемкости <em>(effort limit)</em> динамического программирования.</p>
 <p><img src="/Bioinformatics/Bowtie2.files/workflow.png?width=40pc" alt=""></p>
 <p>Если кратко, то сначала каждый рид и комплементарная к нему последовательность разбивается на затравочные подстроки <em>(seed)</em>. Затем извлеченные подстроки выравниваются на референсный геном без пропусков <em>(seed alignment)</em> и расставляются по приоритету <em>(prioritize)</em>. На последнем этапе затравочные выравнивания расширяются на весь рид.</p>
 <p>В результате для каждого рида получается множество выравниваний. Чтобы выбрать наилучшее выравнивание Bowtie2 вычисляет для каждого из них оценку выравнивания <em>(alignment score).</em> Оценка количественно определяет, насколько рид похож на референсную последовательность. Чем выше балл - тем лучше. Оценка рассчитывается путем вычитания штрафов <em>(penalty)</em> за каждое отличие: замены <em>(mismatch)</em>, пропуски <em>(gap),</em> наличие вырожденных символов <em>(ambigous characters)</em>. В режиме локального выравнивания, за каждое совпадение к оценке добавляется бонус <em>(bonus)</em>. Результат выравнивания оформляется в формате <a href="https://ru.wikipedia.org/wiki/SAMtools">SAM</a> в поток стандартного вывода 1 <em>(“stdout”),</em> если не указан файл назначения. Дополнительная информация, предупреждения и статистика выравнивания выводятся в стандартный поток номер 2 <em>(“stderr”).</em></p>
-<h3 id="установка">Установка</h3>
+<h2 id="установка">Установка</h2>
 <p>Подробное описание способов установки можно посмотреть <a href="https://www.metagenomics.wiki/tools/bowtie2/install">здесь</a></p>
 <p>Наиболее простой способ - установить с помощью Anaconda:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#a6e22e">conda</span> <span style="color:#a6e22e">install</span> <span style="color:#a6e22e">-c</span> <span style="color:#a6e22e">bioconda</span> <span style="color:#a6e22e">bowtie2</span>
-</code></pre></div><h3 id="инструменты-bowtie2">Инструменты Bowtie2</h3>
+</code></pre></div><h2 id="инструменты-bowtie2">Инструменты Bowtie2</h2>
 <p>После установки Bowtie2 пользователю становится доступно несколько инструментов:</p>
 <ol>
 <li><code>bowtie2</code>, <code>bowtie2-align-s</code> и <code>bowtie2-align-l</code> осуществляют выравнивание коротких последовательностей (в формате fastq, fasta и др.) на <strong>индексированный</strong> референсный геном/последовательность. <code>bowtie2-align-s</code> и <code>bowtie2-align-l</code> представляют собой бинарный код для выравнивания на индексы малого (small) и большого (large) формата. <code>bowtie2</code> является сценарием-оберткой <em>(wrapper)</em>, запускающим <code>bowtie2-align-s/l</code> в зависимости от формата индекса и дающий дополнительные возможности, в частности, работу со сжатыми файлами. По-сути всегда нужно использовать <code>bowtie2</code>.</li>
 <li><code>bowtie2-build</code>, <code>bowtie2-build-s</code>, и <code>bowtie2-build-l</code> осуществляют индексирование генома (файл в формате fasta или последовательности из командной строки). Как и в прошлом пункте, <code>bowtie2-build</code> представляет собой обортку для запуска бинарных команд <code>bowtie2-build-s</code>, и <code>bowtie2-build-l</code>. Для геномов длиной менее 4 миллиардов нуклеотидов bowtie2-build строит “малый” индекс, используя 32-битные числа в различных частях индекса. Если геном длиннее, <code>bowtie2-build</code> строит “большой” индекс, используя 64-битные числа. Малые индексы хранятся в файлах с расширением <strong>.bt2</strong>, а большие - в файлах с расширением <strong>.bt2l</strong>. Пользователю не нужно беспокоиться о том, является ли конкретный индекс малым или большим, так как обертки автоматически построят и используют соответствующий индекс.</li>
 <li><code>bowtie2-inspect</code>, <code>bowtie2-inspect-s</code> <code>bowtie2-inspect-l</code> извлекают из индекса Bowtie2 информацию о том, что это за индекс и какие референсные последовательности использовались для его построения. При запуске без каких-либо параметров инструмент выведет <a href="https://en.wikipedia.org/wiki/FASTA"><code>FASTA</code></a> файл, содержащий последовательности референсов (все символы кроме <code>A</code>/<code>C</code>/<code>G</code>/<code>T</code> будут преобразованы в <code>N</code>).</li>
 </ol>
-<h3 id="индексирование-генома-с-помощью-bowtie2-build">Индексирование генома с помощью bowtie2-build</h3>
+<h2 id="индексирование-генома-с-помощью-bowtie2-build">Индексирование генома с помощью bowtie2-build</h2>
 
 <div class="notices note" ><p>Готовые геномные индексы можно скачать с оффициального сайта bowtie-bio.sourceforge.net</p>
 </div>
@@ -1713,10 +1728,238 @@
 <div class="notices note" ><p>Файлы индексированного референса будут сохранены в директории, из которой была вызвана программа bowtie2-build</p>
 </div>
 
-<p>Для ускоренного индексирования следует активировать многопоточный режим, добавив параметр <code>–treads n</code>.</p>
+<p>Для ускоренного индексирования следует активировать многопоточный режим, добавив параметр <code>--treads n</code>.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">bowtie2-build --threads <span style="color:#ae81ff">25</span> -f путь_к_fasta Префикс
-</code></pre></div><h3 id="режимы-выравнивания">Режимы выравнивания</h3>
-<h3 id="рецепты">Рецепты</h3>
+</code></pre></div><h2 id="множественное-выравнивание-с-помощью-bowtie2">Множественное выравнивание с помощью <em>bowtie2</em></h2>
+<p>Минимальный вид команды:</p>
+<pre><code>bowtie2 -x &lt;bt2-idx&gt; {-1 &lt;m1&gt; -2 &lt;m2&gt; | -U &lt;r&gt; } -S [&lt;sam&gt;]
+</code></pre>
+<p>
+<div class="notices note" ><p>Для выравнивания нужно обязательно указать путь к индексированному референсу после параметра -x. Это путь к папке, в которой содержатся файлы индекса плюс префикс файлов-индексов. Например:</p>
+<pre><code>-x /home/romanov/DM6_drosophila/DM6
+</code></pre>
+</div>
+
+
+<div class="notices note" ><p>Для выравнивания односторонних прочтений (single-end reads) нужно указать полный путь к файлу fastq (или fastq.gz) после параметра -U:</p>
+<pre><code>-U /home/file.fastq.gz
+</code></pre>
+<p>Также можно указать несколько fastq-файлов через запятую:</p>
+<pre><code>-U /home/file1.fastq.gz,../file2.fastq.gz,~/foldeir2/file3.fastq.gz
+</code></pre>
+</div>
+
+
+<div class="notices note" ><p>Для выравнивания двусторонних прочтений (paired reads) нужно указать полный путь к файлам R1 и R2 после параметров -1 и -2:</p>
+<pre><code>-1 /home/file.R1.fastq.gz -2 /home/file.R2.fastq.gz
+</code></pre>
+<p>Также можно указать несколько fastq-файлов через запятую:</p>
+<pre><code>-1 /home/file1.R1.fastq.gz,../file2.R1.fastq.gz -2 /home/file1.R2.fastq.gz,../file2.R2.fastq.gz
+</code></pre>
+</div>
+
+
+<div class="notices note" ><p>По умолчанию результат выравнивания в формате .SAM выводится в стантартный вывод (экран командной строки). Чтобы вывести результат в файл, нужно указать адрес после параметра -S:</p>
+<pre><code>-S путь_к_файлу/alignment.sam
+</code></pre>
+</div>
+</p>
+<h3 id="режимы-выравнивания">Режимы выравнивания</h3>
+<p>Bowtie2 способен выравнивать последовательности на индекс в двух режимах:</p>
+<ol>
+<li>В режиме <strong>end-to-end (сквозное выравнивание)</strong> bowtie2 ищет в референсе участок, идентичный целевой последовательности от начала до конца. Такое выравнивание также называют <em>необрезанным</em> (<em>“unclipped”</em> или <em>“untrimmed”</em>). Bowtie2 осуществляет сквозное выравнивание по умолчанию.</li>
+<li>В режиме <strong>local (локальное выравнивание)</strong> bowtie2 ищет в референсе участок, идентичный райну внутри целевой последовательности, при этом несколько нуклеотидов на концах последовательности не учитываются, то есть <em>мягко обрезаются</em> (<em>“soft-clipping”</em> или <em>“soft-trimming”</em>). Это значит, что несовпадение концевых нуклеотидов в последовательности не учитывается</li>
+</ol>
+<p>Пример сквозного выравнивания:</p>
+<pre><code>Рид:      GACTGGGCGATCTCGACTTCG
+          |||||  |||||||||| |||
+Референс: GACTG--CGATCTCGACATCG
+</code></pre>
+<p>Пример локального выравнивания:</p>
+<pre><code>Рид:      ACGGTTGCGTTAA-TCCGCCACG
+              ||||||||| ||||||
+Референс: TAACTTGCGTTAAATCCGCCTGG
+</code></pre>
+<h3 id="виды-несовпадений">Виды несовпадений</h3>
+<p>Замены <em>(mismatches)</em></p>
+<pre><code>Рид:      GACTGCGCCGATTTCGACTTCG
+          |||||| ||||| |||||||||
+Референс: GACTGCCCCGATCTCGACTTCG
+</code></pre>
+<p>Вырожденные буквы <em>(ambigous characters)</em></p>
+<pre><code>Рид:      GACTGCGCCGATNTCGACTTCG
+          |||||| ||||| |||||||||
+Референс: GACTGCNCCGATCTCGACTTCG
+</code></pre>
+<p>Пропуск внутри референса <em>(reference gap)</em></p>
+<pre><code>Рид:      GACTGGGGCGATCTCGACTTCG
+          |||||   ||||||||||||||
+Референс: GACTG---CGATCTCGACTTCG
+</code></pre>
+<p>Пропуск внутри рида <em>(read gap)</em></p>
+<pre><code>Рид:      GACTG---CGATCTCGACTTCG
+          |||||   ||||||||||||||
+Референс: GACTGGGGCGATCTCGACTTCG
+</code></pre>
+<h3 id="функции"><strong>Функции</strong></h3>
+<p>Большинство параметров bowtie2 принимают на входе либо число, либо строку. Однако есть параметры, которые принимают функции <em>(functions)</em> в формате<code>A*F(X)+B</code>. Функции записываются следующим образом: <code>–параметр &lt;F&gt;,&lt;B&gt;,&lt;A&gt;</code>.</p>
+<p>Символ <code>F</code> обозначает название функции. Всего функции бывают четырех типов: константа (<code>C</code>), линейная функция (<code>L</code>), квадратный корень (<code>S</code>), натуральный логарифм (<code>G</code>).</p>
+<p>Например, параметр записанный в виде <code>C,2,2</code> означает константу <code>F(X)=2+2=4</code>.</p>
+<p>Запись <code>L,-5,-10.1</code> означает линейную функцию <code>F(X)=-10.1*X-5</code>.</p>
+<p>Функция, записанная в виде <code>S,-0.6,8</code> означает функцию <code>F(X)=8*sqrt(X)-0.6</code>.</p>
+<p>Функция, записанная в виде <code>G,3,-6</code> означает функцию <code>F(X)=-6*ln(x)+3</code>.</p>
+<h3 id="оценка-выравнивания">Оценка выравнивания</h3>
+<p>Каждая последовательность может выравниваться на референс в нескольких местах. Bowtie2 определяет для каждого выравнивания величину оценки <em>(alignment score)</em> и на выходе выдает координаты выравнивания с оценкой, превышающей пороговое значение (<em>minimum</em> <em>score threshold</em>). При сквозном выравнивании оценка выравнивания вычисляется путем вычитания штрафов <em>(penalties)</em> за каждое отличие в последовательности или референсе (замены, пропуски и т. д.). При локальном выравнивании за каждый совпавший нуклеотид к оценке добавляется бонус <em>(bonus)</em>.</p>
+<p>Ниже приведены параметры, которые задают значения бонусов, штрафов и пороговой оценки:</p>
+<p><code>--ma</code> &lt;целое число <strong>X</strong>&gt; - бонус за совпадение <em>(match bonus)</em>. Используется только при локальном выравнивании (иначе выдаст ошибку). По-умолчанию равно 2. Если рид состоит из 50 нуклеотидов и все нулкеотиды совпадают с референсом, то оценка будет равна <strong>X</strong>*50=100</p>
+<p><code>--mp</code> &lt;целое число <strong>MN</strong>&gt;,&lt;целое число <strong>MX</strong>&gt; - штраф за замену <em>(mismatch penalty).</em> Требует два числа, введенных через запятую. Число <strong>MN</strong> - это минимально-возможный штраф, <strong>MX</strong> - максимально возможный. Величина штрафа зависит от качетсва прочтения в несовпадающем нуклеотиде (Phred-score). Если Phred-score равен <strong>Q</strong>, то от оценки отнимается число равное целой части от величины <code>MN+(MX-MN)*(min(40,Q)/40)</code>. Так что если <strong>Q</strong>&gt;40, то штраф будет равен <strong>MX</strong>, если <strong>Q</strong> равен 0, то штраф будет равен <strong>MN</strong>. По умолчанию: <strong>MX</strong>=6, <strong>MN</strong>=2. Можно ввести параметр <code>--ignore-quals</code>, тогда всегда будет отниматься <strong>MX</strong>.</p>
+<p><code>--np</code> &lt;целое число&gt; - Устанавливает штраф за позиции в выравнии, где рид или референс, или оба сразу содержат неоднозначный символ, например <code>N</code>. По умолчанию: 1.</p>
+<p><code>--rdg</code> &lt;целое число <strong>N1</strong>&gt;,&lt;целое число <strong>N2</strong>&gt; - Штраф за пропуски <em>(read gaps)</em> внутри рида. Если пропуск перекрывает только один нуклеотид, то штраф равен <strong>N1</strong>. Штраф за пропуск <strong>M</strong> нуклеотидов подряд составляет <strong>N1</strong> + <strong>M</strong>*<strong>N2</strong>. Таким образом, N1 - это штраф за открытие пропуска <em>(gap open),</em> а <strong>N2</strong> -это штраф за расширение пропуска <em>(gap extend)</em>. По умолчанию: <strong>N1</strong>=5, <strong>N2</strong>=3.</p>
+<p><code>--rfg</code> &lt;целое число <strong>N1</strong>&gt;,&lt;целое число <strong>N2</strong>&gt; - Штраф за пропуски внутри референса <em>(reference gaps)</em>. Штраф за пропуск <strong>M</strong> нуклеотидов подряд составляет <strong>N1</strong> + <strong>M</strong>*<strong>N2</strong>. По умолчанию: <strong>N1</strong>=5, <strong>N2</strong>=3.</p>
+<p><code>--score-min</code> &lt;функция&gt; - Задает функцию, управляющую минимальной оценкой выравнивания, необходимой для того, чтобы выравнивание считалось «действительным» <em>(valid)</em>, то есть достаточно хорошим. Это функция от длины рида. Значение по умолчанию в сквозном режиме <code>L,-0.6,-0.6</code>, а в локальном режиме <code>G,20,8</code>.</p>
+<h3 id="число-выравниваний-для-каждого-рида">Число выравниваний для каждого рида</h3>
+<p>По умолчанию bowtie2 для каждого рида находит одно действительное выравнивание, после чего ищет еще выравнивания с такой же или более высокой оценкой. В конце концов bowtie2 докладывает одно выравнивание с наибольшей оценкой, или если выравниваний с идентичной оценкой несколько, выдает одно случайное. Для некоторых задач требуется узнать все возможные выравнивания для рида (например, картирование повторов в геноме). Для этого нужно ввести параметры <code>-k</code> или <code>-a</code>. Оба параметра замедляют процесс выравнивания.</p>
+<p><code>-k &lt;целое число&gt;</code> - это число выравниваний, которое будет записано в SAM-файл для каждого рида.</p>
+<p><code>-a</code> - эта команда заставляет bowtie2 записать все выравнивания с оценкой качества, превышающей порог.</p>
+<h3 id="cлучаный-режим">Cлучаный режим</h3>
+<p>В тех случаях, когда bowtie2 приходится выбирать для рида одно выравнивание из нескольких вариантов с одинаковой оценкой качества, он использует генератор случайных чисел. В результате, разные запуски программы на одних и тех же данных приводят к неэксвивалентным результатам. Чтобы получать одинаковые результаты, нужно при запуске программе передать на вход программе одно и то же начальное значение генератора случайных чисел при помощи параметра <code>--seed &lt;целое число&gt;</code>.</p>
+<p>Если же в fastq-файлах есть много повторяющихся ридов и требуется, чтобы каждый рид выравнивался в случайном месте генома, то нужно использовать параметр <code>--non-deterministic</code>, который заставляет программу запускать генератор случайных чисел для каждого рида отдельно. При этом начальным значением является время на часах.</p>
+<h3 id="выравнивание-парных-ридов">Выравнивание парных ридов</h3>
+<p>При выравнивании спаренных ридов <em>(mate pairs)</em> положение ридов относительно референса зависит от метода пробоподготовки. В SAM-файле Bowtie2 помечает спаренные риды разными способами, указывая, были риды выравнены правильным образом. Чтобы определить, правильное выравнивание, bowtie2 учитывает длину встройки (максимальна дистанция между концами ридов), ориентацию ридов относительно прямой цепи референса, положение первого и второго ридов относительно друг друга. <strong>Конкордантными</strong> парами называются пары ридов, которые выравниваются на одну и ту же хромосому (или скэффолд), имеют правильную ориентацию и взаимное положение, а также правильную дистанцию. Спаренные риды, которые не удовлетворяют условиям называют <strong>дискордантными</strong>.</p>
+<p>Минимальная длина фрагментов указывается параметром <code>-I &lt;целое число&gt;</code> или <code>--minins &lt;целое число&gt;</code> (это короткое и длинное название параметра). По умолчанию это значение равно 0, то есть минимум не установлен.</p>
+<p>Максимальная длина фрагментов указывается параметром <code>-X &lt;целое число&gt;</code> или <code>--maxins &lt;целое число&gt;</code> . По умолчанию значение равно 500 (пятьсот пар нуклеотидов). Чем больше разница между <code>-X</code> и <code>-I</code>, тем медленнее работает программа!</p>
+<p>Параметры <code>--fr/--ff/--rf</code> указывают возможную ориентацию первого и второго рида относительно прямой цепи референса (см. картинку ниже). Если ориентация ридов не удовлетворяет выбранному условию, то рид считается дискордантным.</p>
+<p><img src="/Bioinformatics/Bowtie2.files/Concordant.png?width=40pc" alt=""></p>
+<p>Если риды перекрываются, то bowtie2 учитывает тип перекрывания, когда классифицирует конкордантные и дискордантные пары.</p>
+<p>Спаренные риды могут перекрываться обычным способом <em>(overlap)</em>. Такие пары считаются конкордантными. Но использование параметра <code>--no-overlap</code> превращает такие риды в дискордантные:</p>
+<pre><code>Пара 1:    GCAGATTATATGAGTCAGCTACGATATTGTT
+Пара 2:                               TGTTTGGGGTGACACATTACGCGTCTTTGAC
+Референс:  GCAGATTATATGAGTCAGCTACGATATTGTTTGGGGTGACACATTACGCGTCTTTGAC
+</code></pre>
+<p>Содержать друг друга <em>(contain)</em>. Такие пары считаются конкордантными, а параметр параметр <code>--no-contain</code> заставляет считать такие пары дискордантными:</p>
+<pre><code>Пара 1:    GCAGATTATATGAGTCAGCTACGATATTGTTTGGGGTGACACATTACGC
+Пара 2:                               TGTTTGGGGTGACACATTACGC
+Референс:  GCAGATTATATGAGTCAGCTACGATATTGTTTGGGGTGACACATTACGCGTCTTTGAC
+
+Пара 1:                   CAGCTACGATATTGTTTGGGGTGACACATTACGC
+Пара 2:                      CTACGATATTGTTTGGGGTGAC
+Референс:  GCAGATTATATGAGTCAGCTACGATATTGTTTGGGGTGACACATTACGCGTCTTTGAC
+</code></pre>
+<p>Или “проходить мимо” друг друга. Такое перекрывание называется «ласточкин хвост» <em>(dovetail)</em> и по умолчанию считается дискордантным:</p>
+<pre><code>Пара 1:                 GTCAGCTACGATATTGTTTGGGGTGACACATTACGC
+Пара 2:            TATGAGTCAGCTACGATATTGTTTGGGGTGACACAT                   
+Референс:  GCAGATTATATGAGTCAGCTACGATATTGTTTGGGGTGACACATTACGCGTCTTTGAC
+</code></pre>
+<p>Перекрывание по типу ласточкин хвост можно заставить считать конкордантным, если ввести параметр <code>--dovetail</code>.</p>
+<p>По умолчанию bowtie2 для начала ищет конкордантные выравнивания, и только если таких не находится, приступает к поиску дискордантных. Чтобы запретить вывод дискордантных ридов, нужно ввести параметр <code>--no-discordant</code>.</p>
+<p>Когда bowtie2 не может найти конкордантные и дискордантные выравнивания для спаренных ридов, он ищет отдельные независимые выравнивания для каждого рида в отдельности (например, пытается выравнивать риды на разные хромосомы). Если такое поведение неприемлимо, то нужно ввести параметр <code>--no-mixed</code>.</p>
+<h3 id="параметры-выравнивания">Параметры выравнивания</h3>
+<p>Чтобы быстро сузить количество возможных выравниваний, которые необходимо учитывать, bowtie2 начинает с извлечения затравночных подстрок из прочтения и комплементарной к нему последовательности и выравнивания их без пропусков с помощью <a href="http://portal.acm.org/citation.cfm?id=796543">индекса FM</a>. Этот начальный шаг (многозатравочная эвристика, <em>multiseed euristic</em>) делает Bowtie 2 намного быстрее, чем без такого фильтра, но за счет пропуска некоторых допустимых выравниваний. Например, рид может иметь правильное общее выравнивание, но не иметь допустимых зерновых выравниваний, потому что каждое потенциальное зерно прерывается слишком большим количеством замен или пробелов.</p>
+<p>Компромисс между скоростью и чувствительностью/точностью можно отрегулировать, установив длину начальной затравки (<code>-L</code>), дистанция между затравками (<code>-i</code>)допустимое количество замен на затравку (<code>-N</code>). Для более точного выравнивания можно: (а) уменьшить дистанцию между затравками, (б) сократить длину затравок и/или (в) разрешенить большее количество замен.</p>
+<p><code>-N &lt;целое число&gt;</code> определяет число замен в затравочных выравниваниях. По умолчанию - 0. Может принимать значение 0 и 1.</p>
+<p><code>-L &lt;целое число&gt;</code> определяет длину затравночной полседовательности. В end-to-end режиме равно 22, а в local 20.</p>
+<p><code>-i &lt;целое число&gt;</code> - функция, связывающая длину прочтения и расстояние между затравочными последовательностями. По умолчанию равно <code>S,1,1.15</code> в <code>--end-to-end</code> режиме и <code>S,1,0.75</code> в <code>--local</code> mode.</p>
+<p>Есть еще два параметра, контролирующих скорость/чувствительность выравнивания:</p>
+<p><code>-D &lt;целое число X&gt;</code> - перед тем как сдвинують затравочную последовательность вдоль референса, bowtie2 расширяет затравку с целью получить более качественное выравнивание. Если после расширения затравки качество выравнивания не растет, то bowtie2 увиличивает счетчик на единицу. А число <strong>X</strong> определяет максимальное число, которое может достигнуть счетчик для затравочной последовательности. Увеличение -D делает Bowtie 2 медленнее, но увеличивает вероятность того, что он сообщит правильное выравнивании для ридов, которые выравниваются на много мест в референсе. По умолчанию это число равно 15.</p>
+<p><code>-R &lt;целое число X&gt;</code> - максимальное число раз, когда bowtie2 перевыравнивает прочтение (re-seed), если прочтение имеет несколько выравниваний в геноме. Чем больше число, тем медленнее выравнивание, но тем больше вероятность найти правильное выравнивание. Значение по умолчанию - 2.</p>
+<p><code>--n-ceil &lt;функция&gt;</code> - устанавливает функцию, связывающую максимальное число вырожденных букв в выравнивании в зависимости от длины рида. По умолчанию: <code>L,0,0.15</code>.</p>
+<p><code>--local</code> - включает локальный режим выравнивания, при котором несколько нуклеотидов на концах прочтения обрезаются и не вносят вклад в качество выравнивания.</p>
+<p><code>--end-to-end</code> - включает сквозной режим выравнивания. Этот параметр включен по умолчанию.</p>
+<p><code>--gbar &lt;целое число&gt;</code> - определяет число нуклеотидов на концах рида, между которыми недопустимы пробелы (gaps). По умолчанию 4.</p>
+<p><code>--ignore-quals</code> - заставляет bowtie2 игнорировать Phred-score при подсчете пенальти. В таком случае штраф за каждую замену максимальный.</p>
+<p><code>--no-1mm-upfront</code> - По умолчанию, чтобы увеличить скорость выравнивания bowtie2 для начала ищет для каждого рида выравнивание с полным совпадением или с одной ошибкой. Это гораздо быстрее, чем применить многозатравочную эвристику. В случае, если длина затравки (<code>-L</code>) выбрана равной длине рида, а число замен (<code>-N</code>) равно нулю, то такой подход приведет к появлению выравниванию с заменами. Данный параметр отключает такое поведение.</p>
+<p>Чтобы не менять параметры каждый раз, авторы сделали пресеты параметров мультизатравочного выравнивания, которые различаются скоростью и чувствительностью: Вариант <code>end-to-end</code>:</p>
+<p><code>--very-fast</code> - То же, что и : <code>-D 5 -R 1 -N 0 -L 22 -i S,0,2.50</code></p>
+<p><code>--fast</code> - То же, что и : <code>-D 10 -R 2 -N 0 -L 22 -i S,0,2.50</code></p>
+<p><code>--sensitive</code> - То же, что и : <code>D 15 -R 2 -N 0 -L 22 -i S,1,1.15</code> (по умолчанию в <code>--end-to-end</code>)</p>
+<p><code>--very-sensitive</code> - То же, что и: <code>-D 20 -R 3 -N 0 -L 20 -i S,1,0.50</code></p>
+<p>Вариант <code>local</code>:</p>
+<p><code>--very-fast-local</code> - То же, что и: <code>-D 5 -R 1 -N 0 -L 25 -i S,1,2.00</code></p>
+<p><code>--fast-local</code> - То же, что и: <code>-D 10 -R 2 -N 0 -L 22 -i S,1,1.75</code></p>
+<p><code>--sensitive-local</code> - То же, что и: <code>-D 15 -R 2 -N 0 -L 20 -i S,1,0.75</code> (по умолчанию в <code>--local</code>)</p>
+<p><code>--very-sensitive-local</code> - То же, что и: <code>-D 20 -R 3 -N 0 -L 20 -i S,1,0.50</code></p>
+<h3 id="параметры-ввода">Параметры ввода</h3>
+<p><code>-q</code> - риды в формате fastq/fq</p>
+<p><code>-f</code> - риды в формате fasta/fa/mfa/fna</p>
+<p><code>-c</code> - риды записаны в командной строке как разделенный запятой список последовательностей</p>
+<p><code>-s &lt;целое число&gt;</code> или <code>--skip &lt;целое число&gt;</code> - пропустить первые несколько ридов в файле.</p>
+<p><code>-u &lt;целое число&gt;</code> или <code>--qupto &lt;целое число&gt;</code> - выровнить первые несколько ридов. Удобно для проверки кода.</p>
+<p><code>-5 &lt;целове число&gt;</code> или <code>--trim5 &lt;целое число&gt;</code> - перед выравнивание исключить из рида указанное число нуклеотидов с левого конца (включая спаренные риды). Полезно, так как позволяет избежать тримминга ридов.</p>
+<p><code>-3 &lt;целове число&gt;</code> или <code>--trim3 &lt;целое число&gt;</code> - перед выравниванием исключить из рида указанное число нуклеотидов с правого конца (включая спаренные риды). Полезно, так как позволяет избежать тримминга ридов.</p>
+<p><code>--trim-to [5:|3:]&lt;целое число&gt;</code> - перед выравниванием укоротить рид до указанной длины. Удаляться будут буквы с левого конца (<code>--trim-to 5:N</code>) или c правого конца (<code>--trim-to 3:N</code>). Нельзя вводить одновременно с параметром <code>-5</code> или <code>-3</code>.</p>
+<p><code>--phred33</code> или <code>--phred64</code> - кодировка Phred-score в таблице ASCII. Зависит от платформы секвенирования. В Illumina MiSeq - phred33. Тип платформы можно опрделенить при помощи <a href="https://www.bioinformatics.babraham.ac.uk/projects/fastqc/">fastqc</a>. Соответствие между платформой и Phred-score можно определить по картинке ниже:</p>
+<h3 id="img-srcbowtie2filesqualityscorepng-width571-"><img src="Bowtie2.files/qualityscore.png" width="571" />.</h3>
+<h3 id="параметры-вывода">Параметры вывода</h3>
+<table>
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 82%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><p><code>--un &lt;path&gt;</code></p>
+<p><code>--un-gz &lt;path&gt;</code></p>
+<p><code>--un-lz4 &lt;path&gt;</code></p>
+<p><code>--un-bz2 &lt;path&gt;</code></p></td>
+<td>Записать неспаренные невыравненные риды в файл <code>&lt;path&gt;</code> в зжатом или несжатом виде.</td>
+</tr>
+<tr class="even">
+<td><p><code>--al &lt;path&gt;</code></p>
+<p><code>--al-gz &lt;path&gt;</code></p>
+<p><code>--al-lz4 &lt;path&gt;</code></p>
+<p><code>--al-bz2 &lt;path&gt;</code></p></td>
+<td>Записать неспаренные риды, которые выравнились хотя бы один раз в файл <code>&lt;path&gt;</code> в сжатом или несжатом виде.</td>
+</tr>
+<tr class="odd">
+<td><p><code>--un-conc &lt;path&gt;</code></p>
+<p><code>--un-conc-gz &lt;path&gt;</code></p>
+<p><code>--un-conc-lz4 &lt;path&gt;</code></p>
+<p><code>--un-conc-bz2 &lt;path&gt;</code></p></td>
+<td>Записать спаренные риды, которые не выровнились конкордантно, в файл <code>&lt;path&gt;</code> в зжатом или несжатом виде.</td>
+</tr>
+<tr class="even">
+<td><p><code>--al-conc &lt;path&gt;</code></p>
+<p><code>--al-conc-gz &lt;path&gt;</code></p>
+<p><code>--al-conc-lz4 &lt;path&gt;</code></p>
+<p><code>--al-conc-bz2 &lt;path&gt;</code></p></td>
+<td>Записать спаренные риды, которые выравнились конкордантно хотя бы один раз в файл <code>&lt;path&gt;</code> в сжатом или несжатом виде.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="быстродействие">Быстродействие</h3>
+<p><code>-p &lt;целое число&gt;</code> или <code>--threads &lt;целое число&gt;</code> устаналвивает число занятых процессоров (по умолчанию 1). Ускоряет выравнивание в пропорциональное число раз.</p>
+<h3 id="сводка-по-выравниванию">Сводка по выравниванию</h3>
+<p>Сводка <em>(Alignment summary)</em> выглядит следующим образом:</p>
+<pre><code>20000 reads; of these:
+  20000 (100.00%) were unpaired; of these:
+    1247 (6.24%) aligned 0 times
+    18739 (93.69%) aligned exactly 1 time
+    14 (0.07%) aligned &gt;1 times
+93.77% overall alignment rate
+</code></pre>
+<p>А для спаренных ридов вот так:</p>
+<pre><code>10000 reads; of these:
+  10000 (100.00%) were paired; of these:
+    650 (6.50%) aligned concordantly 0 times
+    8823 (88.23%) aligned concordantly exactly 1 time
+    527 (5.27%) aligned concordantly &gt;1 times
+    ----
+    650 pairs aligned concordantly 0 times; of these:
+      34 (5.23%) aligned discordantly 1 time
+    ----
+    616 pairs aligned 0 times concordantly or discordantly; of these:
+      1232 mates make up the pairs; of these:
+        660 (53.57%) aligned 0 times
+        571 (46.35%) aligned exactly 1 time
+        1 (0.08%) aligned &gt;1 times
+96.70% overall alignment rate
+</code></pre>
+
+<div class="notices note" ><p>По умолчанию сводка выводится в стандартный поток ошибок stderr. Чтобы записать сводку в отдельный файл нужно воспользоваться перенаправлением из стандартного потока ошибок. Для этого в конце команды надо написать &ldquo;2 &gt; название_файла &ldquo;:</p>
+<pre><code>bowtie2 -x /home/romanov/DM6_drosophila/DM6 -U file.fastq.gz --very-fast -S alignment.sam 2&gt;alignment_summary.txt
+</code></pre>
+</div>
+
 
 
 <footer class="footline">
@@ -2665,19 +2908,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1662975638"></script>
-    <script src="/js/perfect-scrollbar.min.js?1662975638"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1662975638"></script>
-    <script src="/js/jquery.sticky.js?1662975638"></script>
-    <script src="/js/featherlight.min.js?1662975638"></script>
-    <script src="/js/highlight.pack.js?1662975638"></script>
+    <script src="/js/clipboard.min.js?1663631105"></script>
+    <script src="/js/perfect-scrollbar.min.js?1663631105"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1663631105"></script>
+    <script src="/js/jquery.sticky.js?1663631105"></script>
+    <script src="/js/featherlight.min.js?1663631105"></script>
+    <script src="/js/highlight.pack.js?1663631105"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1662975638"></script>
-    <script src="/js/learn.js?1662975638"></script>
-    <script src="/js/hugo-learn.js?1662975638"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1663631105"></script>
+    <script src="/js/learn.js?1663631105"></script>
+    <script src="/js/hugo-learn.js?1663631105"></script>
     
         
-            <script src="/mermaid/mermaid.js?1662975638"></script>
+            <script src="/mermaid/mermaid.js?1663631105"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
