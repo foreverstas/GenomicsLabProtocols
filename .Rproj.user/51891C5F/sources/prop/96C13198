@@ -4,8 +4,9 @@
     "cursorPosition": "6,50",
     "scrollLine": "0",
     "rmdVisualMode": "true",
-    "rmdVisualModeLocation": "165:0",
+    "rmdVisualModeLocation": "2:0",
     "rmdVisualWrapConfigured": "true",
     "docOutlineVisible": "1",
-    "docOutlineSize": "122"
+    "docOutlineSize": "122",
+    "rmdVisualCollapsedChunks": ""
 }
