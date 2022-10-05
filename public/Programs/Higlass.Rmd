@@ -1,0 +1,105 @@
+---
+title: "Higlass"
+author: "Romanov Stanislav"
+date: "09 12 2021"
+output: html_document
+lang: russian
+tags: ["Higlass", "Программы", "Docker"]
+---
+
+
+Higlass - один из самых популярных геномных браузеров, предназначенный для удобного просмотра контактных матриц HiC. Является альтернативой Juicebox. Работает с HiC-картами в формате mcool.
+
+
+```{r echo=FALSE}
+
+blogdown::shortcode_open(.name = "expand", "Что важно знать про Higlass?")
+```
+
+
+```{r echo=FALSE}
+blogdown::shortcode("notice","note" ,.content = "Higlass представляет собой интерактивный веб-браузер, написанный на языке Javas Sript. Благодаря этому окно браузера можно интегрировать в html-страницы, но такой способ подходит только для тех, кто имеет опыт работать с технологией JavaScript API. Авторы также интегрировали браузер в библиотеку Python, что позволяет открывать окно браузера внутри сессии Python. Это удобно для тех, кто предпочитает анализировать данные в среде разработки Jupyter. Кроме того, авторы создали серверную версию Higlass, что позволяет запускать браузер либо на локальной машине, либо на сервере института. Серверное приложение открывается в интернет-браузере по ссылке и дает возможность пользователям добавлять профили в сессию в интерактивном режиме.")
+```
+
+
+```{r echo=FALSE}
+blogdown::shortcode("notice","note" ,.content = "Стоит обратить внимание, что хотя интерфейс программы интуитивный, установка, управление данными и настройка Higlass на рабочей станции может оказаться огромной головной болью особенно для людей, не обладающих навыками программирования. Авторы, по-видимому, не ставили перед собой задачу сделать управление Higlass дружелюбным. Это видно по качеству написания официальной документации, которая содержит несостыковки, и практически не описывает детали. Поэтому требуется немало времени, чтобы разобраться, как заставить эту штуку работать. В силу этого ниже дан более-менее подробный алгоритм по установке Higlass, также описаны некоторые наиболее часто встречающиеся задачи.")
+                    
+```
+
+```{r echo=FALSE}
+blogdown::shortcode("notice","warning" ,.content = "Установка пакетов Higlass для Python и Jupyter возможна только на системе Linux. Даже в Anaconda. Даже если очень захотеть. Для пользователей Windows Higlass доступен только через интерфейс docker или путем соединения с Higlass-сервером (по URL-ссылке или через JavaScript API).")
+```
+
+```{r echo=FALSE}
+
+blogdown::shortcode_close(.name = "expand", "Свернуть")
+```
+
+### Документация
+
+```{r echo=FALSE}
+blogdown::shortcode("notice","warning" ,.content = "По мере знакомства с документацией Higlass может возникнуть ощущение, что программа создавалась несколькими коллективами разработчиков параллельно. В результате, разделы документации были написаны разными людьми и размещены на разных ресурсах без внятной структуры. По этой причине знакомство с этой программой может обернуться огромной головной болью, так как придется провести немало времени, блуждая по перекрестным ссылкам. Ниже даны ссылки на источники, которые могут очень пригодится.")
+```
+
+```{r echo=FALSE}
+blogdown::shortcode_open("expand","Документация")
+```
+
+[Краткое описание программы от разработчиков и связанные утилиты на GitHub](https://github.com/higlass/higlass)
+
+Официальная документация higlass доступна по ссылке [https://docs.higlass.io](https://docs.higlass.io/). К сожалению, в этой документации описаны команды терминала Linux. Поэтому, если вы не разбираетесь в том, как работает Docker, и собираетесь работать с Higlass на Windows, то написанные в этой документации команды могут оказаться абсолютно бесполезными.
+
+**Для пользователей Windows** нужно обратить внимание на документацию в разделе wiki на [GitHub](https://github.com/higlass/higlass/wiki/Setup). Обратите внимание, что ссылки на содержание wiki-раздела даны в правой части экрана.
+
+```{r echo=FALSE}
+
+blogdown::shortcode_close(.name = "expand", "Свернуть")
+```
+
+
+```{r echo=FALSE}
+blogdown::shortcode_open("expand","Установка на Windows при помощи Docker")
+```
+
+  [Ссылка на Github](https://github.com/higlass/higlass-docker)
+```{r echo=FALSE}
+
+blogdown::shortcode_close(.name = "expand", "Свернуть")
+```
+
+```{r echo=FALSE}
+blogdown::shortcode_open("expand","Интерфейс и работа в геномном браузере:")
+```
+
+  [Краткое описание программы Higlass в книге 3DGenome](https://zhonglab.gitbook.io/3dgenome/chap4-integrative-data-visualization-tools/4.2-higlass)
+
+  [Подробное описание интерфейса от создателей программы](https://github.com/higlass/higlass/wiki/View-Operations)
+
+  [Презентация](https://hms-dbmi.github.io/hic-data-analysis-bootcamp/#58) от создателей курса [Hi-C Data Analysis Bootcamp](https://github.com/hms-dbmi/hic-data-analysis-bootcamp) (Harvard Medical School)
+
+  [Короткий видеоурок по интерфейсу HiGlass](https://www.youtube.com/watch?v=LEDaOa3NZtM)
+
+```{r echo=FALSE}
+
+blogdown::shortcode_close(.name = "expand", "Свернуть")
+```
+
+
+```{r echo=FALSE}
+blogdown::shortcode_open("expand","Интеграция с Jupyter Notebook (только для Linux)")
+```
+
+  [Видео урок Higlass Python API](https://www.youtube.com/watch?v=v62k4Ok1S8g)
+
+```{r echo=FALSE}
+
+blogdown::shortcode_close(.name = "expand", "Свернуть")
+```
+
+
+
+
+
+
+

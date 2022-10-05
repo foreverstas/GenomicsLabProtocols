@@ -12,22 +12,22 @@
     <title>Docker :: Epigenetic and Genomics Protocols</title>
 
     
-    <link href="/css/nucleus.css?1664656045" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1664656045" rel="stylesheet">
-    <link href="/css/hybrid.css?1664656045" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1664656045" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1664656045" rel="stylesheet">
-    <link href="/css/auto-complete.css?1664656045" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1664656045" rel="stylesheet">
-    <link href="/css/theme.css?1664656045" rel="stylesheet">
-    <link href="/css/tabs.css?1664656045" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1664656045" rel="stylesheet">
+    <link href="/css/nucleus.css?1664997855" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1664997855" rel="stylesheet">
+    <link href="/css/hybrid.css?1664997855" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1664997855" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1664997855" rel="stylesheet">
+    <link href="/css/auto-complete.css?1664997855" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1664997855" rel="stylesheet">
+    <link href="/css/theme.css?1664997855" rel="stylesheet">
+    <link href="/css/tabs.css?1664997855" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1664997855" rel="stylesheet">
     
-    <link href="/css/theme-green.css?1664656045" rel="stylesheet">
+    <link href="/css/theme-green.css?1664997855" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1664656045"></script>
+    <script src="/js/jquery-3.3.1.min.js?1664997855"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -53,14 +53,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1664656045"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1664656045"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1664997855"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1664997855"></script>
 <script type="text/javascript">
     
         var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1664656045"></script>
+<script type="text/javascript" src="/js/search.js?1664997855"></script>
 
     
   </div>
@@ -1461,6 +1461,27 @@
 
             
           
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/programs/higlass/" title="Higlass" class="dd-item ">
+        <a href="/programs/higlass/">
+        Higlass
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
         
         </ul>
       
@@ -1696,7 +1717,7 @@
 
 
 <h3 id="для-чего-нужен-docker">Для чего нужен Docker</h3>
-<p>Раньше разработчики биоинформатических алгоритмов предоставляли свои продукты в виде готовых программ,импортируемых библиотек, отдельных скриптов. Однако со временем алгоритмы стали слишком сложны и стабильность их работы стала слишком зависеть от версии операционной системы и установленных на компьютере программ. В результате, зачастую, наиболее распространенные биоинформатические алгоритмы доступны только пользователям одной операционной системы (тот же <code>bowtie2</code> отсутствует на Windows). Чтобы решить эту проблему, некоторые разработчики стали предоставлять приложения в форме контейнеров <em>(conteiners)</em> - полностью изолированных от операционной системы самодостаточных наборов программ, включающие полный набор скриптов и их зависимости. Разработчики приложения добавляют в контейнер все необходимые компоненты операционной системы, и проверяют зависимости на совместимость, благодаря чему приложение будет работать без ошибок на любой операционной системе. Запуск приложения в контейнере означает, что программа не зависит от окружающих процессов и компонентов операционной системы. Самым распространенным менеджером контейнеров является Docker. С его помощью на компьютере с Windows можно запускать такие программы как <code>bowtie2</code>, <code>hisat2</code>, <code>higlass</code> и прочие. Вообще, разработчики все чаще предоставляют свои программы именно в форме docker-контейнеров.</p>
+<p>Раньше разработчики биоинформатических алгоритмов предоставляли свои продукты в виде готовых программ, импортируемых библиотек, отдельных скриптов. Однако со временем стабильность работы программ стала слишком зависеть от версии операционной системы и установленных на компьютере зависимостей. В результате, зачастую наиболее распространенные биоинформатические алгоритмы доступны только пользователям одной операционной системы (тот же <code>bowtie2</code> отсутствует на Windows). Чтобы решить эту проблему, некоторые разработчики стали предоставлять приложения в форме контейнеров <em>(conteiners)</em> - полностью изолированных от операционной системы самодостаточных наборов программ, включающие полный набор скриптов и их зависимости. Разработчики приложения добавляют в контейнер все необходимые компоненты операционной системы, и проверяют зависимости на совместимость, благодаря чему приложение будет работать без ошибок на любой операционной системе. Запуск приложения в контейнере означает, что программа не зависит от окружающих процессов и компонентов операционной системы. Самым распространенным менеджером контейнеров является Docker. С его помощью на компьютере с Windows можно запускать такие программы как <code>bowtie2</code>, <code>hisat2</code>, <code>higlass</code> и прочие. Вообще, разработчики все чаще предоставляют свои программы именно в форме docker-контейнеров.</p>
 
 <div class="expand">
     <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
@@ -1720,7 +1741,6 @@
 
     </div>
 </div>
-<p>Самым распространенным менеджером контейнеров является Docker</p>
 <h3 id="документация">Документация</h3>
 
 <div class="expand">
@@ -1882,15 +1902,15 @@
 <div class="notices note" ><p>Образ - это неизменяемый файл, содержащий исходный код, библиотеки, зависимости, инструменты и другие файлы, необходимые для запуска приложения. Из-за того, что образы предназначены только для чтения их иногда называют снимками <em>(snapshot)</em>. Образ используется как шаблон для построения контейнера. При создании контейнера поверх образа добавляет слой, доступный для записи, что позволяет менять его по своему усмотрению.</p>
 </div>
 
-<p>В результате в окне приложения docker в разделе images появится информация о скачанном образе. Нужно обратить внимание, что название образа совпадает с названием, которое было введен в команде выше. Скачав образ один раз, с него можно запустить несколько одинаковых контейнеров.</p>
+<p>В результате в окне приложения docker в разделе images появится информация о скачанном образе. В данном случае это <code>docker/getting-started</code>. Нужно обратить внимание, что название образа совпадает с названием, которое было введен в команде выше. Скачав образ один раз, с него можно запустить несколько одинаковых контейнеров.</p>
 <p><img src="/Programs/Docker.files/image.png?width=20pc" alt="Image"></p>
 <ol start="3">
 <li>Нужно запустить контейнер. Для этого навести бегунок мыши на название образа, затем нажать Run.</li>
 </ol>
 <p><img src="/Programs/Docker.files/imagerun.png?width=20pc" alt="ImageRun"></p>
-<p>В разделе <code>Container</code> появится название контейнера.</p>
+<p>В разделе <code>Container</code> появится название контейнера. В данном случае это <code>condescending_bhaskara</code>. Само название может отличаться от названия образа.</p>
 <p><img src="/Programs/Docker.files/container.png?width=20pc" alt="Container"></p>
-<p>Само название может отличаться от названия образа. Нужно обратить внимание на <code>port</code>. Зная этот параметр, можно обратиться к запущеной программе из окна браузера. Мы можем узнать физический адрес, к которому нужно будет обращаться при помощи раздела <code>Viewport</code>, в который можно попасть, если нажать на название контейнера.</p>
+<p>Нужно обратить внимание на <code>port</code>. Зная этот параметр, можно обратиться к запущеной программе из окна браузера. Мы можем узнать физический адрес, к которому нужно будет обращаться при помощи раздела <code>Viewport</code>, в который можно попасть, если нажать на название контейнера.</p>
 <p><img src="/Programs/Docker.files/port.png?width=20pc" alt="Container"></p>
 <p>Либо можно ввести в PowerShell или cmd команду</p>
 <pre><code>  $docker ps
@@ -2786,9 +2806,6 @@
             
         
                     
-            
-        
-                    
                         
             
             
@@ -2796,6 +2813,25 @@
                     
                         
                         
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
                     
                 
                 
@@ -2868,7 +2904,7 @@
 			<a class="nav nav-prev" href="/programs/" title="Программы"> <i class="fa fa-chevron-left"></i></a>
 		
 		
-			<a class="nav nav-next" href="/es-protocols/" title="Протоколы для мЭСК" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+			<a class="nav nav-next" href="/programs/higlass/" title="Higlass" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -2878,19 +2914,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1664656045"></script>
-    <script src="/js/perfect-scrollbar.min.js?1664656045"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1664656045"></script>
-    <script src="/js/jquery.sticky.js?1664656045"></script>
-    <script src="/js/featherlight.min.js?1664656045"></script>
-    <script src="/js/highlight.pack.js?1664656045"></script>
+    <script src="/js/clipboard.min.js?1664997855"></script>
+    <script src="/js/perfect-scrollbar.min.js?1664997855"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1664997855"></script>
+    <script src="/js/jquery.sticky.js?1664997855"></script>
+    <script src="/js/featherlight.min.js?1664997855"></script>
+    <script src="/js/highlight.pack.js?1664997855"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1664656045"></script>
-    <script src="/js/learn.js?1664656045"></script>
-    <script src="/js/hugo-learn.js?1664656045"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1664997855"></script>
+    <script src="/js/learn.js?1664997855"></script>
+    <script src="/js/hugo-learn.js?1664997855"></script>
     
         
-            <script src="/mermaid/mermaid.js?1664656045"></script>
+            <script src="/mermaid/mermaid.js?1664997855"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
