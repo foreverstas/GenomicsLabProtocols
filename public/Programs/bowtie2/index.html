@@ -1,0 +1,3046 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.88.1" />
+    <meta name="description" content="Epigenetic and Genomics Protocols">
+<meta name="author" content="Stanislav Romanov">
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>Bowtie2 :: Epigenetic and Genomics Protocols</title>
+
+    
+    <link href="/css/nucleus.css?1665602194" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1665602194" rel="stylesheet">
+    <link href="/css/hybrid.css?1665602194" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1665602194" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1665602194" rel="stylesheet">
+    <link href="/css/auto-complete.css?1665602194" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1665602194" rel="stylesheet">
+    <link href="/css/theme.css?1665602194" rel="stylesheet">
+    <link href="/css/tabs.css?1665602194" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1665602194" rel="stylesheet">
+    
+    <link href="/css/theme-green.css?1665602194" rel="stylesheet">
+    
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1665602194"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/programs/bowtie2/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <!DOCTYPE html><html><head><meta charset='utf-8'><title>Converted document</title></head><body><div><img alt='' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARkAAAB5CAYAAAANk1X5AAAACXBIWXMAAA7DAAAOwwHHb6hkAAAwJUlEQVR4nO19CbxdRZnnTWachVky04Mzg9NjL6Hb9Dhs93sk7YCK2OKCIqhpkVZwQZpFQA0KKKC4QFrWsIrQEmQziCxGWgICgpEoAjGENYGQkJAQQkIwZHlZXqb+73x133e+W3VO1Tnnvnfvy/l+v/ol79z6ajtV/1P11bc0Gl1CzWbzfUR0q0lLTVpv0kaTnjTpSpP2Hen2MY3t6+s7yKRfmDYtM2mTSetMmm/SNJN261TFu++++3839X7VjNNvTD0vmvS6SQvN3zebfw80WcbElGf4DjF8UzuZJk2a9J87NBxRZPr6HV8bzW+fL1imYaczTLrHpMU8Dzbxu3nYpAvxXvbbb79/XXV/aoqkt771rf/RvIyfmLQ9J90wkpPWLPC38ALPauM2ky41E+vfVVk3A8KanLrv3Guvvd4YUeb3A8a8VNpjjz3+V5XjUJR48fvaeW9MWWbc9jdz4X5VxoBJT5s0z1HXIpOONqxjO9S9mrLobW9725+YFzA3YuI+PHHixP823O00k2qiqXt1RDt/bXYe/6Giug8y5W0JrHfebrvt9l9DyjWL5W/23nvvvzPlH868S/C3eX6UKvMJPHcl89tCznMk/720i0FmDff3E0VABh8Ow3sBA4rkn23m5F/bfHvuued/EQC+Unwc7jUfyT/tXC9raiMz6DuZ9Fv1wnBEutSkg5HMyzqfkm2ozHNXYxi/CmZ38CaeLLINAJzzMGFN+pz5/02U7GJknlvK1m3K2MUBbnNMOsbUeyglW369w5keWcd45nuS+7uHLA+7twzeR5HHtOX/8t/PdDHIvIT/G6D537EgYz6G/9708ZcMMC8L3qewE/fUeQ3nOcakF/j/y8x47lp1/2ryEH8V5Mue75qUZtL/mfntcTXxvzhc7TT1zZR1Y6tsJur/1PlMm96uwQi7hJJ1n6PKu6ShZC88PotEvgHzNf2riDpqkMmmsSyD22z+/UdK5IV2bD7jYzLv4M95bH5q/p1kUj/zveCaPzVVTJBvqC//cybt7MuPyaoW8GpsSzvdTrPg3q0m5Lx99tnnP/nym0n3t5Q+ky8tI5+h9PEDC/gNrnxmPD+g2nlqRB01yGTzHsN9/Kr591g1NpTDuxbzlv8/XfDeVF3vanISH4PkF/qjeTwmz2fVCz5uGNr5K1HnNjNB9w5o5zdVO71fuyzadddd/60ao2/68uIGg8Sx0uS9NrSeGmT8IIMPBCXH0ecbyY7mWsWbeZtoP4zmSPVvTL3vlLxmnN9WcTdrkmQG+Vm5OwjhwYsyeVeIhfRgJ9s4adKk/0FpId+sED7syEzaINr5syL1c38lyPxjTr2rBDDcGFpPDTJ+kMHHj/N8i8u5twjIQBiPCwv1Pi+ptpc1tQgSdjWJ/ymU1+S/XPBuhkCuU+2k5Bwt2xmsT6GuOB8r0QYpZLwso763qMl/dkQdNcj4+abxGHyc/55TFGT4742Cd36VfaxJkJZzmBf43lBeHD3UlrOvU+005b9L1mUm5/+L4J0meBeVaMOdopyNpr//x5FtDHZLakz3j6ijBhkPsdAW7/6dXE5ZkHld8L5aZR9rEmQG9wj1oiaE8poJ/0HFe0AH23mgArQ/i+D9tuBdWbQNGlSxUKCY1+ArfN4VakVG7JyCtX93IJBZZ9LJJp0VATK/5DF4O5dTJchsr7aXNbXIvLBPy4G2EzSQ9yOK9/2daqc4j9s0PpTX5D2zIpAh1QabBoWR1K6b05934+Fo644CMq5xrEFmNBKryMtJ/JFQXpP/y+olNzvVTjPBPqbqmhTRzisF37NF2xCp+r/J5P9kbB07AsjwB2OyK9mjkIevBpleJMeZ2CvQ1GRe9o8EH25+xnWqnTwJ5a4p83ZH8c4WvH8oUr8Zp7dSmDnBNjMu/wLThyL17AggU5RqkOlhMgO8QAw2BKNBZgKUWDtbviUdbuNkNaGuD+SDKcBWAU4/LVj/Har+8zBZcZNk0j7m7wOh/BdjFOmppwYZD9Ug08NkBvhUNZGDjkzUbkM0pRPtg46KnWAivdwIEKgavu+qHdAnYus3fAeouuejTYU6k19XDTIeqkGmhwm2GyQU1igRYuYefUyeixzHhcOqbp+ZXFeoOraYifYPeXy4Ujd5Nwu+Z2PBgZXwnhZlYFcULA+KpRpk/FSDTI8TJRbEcjL/Cq4fctig2n2JetEbDGj9ZVXt0jdYAJgQsweTD1dBq1SfDomtn5JrVrkTuqBYT4Lr62qQMeXsbNqwO0w6zP8nhHyMqqJuBRn4VYJ7CYwJxt6UtUtjmDwT4J2aOvdC3bAoL2ybh68pBsYm8hjmuWjy5Mn/SvLCBseVDwaOvIORL21RgAXxGNO5ixXfrVEd9BA0iCnxcibLPjKPzwz6e0y+19Ti/FFs/az3sk6Us7zTjrqGC2TM38easu7OSybfFFbBP0OXJ3Z2j5o6v5TlswcAH1jfub4yuglksC7Y5m++Y0y28wduhmnzhxsBx3qT96LA8YHsb1fz72WYj456ocV8H2tFhwMdKUU0KMGF8jKyykYc48vLeiDrVf4ZeXXAINDU83vBM+DRho0iarey/edAvkdUH+AhbSdffjaWm0lDMiYsnDWkdkLUgaOgo+2lQcakqyjZmaZ83yiQudCzOHR6lCczdIDm8Xu26vivkbLe971389uJgfV1XE+G+47xkUfpIJAx+cZR4ptmq+DFrSPcfl7G7ldfVu3C/Ms8Yjv64h0fSkQbeAfw//Q4Dd16vqrzBpxGEjIv7h2SmdExlHcPxZvpU4WdPslJHWTcxz6BZT3fC22jjyjtpQ8T2ut+QvHNUm15iyffGyht8l9o8ldJVA3IOJPruISdGY/Rg1zfOzSfqfN2+GMRPH/Kk3szdIEovQN+Cf6Pc/pY1KygKpBxpixerh8f7GcV33qtrgD3I+waFgbED3O+/hC1C96FI/+V3OZjVH1QFTlXulZh2SM+iC9CVklp+ersIL/GOHOplx6jMNdUCy5TnqFNBUIErExjMXEEb2FDRBC23pT+Sk4P5TV5b5B98LgIHUOJo/QQgBmUUZXpT0TbC4MMXHhiN+pL5Dhm54EMdH4aju0+PnT8+/nYvVB6B3xdTh9HBGQwllnjk9Pm8QwaSxSYO493LLPaziDxgACIzON+AMic6eIz7f8aj83HTfp7xXN8Vp2ygxIoPpXLNNTofdSkeV9OXSfJ/JFe3fSiLRrVAIA1VfU5+OqZEpehEmT+Wudhr2qyrdg6XwkQNmP0IUweSlvpRu0gi1IZkClCASDjPKJaVwm2PZQc0eRY7pLRxxEBmaLEN4yI1LGKwUPqXR3q6SN2ybik+AU7ebNHma3Qp8roYybI+HZD9r0B9JnvMcG3sJEnF6LkHCgH89jQAXIcY/bKqesyVVewkNnkPUXxYidym3kve0aUsS85tv0Ay9AytG4MtZ+HAWIviN9fc714Buh+0Yb7Q9tQlHoFZLitGJvn+P8Hqvfl/RD2GsgQf3hh2qJt/SjjQ0pJmJ4V/P+LxJg+1PAIZYuCDDYDXPaNzPctyef60LoaLL+qp+cPTavRh8rK8s7LWielEWFBDO9iGhxo6MuWqaiHWzCW1msjw0H0j9GkZdeM8sW8R/7OQCbL/7KvLFK6QJ32cN9jIIOzv3VnuZsa02kZfL0EMmP4gzSoCU/JDrdVZ5ZHPUpuRjfj/83E53TuR7MoyEBthH//GZejZav5Yg9KzoK2oh/mj02LT+4u+hs5oEHKWTZF6kFQYoy4UZVh07ddPOza0icfgTuFqIBflFy3eicCypO/Y6L7ytI7QfjfiWlLLPUqyPCRQL63n2Tw9QzIsFC1BZoYj0iQGfxQO8bHKcupCmQc+mUn5XaW0q4GZ+cPT6vRPxR8uQ6b9HYQky60LkvYlbCwGud0HRen7RqY2jWHt/IXA5MmKhIjl5cCSr37MM+OV/V5b61MP/ZTi+5Dse2JbPuoABnodGTw9QzI0JC/pcGdeDNtFBwMMtp9KwvUXX3sCMiYv78T0lnp3W19aLhNSgRWli9XSa6M60hJaF8zCUy2TpW3Fv56Rfv2dQDRkhgZjCbWVWjthBy/H6LqO9hXFim7rhh/O0VoFIHMrzL4eglkTubx+Sz+LgoylAiCZVvnevrYKZDJd6sLQZperJQojOUluYBPzh/WNn2L5TGqyqwj8EVKxx7S6SJR168z8s2BsA07o9D6Ob6OPK5dqfPwwpJ55rn6CPkVpRXyFse0pQjVINNdINPH0S46ADJPeeobOZBhtf9+1dCoZCraPX9Y2693QxTrJk6c+BeUHHHWBrTlj9CDafo9zemEOFDH+6IDWuJQJPepPjuvCyntBB3pLuiZcDkIvQGfwtIwEuPw9ZDxK0M1yNQgM2Igw4y3lwCZYI9wPCBygW1zdY7NCT6M8yW5b4WQsJPCzugO1ekPouNqAH+Mwc8Cp2bina7NAx+3+WpV3i98feTF9XzE+K3stN0S96MGGQ/VIDMMICMaINOLlKguz+5LQn88zAtVL/rgKIbcOchKNqsyrkdnWK0cfnOXZSxKtOusJscaZq1QOViw3pbq/8utnImv+66htHq0Tg+zzGccR1zQE25tnrNxfjGLA0HGe1tSJdUgU4PMiIIMN3aeYO53qcxDbkBpZbPXi3hsM3xHU7tQdrsDwOSuZZbp6EFaMM1mAjIvJqhURW/zdMdHRBhJPpGx+F3t29gMDENCSfA33ILlHkVjtI6LUh7IUCJLei4gvTmkvtEMMs0k4mjIWA0mT507HMg0tF2Ci9k8O051yGs+n0cscPbpvdiEY8zFPkNES8iXUcbUDFbEMkJ86XvygMCkF2NiMlmCwBp1sDwKNwon49pP9f11+PqNLTuGAkAGFre5An/IyELqG80gQ8kx3XUJ8iq1X4o4DSR3SJBpJP5bHhIFQKekpdps/v9mSvtSwbGllGMh7sBtjgW9CUJhCreOdvkjsYPnlZ+oMprNxK+GLgNWrheU7aujPm2g9nQnZTN5IFMfl4bXn8yOCjJWZiFReAW+XHxMekA16mNRhWcQ7yakHw3nXX9Gu3/lAxkeiPND9H/YmZXs/6pO6q+wQFq28+ZGASXBEKpBpgaZrgAZbox2e/ms0u4tHFw+p95fiDr6866VJekX5Ekz84CGw5NIHqf5e1WEoxS178Ly1bQLUA0yNch0DchgcVMisPIt1teybHKKkkOH5rMRvBMpcadwhU2UxJceUANycVY5pIzUYqy8ixIvdnnbtYUDkY3BpIUA3ufaNIZqkKlBpmtAhhuAa+atqvGZjSlLuKVSi+3JsuFBKHETIF/4gJ1Imlijd53IO79M3TGkDSspuZGS1/ybzbj/HvlCzT401SBTg0xXgQwXdrNqPFJQTKKiRO0GjeeULdMM0t9R+mp8vlbhZ2vtB1TdR5StO4bMS7zWBeqONBuhZmLLr0GmBpmuAhkcE8iv3zG5UKEBxBETXlL1XRXstNhDpI5BTeHigc0W9BX2nMYwhZ6wxNfaISCD9EiMzApUg0wNMl0DMoZxJ8pWUnulk8G8KLHt0bGhX+Od1Tl4GZhoMcc2SjwASo/rr/FLvsUBpqurjO8UQuxy8o/q5d1ISYTJSZR45F9C6UlxSUwdNcjUINNNIPMD1ei7TJqhGhSke1KUmonLhCzVf6QBjyNvJwUeR16GM6FO9s3TNu1xr81gkhIN4vkiX3+MN70aZHoLZMzzj2KBuxINmd2Mh/vLngKZpvLWRonPGMQVgnvAO1SjnI6OqyK+Tv5tFijEOCPva/fPq9OsPJukThElYUBsOxCNwXlUo/bY2bkB6QRvDTIe6kaQKZG6F2TYw5bU2djaJ+K+cFzrV8TvK6DnEVxBMYLaP0JkQCt4jWNA26ymfUQqWgKndWaQvt+n4tsMJ7H7h63ipXk9jRF7qhftvzS0nhpkeg5kICe8KTb1ecIddwXIaD0Vky7Xedg6WeY5I7iCgsST7Jhm4vZhuxqY/ULLcVwTY4Bux7a0Cj2UokTtESNOycn/suj/FRH11CDjoW4EmSyZTBEacZBhs4GFgnmTdGWp8kkr7LV2YKsmSr7ap1OGFXNfRLyiZhIBz7fFXMYvu2PX81lE6bCvt/jysfW41F8KBvkaZGqQGVGQYdshOaiYyJDB3CC0aCE4vZXaBbLesB9FCVfWptzfZYCCTfkR7Ib6eFBeeRBoyzCdw0XKbGMzAn05so3R5h0UEeSuBpkaZEYaZH6sBjUm5UeRiyBT3ri+JPi6rgcOs15QAxN8y8UOseDMCs63FlCij7PJUc+jMb6HqyAOjyEVBnHF/iVoIbPrT1jA36LaOSemjjIg0+xMmNoaZHYUkKFELybPr0tmaubE+42gMaSC2lPiqW7Qny47qPqD+G1LST8sqA83NotVnedV1J9gMnVeGDHmmMTBQm8uvzDIkCPypkwuvakaZGqQaZHj2vo2cTySkutZJu/dzcTnCiTfUjZQibWyKedIPaEALDIPT1Zp+DirbL2mzDdROgoCbnAmlC03hljedU0AwECp8IDY8isCmZ/0JcanKafuNcjUIJNJJuN5gmmTXtQZfI+EvMBQokTQu1SUudpno+OQTSCGU6kjG4fCHRCD/tMy5RUlU+/h5A77AgH4jKLhbKsAmT72rUPKPUUNMjXIZBIlMgrL9Ghooykd+uO1Rklbn2Z7YDTvzQkLhpepQXrQ/Hs0bpxgFGnK+xAE2jHxjCgd0nbbcJsXWGI5zCRMQJM+Z/qyf1mBdA0yNciMJMisFExtTrcz+KaoQXlTKK+nvEtFedhRZDqsxoSn9NWvLwVf85oB+6DinVKmT91ENciMHpBBe3xCeJ+McsRAhuUAUrYS7FrB5J2sXsSkUF5PedLX79MhPLjqVSDpSj8PbQM77NoiBj7KCLGbqQaZUQUy+qJCpu4yK+BwqbKBmdqmkkzh71WN/EAor6e834iG3x7Kx4OQBTQ3xbSDhDwEwu/4nnQn1SAz+kCGhfBXdjXI6MBoFGFwh/AgqpGlHItTYoxpy7sukndBBshMjyzrYTGAwWDnKQvX45M5BSvOgfgDYHkn4++SbalBxkO9CjKNXnD1wMcNyfDxTIZ0R5uK9x9CeT3lSb/CUVEVKe02c5Ua9Dsiy5LhbO+K60VbWVJr+Z4Y3r7EMFT2o+xxtAYZD9Ug00GQMYz7qQYemMkgyDFJPxnK6yJK3xb9IZTPMZkuoyQmlP37+Yg24IVJW6lfF+tNQnby8kv6fQyvGc9Pq0mQGeAuj2qQqUFmRECGEkfbLQb2kh9EGPiqQIbV6qVN1MbQq2e9GE06gtI3VdtDtYJJ7c5MernMMYXSpgBBwmxLMCuQbamPS6MLZExd39ghQAa6F/L6K1QRD4RAaJK3qB/eZuKCwWVDFBJzGc605gqe9WgHwFKVFWQm0NduKIq0rEh4WhAlsbBbgBXJO1Xwwq6pzT4osrwaZDwExUte2O/gcqoEmVc9dX6Jx+dz+LtCkPmdp76R9yczEkSJ79q2wPZ8q5Or3AcZkuKz/lXGqoWwIcTrHSV2XNp2ahC8TNn7xPbPboktUMQoBqpJFwVQLhotINOXYRRbFGTMb9O4TX/Pf5cFGWkL6AytY/pxKNf5NfxdFGQ46qls622e+nY8kOlzuF7AbU6osSVcb1JayLsR/k5F+Z9Q5c8N3anxjuZpxb8qNhQJvlKyDJePHh9ROoJCsIwqo7yeBBkNFobvxgy+QiAjFs6ZXM69RUGGEl/Msr3OgIJ28RLffvJ1dJGdzHjV1lNdPDscyLDS2xLV2PND+WEyQCp0inn2FZVtLLWHOlkI3pA6TN43NJOIAblfCR+JF2tTjP+X5YIvStfHU16vgcwK5utTi+G7GXyFQIZdoMK966JGMm+uKwIycGGrL1Oa7EHAw4dxXcu7kW9HgswG/J/Xghwf5wXBiIAMFpFhfD+29Iyi32IFu528TBURAEG9xCtD+Cix0l6oeJFw1dx2vDLPd6H0TZNN91GAlTUl5937igIF77bkCzkqhI+jaco6S1u59wrIsBY6tK4X4G+9I+3L8IZYFGSY9xhu11dMHV9Qbc3cXVNilT54pFXHnsyPg7DXO91hu/eujPpWMiDi/z8RPDN8PMMOMs3EFeUy1SmbXuIKOxbcjNLe+Z8KATY2imyT35g0M+sYxIPUBkyhV8pmrHaldMjYmRFdxXZWOkC/JrDOQ1Rb3x9Rp5N6BWSEDGYWj4X07bw6a66UAZlGsoOBPG5zM/Fl3ZKr9GXEZbeL0PDczAqqdq4sDTleYz4xqB5MIvYWbk09+SE3RLjlG7m+LWJsvJclwwYy/JW42gMuOl0dI6gMJVJX35RYc+eCDDuskt7jMBkQCTLXxQPOyvYGQaQgHRh2ASFvv/pjLKIpHUoGQerutqkv8QD4MKd5lCgkPkdpw0/Ylo0LrS+jHV0FMibNdfmHNu04jn8/FVrk8p1j153TxzIgMzjHTB3385hLU5VnfJE5aOhohUVrP9wrQvWaUC4lblOgnyXlgM5diV3kfCtrXaNsyLuYGDaQMRm/5wCTZTzJX3X8NjVkoGLItOFTjnr68XIxiXD97IseYPI9K3heianX5J+g6pzuyYcvxQEYPEp74ZMD+/aIeo91lRGasq5sQ8jw/w1cX/QlfmpQ5hJ2haEjTzyB565EQzvBI/lv6fenKMggLUa7ADa82GBCgZ3f6mYStlfuJuDKo+0aH2Ai2oldxBrurxb8/8HmQ9sy3hfeP/Ss9K55DsbS5uOon1ZFAYBkHXk9ALepMe+Iy5qp6sNu5SuQ84i+YueC4z/kdfbSY2kWwOydEMbjqzyf/oXHapoCmQvw3F7jC34roJ7D5XxTtXOGHVe7g5AW12vZ3mjwWMRB50+g9NGgX97YVEGmzLMCFtcG/tp/DTsJ+FcBL9BU5FkdWa+Wwp9u+w1gY9kUvmIunZ1UwgQOrZe97m0N6LOvri/EjXCazBh+v2jdoangcQnHIJe6AJLcsWKxX+87ElOiBhHVXo+j9hTxgrrfwY8P3eNqnSDBsPbYErv/MQz8i1W52OHArk+7NcE8hXb7zlmFUvt1fF56SY3DX4byorKL1Et+n6tR0BVQzBcWHDRfp6+K7DTSOkqOHdKR+KrIet+sykS87/soPxxuW4rVbjY8P1dlQIEQPn0BuCebdColynczVb7Xy4acYfnO1E4m184gVCaD53zxMI8XEhYPvtSw+zrXTPI9s/qHr3iB9saE922aOr5OCSDCEBc7lvUmLeHd1Xl9kc7RcurDZcPBuPqm5ISBkwZ2dNi5PAXZDx8pdwks79jI8TlN8rMsNIi3da7mlKl3QcKqOdbmJqDTKS1Y3rrh+m42tX8dslKwTRKIBysGTFbhhWInIeQEdoEEG5KCILhVZTtjKzmOkm0B9nqFylxh19SjRGm9kkxXCtCqFHkXV9kOU/YlomxsBVtCX2yJ+Rp9KqP4NvKDQJSCGgu9XbdTNkEWAFsjHBmhF9ESKJs2f1QtkGCZjCgjFeYFgjj5OyWyAGmJjq9XiGlFV1INMjsgUdrnSqbbAUq2rjavUy26RDsOU4v74Iy8O7P69XRSRmcU4SpUlPe84AeA3QmBGBS+sra7pMKVuGQQeWQW1f6q/c9BKVH8npKdQEgfW0c3UQ0yOyBRWotxPRS+XPkcjqyiHEjlEXQHKB0VIChAW197rO4TYus2PDME/2bfGEhip95SFrQ4tl5Lfe1B9K7idh2sni+WANSLVIPMDkha/Ri7Ga3vAdsaUte2sfKHEKK0M6cBeTXoIj7qyKgK/UVcHzi0KnM1jR1XoUHayS6ixK5luSrvBkrfaGE83lu0jm6hGmR2TIL26W/VBH+Zpdi44YBuwBr1+4oOKeRNUfVclJWfdSZKL3TelSxQk/3TvvwMbo+ruqMDq0lqJsH0vLKhGBuubqYaZHZQokRXJM+7v0xbOxF7qNnuaAqKdW1mDLzIz1Z5V4ccc3zEt1lykeNGy+kRsNkeXbNNYFuEqN35s114D0nlq16mGmR2YIJynTp65KUbqqwfXuqoXYj7bVdeMxE/41iIpY9v1K6r87orbhTvfLTCGKzHS6n5U7tphe1bKRem3UQ1yOzghB0Cyyeu4+PAcj5G3MlHE3mkwC1MVHD3DIIRmg7ejlsip/2RY8cT5YzbR+xqYoUq27mbgdyK2n3LTCtR/Zg+4ftXpZVFbq66kWqQqSmTmiqmEpX02i/K1drED/jslEDsBGidyP8ylXRDCYKXPBJB3ExalNWOviRapdx9bS4RkzrTloltlTpmAT9cVINMTblEaSfYmBQfLFum+oKvDzEko8Q+Q8pEqnB7cKbq20fyeLRBIVTNY+uFZS4lKuktmRdb0z6uyv5qsZ51D9UgU1Mu8dde2vUszPra5xHvSqShYOaNkiUtv+irIHSsKecxUeYzITwshH5KtOP+yGphAPcb2RfiON1shPZH8XxjJwTuw0Fm3rybktvKM2hIhnWyQ9nw95wPqbQri5p6lEjd7FinxwXLSoVfyXIv6OB9Xk7Oom0AsatDaa5wdkQ7ZASBzTEKc9ouCbu6hjgW8Y5GAlCUq89uIVLa0SEp1jVCTaOIWOj5ipgQkEucgd0EtFfZevb4wEgAJ8ljAvyqhraD0jc8a8v0ieUrcpJPjuA9XPJCOzqEjxLL2ucF7/qJEyf+hco2RtmMofy+qM51AcFqmkR43ZAUE4qnplFIZhJ8OeBrhGPQ1XC+k1HOuSL/a5FtuFrwDjRKCEYN/76q7V5fqpq0xnBoPCZ9S+bzYI+2qN3OT0PbVlNNPUu8m8myhpYJHtSclsOU9sS1OUbpzOS/RvBuawS43MwoK7WQIUMI5XVYYwep/1O7pvUg0FLi5QyW1/A05/JMuMWlv1NTTaOKHLoqdoHA/8s8BwBBD6btmlm77YOP2dA2KI94UW43NfF2XgLFZ0J5Tf7jY/vAN0pRMgrVPh3qpaaaRhdRu/u+syA8Fb+PZw9hMs/RjnImq6PApyLaIAW/D5bpD+/MpFnBDyLacbnsQ4jglxL/NGVAxuvgu6aaep5gHa0m/dWufLxwZXyjh3UeWE1T+gr7qpA2aK/6Jp1bQb8eEuWtCL2ap3RolRcDeWbK4w8lDqnvZh+3N7mSAu1tZV1w1lRT1xKpsAlmYeyekVcquOEI1ab7QGnZxKLANkh5DISt7yzTJy5zSt7OSxPbfMmdWK6eDCW3SlL/5bKQ9ukjHXlMHmqqqefJ4WLBq9LPAeMkIKV8xHBURKmav81GIfCRw2IaXvoKC30tsTaq9P6+Nu8a3iGbWpU1Htx+Lf/5fEj7GJzkru/0mP7VVFPPkOOL7w2/QOqqWytY6ZhPefGEKAkxu1zxVObMCQtX7UwezPKdw0fCJYonU66EkKpq/CZFtE9643MeU2uqqefJTO4D1CI53pWPXSJI6+rVcsFypAC5i1mbp+VJ6Ri/SEEhXkOJdzNS0TBXC5kSHRtpWPlYTv7jVR+C1edN3l+HAnJNNfUssb2OFOhu0AaK2NrD2E0tpktVHqntmxlbWPCconYxlV/laiCzYVizSO/IdMS9jLz9kW27XvC+EMNbU2cIul2QS5r3MaExCizlu4YoiYkkAQQykhmsYo/ofU+o31crnyhw+7lI/P5ciEtPag/G5owNXLJv8kiypBEg78FuhNKW1F5H6woolke2TdqN5cqvMsqBMegalW6yv/Oi0b+vCfkQdIJw80aJguLyCq7v4b8Ilxf3sUHm5QhrW6QgPvouE+9kAcxq+KYyN5b7cBLbyWEMn+f3ue9ItymTOHB5VrwimRBHKeUD17yEXVWe03x1aVIAFmQtHUrwB6PaFeyICur+gm+pLx+lr6+jQsuYOr4k21fEcTq3wRWx8zn7OzwNOn5fF6MsWSWxz+lCY6aJhtyELGfwwv9XwGF+TDmIEEl8TDb/v5YVS1txuiEOKNPOqok9KMgTSLDpDNQ5EBfb8Nw6bHPA4a3fl5a5gp6RUsKLtL6Wym84blS2ReXwpvKo9LEI3q9LXp/NFmQpNg++eJHtO1y17y0x/JY4kL39SFjXHS0DVdOub/AzuTsr4/mvFHF7S4OMGa+JopxBgTsNHY+DBencHruDmdPg3S4J9Y5uAxkQpf1IB4MMpdVWHulkGwcJxx5KOx6H/ss9lIRNwXZsIVsOn4iX4SrD/P5duVh0GJYsoiGfJBagKrPjgaMqWbb5myLadaQCWOdLpCTWtj1+/DKmfZQI3VvHlzIW2TRk+iHD3ezGv93g+M3pc3k4iOWAVYBMa97ZWN3m/6fxs8UR5XxBzJGWXJASNYOVXQwylxYBGaWqMbuTbRwUcjnMBc6MLYfSweY3NCL0XPSRoUr/t9i5yLLzArsr3oPUuDhv3bqFBMjI4HaT+TfcCm6ltBC850HGLJYbRTlv5mfn898vhZZD6VvTlFKkdcQ1mkCGxx8XNZc73JFUS9qTmUn3xsZgAlBR2ro4atKY/OeoNnj1dGLJsZMJ1sEh5a0PE7qqdnWCBMh8S7QbsjEI5aFa8CxkDaMJZKRRLY7GeEYcfhm/hZSBY7AYuzYFU/OsiY9ojG+k4aKiIDNsBB+zanG/hPCyseXAL7AqJ+qsT2nB6ZrY+nPKnqDa9uUIdixO6Zd3nTQa7TayC0VpZSNShb3Bu2MUgswVAhy+KObiNvP/vw0pg5Q3R5N2Kdqe4aauBhkWOEr3DdtifK5IInWzESP3YGW5jYK/knAoggAUUhnvvhhmao86cHDF7auM7Ps0H4q9RXsRe8sqW5432kDG8J4q5w6x9jgAJ6KMlDJlL8Un7wqQwTUeC3nO4a/aDebvH5G6rsZ1XcEqoKPQim1U9nYFi7pgO7xEaT2WgRhfs2xmIB2tT6+6fVWRBRne/vdze2G4eQK/m6NcIIP8cGjO1vgTuKyd8QyuR+2NF8YCz2xezodopQf4on3yNStuMk6QQm0XyKAeOAyLuWEj5ZyM5/XJkeN2nvzYNgLlieziFTpkJ2hZH4AKH1v0GbZ52AGzRvyB9lgHgsoCyw1bMc/M/8fZsecP9hioYiDSqZYL+UDG/P8NrPMzxaTDtMN61MuO7cdbmYydB0gwFOZyJiCaqtNDAJS6WPK+Sb0EV7qnaCxsnmRyFxPlhNzw3CX4+7NcexYl1n+Q/Q3W4eE2PlDFV7fTREM7UygSPiXeye34F1rLLpChtKB4Dj9rCYitJbosk5JAeGeJj9UrDlnG8QLscHs2YPL8E35TILOIP3z27y14Z4F93omSEMSW98QC4/YDwR/kMpYSm7gBTnbcoQE/CFBQclTr4juUttQ/lcPvtMxwcMMFXqVDtJ3jmNl1/KoCpDaQYd2wZ/iZ5YPQ/yQxZltE+Tfy85dFWb9TZUMfJ+UNE0eE6wLAZTCF+rB1kdZDAWqH8nJEAWmFfEvRduQQxkNe3bb5wckiOFQXvK83KrAQ7wQpkLlNtHlwJ4ZdrQtkILvQICPjJ1mQwRdNzR1oeM8Wf19p28KykQGexO/lHaFVdNtLgcx2LudW8ffMkD5zCJ6Wpb29fjb/n8r+fAYTq2A4NXbVWlmZV6e8dYT5DdaPqP8o5IHTdErcrdpyX6JEjcC+owF+dr14tpLbszP/1nonJHbjUkPaBTJCTvVHjLP4e8DuuEgYRVuQMfkOVe/kaeWTaaoctDNVZqRH8LVQTDYVNkrUTrf11yyLqD1WdNQ2N4YovSWOAgpSlty+yTrSJEEGOwbV5kGBumcnM84BMm/UINNIjsY233LI03BR4Jn8NubVM/z3EYJ3st7J4G8GIvvs0bz+chmpGOY2lA73X8ocF/uE9uoaPDdKBg15kVzdGFLas6YrC0S+O8TY7M7P5FW51WGaZ59Z/TLz/3vtM6s3JtbugI1s6gIZGgLNbTheqZ384E5PuiexICPfOd4bxotj2tuxTW7r2DxAHpHgp/cwOUhcqdy6bQ0Jd+J5Qe8rCjJah0W3s0qiJLiY3HEF27Zo3jLB7zpJEmT0dt2CR0mQGSPyPcG8O4lngztEs1D+Sjy7E89Y3rMMIICF5JLJUKL4Zp/Ny+uvVcQTpgQ2jefyzuDfH8oJT/xDwbspq06WqwzoNpKwphf1t3THrEyEPSVaQPlzzneffWZNISgRYtvydmHei8U7+SznawMZgJL5/9nQ4ue/3y3yTONnLU+U4ri0s8j3AJ4xnthnsxq6IVyAMzSrQ9HsjOxX6n1BUq076rhE7TuEZj5XMdKLLrKdMszL5kaXWuYqkNlHje2giv1wgAwJExNfuJeyIMNCV8hiXoUcT+7QYUKBPDg68d/H5ZQlj8OZoXjk0ciOFbd9lqj/Q/ysUpChIU3mVh9dIKNJavfaMD2lQIbSltCZ17Xm9ydFRXdn5fURT0Z5UxXs3Y3ScbjXxYRPiSU1OaJcSlB6S/54p9pYligtk5ETBukU5BkmkDlRjPPNrraWBRlxxPk580pbHAgprWuS1tEiY9xOE7zbs3ShpIMy6eye0rpeR/KzqkFmigYLH8iw7yfcKqa8J1QFMv3i4YVZg6usjJ/IyptFhneuKOepRoC8gyexPNZV7uJBtRETeJ2YIEFhcHnrKW8vKnWqVSVJkOG/pX7QoH7PcIAMbhg7CTK8gOytzGAUCpbnbBRthhuEVSHv2eQ7TC7ELBUHac0uQUaF8zmRy60aZFoRMQCg/Mwlk8E7sTIdeHk8W/BVAjLSleWdWYOrbJYKW2KSEjSHhEEhZRSJa7qi9Ue08yrVzvfk8aitNNIBeTwjRRpkIIgV4zsoKxumnYx0Xua8MSwDMs6Jn/RXXoOv4X7n7lhJXUDoeQFQw20bhNzK1WrruKRA5mgut2qQkeM6jZ+5bpfsnB3ATZ6UyVQCMqbQH4uH21CJa2D5TCul79PzXoaP+BpxjSgrdZevyfw2idI7LmxvO35jw5NJXpkvoAw7KRZqy/xYDF0pjwFpkBECzS32KDocICPlX+oYPsbqY5UBGUqbiqynIVCFTyO569wQqHeFfkkdkWPkj3ZBQmFVybpaqhAkjktQKORnHZPJEIslNMiwWojd0c3n9lcLMoZhf/FwcCHpMylrYT4j84UqP/mI2mNpv+IyRoQvGhIawpw6dqvkaOc0Vfdc142YefZJSvsrxldhv+FqZxHSIENDt2ItR2DDdFySejdP2ro53MxWgFBJkBlH6Q/kFPGbXHSLImJtSZ9GqVhh1g0E9EhYm9rKIJ8Q/C1QgKYuP6saZC4U7+RQR3/fJa+mrduRykGGM0ulJrvgLzb/nsJbyg3qdwiIyyqYYQJer8rdzg6dzmAvY/dQuznDFSXrjSIsCoeuUD9PiKn8Ihc4+vGN4WxnLPGiHRxbq3pu/n8wj3HLGlnphJzN+STIzOVn48U7igIZlpms4mdok3XBYG853lVW8Evp2F6v44PGZaZ8RmM3F6LNzlfsdte6xo4h9wV6LP3WdIISezDka2kH05CuC/w0W92ZSkGGFQrtfNyV86VAppkO1PgM1/l58exyPCsNMnyXP18vFE9aWJX/Fnbp97PAegeFV0V92pYhvEhT/yOh7aQkmmVXavlaUtqagzIBO+HMb9/D39QefuYxdkIGJTv74YFWLuzcnlWAMhY2LuIZImuOZYdn9tnzDT5OUtpw8Xe4RqbE89xa1oaV5ijLwMfRR+2zpY2Mo6nD8t+2fXDxq+dYC7lhipXjNUQA/bSdz/JjyELlwXzwAMljsJnntJUBpbTMeVePcZY3uvszMD5nn1nxhgQZAKVJn6MhEHza1oHdimjzsXBHQcLtCrdfuuici8uMZtod6yMsd+oTzx7ndkh5VVpuy9vdO3MWz00+w7YSNIadUGXZTK1tBgZA6xRhojcTXzpbM9qJBTlsR7kyRGnn1+vxjP38bLGKW30qAgNP9OOY/zLxfLMWeLPh4g/Vsw+Q8gUE/SuUxzuAGY76juL6pqvnkH+dpfJnWrxTchzU7+8B7BBYR0YeqXJtznjBX6bbDMCxXveYACDW3gnyjzV2QduPJiKgqjJmajUK7Ew4sKF8di33Te5kpEnMoCsP5FE7lO285nY2z7+onsOcQQYKgMvO9SrPFGvjJtIkxzvfp23g+Dx2FTd0Ka70eHEFByArQrzNwvHjcX4RsC+BoeFJMa45O038tZ/KRygsVBj+zcTC7CWTf7YrghLcZCxY+xyKYdZHEKybbR6bhKvTsayBDdcW4/mLeITMZ8oixftGvkBoPXNEsICvFph0nCMnKH81U2WxCruvLCeZfBOaiR+Zr3Fo4zHiN1wwQJHyBHxUQscSbePj/UV9iZcAZwRRAASA26QLWOm1tfPiyxDZvz52a9J6BpccfOqQz6xtUQtk2AIbMkK46viwrQNgKnnRBivg553eeXzTizEZw4aWp7F19yGSF1raDIJyfoxzvfPQcaypppq6mMghk6mppppqqoxIuBep0ud1TTXVVJM91q4TcpDDR7pNNdVU0ygiUtrwfYEO0YeL/j+WY1CAF+3B5QAAAABJRU5ErkJggg=='/></div></body>
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1665602194"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1665602194"></script>
+<script type="text/javascript">
+    
+        var baseurl = "\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1665602194"></script>
+
+    
+  </div>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/" title="Растворы и реактивы" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/">
+          Растворы и реактивы
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/enzymes/" title="Растворы ферментов" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/enzymes/">
+          Растворы ферментов
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/enzymes/proteinasek/" title="Протеиназа К" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/enzymes/proteinasek/">
+          Протеиназа К
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/enzymes/rnasea/" title="РНКаза А" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/enzymes/rnasea/">
+          РНКаза А
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/labreagents/sephadex/" title="Sephadex-G50" class="dd-item ">
+        <a href="/labreagents/sephadex/">
+        Sephadex-G50
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/buffers/" title="Стоковые растворы" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/buffers/">
+          Стоковые растворы
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/buffers/%D1%81acl2/" title="CaCl2" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/buffers/%D1%81acl2/">
+          CaCl2
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/buffers/edta/" title="EDTA" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/buffers/edta/">
+          EDTA
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/buffers/egta/" title="EGTA" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/buffers/egta/">
+          EGTA
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/buffers/hepes/" title="HEPES" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/buffers/hepes/">
+          HEPES
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/buffers/iptg/" title="IPTG" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/buffers/iptg/">
+          IPTG
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/buffers/kcl/" title="KCl" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/buffers/kcl/">
+          KCl
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/buffers/licl/" title="LiCl" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/buffers/licl/">
+          LiCl
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/buffers/mgcl2/" title="MgCl2" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/buffers/mgcl2/">
+          MgCl2
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/buffers/nacl/" title="NaCl" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/buffers/nacl/">
+          NaCl
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/buffers/naoac/" title="NaOAc" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/buffers/naoac/">
+          NaOAc
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/buffers/naoh/" title="NaOH" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/buffers/naoh/">
+          NaOH
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/buffers/nh4oac/" title="NH4OAc" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/buffers/nh4oac/">
+          NH4OAc
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/buffers/pbs/" title="PBS" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/buffers/pbs/">
+          PBS
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/buffers/peg/" title="PEG" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/buffers/peg/">
+          PEG
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/buffers/tae/" title="TAE" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/buffers/tae/">
+          TAE
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/buffers/tbe/" title="TBE" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/buffers/tbe/">
+          TBE
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/buffers/te/" title="TE" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/buffers/te/">
+          TE
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/buffers/tris/" title="Tris" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/buffers/tris/">
+          Tris
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/buffers/xgal/" title="X-Gal" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/buffers/xgal/">
+          X-Gal
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/buffers/buffere/" title="Буфер E (EB)" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/buffers/buffere/">
+          Буфер E (EB)
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/buffers/bufferl/" title="Буфер L" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/buffers/bufferl/">
+          Буфер L
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/buffers/bufferm/" title="Буфер M" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/buffers/bufferm/">
+          Буфер M
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/buffers/buffern/" title="Буфер N" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/buffers/buffern/">
+          Буфер N
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/buffers/bufferr/" title="Буфер R" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/buffers/bufferr/">
+          Буфер R
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/buffers/bufferw/" title="Буфер W" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/buffers/bufferw/">
+          Буфер W
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/buffers/buffery/" title="Буфер Y" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/buffers/buffery/">
+          Буфер Y
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/buffers/nap/" title="Натрий фосфат 0.5M (pH 8.5)" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/buffers/nap/">
+          Натрий фосфат 0.5M (pH 8.5)
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/buffers/oligos/" title="Олигонуклеотиды" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/buffers/oligos/">
+          Олигонуклеотиды
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/buffers/phenol/" title="Фенол:Хлороформ" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/buffers/phenol/">
+          Фенол:Хлороформ
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/projects/" title="Проекты" class="dd-item
+        
+        
+        
+        ">
+      <a href="/projects/">
+          Проекты
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/bioinformatics/" title="Биоинформатика" class="dd-item
+        
+        
+        
+        ">
+      <a href="/bioinformatics/">
+          Биоинформатика
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/celltechniques/" title="Манипуляции с клетками" class="dd-item
+        
+        
+        
+        ">
+      <a href="/celltechniques/">
+          Манипуляции с клетками
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/celltechniques/lipofection/" title="Трансфекция с липофектамином" class="dd-item ">
+        <a href="/celltechniques/lipofection/">
+        Трансфекция с липофектамином
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/cloning/" title="Молекулярное клонирование" class="dd-item
+        
+        
+        
+        ">
+      <a href="/cloning/">
+          Молекулярное клонирование
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/cloning/top10/" title="Приготовление электрокомпетентных клеток TOP10" class="dd-item ">
+        <a href="/cloning/top10/">
+        Приготовление электрокомпетентных клеток TOP10
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/dnaextaction/" title="Очистка ДНК и РНК" class="dd-item
+        
+        
+        
+        ">
+      <a href="/dnaextaction/">
+          Очистка ДНК и РНК
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/dnaextaction/ampure/" title="Очистка на магнитных шарах" class="dd-item ">
+        <a href="/dnaextaction/ampure/">
+        Очистка на магнитных шарах
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/dnaextaction/sephadex/" title="Очистка секвенирующих реакций сефадексом" class="dd-item ">
+        <a href="/dnaextaction/sephadex/">
+        Очистка секвенирующих реакций сефадексом
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/dnaextaction/ethextr/" title="Переосаждение ДНК этанолом" class="dd-item ">
+        <a href="/dnaextaction/ethextr/">
+        Переосаждение ДНК этанолом
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/dnaextaction/isoextr/" title="Переосаждение изопропанолом" class="dd-item ">
+        <a href="/dnaextaction/isoextr/">
+        Переосаждение изопропанолом
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/dnaextaction/phenolchl/" title="Фенол-хлороформная экстракция" class="dd-item ">
+        <a href="/dnaextaction/phenolchl/">
+        Фенол-хлороформная экстракция
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/dnaextaction/peg/" title="Экстракция c PEG" class="dd-item ">
+        <a href="/dnaextaction/peg/">
+        Экстракция c PEG
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/pcrtechnique/" title="ПЦР" class="dd-item
+        
+        
+        
+        ">
+      <a href="/pcrtechnique/">
+          ПЦР
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pcrtechnique/inhibitors/" title="" class="dd-item ">
+        <a href="/pcrtechnique/inhibitors/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/programs/" title="Программы" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/programs/">
+          Программы
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/programs/bowtie2/" title="Bowtie2" class="dd-item active">
+        <a href="/programs/bowtie2/">
+        Bowtie2
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/programs/docker/" title="Docker" class="dd-item ">
+        <a href="/programs/docker/">
+        Docker
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/programs/higlass/" title="Higlass" class="dd-item ">
+        <a href="/programs/higlass/">
+        Higlass
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/es-protocols/" title="Протоколы для мЭСК" class="dd-item
+        
+        
+        
+        ">
+      <a href="/es-protocols/">
+          Протоколы для мЭСК
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/es-protocols/esmedium/" title="ES-среда" class="dd-item ">
+        <a href="/es-protocols/esmedium/">
+        ES-среда
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/es-protocols/accutase/" title="Диссоциация ES-клеток Аккутазой" class="dd-item ">
+        <a href="/es-protocols/accutase/">
+        Диссоциация ES-клеток Аккутазой
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/es-protocols/esreagents/" title="Реактивы для мЭСК" class="dd-item ">
+        <a href="/es-protocols/esreagents/">
+        Реактивы для мЭСК
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li>
+                  <a class="padding" href="https://github.com/foreverstas/GenomicsLabProtocols/"><i class='fab fa-fw fa-github'></i> GitHub repo</a>
+              </li>
+          
+              <li>
+                  <a class="padding" href="/credits"><i class='fas fa-fw fa-bullhorn'></i> Credits</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Edit this page' href="https://github.com/foreverstas/GenomicsLabProtocols/edit/master/content/Programs/Bowtie2.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">Edit this page</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Home</a> > <a href='/programs/'>Программы</a> > Bowtie2
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#референсные-публикации">Референсные публикации</a></li>
+        <li><a href="#официальные-материалы">Официальные материалы</a></li>
+      </ul>
+    </li>
+    <li><a href="#принцип-работы">Принцип работы</a></li>
+    <li><a href="#установка">Установка</a></li>
+    <li><a href="#инструменты-bowtie2">Инструменты Bowtie2</a></li>
+    <li><a href="#индексирование-генома-с-помощью-bowtie2-build">Индексирование генома с помощью bowtie2-build</a></li>
+    <li><a href="#множественное-выравнивание-с-помощью-bowtie2">Множественное выравнивание с помощью <em>bowtie2</em></a>
+      <ul>
+        <li><a href="#режимы-выравнивания">Режимы выравнивания</a></li>
+        <li><a href="#виды-несовпадений">Виды несовпадений</a></li>
+        <li><a href="#функции"><strong>Функции</strong></a></li>
+        <li><a href="#оценка-выравнивания">Оценка выравнивания</a></li>
+        <li><a href="#число-выравниваний-для-каждого-рида">Число выравниваний для каждого рида</a></li>
+        <li><a href="#cлучаный-режим">Cлучаный режим</a></li>
+        <li><a href="#выравнивание-парных-ридов">Выравнивание парных ридов</a></li>
+        <li><a href="#параметры-выравнивания">Параметры выравнивания</a></li>
+        <li><a href="#параметры-ввода">Параметры ввода</a></li>
+        <li><a href="#параметры-вывода">Параметры вывода</a></li>
+        <li><a href="#быстродействие">Быстродействие</a></li>
+        <li><a href="#сводка-по-выравниванию">Сводка по выравниванию</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+<div class="tags">
+
+  <a class="tag-link" href="/tags/bowtie2">bowtie2</a>
+
+  <a class="tag-link" href="/tags/bowtie">bowtie</a>
+
+  <a class="tag-link" href="/tags/%D0%BC%D0%BD%D0%BE%D0%B6%D0%B5%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B5-%D0%B2%D1%8B%D1%80%D0%B0%D0%B2%D0%BD%D0%B8%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5">Множественное выравнивание</a>
+
+  <a class="tag-link" href="/tags/chip-seq">ChIP-seq</a>
+
+  <a class="tag-link" href="/tags/fastq-alignment">Fastq alignment</a>
+
+</div>
+
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Bowtie2
+            </h1>
+          
+
+        
+
+
+<p><a href="http://bowtie-bio.sourceforge.net/bowtie2/index.shtml">Bowtie 2</a> — это наиболее популярный инструмент для выравнивания коротких фрагментов ДНК на эталонные последовательности. Он особенно хорош для выравнивания ридов длиной от 50 до 100-1000bp на длинные референсные геномы (в т.ч. млекопитающих). Достаточно высокая скорость и эффективное использование оперативной памяти в Bowtie 2 достигается за счет преобразования генома в матрицу ссылочных последовательностей с помощью <a href="http://en.wikipedia.org/wiki/FM-index">FM-индекса</a> (на основе <a href="https://mf.grsu.by/UchProc/livak/po/comprsite/theory_bwt.html">преобразования Барроуза — Уилера</a>, <a href="https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%B5%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5_%D0%91%D0%B0%D1%80%D1%80%D0%BE%D1%83%D0%B7%D0%B0_%E2%80%94_%D0%A3%D0%B8%D0%BB%D0%B5%D1%80%D0%B0#:~:text=%D0%9F%D1%80%D0%B5%D0%BE%D0%B1%D1%80%D0%B0%D0%B7%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%91%D0%B0%D1%80%D1%80%D0%BE%D1%83%D0%B7%D0%B0%20%E2%80%94%20%D0%A3%D0%B8%D0%BB%D0%B5%D1%80%D0%B0%20(Burrows%2D,BWT%20%D0%B8%D1%81%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D1%83%D0%B5%D1%82%D1%81%D1%8F%20%D0%B2%20%D0%B0%D1%80%D1%85%D0%B8%D0%B2%D0%B0%D1%82%D0%BE%D1%80%D0%B5%20bzip2.),%20*BWT*"><em>Burrows-Wheeler transform</em></a>. Bowtie2 поддерживает режимы выравнивания с пропусками <em>(gapped alignment)</em>, локальное выравнивание <em>(local alignment)</em> и выравнивание парных ридов <em>(paired-end alignment)</em>. Доступен для <em>Linux</em> и <em>OSX</em>.</p>
+
+<div class="notices warning" ><p>Не следует путать bowtie2 с bowtie. Хотя последний инструмент является предшественником bowtie2, в нем имеется ряд недостатков: отсутствует возможность локального выравнивания (то есть все риды должны выравниваниваться полностью от начала до конца), режим выравнивания парных ридов ограничен и не предназначен для выравнивания дискордантных ридов, отсутсвует поддержка вырожденных символов (например, N). Bowtie обладает низкой эффективностью при выравнивании ридов длинее 50 пар и не способен выравнивать риды длинее 1000 пар. Важно понимать, что геномные индексы, произведенные Bowtie2 и Bowtie взаимозаменяемы только начиная с версии Bowtie v1.2.3.</p>
+</div>
+
+<h3 id="референсные-публикации">Референсные публикации</h3>
+<ul>
+<li>
+<p>Langmead B, Wilks C, Antonescu V, Charles R. <a href="https://doi.org/10.1093/bioinformatics/bty648">Scaling read aligners to hundreds of threads on general-purpose processors</a>. <em>Bioinformatics</em>. 2018 Jul 18. doi: 10.1093/bioinformatics/bty648.</p>
+</li>
+<li>
+<p>Langmead B, Salzberg SL. <a href="https://www.nature.com/articles/nmeth.1923">Fast gapped-read alignment with Bowtie 2</a>. <em>Nature Methods</em>. 2012 Mar 4;9(4):357-9. doi: 10.1038/nmeth.1923.</p>
+</li>
+</ul>
+<h3 id="официальные-материалы">Официальные материалы</h3>
+<ul>
+<li>
+<p><a href="http://bowtie-bio.sourceforge.net/bowtie2/index.shtml">Официальный сайт</a></p>
+</li>
+<li>
+<p>Расширенный <a href="http://bowtie-bio.sourceforge.net/bowtie2/manual.shtml">мануал</a></p>
+</li>
+<li>
+<p>Список <a href="http://bowtie-bio.sourceforge.net/bowtie2/other_tools.shtml">приложений</a>, использующих Bowtie2</p>
+</li>
+<li>
+<p>Архив <a href="https://benlangmead.github.io/aws-indexes/bowtie">геномных индексов</a> Bowtie2 и Bowtie</p>
+</li>
+</ul>
+<h2 id="принцип-работы">Принцип работы</h2>
+<p>Подробно о алгоритме преобразования BWT, FM-индексе и связанных с этим алгоритмах можно познакомиться в <a href="https://www.youtube.com/watch?v=P3ORBMon8aw">видео-лекции</a>, <a href="https://www.cs.jhu.edu/~langmea/resources/lecture_notes/bwt_and_fm_index.pdf">презентации</a> или <a href="https://www.cs.cmu.edu/~15451-f18/lectures/lec25-bwt.pdf">конспекте</a>.</p>
+<p>Если говорить подробно, то для каждого рида Bowtie2 производит вычисления в четыре шага. На шаге 1 <em><strong>(Extract seed)</strong></em> Bowtie2 извлекает из рида и комплементарной к нему последовательности (не путать с <em>mait-pair</em>) “затравочные” подстроки (<em>seeds</em>). На шаге 2 <strong>(<em>Align with FM-Index</em>)</strong> затравочные подстроки выравниваются на референсный геном без пропусков (<em>ungapped, без делеций и инсерций</em>) с использованием FM-индекса, в результате чего получаются интервалы Барроуза-Уиллера <em>(BW ranges),</em> которые указывают на строки в матрице, полученной путем трансформации генома с помощью BWT. На шаге 3 <em><strong>(Prioritize, resolve)</strong></em> Bowtie2 извлекает из BW-матрицы строки, соответствующие полученным интервалам, и каждая строка приобретает приоритет <em>(prioritize)</em>, при этом чем меньше интервал - тем выше приоритет. Далее, учитывая приоритет строк, с помощью FM-индекса и алгоритма “walk-left” Bowtie2 определяется смещение <em>(<a href="https://ru.wikipedia.org/wiki/%D0%A1%D0%BC%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D0%B5_(%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0)#:~:text=%D0%92%20%D0%B8%D0%BD%D1%84%D0%BE%D1%80%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B5%2C%20%D1%81%D0%BC%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B2%D0%BD%D1%83%D1%82%D1%80%D0%B8%20%D0%BC%D0%B0%D1%81%D1%81%D0%B8%D0%B2%D0%B0,%D0%BE%D0%B4%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%B8%20%D1%82%D0%BE%D0%B3%D0%BE%20%D0%B6%D0%B5%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%B0.">offset</a>)</em> выбранных строк, и таким образом получает координаты затравочных последовательностей в геноме <em>(Extention candidates).</em> Иными словами, Bowtie2 разрешает <em>(resolve)</em> затравочные выравнивания. На шаге 4 <em>(<strong>Extend</strong>)</em> Bowtie2 берет приоритетные разрешенные затравочные выравнивания из шага 3 и расширяет выравнивание рида на всю окрестность вблизи затравки. Выравнивание на данном этапе ускоряется за счет использования динамического программирования SIMD (<a href="https://ru.wikipedia.org/wiki/SIMD">Single Instruction Multiple Data</a>). Выравнивание продолжается до тех пор, пока не будут проанализированы все разрешенные затравки <em>(seed hits)</em>, пока не будет изучено достаточное количество выравниваний, или пока не будет достигнут предел трудоемкости <em>(effort limit)</em> динамического программирования.</p>
+<p><img src="/Bioinformatics/Bowtie2.files/workflow.png?width=40pc" alt=""></p>
+<p>Если кратко, то сначала каждый рид и комплементарная к нему последовательность разбивается на затравочные подстроки <em>(seed)</em>. Затем извлеченные подстроки выравниваются на референсный геном без пропусков <em>(seed alignment)</em> и расставляются по приоритету <em>(prioritize)</em>. На последнем этапе затравочные выравнивания расширяются на весь рид.</p>
+<p>В результате для каждого рида получается множество выравниваний. Чтобы выбрать наилучшее выравнивание Bowtie2 вычисляет для каждого из них оценку выравнивания <em>(alignment score).</em> Оценка количественно определяет, насколько рид похож на референсную последовательность. Чем выше балл - тем лучше. Оценка рассчитывается путем вычитания штрафов <em>(penalty)</em> за каждое отличие: замены <em>(mismatch)</em>, пропуски <em>(gap),</em> наличие вырожденных символов <em>(ambigous characters)</em>. В режиме локального выравнивания, за каждое совпадение к оценке добавляется бонус <em>(bonus)</em>. Результат выравнивания оформляется в формате <a href="https://ru.wikipedia.org/wiki/SAMtools">SAM</a> в поток стандартного вывода 1 <em>(“stdout”),</em> если не указан файл назначения. Дополнительная информация, предупреждения и статистика выравнивания выводятся в стандартный поток номер 2 <em>(“stderr”).</em></p>
+<h2 id="установка">Установка</h2>
+<p>Подробное описание способов установки можно посмотреть <a href="https://www.metagenomics.wiki/tools/bowtie2/install">здесь</a></p>
+<p>Наиболее простой способ - установить с помощью Anaconda:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#a6e22e">conda</span> <span style="color:#a6e22e">install</span> <span style="color:#a6e22e">-c</span> <span style="color:#a6e22e">bioconda</span> <span style="color:#a6e22e">bowtie2</span>
+</code></pre></div><h2 id="инструменты-bowtie2">Инструменты Bowtie2</h2>
+<p>После установки Bowtie2 пользователю становится доступно несколько инструментов:</p>
+<ol>
+<li><code>bowtie2</code>, <code>bowtie2-align-s</code> и <code>bowtie2-align-l</code> осуществляют выравнивание коротких последовательностей (в формате fastq, fasta и др.) на <strong>индексированный</strong> референсный геном/последовательность. <code>bowtie2-align-s</code> и <code>bowtie2-align-l</code> представляют собой бинарный код для выравнивания на индексы малого (small) и большого (large) формата. <code>bowtie2</code> является сценарием-оберткой <em>(wrapper)</em>, запускающим <code>bowtie2-align-s/l</code> в зависимости от формата индекса и дающий дополнительные возможности, в частности, работу со сжатыми файлами. По-сути всегда нужно использовать <code>bowtie2</code>.</li>
+<li><code>bowtie2-build</code>, <code>bowtie2-build-s</code>, и <code>bowtie2-build-l</code> осуществляют индексирование генома (файл в формате fasta или последовательности из командной строки). Как и в прошлом пункте, <code>bowtie2-build</code> представляет собой обортку для запуска бинарных команд <code>bowtie2-build-s</code>, и <code>bowtie2-build-l</code>. Для геномов длиной менее 4 миллиардов нуклеотидов bowtie2-build строит “малый” индекс, используя 32-битные числа в различных частях индекса. Если геном длиннее, <code>bowtie2-build</code> строит “большой” индекс, используя 64-битные числа. Малые индексы хранятся в файлах с расширением <strong>.bt2</strong>, а большие - в файлах с расширением <strong>.bt2l</strong>. Пользователю не нужно беспокоиться о том, является ли конкретный индекс малым или большим, так как обертки автоматически построят и используют соответствующий индекс.</li>
+<li><code>bowtie2-inspect</code>, <code>bowtie2-inspect-s</code> <code>bowtie2-inspect-l</code> извлекают из индекса Bowtie2 информацию о том, что это за индекс и какие референсные последовательности использовались для его построения. При запуске без каких-либо параметров инструмент выведет <a href="https://en.wikipedia.org/wiki/FASTA"><code>FASTA</code></a> файл, содержащий последовательности референсов (все символы кроме <code>A</code>/<code>C</code>/<code>G</code>/<code>T</code> будут преобразованы в <code>N</code>).</li>
+</ol>
+<h2 id="индексирование-генома-с-помощью-bowtie2-build">Индексирование генома с помощью bowtie2-build</h2>
+
+<div class="notices note" ><p>Готовые геномные индексы можно скачать с оффициального сайта bowtie-bio.sourceforge.net</p>
+</div>
+
+<p><a href="http://bowtie-bio.sourceforge.net/bowtie2/manual.shtml#the-bowtie2-build-indexer">Подробный мануал</a></p>
+<p>Обычно в качестве референса предоставляется fasta-файл. Вслед за fasta-файлом требуется префикс для файлов индексированного референса:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">bowtie2-build -f путь_к_fasta Префикс
+</code></pre></div><p>Параметр <code>-f</code> не обязателен. Он указывает, что рефернс представляет из себя fasta-файл. Можно предоставлять список fasta-файлов через запятую без пробелов:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">bowtie2-build -f путь_к_fasta_1,путь_к_fasta_2,путь_к_fasta_3 Префикс
+</code></pre></div><p>Вместо Fasta-файла может быть список последовательностей через запятую без пробелов:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">bowtie2-build -c GGTCATCCT,ACGGGTCGT,CCGTTCTATGCGGCTTA Префикс
+</code></pre></div><p>В результате программа выдаст шесть файлов с названиями <code>Префикс.1.bt2</code>, <code>Префикс.2.bt2</code>, <code>Префикс.3.bt2</code>, <code>Префикс.4.bt2</code>, <code>Префикс.rev.1.bt2</code> и <code>Префикс.rev.2.bt2</code>. Если префикс не указать, то префикс будет <code>NAME.</code>. В случае, если индексы большие, вместо <code>.bt2</code> расширение файла будет <code>.bt2l</code>.</p>
+
+<div class="notices note" ><p>Файлы индексированного референса будут сохранены в директории, из которой была вызвана программа bowtie2-build</p>
+</div>
+
+<p>Для ускоренного индексирования следует активировать многопоточный режим, добавив параметр <code>--treads n</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">bowtie2-build --threads <span style="color:#ae81ff">25</span> -f путь_к_fasta Префикс
+</code></pre></div><h2 id="множественное-выравнивание-с-помощью-bowtie2">Множественное выравнивание с помощью <em>bowtie2</em></h2>
+<p>Минимальный вид команды:</p>
+<pre><code>bowtie2 -x &lt;bt2-idx&gt; {-1 &lt;m1&gt; -2 &lt;m2&gt; | -U &lt;r&gt; } -S [&lt;sam&gt;]
+</code></pre>
+<p>
+<div class="notices note" ><p>Для выравнивания нужно обязательно указать путь к индексированному референсу после параметра -x. Это путь к папке, в которой содержатся файлы индекса плюс префикс файлов-индексов. Например:</p>
+<pre><code>-x /home/romanov/DM6_drosophila/DM6
+</code></pre>
+</div>
+
+
+<div class="notices note" ><p>Для выравнивания односторонних прочтений (single-end reads) нужно указать полный путь к файлу fastq (или fastq.gz) после параметра -U:</p>
+<pre><code>-U /home/file.fastq.gz
+</code></pre>
+<p>Также можно указать несколько fastq-файлов через запятую:</p>
+<pre><code>-U /home/file1.fastq.gz,../file2.fastq.gz,~/foldeir2/file3.fastq.gz
+</code></pre>
+</div>
+
+
+<div class="notices note" ><p>Для выравнивания двусторонних прочтений (paired reads) нужно указать полный путь к файлам R1 и R2 после параметров -1 и -2:</p>
+<pre><code>-1 /home/file.R1.fastq.gz -2 /home/file.R2.fastq.gz
+</code></pre>
+<p>Также можно указать несколько fastq-файлов через запятую:</p>
+<pre><code>-1 /home/file1.R1.fastq.gz,../file2.R1.fastq.gz -2 /home/file1.R2.fastq.gz,../file2.R2.fastq.gz
+</code></pre>
+</div>
+
+
+<div class="notices note" ><p>По умолчанию результат выравнивания в формате .SAM выводится в стантартный вывод (экран командной строки). Чтобы вывести результат в файл, нужно указать адрес после параметра -S:</p>
+<pre><code>-S путь_к_файлу/alignment.sam
+</code></pre>
+</div>
+</p>
+<h3 id="режимы-выравнивания">Режимы выравнивания</h3>
+<p>Bowtie2 способен выравнивать последовательности на индекс в двух режимах:</p>
+<ol>
+<li>В режиме <strong>end-to-end (сквозное выравнивание)</strong> bowtie2 ищет в референсе участок, идентичный целевой последовательности от начала до конца. Такое выравнивание также называют <em>необрезанным</em> (<em>“unclipped”</em> или <em>“untrimmed”</em>). Bowtie2 осуществляет сквозное выравнивание по умолчанию.</li>
+<li>В режиме <strong>local (локальное выравнивание)</strong> bowtie2 ищет в референсе участок, идентичный райну внутри целевой последовательности, при этом несколько нуклеотидов на концах последовательности не учитываются, то есть <em>мягко обрезаются</em> (<em>“soft-clipping”</em> или <em>“soft-trimming”</em>). Это значит, что несовпадение концевых нуклеотидов в последовательности не учитывается</li>
+</ol>
+<p>Пример сквозного выравнивания:</p>
+<pre><code>Рид:      GACTGGGCGATCTCGACTTCG
+          |||||  |||||||||| |||
+Референс: GACTG--CGATCTCGACATCG
+</code></pre>
+<p>Пример локального выравнивания:</p>
+<pre><code>Рид:      ACGGTTGCGTTAA-TCCGCCACG
+              ||||||||| ||||||
+Референс: TAACTTGCGTTAAATCCGCCTGG
+</code></pre>
+<h3 id="виды-несовпадений">Виды несовпадений</h3>
+<p>Замены <em>(mismatches)</em></p>
+<pre><code>Рид:      GACTGCGCCGATTTCGACTTCG
+          |||||| ||||| |||||||||
+Референс: GACTGCCCCGATCTCGACTTCG
+</code></pre>
+<p>Вырожденные буквы <em>(ambigous characters)</em></p>
+<pre><code>Рид:      GACTGCGCCGATNTCGACTTCG
+          |||||| ||||| |||||||||
+Референс: GACTGCNCCGATCTCGACTTCG
+</code></pre>
+<p>Пропуск внутри референса <em>(reference gap)</em></p>
+<pre><code>Рид:      GACTGGGGCGATCTCGACTTCG
+          |||||   ||||||||||||||
+Референс: GACTG---CGATCTCGACTTCG
+</code></pre>
+<p>Пропуск внутри рида <em>(read gap)</em></p>
+<pre><code>Рид:      GACTG---CGATCTCGACTTCG
+          |||||   ||||||||||||||
+Референс: GACTGGGGCGATCTCGACTTCG
+</code></pre>
+<h3 id="функции"><strong>Функции</strong></h3>
+<p>Большинство параметров bowtie2 принимают на входе либо число, либо строку. Однако есть параметры, которые принимают функции <em>(functions)</em> в формате<code>A*F(X)+B</code>. Функции записываются следующим образом: <code>–параметр &lt;F&gt;,&lt;B&gt;,&lt;A&gt;</code>.</p>
+<p>Символ <code>F</code> обозначает название функции. Всего функции бывают четырех типов: константа (<code>C</code>), линейная функция (<code>L</code>), квадратный корень (<code>S</code>), натуральный логарифм (<code>G</code>).</p>
+<p>Например, параметр записанный в виде <code>C,2,2</code> означает константу <code>F(X)=2+2=4</code>.</p>
+<p>Запись <code>L,-5,-10.1</code> означает линейную функцию <code>F(X)=-10.1*X-5</code>.</p>
+<p>Функция, записанная в виде <code>S,-0.6,8</code> означает функцию <code>F(X)=8*sqrt(X)-0.6</code>.</p>
+<p>Функция, записанная в виде <code>G,3,-6</code> означает функцию <code>F(X)=-6*ln(x)+3</code>.</p>
+<h3 id="оценка-выравнивания">Оценка выравнивания</h3>
+<p>Каждая последовательность может выравниваться на референс в нескольких местах. Bowtie2 определяет для каждого выравнивания величину оценки <em>(alignment score)</em> и на выходе выдает координаты выравнивания с оценкой, превышающей пороговое значение (<em>minimum</em> <em>score threshold</em>). При сквозном выравнивании оценка выравнивания вычисляется путем вычитания штрафов <em>(penalties)</em> за каждое отличие в последовательности или референсе (замены, пропуски и т. д.). При локальном выравнивании за каждый совпавший нуклеотид к оценке добавляется бонус <em>(bonus)</em>.</p>
+<p>Ниже приведены параметры, которые задают значения бонусов, штрафов и пороговой оценки:</p>
+<p><code>--ma</code> &lt;целое число <strong>X</strong>&gt; - бонус за совпадение <em>(match bonus)</em>. Используется только при локальном выравнивании (иначе выдаст ошибку). По-умолчанию равно 2. Если рид состоит из 50 нуклеотидов и все нулкеотиды совпадают с референсом, то оценка будет равна <strong>X</strong>*50=100</p>
+<p><code>--mp</code> &lt;целое число <strong>MN</strong>&gt;,&lt;целое число <strong>MX</strong>&gt; - штраф за замену <em>(mismatch penalty).</em> Требует два числа, введенных через запятую. Число <strong>MN</strong> - это минимально-возможный штраф, <strong>MX</strong> - максимально возможный. Величина штрафа зависит от качетсва прочтения в несовпадающем нуклеотиде (Phred-score). Если Phred-score равен <strong>Q</strong>, то от оценки отнимается число равное целой части от величины <code>MN+(MX-MN)*(min(40,Q)/40)</code>. Так что если <strong>Q</strong>&gt;40, то штраф будет равен <strong>MX</strong>, если <strong>Q</strong> равен 0, то штраф будет равен <strong>MN</strong>. По умолчанию: <strong>MX</strong>=6, <strong>MN</strong>=2. Можно ввести параметр <code>--ignore-quals</code>, тогда всегда будет отниматься <strong>MX</strong>.</p>
+<p><code>--np</code> &lt;целое число&gt; - Устанавливает штраф за позиции в выравнии, где рид или референс, или оба сразу содержат неоднозначный символ, например <code>N</code>. По умолчанию: 1.</p>
+<p><code>--rdg</code> &lt;целое число <strong>N1</strong>&gt;,&lt;целое число <strong>N2</strong>&gt; - Штраф за пропуски <em>(read gaps)</em> внутри рида. Если пропуск перекрывает только один нуклеотид, то штраф равен <strong>N1</strong>. Штраф за пропуск <strong>M</strong> нуклеотидов подряд составляет <strong>N1</strong> + <strong>M</strong>*<strong>N2</strong>. Таким образом, N1 - это штраф за открытие пропуска <em>(gap open),</em> а <strong>N2</strong> -это штраф за расширение пропуска <em>(gap extend)</em>. По умолчанию: <strong>N1</strong>=5, <strong>N2</strong>=3.</p>
+<p><code>--rfg</code> &lt;целое число <strong>N1</strong>&gt;,&lt;целое число <strong>N2</strong>&gt; - Штраф за пропуски внутри референса <em>(reference gaps)</em>. Штраф за пропуск <strong>M</strong> нуклеотидов подряд составляет <strong>N1</strong> + <strong>M</strong>*<strong>N2</strong>. По умолчанию: <strong>N1</strong>=5, <strong>N2</strong>=3.</p>
+<p><code>--score-min</code> &lt;функция&gt; - Задает функцию, управляющую минимальной оценкой выравнивания, необходимой для того, чтобы выравнивание считалось «действительным» <em>(valid)</em>, то есть достаточно хорошим. Это функция от длины рида. Значение по умолчанию в сквозном режиме <code>L,-0.6,-0.6</code>, а в локальном режиме <code>G,20,8</code>.</p>
+<h3 id="число-выравниваний-для-каждого-рида">Число выравниваний для каждого рида</h3>
+<p>По умолчанию bowtie2 для каждого рида находит одно действительное выравнивание, после чего ищет еще выравнивания с такой же или более высокой оценкой. В конце концов bowtie2 докладывает одно выравнивание с наибольшей оценкой, или если выравниваний с идентичной оценкой несколько, выдает одно случайное. Для некоторых задач требуется узнать все возможные выравнивания для рида (например, картирование повторов в геноме). Для этого нужно ввести параметры <code>-k</code> или <code>-a</code>. Оба параметра замедляют процесс выравнивания.</p>
+<p><code>-k &lt;целое число&gt;</code> - это число выравниваний, которое будет записано в SAM-файл для каждого рида.</p>
+<p><code>-a</code> - эта команда заставляет bowtie2 записать все выравнивания с оценкой качества, превышающей порог.</p>
+<h3 id="cлучаный-режим">Cлучаный режим</h3>
+<p>В тех случаях, когда bowtie2 приходится выбирать для рида одно выравнивание из нескольких вариантов с одинаковой оценкой качества, он использует генератор случайных чисел. В результате, разные запуски программы на одних и тех же данных приводят к неэксвивалентным результатам. Чтобы получать одинаковые результаты, нужно при запуске программе передать на вход программе одно и то же начальное значение генератора случайных чисел при помощи параметра <code>--seed &lt;целое число&gt;</code>.</p>
+<p>Если же в fastq-файлах есть много повторяющихся ридов и требуется, чтобы каждый рид выравнивался в случайном месте генома, то нужно использовать параметр <code>--non-deterministic</code>, который заставляет программу запускать генератор случайных чисел для каждого рида отдельно. При этом начальным значением является время на часах.</p>
+<h3 id="выравнивание-парных-ридов">Выравнивание парных ридов</h3>
+<p>При выравнивании спаренных ридов <em>(mate pairs)</em> положение ридов относительно референса зависит от метода пробоподготовки. В SAM-файле Bowtie2 помечает спаренные риды разными способами, указывая, были риды выравнены правильным образом. Чтобы определить, правильное выравнивание, bowtie2 учитывает длину встройки (максимальна дистанция между концами ридов), ориентацию ридов относительно прямой цепи референса, положение первого и второго ридов относительно друг друга. <strong>Конкордантными</strong> парами называются пары ридов, которые выравниваются на одну и ту же хромосому (или скэффолд), имеют правильную ориентацию и взаимное положение, а также правильную дистанцию. Спаренные риды, которые не удовлетворяют условиям называют <strong>дискордантными</strong>.</p>
+<p>Минимальная длина фрагментов указывается параметром <code>-I &lt;целое число&gt;</code> или <code>--minins &lt;целое число&gt;</code> (это короткое и длинное название параметра). По умолчанию это значение равно 0, то есть минимум не установлен.</p>
+<p>Максимальная длина фрагментов указывается параметром <code>-X &lt;целое число&gt;</code> или <code>--maxins &lt;целое число&gt;</code> . По умолчанию значение равно 500 (пятьсот пар нуклеотидов). Чем больше разница между <code>-X</code> и <code>-I</code>, тем медленнее работает программа!</p>
+<p>Параметры <code>--fr/--ff/--rf</code> указывают возможную ориентацию первого и второго рида относительно прямой цепи референса (см. картинку ниже). Если ориентация ридов не удовлетворяет выбранному условию, то рид считается дискордантным.</p>
+<p><img src="/Bioinformatics/Bowtie2.files/Concordant.png?width=40pc" alt=""></p>
+<p>Если риды перекрываются, то bowtie2 учитывает тип перекрывания, когда классифицирует конкордантные и дискордантные пары.</p>
+<p>Спаренные риды могут перекрываться обычным способом <em>(overlap)</em>. Такие пары считаются конкордантными. Но использование параметра <code>--no-overlap</code> превращает такие риды в дискордантные:</p>
+<pre><code>Пара 1:    GCAGATTATATGAGTCAGCTACGATATTGTT
+Пара 2:                               TGTTTGGGGTGACACATTACGCGTCTTTGAC
+Референс:  GCAGATTATATGAGTCAGCTACGATATTGTTTGGGGTGACACATTACGCGTCTTTGAC
+</code></pre>
+<p>Содержать друг друга <em>(contain)</em>. Такие пары считаются конкордантными, а параметр параметр <code>--no-contain</code> заставляет считать такие пары дискордантными:</p>
+<pre><code>Пара 1:    GCAGATTATATGAGTCAGCTACGATATTGTTTGGGGTGACACATTACGC
+Пара 2:                               TGTTTGGGGTGACACATTACGC
+Референс:  GCAGATTATATGAGTCAGCTACGATATTGTTTGGGGTGACACATTACGCGTCTTTGAC
+
+Пара 1:                   CAGCTACGATATTGTTTGGGGTGACACATTACGC
+Пара 2:                      CTACGATATTGTTTGGGGTGAC
+Референс:  GCAGATTATATGAGTCAGCTACGATATTGTTTGGGGTGACACATTACGCGTCTTTGAC
+</code></pre>
+<p>Или “проходить мимо” друг друга. Такое перекрывание называется «ласточкин хвост» <em>(dovetail)</em> и по умолчанию считается дискордантным:</p>
+<pre><code>Пара 1:                 GTCAGCTACGATATTGTTTGGGGTGACACATTACGC
+Пара 2:            TATGAGTCAGCTACGATATTGTTTGGGGTGACACAT                   
+Референс:  GCAGATTATATGAGTCAGCTACGATATTGTTTGGGGTGACACATTACGCGTCTTTGAC
+</code></pre>
+<p>Перекрывание по типу ласточкин хвост можно заставить считать конкордантным, если ввести параметр <code>--dovetail</code>.</p>
+<p>По умолчанию bowtie2 для начала ищет конкордантные выравнивания, и только если таких не находится, приступает к поиску дискордантных. Чтобы запретить вывод дискордантных ридов, нужно ввести параметр <code>--no-discordant</code>.</p>
+<p>Когда bowtie2 не может найти конкордантные и дискордантные выравнивания для спаренных ридов, он ищет отдельные независимые выравнивания для каждого рида в отдельности (например, пытается выравнивать риды на разные хромосомы). Если такое поведение неприемлимо, то нужно ввести параметр <code>--no-mixed</code>.</p>
+<h3 id="параметры-выравнивания">Параметры выравнивания</h3>
+<p>Чтобы быстро сузить количество возможных выравниваний, которые необходимо учитывать, bowtie2 начинает с извлечения затравночных подстрок из прочтения и комплементарной к нему последовательности и выравнивания их без пропусков с помощью <a href="http://portal.acm.org/citation.cfm?id=796543">индекса FM</a>. Этот начальный шаг (многозатравочная эвристика, <em>multiseed euristic</em>) делает Bowtie 2 намного быстрее, чем без такого фильтра, но за счет пропуска некоторых допустимых выравниваний. Например, рид может иметь правильное общее выравнивание, но не иметь допустимых зерновых выравниваний, потому что каждое потенциальное зерно прерывается слишком большим количеством замен или пробелов.</p>
+<p>Компромисс между скоростью и чувствительностью/точностью можно отрегулировать, установив длину начальной затравки (<code>-L</code>), дистанция между затравками (<code>-i</code>)допустимое количество замен на затравку (<code>-N</code>). Для более точного выравнивания можно: (а) уменьшить дистанцию между затравками, (б) сократить длину затравок и/или (в) разрешенить большее количество замен.</p>
+<p><code>-N &lt;целое число&gt;</code> определяет число замен в затравочных выравниваниях. По умолчанию - 0. Может принимать значение 0 и 1.</p>
+<p><code>-L &lt;целое число&gt;</code> определяет длину затравночной полседовательности. В end-to-end режиме равно 22, а в local 20.</p>
+<p><code>-i &lt;целое число&gt;</code> - функция, связывающая длину прочтения и расстояние между затравочными последовательностями. По умолчанию равно <code>S,1,1.15</code> в <code>--end-to-end</code> режиме и <code>S,1,0.75</code> в <code>--local</code> mode.</p>
+<p>Есть еще два параметра, контролирующих скорость/чувствительность выравнивания:</p>
+<p><code>-D &lt;целое число X&gt;</code> - перед тем как сдвинують затравочную последовательность вдоль референса, bowtie2 расширяет затравку с целью получить более качественное выравнивание. Если после расширения затравки качество выравнивания не растет, то bowtie2 увиличивает счетчик на единицу. А число <strong>X</strong> определяет максимальное число, которое может достигнуть счетчик для затравочной последовательности. Увеличение -D делает Bowtie 2 медленнее, но увеличивает вероятность того, что он сообщит правильное выравнивании для ридов, которые выравниваются на много мест в референсе. По умолчанию это число равно 15.</p>
+<p><code>-R &lt;целое число X&gt;</code> - максимальное число раз, когда bowtie2 перевыравнивает прочтение (re-seed), если прочтение имеет несколько выравниваний в геноме. Чем больше число, тем медленнее выравнивание, но тем больше вероятность найти правильное выравнивание. Значение по умолчанию - 2.</p>
+<p><code>--n-ceil &lt;функция&gt;</code> - устанавливает функцию, связывающую максимальное число вырожденных букв в выравнивании в зависимости от длины рида. По умолчанию: <code>L,0,0.15</code>.</p>
+<p><code>--local</code> - включает локальный режим выравнивания, при котором несколько нуклеотидов на концах прочтения обрезаются и не вносят вклад в качество выравнивания.</p>
+<p><code>--end-to-end</code> - включает сквозной режим выравнивания. Этот параметр включен по умолчанию.</p>
+<p><code>--gbar &lt;целое число&gt;</code> - определяет число нуклеотидов на концах рида, между которыми недопустимы пробелы (gaps). По умолчанию 4.</p>
+<p><code>--ignore-quals</code> - заставляет bowtie2 игнорировать Phred-score при подсчете пенальти. В таком случае штраф за каждую замену максимальный.</p>
+<p><code>--no-1mm-upfront</code> - По умолчанию, чтобы увеличить скорость выравнивания bowtie2 для начала ищет для каждого рида выравнивание с полным совпадением или с одной ошибкой. Это гораздо быстрее, чем применить многозатравочную эвристику. В случае, если длина затравки (<code>-L</code>) выбрана равной длине рида, а число замен (<code>-N</code>) равно нулю, то такой подход приведет к появлению выравниванию с заменами. Данный параметр отключает такое поведение.</p>
+<p>Чтобы не менять параметры каждый раз, авторы сделали пресеты параметров мультизатравочного выравнивания, которые различаются скоростью и чувствительностью: Вариант <code>end-to-end</code>:</p>
+<p><code>--very-fast</code> - То же, что и : <code>-D 5 -R 1 -N 0 -L 22 -i S,0,2.50</code></p>
+<p><code>--fast</code> - То же, что и : <code>-D 10 -R 2 -N 0 -L 22 -i S,0,2.50</code></p>
+<p><code>--sensitive</code> - То же, что и : <code>D 15 -R 2 -N 0 -L 22 -i S,1,1.15</code> (по умолчанию в <code>--end-to-end</code>)</p>
+<p><code>--very-sensitive</code> - То же, что и: <code>-D 20 -R 3 -N 0 -L 20 -i S,1,0.50</code></p>
+<p>Вариант <code>local</code>:</p>
+<p><code>--very-fast-local</code> - То же, что и: <code>-D 5 -R 1 -N 0 -L 25 -i S,1,2.00</code></p>
+<p><code>--fast-local</code> - То же, что и: <code>-D 10 -R 2 -N 0 -L 22 -i S,1,1.75</code></p>
+<p><code>--sensitive-local</code> - То же, что и: <code>-D 15 -R 2 -N 0 -L 20 -i S,1,0.75</code> (по умолчанию в <code>--local</code>)</p>
+<p><code>--very-sensitive-local</code> - То же, что и: <code>-D 20 -R 3 -N 0 -L 20 -i S,1,0.50</code></p>
+<h3 id="параметры-ввода">Параметры ввода</h3>
+<p><code>-q</code> - риды в формате fastq/fq</p>
+<p><code>-f</code> - риды в формате fasta/fa/mfa/fna</p>
+<p><code>-c</code> - риды записаны в командной строке как разделенный запятой список последовательностей</p>
+<p><code>-s &lt;целое число&gt;</code> или <code>--skip &lt;целое число&gt;</code> - пропустить первые несколько ридов в файле.</p>
+<p><code>-u &lt;целое число&gt;</code> или <code>--qupto &lt;целое число&gt;</code> - выровнить первые несколько ридов. Удобно для проверки кода.</p>
+<p><code>-5 &lt;целове число&gt;</code> или <code>--trim5 &lt;целое число&gt;</code> - перед выравнивание исключить из рида указанное число нуклеотидов с левого конца (включая спаренные риды). Полезно, так как позволяет избежать тримминга ридов.</p>
+<p><code>-3 &lt;целове число&gt;</code> или <code>--trim3 &lt;целое число&gt;</code> - перед выравниванием исключить из рида указанное число нуклеотидов с правого конца (включая спаренные риды). Полезно, так как позволяет избежать тримминга ридов.</p>
+<p><code>--trim-to [5:|3:]&lt;целое число&gt;</code> - перед выравниванием укоротить рид до указанной длины. Удаляться будут буквы с левого конца (<code>--trim-to 5:N</code>) или c правого конца (<code>--trim-to 3:N</code>). Нельзя вводить одновременно с параметром <code>-5</code> или <code>-3</code>.</p>
+<p><code>--phred33</code> или <code>--phred64</code> - кодировка Phred-score в таблице ASCII. Зависит от платформы секвенирования. В Illumina MiSeq - phred33. Тип платформы можно опрделенить при помощи <a href="https://www.bioinformatics.babraham.ac.uk/projects/fastqc/">fastqc</a>. Соответствие между платформой и Phred-score можно определить по картинке ниже:</p>
+<p><img src="/Bioinformatics/Bowtie2.files/qualityscore.png" alt=""></p>
+<h3 id="параметры-вывода">Параметры вывода</h3>
+<table>
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 82%" />
+</colgroup>
+<tbody>
+<tr class="odd">
+<td><p><code>--un &lt;path&gt;</code></p>
+<p><code>--un-gz &lt;path&gt;</code></p>
+<p><code>--un-lz4 &lt;path&gt;</code></p>
+<p><code>--un-bz2 &lt;path&gt;</code></p></td>
+<td>Записать неспаренные невыравненные риды в файл <code>&lt;path&gt;</code> в зжатом или несжатом виде.</td>
+</tr>
+<tr class="even">
+<td><p><code>--al &lt;path&gt;</code></p>
+<p><code>--al-gz &lt;path&gt;</code></p>
+<p><code>--al-lz4 &lt;path&gt;</code></p>
+<p><code>--al-bz2 &lt;path&gt;</code></p></td>
+<td>Записать неспаренные риды, которые выравнились хотя бы один раз в файл <code>&lt;path&gt;</code> в сжатом или несжатом виде.</td>
+</tr>
+<tr class="odd">
+<td><p><code>--un-conc &lt;path&gt;</code></p>
+<p><code>--un-conc-gz &lt;path&gt;</code></p>
+<p><code>--un-conc-lz4 &lt;path&gt;</code></p>
+<p><code>--un-conc-bz2 &lt;path&gt;</code></p></td>
+<td>Записать спаренные риды, которые не выровнились конкордантно, в файл <code>&lt;path&gt;</code> в зжатом или несжатом виде.</td>
+</tr>
+<tr class="even">
+<td><p><code>--al-conc &lt;path&gt;</code></p>
+<p><code>--al-conc-gz &lt;path&gt;</code></p>
+<p><code>--al-conc-lz4 &lt;path&gt;</code></p>
+<p><code>--al-conc-bz2 &lt;path&gt;</code></p></td>
+<td>Записать спаренные риды, которые выравнились конкордантно хотя бы один раз в файл <code>&lt;path&gt;</code> в сжатом или несжатом виде.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="быстродействие">Быстродействие</h3>
+<p><code>-p &lt;целое число&gt;</code> или <code>--threads &lt;целое число&gt;</code> устаналвивает число занятых процессоров (по умолчанию 1). Ускоряет выравнивание в пропорциональное число раз.</p>
+<h3 id="сводка-по-выравниванию">Сводка по выравниванию</h3>
+<p>Сводка <em>(Alignment summary)</em> выглядит следующим образом:</p>
+<pre><code>20000 reads; of these:
+  20000 (100.00%) were unpaired; of these:
+    1247 (6.24%) aligned 0 times
+    18739 (93.69%) aligned exactly 1 time
+    14 (0.07%) aligned &gt;1 times
+93.77% overall alignment rate
+</code></pre>
+<p>А для спаренных ридов вот так:</p>
+<pre><code>10000 reads; of these:
+  10000 (100.00%) were paired; of these:
+    650 (6.50%) aligned concordantly 0 times
+    8823 (88.23%) aligned concordantly exactly 1 time
+    527 (5.27%) aligned concordantly &gt;1 times
+    ----
+    650 pairs aligned concordantly 0 times; of these:
+      34 (5.23%) aligned discordantly 1 time
+    ----
+    616 pairs aligned 0 times concordantly or discordantly; of these:
+      1232 mates make up the pairs; of these:
+        660 (53.57%) aligned 0 times
+        571 (46.35%) aligned exactly 1 time
+        1 (0.08%) aligned &gt;1 times
+96.70% overall alignment rate
+</code></pre>
+
+<div class="notices note" ><p>По умолчанию сводка выводится в стандартный поток ошибок stderr. Чтобы записать сводку в отдельный файл нужно воспользоваться перенаправлением из стандартного потока ошибок. Для этого в конце команды надо написать &ldquo;2 &gt; название_файла &ldquo;:</p>
+<pre><code>bowtie2 -x /home/romanov/DM6_drosophila/DM6 -U file.fastq.gz --very-fast -S alignment.sam 2&gt;alignment_summary.txt
+</code></pre>
+</div>
+
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/programs/" title="Программы"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/programs/docker/" title="Docker" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1665602194"></script>
+    <script src="/js/perfect-scrollbar.min.js?1665602194"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1665602194"></script>
+    <script src="/js/jquery.sticky.js?1665602194"></script>
+    <script src="/js/featherlight.min.js?1665602194"></script>
+    <script src="/js/highlight.pack.js?1665602194"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1665602194"></script>
+    <script src="/js/learn.js?1665602194"></script>
+    <script src="/js/hugo-learn.js?1665602194"></script>
+    
+        
+            <script src="/mermaid/mermaid.js?1665602194"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    
+
+  </body>
+</html>
+
