@@ -115,7 +115,7 @@ incomplete](/Programs/Docker.files/incomplete.png?width=20pc)
 3.  Если возникает ошибка **WSL2 is not installed** или **WSL2
     installation is incomplete** то нужно сделать следующее:
 
-{{% expand "Видео-помощь" %}}
+{{% expand "   Видео-помощь" %}}
 
 [WSL2 installation is
 incomplete](https://www.youtube.com/watch?v=SjdFip4t3kI)
@@ -148,11 +148,11 @@ incomplete](https://www.youtube.com/watch?v=SjdFip4t3kI)
 
 {{% expand "Как найти Другие компоненты Windows" %}}
 
-![Поиск в меню Пуск](/Programs/Docker.files/additional.png?width=20pc?classes=inline)
+![Поиск в меню Пуск](/Programs/Docker.files/additional.png?width=20pc&classes=inline)
 ![Дополнительные
-компоненты](/Programs/Docker.files/others.png?width=20pc?classes=inline)
+компоненты](/Programs/Docker.files/others.png?width=20pc&classes=inline)
 ![Другие
-компоненты Windows](/Programs/Docker.files/components.png?width=20pc?classes=inline)
+компоненты Windows](/Programs/Docker.files/components.png?width=20pc&classes=inline)
 
 {{% /expand %}}
 

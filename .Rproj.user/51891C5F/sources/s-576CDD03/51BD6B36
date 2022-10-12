@@ -3,7 +3,7 @@
     "path": "C:/Users/stasw/Desktop/GitHub/GenomicsLabProtocols_home_control/content/Programs/Docker.Rmd",
     "project_path": "content/Programs/Docker.Rmd",
     "type": "r_markdown",
-    "hash": "3386377989",
+    "hash": "0",
     "contents": "",
     "dirty": false,
     "created": 1665592563181.0,
@@ -12,8 +12,8 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "184,83",
-        "scrollLine": "162",
+        "cursorPosition": "97,39",
+        "scrollLine": "95",
         "docOutlineVisible": "1",
         "rmdVisualMode": "false",
         "rmdVisualCollapsedChunks": "",
@@ -21,11 +21,11 @@
         "rmdVisualWrapConfigured": "true"
     },
     "folds": "",
-    "lastKnownWriteTime": 1665602645,
+    "lastKnownWriteTime": 1665602744,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1665602645165,
+    "last_content_update": 1665602744934,
     "read_only": false,
     "read_only_alternatives": []
 }
