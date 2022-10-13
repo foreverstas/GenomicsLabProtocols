@@ -12,22 +12,22 @@
     <title>Docker :: Epigenetic and Genomics Protocols</title>
 
     
-    <link href="/css/nucleus.css?1665692181" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1665692181" rel="stylesheet">
-    <link href="/css/hybrid.css?1665692181" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1665692181" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1665692181" rel="stylesheet">
-    <link href="/css/auto-complete.css?1665692181" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1665692181" rel="stylesheet">
-    <link href="/css/theme.css?1665692181" rel="stylesheet">
-    <link href="/css/tabs.css?1665692181" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1665692181" rel="stylesheet">
+    <link href="/css/nucleus.css?1665693921" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1665693921" rel="stylesheet">
+    <link href="/css/hybrid.css?1665693921" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1665693921" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1665693921" rel="stylesheet">
+    <link href="/css/auto-complete.css?1665693921" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1665693921" rel="stylesheet">
+    <link href="/css/theme.css?1665693921" rel="stylesheet">
+    <link href="/css/tabs.css?1665693921" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1665693921" rel="stylesheet">
     
-    <link href="/css/theme-green.css?1665692181" rel="stylesheet">
+    <link href="/css/theme-green.css?1665693921" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1665692181"></script>
+    <script src="/js/jquery-3.3.1.min.js?1665693921"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -53,14 +53,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1665692181"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1665692181"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1665693921"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1665693921"></script>
 <script type="text/javascript">
     
         var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1665692181"></script>
+<script type="text/javascript" src="/js/search.js?1665693921"></script>
 
     
   </div>
@@ -1914,7 +1914,7 @@ Technology, VT, Virtualization и пр.) и Hyper-V. Затем перевест
 <li>Cкачать образ контейнера с помощью <code>docker pull</code></li>
 </ol>
 <p>В появившемся окне консоли ввести команду:</p>
-<pre><code>$docker pull docker/getting-started
+<pre><code>&gt; docker pull docker/getting-started
 </code></pre>
 <p>Эту команда написана в документации образа <a href="https://hub.docker.com/r/docker/getting-started">docker/getting-started</a> в правой части экрана.</p>
 <p>В результате в окне приложения Docker Desktop в разделе images появится
@@ -1944,7 +1944,7 @@ Technology, VT, Virtualization и пр.) и Hyper-V. Затем перевест
     </div>
     <div class="expand-content" style="display: none;">
         <p>В консоли ввести:</p>
-<pre><code>$docker run -d -p 80:80 docker/getting-started
+<pre><code>&gt; docker run -d -p 80:80 docker/getting-started
 </code></pre>
 <p>Эта команда написана в документации образа <a href="https://hub.docker.com/r/docker/getting-started">docker/getting-started</a>.
 Обычно нет нужды переписывать или модифицировать ее. В ответ docker запустит сам контейнер. Либо сначала скачает образ (если это не было сделано ранее) и сразу скачает контейнер.</p>
@@ -1986,17 +1986,17 @@ Technology, VT, Virtualization и пр.) и Hyper-V. Затем перевест
 <h3 id="настройки-контейнеров-перед-и-после-запуска">Настройки контейнеров перед и после запуска</h3>
 <p>Как было показано, запуск контейнера производится при помощи команды <code>docker run</code>.</p>
 <p>Синтаксис команды следующий:</p>
-<pre><code>$docker run [Параметры] название_образа [название_программы] [аргументы...]
+<pre><code>&gt; docker run [Параметры] название_образа [название_программы] [аргументы...]
 </code></pre>
 <p>Необходимо внимательно следить за порядком написания отдельных частей команды. Параметры команды <code>docker run</code> должны быть написаны перед названием образа. После образа можно писать название программы, результат которой вы хотите получить. После названия программы должны идти соответсвующие аргументы.</p>
 <h4 id="как-дать-контейнеру-название">Как дать контейнеру название?</h4>
 <p>Параметр <code>--name</code> позволит присвоить контейнеру нужное имя. Например, после команды</p>
-<pre><code>$docker run --name StaticSite -d -p 80:80 docker/getting-started
+<pre><code>&gt; docker run --name StaticSite -d -p 80:80 docker/getting-started
 </code></pre>
 <p>название контейнера будет “StaticSite” и можно будет использовать это название при обращении к контейнеру другими командами docker.</p>
 <h4 id="как-найти-все-запущеные-контейнеры-и-их-параметры">Как найти все запущеные контейнеры и их параметры?</h4>
 <p>Команда</p>
-<pre><code>  $docker ps
+<pre><code>&gt; docker ps
 </code></pre>
 <p>предоставить таблицу со списком всех установленных контейнеров. Ту же самую информацию можно увидеть в разделе <strong>Containers</strong> программы <strong>Docker Desktop</strong>. Дополнительные подробности можно рассмотреть в разделе <strong>Inspect</strong>, куда можно попасть если нажать на название контейнера.</p>
 <h4 id="настройка-доступа-к-контейнеру-через-браузер">Настройка доступа к контейнеру через браузер</h4>
@@ -2005,7 +2005,7 @@ Technology, VT, Virtualization и пр.) и Hyper-V. Затем перевест
 <p>Чтобы узнать, по какому адресу располагается сервер, который мы сейчас запустили, нужно обратить внимание на параметр <code>port</code>, который можно подробно рассмотреть в разделе <strong>Inspect</strong>, куда можно попасть если нажать на название контейнера.</p>
 <p><img src="/Programs/Docker.files/port.png?width=20pc" alt="Container"></p>
 <p>Как альтернатива, можно ввести в <strong>PowerShell</strong> или <strong>cmd</strong> команду</p>
-<pre><code>  $docker ps
+<pre><code>&gt; docker ps
 </code></pre>
 <p>В таком случае в консоли появится следующая таблица:</p>
 <table>
@@ -2034,7 +2034,7 @@ Technology, VT, Virtualization и пр.) и Hyper-V. Затем перевест
 </table>
 <p>Легко заметить, что информация в этой таблице почти полностью отображена в разделе <strong>Inspect</strong>. Здесь мы снова видим название контейнера, название образа, время создания, а также адрес порта.</p>
 <p>Если мы знаем название контейнера, мы можем быстро узнать порт при помощи команды PowerShell</p>
-<pre><code>$docker port название_контейнера
+<pre><code>&gt; docker port название_контейнера
 </code></pre>
 <p>Данные в ячейке <code>PORTS</code> позволяют понять, как можно обращаться к серверу через
 браузер. В данном случае для нашего контейнера port обозначен как
@@ -2057,30 +2057,36 @@ Technology, VT, Virtualization и пр.) и Hyper-V. Затем перевест
 <p>В <a href="https://docs.docker.com/network/links/">документации docker</a> есть много других примеров, как можно привязать контейнер к IP-адресам. Например, в команде <code>-p 8989:80</code> мы не пишем конкретный IP-адрес, к которому будет привязан контейнер, поэтому docker по умолчанию использует адрес 0.0.0.0. Но так как это общее название для всех адресов на локальной машине, мы не знаем, к какому IP-адресу локальной машины все-таки будет привязан контейнер. Если docker принимает в качестве IP-адреса 0.0.0.0, то к контейнеру смогут подключиться пользователи на всех сетевых интерфейсах (как публичных, так и частных), что обычно считается небезопасным. Чтобы попасть на созданный нами сервер, мы должны вписать в адресной строке “localhost:8989”. В то же время, обращение <code>8989:80</code> является сокращенной формой, и полностью команда выглядит как <code>-p 0.0.0.0:8989:80/tcp</code>. Зная это, мы можем менять IP-адрес, порт контейнера, порт локальной машины, а также протокол передачи данных. Например, ввод <code>-p 127.0.0.1:8000:80/tcp</code> заставит docker привязать контейнер к адресу <code>http:/127.0.0.1:8000</code>.</p>
 <h4 id="как-приостановить-и-запустить-снова-выполнение-контейнера">Как приостановить и запустить снова выполнение контейнера?</h4>
 <p>Остановить запущеный контейнер можно из окна docker в разделе <code>Containers</code>, нажатием на значок <strong>Stop</strong> (серый квадратик) напротив названия контейнера. Либо нужно в <code>PowerShell</code> ввести команду:</p>
-<pre><code>$docker stop название_контейнера
+<pre><code>&gt; docker stop название_контейнера
 </code></pre>
 <p>Обратите внимание, что здесь нужно вводить не название образа, а название контейнера.</p>
 <p>При остановке контейнера все данные и временные файлы внутри контейнера будут сохранены до следующего запуска.</p>
 <p>Чтобы заново запустить выполнение контейнера нужно нажать на значок <strong>Start</strong> (серый треугольник) напротив остановленного контейнера. Либо нужно в <code>PowerShell</code> ввести команду:</p>
-<pre><code>$docker restart название_контейнера
+<pre><code>&gt; docker restart название_контейнера
 </code></pre>
 <h4 id="режимы-запуска-контейнеров">Режимы запуска контейнеров</h4>
 <p>При запуске контейнера Docker при помощи <code>docker run</code> в терминале вы должны сначала решить, хотите ли вы запускать контейнер в фоновом режиме (<em>detached mode</em>) или на переднем плане (<em>foreground mode</em>).</p>
-<h5 id="фоновый-режим">Фоновый режим</h5>
+<ul>
+<li>Фоновый режим</li>
+</ul>
 <p>В примере выше мы запускали статический вебсайт следующим образом:</p>
-<pre><code>$docker run -d -p 80:80 docker/getting-started
+<pre><code>&gt; docker run -d -p 80:80 docker/getting-started
 </code></pre>
 <p>А сразу после ввода команды терминал выводил идентификатор образа и приглашал ввести слудующую команду:</p>
-<pre><code>PS C:\Users\stasw&gt; docker run -d -p 80:80 docker/getting-started
+<pre><code>&gt; docker run -d -p 80:80 docker/getting-started
+
 0e1d96e727a0d5b855b559689a91ca6e0bcf7149ce2492fa4525935336133950
-PS C:\Users\stasw&gt;
+
+&gt;
 </code></pre>
 <p>Даже после закрытия терминала контейнер продолжает работать, и статический вебсайт остается доступен до тех пор, пока контейнер не будет остановлен. Это так называемый режим <em>Detach</em>, или фоновый режим.</p>
 <p>В режиме Detach, после ввода команды <code>docker run ...</code> в терминале, Docker запустит программу внутри контейнера в фоновом режиме и вы сможете вводить другие команды оболочки Windows в терминал. В таком случае можно будет спокойно закрыть терминал, а контейнер продолжит работу. Контейнеры, запущенные в фоновом режиме, останавливаются, когда завершается корневой процесс, используемый для запуска контейнера.</p>
 <p>Запустить фоновый режим можно с помощью параметра <code>-d</code> или <code>--detach</code>, или <code>-d=true</code> (это одно и то же). В примере выше мы именно его и вводили. Если вы укажете вместе с параметром <code>-d</code> еще параметр <code>--rm</code>, то после выхода из контейнера или закрытия Docker контейнер будет полностью удален.</p>
-<h5 id="передний-план">Передний план</h5>
+<ul>
+<li>Передний план</li>
+</ul>
 <p>В примере выше мы запускали контейнер <code>docker/getting-started</code> с параметром <code>-d</code> в фоновом режиме, что делало возможным пользоваться терминалом после открытия контейнера. Если убрать этот параметр, то в окно консоли начнут выводиться журнал сообщений (<em>logs, логи</em>) контейнера.</p>
-<pre><code>PS C:\Users\stasw&gt; docker run -p 80:80 docker/getting-started
+<pre><code>&gt; docker run -p 80:80 docker/getting-started
 
 /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
 ...[много всего остального]...
@@ -2092,34 +2098,38 @@ PS C:\Users\stasw&gt;
 </div>
 
 <p>Логи представляют собой текстовые сообщения, которые посылаются программами в контейнере. Есть стандатные сообщения (например, о том, что программа запущена или выполнена) и сообщения об ошибках (например, ошибка из-за неверного формата файлов). Вывод стандартных сообщений и ошибок в окно консоли производится через разные потоки вывода, а именно поток стандартного вывода (<em>STDOUT</em>) и поток стандартных ошибок (<em>STDERR</em>), соответственно. На самом деле, сообщения, которые выводятся через поток ошибок не обязательно содержат ошибки, и два потока вывода нужны для только для удобства. По умолчанию режим переднего плана подразумевает, что в консольвыводятся сообщения из обоих потоков вывода.В зависимости от цели, которую вы преследуете, вы можете заставить docker выводить только сообщения об ошибках или только стандартные сообщения, а также получать сообщения из стандартного ввода. Для этого требуется использовать параметр <code>-a</code>:</p>
-<pre><code>$docker run ... -a stdout -a stderr ...
+<pre><code>&gt; docker run ... -a stdout -a stderr ...
 </code></pre>
 <p>Вы можете вписать один или несколько потоков, повторив параметр <code>-a</code> несколько раз.</p>
 <p>Легко обнаружить, что при запуске <code>docker/getting-started</code> c выводом сообщений по <code>STDOUT</code>, выводятся только сообщения о запуске скриптов</p>
-<pre><code>PS C:\Users\stasw&gt; docker run -a stdout -p 80:80 docker/getting-started
+<pre><code>&gt; docker run -a stdout -p 80:80 docker/getting-started
+
 /docker-entrypoint.sh: /docker-entrypoint.d/ is not empty, will attempt to perform configuration
 </code></pre>
 <p>А при выводе только из <code>STDERR</code>, только сообщения о запуске процессов</p>
-<pre><code>PS C:\Users\stasw&gt; docker run -a stderr -p 80:80 docker/getting-started
+<pre><code>&gt; docker run -a stderr -p 80:80 docker/getting-started
+
 2022/10/13 12:08:41 [notice] 1#1: start worker process 32
 ...[аналогичные сообщения]...
 </code></pre>
-<h5 id="передача-данный-в-конвейер-через-поток-стандартного-ввода">Передача данный в конвейер через поток стандартного ввода</h5>
+<h4 id="передача-данных-в-конвейер-через-поток-стандартного-ввода">Передача данных в конвейер через поток стандартного ввода</h4>
 <p>Для работы некоторых приложения может потребоваться подать на вход текст, полученный из другой программы (через поток стандартного ввода <em>STDIN</em>) при помощи символа <code>|</code> (<em>pipe</em>). Чтобы сделать возможным получение данных из <em>STDIN</em>, необходимо упомянуть поток стандартного ввода в параметре <code>-a stdin</code>. В большинстве случаев, чтобы передать в контейнер данные из стандартного ввода придется также ввести параметр <code>-i</code>, который заставляет держать канал <em>STDIN</em> открытым, даже если контейнер не подключен к вводу (это задается создателем образа).</p>
 <p>Продемонстрировать это можно, например, запуская программу cat, которая в Linux является стандартным средством просмотра текста через консоль, но в Windows эта программа отсутствует. Если ввести в консоль <strong>PowerShell</strong> команду</p>
-<pre><code>$echo &quot;Hello World!&quot; | docker run --rm -i -a stdin -a stdout ubuntu cat
+<pre><code>&gt; echo &quot;Hello World!&quot; | docker run --rm -i -a stdin -a stdout ubuntu cat
 </code></pre>
 <p>то Docker передаст тестовую строку “Hello World!” программе <code>cat</code>, запущеной в контейнере из образа <code>ubuntu</code> (содержит минимальный набор компонентов ОС Linux), через <em>STDIN</em>. В свою очередь, cat передаст полученный текст в окно консоли через <em>STDOUT</em>.</p>
 <p>В терминале мы увидим сообщение</p>
 <pre><code>Hello World!
+
+&gt; 
 </code></pre>
 <p>Когда программа cat завершит выполнение, то контейнер будет удален благодаря параметру <code>--rm</code>.</p>
-<h5 id="запуск-контейнера-в-интерактивном-режиме">Запуск контейнера в интерактивном режиме</h5>
+<h4 id="запуск-контейнера-в-интерактивном-режиме">Запуск контейнера в интерактивном режиме</h4>
 <p>Контейнер может содержать компоненты ядра операционной системы, а значит, в ряде случаев внутри контейнера можно будет запускать собственный терминал. Это напоминает работу в виртуальной машине. Чтобы запустить терминал, нужно запустить <code>docker run</code> с параметром <code>-t</code> и <code>-i</code> одновременно (часто пишут одним словом <code>-ti</code> или <code>-it</code>). Для примера, следующая команда открывает в PowerShell терминал Ubuntu:</p>
-<pre><code>$docker run --rm -it ubuntu
+<pre><code>&gt; docker run --rm -it ubuntu
 </code></pre>
 <p>В появившемся терминале можно вводить команды bash. Ниже я проверяю версию Ubuntu, обратившись к стандартному файлу os-ubuntu:</p>
-<pre><code>    $docker run --rm -it ubuntu
+<pre><code>&gt; docker run --rm -it ubuntu
 
 root@df7701d1e063:/# cat /etc/os-release
 PRETTY_NAME=&quot;Ubuntu 22.04.1 LTS&quot;
@@ -2143,14 +2153,14 @@ root@df7701d1e063:/#
 <h4 id="запуск-команд-внутри-конвейера-запущенного-в-фоновом-режиме">Запуск команд внутри конвейера, запущенного в фоновом режиме</h4>
 <p>Если внутри конвейера есть компоненты ядра операционной системы, то можно запустить их при помощи терминала внутри ковейера. Запустить терминал можно из <strong>Docker Desktop</strong>, если в разделе <em>Containers</em>. Для этого нужно либо нажать на троеточие напротив названия терминала и выбрать <em>Open in terminal</em>, либо нажать на имя контейнера и открыть вкладку <em>CLI</em> (правый верхний угол экрана).</p>
 <p>Если в запущеном контейнере есть программы, которые вы хотите запустить, то нужно воспользоваться командой</p>
-<pre><code>$docker exec название_контейнера название_программы [аргументы]
+<pre><code>&gt; docker exec название_контейнера название_программы [аргументы]
 </code></pre>
 <p>Например, после запуска контейнера <code>ubuntu</code> можно запустить команду <code>cat /etc/os-release</code>, которая в Linux покажет версию операционной системы (то же самое, что показано в примере с запуском контейнера в интерактивном режиме:</p>
-<pre><code>    $docker run -d -i --name Ubuntu_container ubuntu
+<pre><code>&gt; docker run -d -i --name Ubuntu_container ubuntu
 
 3586325f911cd4a83600b08aff7e8e00d1c2ccf5bef5ce77b22a52fe38ccde1d
 
-    $docker exec Ubuntu_container cat /etc/os-release
+&gt; docker exec Ubuntu_container cat /etc/os-release
 
 PRETTY_NAME=&quot;Ubuntu 22.04.1 LTS&quot;
 NAME=&quot;Ubuntu&quot;
@@ -2169,12 +2179,12 @@ UBUNTU_CODENAME=jammy
 <p>Вторая команда запускает в контейнере нужную команду cat, которая выводит результат в <em>STDOUT</em>, то есть прямо в терминал.</p>
 <h4 id="как-удалить-контейнер">Как удалить контейнер?</h4>
 <p>Удалить контейнер можно из окна docker в разделе <code>Containers</code>, нажатием на значок Delete (мусорный ящик) напротив названия контейнера. Либо в <code>PowerShell</code> можно ввести команду:</p>
-<pre><code>$docker rm название_контейнера(или идентификатор)
+<pre><code>&gt; docker rm название_контейнера(или идентификатор)
 </code></pre>
 <p>После удаления контейнера все данные внутри контейнера будут удалены.</p>
 <h4 id="как-удалить-образ-контейнера">Как удалить образ контейнера?</h4>
 <p>После остановки контейнера, его можно удалить. Это можно сделать из окна docker в разделе <code>Images</code>. Для этого нужно нажать на значок троеточия напротив названия контейнера, затем выбрать <code>Remove</code>. Либо в <code>PowerShell</code> нужно ввести команду:</p>
-<pre><code>  $docker image rm название_образа(или идентификатор) 
+<pre><code>&gt; docker image rm название_образа(или идентификатор) 
 </code></pre>
 <h4 id="как-переносить-файлы-между-компьютером-и-контейнером">Как переносить файлы между компьютером и контейнером?</h4>
 <p>Как уже говорилось, контейнер является полностью изолированной от операционной системы компьютера программой. При запуске контейнера docker создает отдельную файловую систему, и к файлам внутри контейнера невозможно обратиться при помощи стандартного файлового менеджера. Что нужно сделать, чтобы быстро и легко переносить данные из локальной машины в файловую систему компьютера?</p>
@@ -2201,10 +2211,10 @@ UBUNTU_CODENAME=jammy
 <li>Вместо двоеточия после названия диска (C:) пишется двойной слеш перед названием диска (//c)</li>
 </ol>
 <p>Допустим, вы хотите, чтобы на компьютере с Windows Том располагался в папке “C:\Docker\myContainer\data”. В контейнере, содержащем ядро Linux, этому тому будет соответствовать директория “/data”. команда, монтирующая том будет выглядеть следующим образом:</p>
-<pre><code>$docker run ... -v //c/Docker/myContainer/data:/data ...
+<pre><code>&gt; docker run ... -v //c/Docker/myContainer/data:/data ...
 </code></pre>
 <p>Если вы хотите смонтировать несколько папок, то можно воспользоваться параметром <code>-v</code> несколько раз:</p>
-<pre><code> $docker run ... -v //c/Docker/myContainer/data:/data -v //e/Docker/second_dir:/secondDir ...
+<pre><code>&gt; docker run ... -v //c/Docker/myContainer/data:/data -v //e/Docker/second_dir:/secondDir ...
 </code></pre>
 <p>Обратите внимание, что название папки на компьютере и директории в контейнере может не совпадать.</p>
 <p>Более продвинутый способ - создать на компьютере <em>Том (Volume)</em>. Тома - это файлы или каталоги, которые смонтированы непосредственно на хосте и не являются частью файловой системы контейнера. По определению, том — это файловая система, которая расположена на хост-машине за пределами контейнеров. По сути том - это папка внутри Docker Desktop путь к которой будет записан в памяти docker в виде переменной.</p>
@@ -2215,9 +2225,11 @@ UBUNTU_CODENAME=jammy
 </li>
 <li>
 <p>В терминале (Cmd или PowerShell) ввести команду</p>
-<p>$docker volume create название_тома</p>
 </li>
 </ol>
+<!-- -->
+<pre><code>&gt; docker volume create название_тома
+</code></pre>
 <p>Вы можете найти эту папку при помощи файлового менеджера. Путь к папке, в которой лежат Томы в Windows 11 находится по адресу <code>\\wsl.localhost\docker-desktop-data\data\docker\volumes</code>. Его можно ввести в адресную строку проводника:</p>
 <p><img src="/Programs/Docker.files/Volume.png?width=20pc" alt="Volume"></p>
 <p>На скриншоте выше показно, как это может выглядеть. Обратите внимание, в проводнике <strong>Explorer</strong> в левой части экрана располагается панель быстрого доступа, где можно увидеть смонтированные при помощи WSL2 разделы <code>docker-desktop</code> и <code>docker-desktop-data</code>, которые появляются после установки <strong>Docker Desktop</strong>. В разделе <code>docker-desktop-data</code> - в указанной выше директории - и хранятся тома. На скриншоте показано, что помимо служебных файлов в этой диркетории лежит папка <code>my_vol</code>. Это название универсального тома, который был создан командой <code>docker volume create my_vol</code>. В этой папке лежит несколько служебных папок, а также папка <code>_data</code>. Собственно, содержимое последней папки и будет синхронизироваться с разделами контейнеров.</p>
@@ -2226,20 +2238,20 @@ UBUNTU_CODENAME=jammy
 <img src="/Programs/Docker.files/Volume1.png?width=20pc" alt="Volume2">
 <img src="/Programs/Docker.files/Volume3.png?width=20pc" alt="Volume3"></p>
 <p>После создания тома его можно привязывать к нескольким контейнерам, просто указав название тома перед названием директории в контейнере в параметре <code>-v</code></p>
-<pre><code>$docker run ... -v my_vol:/data ...
+<pre><code>&gt; docker run ... -v my_vol:/data ...
 </code></pre>
 <p>Удалить том можно в разделе <em>Volumes</em> в <strong>Docker Desktop</strong> (значок корзины) либо в терминале при помощи команды</p>
-<pre><code>$docker volume rm название_тома
+<pre><code>&gt; docker volume rm название_тома
 </code></pre>
 <p>Узнать список всех томов на компьютере можно в разделе <em>Volumes</em> в <strong>Docker Desktop</strong> либо в терминале при помощи команды</p>
-<pre><code>$docker volume ls
+<pre><code>&gt; docker volume ls
 </code></pre>
 <h4 id="как-копировать-файлы-в-контейнер-и-из-него">Как копировать файлы в контейнер и из него?</h4>
 <p>Если вы хотите напрямую скопировать файлы из вашей хост-системы в контейнер, вы должны использовать команду <code>docker cp</code> к терминале (<strong>Cmd</strong> или <strong>PowerShell</strong>), например:</p>
-<pre><code>$docker cp путь_к_файлу_на_компьютере название_контейнера:путь_назначения_в_контейнере
+<pre><code>&gt; docker cp путь_к_файлу_на_компьютере название_контейнера:путь_назначения_в_контейнере
 </code></pre>
 <p>Это работает и в обратную сторону:</p>
-<pre><code>$docker cp название_контейнера:путь_к_файлу_в_контейнере путь_назначения_на_компьютере
+<pre><code>&gt; docker cp название_контейнера:путь_к_файлу_в_контейнере путь_назначения_на_компьютере
 </code></pre>
 <h3 id="литература">Литература</h3>
 <p><a href="https://drive.google.com/file/d/1BYH8Lh46ZWtInXYYRncr4oqjXhMMHa8n/view?usp=sharing">Милл Иан, Сейерс Эйдан Хобсон - Docker на практике (2020)</a></p>
@@ -3251,19 +3263,19 @@ WSL2</a></p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1665692181"></script>
-    <script src="/js/perfect-scrollbar.min.js?1665692181"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1665692181"></script>
-    <script src="/js/jquery.sticky.js?1665692181"></script>
-    <script src="/js/featherlight.min.js?1665692181"></script>
-    <script src="/js/highlight.pack.js?1665692181"></script>
+    <script src="/js/clipboard.min.js?1665693921"></script>
+    <script src="/js/perfect-scrollbar.min.js?1665693921"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1665693921"></script>
+    <script src="/js/jquery.sticky.js?1665693921"></script>
+    <script src="/js/featherlight.min.js?1665693921"></script>
+    <script src="/js/highlight.pack.js?1665693921"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1665692181"></script>
-    <script src="/js/learn.js?1665692181"></script>
-    <script src="/js/hugo-learn.js?1665692181"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1665693921"></script>
+    <script src="/js/learn.js?1665693921"></script>
+    <script src="/js/hugo-learn.js?1665693921"></script>
     
         
-            <script src="/mermaid/mermaid.js?1665692181"></script>
+            <script src="/mermaid/mermaid.js?1665693921"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
