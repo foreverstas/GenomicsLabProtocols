@@ -679,7 +679,7 @@ WSL2](https://ip-calculator.ru/blog/ask/ustanovka-docker-na-windows-10-home/)
 
 Sam-файл с выравниванием располагается в по адресу `C:\Docker_control\Bowtie2_example\lv-align.sam`
 
-Стоит обратить внимание, что то же самое можно сделать, запустивь интерактивный терминал внутри контейнера:
+Стоит обратить внимание, что то же самое можно сделать, запустив интерактивный терминал внутри контейнера:
 
     >docker run -it --rm -v //c/Docker_control/Bowtie2_example/:/data/ biocontainers/bowtie2:v2.3.4.3-1-deb_cv2
 
