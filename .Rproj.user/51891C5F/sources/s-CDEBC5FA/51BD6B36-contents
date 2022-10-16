@@ -848,17 +848,20 @@ biodocker@f2e8661dab5d# exit
 ### Литература
 
 [Милл Иан, Сейерс Эйдан Хобсон - Docker на практике (2020)](https://drive.google.com/file/d/1BYH8Lh46ZWtInXYYRncr4oqjXhMMHa8n/view?usp=sharing)
+
 [Эдриен Моуэт - Использование Docker (2017)](https://drive.google.com/file/d/136mEKfg2tM3alMeqSdD4vCt9iqheBSTb/view?usp=sharing)
 
 ### Документация
 
 [Официальная документация](https://docs.docker.com/) 
+
 [Русская версия документации](https://dker.ru/docs/)
+
 [Видеоуроки](https://youtube.com/playlist?list=PLD5U-C5KK50XMCBkY0U-NLzglcRHzOwAg)
-[Инструкция по установке на Windows с
-WSL2](https://tretyakov.net/post/ustanovit-docker-na-windows-10-wsl2/)
-[Еще одна инструкция по установке на Windows с
-WSL2](https://ip-calculator.ru/blog/ask/ustanovka-docker-na-windows-10-home/)
+
+[Инструкция по установке на Windows с WSL2](https://tretyakov.net/post/ustanovit-docker-na-windows-10-wsl2/)
+
+[Еще одна инструкция по установке на Windows с WSL2](https://ip-calculator.ru/blog/ask/ustanovka-docker-na-windows-10-home/)
 
 
 
