@@ -111,17 +111,11 @@ WSL2](https://ip-calculator.ru/blog/ask/ustanovka-docker-na-windows-10-home/)
 {{% /expand %}}
 Установка **Docker Desktop** происходит в несколько этапов.
 
-1.  В **BIOS** включить виртуализацию. Для этого нужно перезагрузить
-    компьютер, войти в **BIOS**, затем в одном из окон найти строчку,
-    которая включает слова “Virtualization” (Intel Virtualization
-    Technology, VT, Virtualization и пр.) и “Hyper-V”. Затем перевести в
-    режим Enabled.
+1.  В **BIOS** включить виртуализацию. Для этого нужно перезагрузить компьютер, войти в **BIOS**, затем в одном из окон найти опцию, которая включает слова “Virtualization” (Intel Virtualization Technology, VT, Virtualization и пр.) и “Hyper-V”. Затем перевести опцию в режим Enabled.
 
 ![Куда смотреть в BIOS?](/Programs/Docker.files/bios.png?width=20pc)
 
-2.  Скачать установщик **Docker Desktop** на сайте
-    [docker.com](https://www.docker.com/). Во время установки следовать
-    инструкциям.
+2.  Скачать установщик **Docker Desktop** на сайте [docker.com](https://www.docker.com/). Во время установки следовать инструкциям.
 
 ![Официальный сайт](/Programs/Docker.files/docker.png?width=20pc)
 
@@ -129,15 +123,13 @@ WSL2](https://ip-calculator.ru/blog/ask/ustanovka-docker-na-windows-10-home/)
 
 ![Когда все нормально](/Programs/Docker.files/Normal.png?width=20pc)
 
-Но программа может выдать ошибки из-за неполной установки зависимостей.
-В таком случае будут видны такие ошибки:
+Но программа может выдать ошибки из-за неполной установки зависимостей. В таком случае будут видны такие ошибки:
 
 ![WSL2 is not installed](/Programs/Docker.files/noWSL.png?width=20pc)
 
 ![WSL2 installation is incomplete](/Programs/Docker.files/incomplete.png?width=20pc)
 
-Вообще в сообщении об ошибке уже написано, что делать, но если есть
-затруднения, то нужно сделать как указано ниже.
+Вообще в сообщении об ошибке уже написано, что делать, но если есть затруднения, то нужно сделать как указано ниже.
 
 {{% expand "   Видео-помощь" %}}
 
@@ -147,11 +139,7 @@ WSL2](https://ip-calculator.ru/blog/ask/ustanovka-docker-na-windows-10-home/)
 
 {{% /expand %}}
 
-Решением будет установка подсистемы Linux для Windows, как это описано в
-руководстве [здесь](https://learn.microsoft.com/ru-ru/windows/wsl/install) и
-[здесь](https://learn.microsoft.com/ru-ru/windows/wsl/install-manual).
-На первый взгляд это кажется очень сложным, но на самом деле потребует
-только несколько раз войти в **PowerShell** и **MicrosoftStore**.
+Решением будет установка подсистемы Linux для Windows, как это описано в руководстве [здесь](https://learn.microsoft.com/ru-ru/windows/wsl/install) и [здесь](https://learn.microsoft.com/ru-ru/windows/wsl/install-manual). На первый взгляд это кажется очень сложным, но на самом деле потребует только несколько раз войти в **PowerShell** и **MicrosoftStore**.
 
 {{% expand "Как открыть PowerShell" %}}
 
@@ -168,7 +156,9 @@ WSL2](https://ip-calculator.ru/blog/ask/ustanovka-docker-na-windows-10-home/)
 {{% expand "Как найти Другие компоненты Windows" %}}
 
 ![Поиск в меню Пуск](/Programs/Docker.files/additional.png?width=20pc&classes=inline)
+
 ![Дополнительные компоненты](/Programs/Docker.files/others.png?width=20pc&classes=inline)
+
 ![Другие компоненты Windows](/Programs/Docker.files/components.png?width=20pc&classes=inline)
 
 {{% /expand %}}
@@ -181,16 +171,13 @@ WSL2](https://ip-calculator.ru/blog/ask/ustanovka-docker-na-windows-10-home/)
 
 {{% expand "Способ 1" %}}
 
-Нажать комбинацию клавиш `Windows+R` и в появившемся окне ввести
-*powershell* или *cmd*, соответственно.
+Нажать комбинацию клавиш `Windows+R` и в появившемся окне ввести *powershell* или *cmd*, соответственно.
 
 {{% /expand %}}
 
 {{% expand "Способ 2" %}}
 
-Нажать клавишу Windows или кнопку Пуск на рабочем столе и в появившейся
-строке поиска ввести *powershell* или *Командная строка*,
-соответственно. Открыть приложение.
+Нажать клавишу Windows или кнопку Пуск на рабочем столе и в появившейся строке поиска ввести *powershell* или *Командная строка*, соответственно. Открыть приложение.
 
 {{% /expand %}}
 
