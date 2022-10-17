@@ -12,22 +12,22 @@
     <title>Docker :: Epigenetic and Genomics Protocols</title>
 
     
-    <link href="/css/nucleus.css?1665989772" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1665989772" rel="stylesheet">
-    <link href="/css/hybrid.css?1665989772" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1665989772" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1665989772" rel="stylesheet">
-    <link href="/css/auto-complete.css?1665989772" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1665989772" rel="stylesheet">
-    <link href="/css/theme.css?1665989772" rel="stylesheet">
-    <link href="/css/tabs.css?1665989772" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1665989772" rel="stylesheet">
+    <link href="/css/nucleus.css?1666020333" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1666020333" rel="stylesheet">
+    <link href="/css/hybrid.css?1666020333" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1666020333" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1666020333" rel="stylesheet">
+    <link href="/css/auto-complete.css?1666020333" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1666020333" rel="stylesheet">
+    <link href="/css/theme.css?1666020333" rel="stylesheet">
+    <link href="/css/tabs.css?1666020333" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1666020333" rel="stylesheet">
     
-    <link href="/css/theme-green.css?1665989772" rel="stylesheet">
+    <link href="/css/theme-green.css?1666020333" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1665989772"></script>
+    <script src="/js/jquery-3.3.1.min.js?1666020333"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -53,14 +53,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1665989772"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1665989772"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1666020333"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1666020333"></script>
 <script type="text/javascript">
     
         var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1665989772"></script>
+<script type="text/javascript" src="/js/search.js?1666020333"></script>
 
     
   </div>
@@ -1673,9 +1673,12 @@
         <li><a href="#архитектура-платформы-docker">Архитектура платформы <strong>Docker</strong></a></li>
         <li><a href="#установка-docker-desktop">Установка <strong>Docker Desktop</strong></a></li>
         <li><a href="#пример-работы-с-docker-и-docker-desktop">Пример работы с <strong>Docker</strong> и <strong>Docker Desktop</strong></a></li>
-        <li><a href="#как-на-docker-запускать-программы">Как на <strong>Docker</strong> запускать программы</a></li>
+        <li><a href="#как-с-помощью-docker-запускать-программы">Как с помощью <strong>Docker</strong> запускать программы</a></li>
         <li><a href="#работа-с-контейнерами">Работа с контейнерами</a></li>
-        <li><a href="#применение-на-практике">Применение на практике</a></li>
+        <li><a href="#использование-контейнера-на-примере-bowtie2">Использование контейнера на примере <strong>bowtie2</strong></a></li>
+        <li><a href="#создание-собственных-контейнеров-и-образов">Создание собственных контейнеров и образов</a></li>
+        <li><a href="#создание-образов-при-помощи-dockerfile">Создание образов при помощи <strong>Dockerfile</strong></a></li>
+        <li><a href="#интеграция-образов-в-реестры">Интеграция образов в реестры</a></li>
         <li><a href="#литература">Литература</a></li>
         <li><a href="#документация">Документация</a></li>
       </ul>
@@ -1989,8 +1992,8 @@ WSL2</a></p>
 <code>http://localhost:80</code>. Нужно понимать, что параметр <code>Open with browser</code> и ссылка в браузере заработают только при правильной настройке контейнера.</p>
 <p><img src="/Programs/Docker.files/program.png?width=20pc" alt="Container"></p>
 <p>Обратите внимание, что после того, как вы введете нужный адрес в адресную строку браузера, адрес поменяется в соответствием с URL-адресами, запрограммированными внутри контейнера.</p>
-<h3 id="как-на-docker-запускать-программы">Как на <strong>Docker</strong> запускать программы</h3>
-<p>Как было показано, запуск контейнера производится при помощи команды <code>docker run</code>. Показанный пример показвал, каким образом при помощи нее запускаются серверные приложения. Однако в общем случае <strong>Docker</strong> позволяет путем минимальных модификаций, запускать в командной строке Windows любые программы, написанные под Linux (или под любую другую ОС).</p>
+<h3 id="как-с-помощью-docker-запускать-программы">Как с помощью <strong>Docker</strong> запускать программы</h3>
+<p>Как было показано, запуск контейнера производится при помощи команды <code>docker run</code>. Показанный пример демонстрировал, каким образом при помощи нее запускаются серверные приложения. Однако в общем случае <strong>Docker</strong> позволяет путем минимальных модификаций, запускать в командной строке Windows любые программы, написанные под Linux (или под любую другую ОС).</p>
 <p>Синтаксис команды <code>docker run</code> следующий:</p>
 <pre><code>&gt; docker run [Параметры] название_образа [название_программы] [аргументы...]
 </code></pre>
@@ -2008,7 +2011,7 @@ WSL2</a></p>
 Hello World!
 </code></pre>
 
-<div class="notices note" ><p>Представленный пример по сути является бессмысленным, поскольку програма <code>echo</code> спокойно запустится на современных вариантах ОС Windows. Однако строго говоря, программы echo под Windows не существует, так как само слово &ldquo;echo&rdquo; является псевдонимом (<em>alias</em>) программы <code>Write-Output</code>).</p>
+<div class="notices note" ><p>Представленный пример по сути является бессмысленным, поскольку програма <code>echo</code> спокойно запустится на современных вариантах ОС Windows. Однако строго говоря, программы echo под Windows не существует, так как само слово &ldquo;echo&rdquo; является псевдонимом (<em>alias</em>) программы <code>Write-Output</code>.</p>
 </div>
 
 <p>Данный пример только демонстрирует, что запуск программ под, написанных под Unix-системы, на компьютере с ОС Windows с помощью <strong>Docker</strong> по сути не отличается от работы в нативном терминале Linux, только добавлением приставки, состоящей из служебных команд <code>docker run</code>. По сути, запуск программы начинается с вызова контейнера, после чего в нем запускается программа. В разделе ниже процесс создания контейнеров будет описан более подробно.</p>
@@ -2268,8 +2271,8 @@ UBUNTU_CODENAME=jammy
 <p>Это работает и в обратную сторону:</p>
 <pre><code>&gt; docker cp название_контейнера:путь_к_файлу_в_контейнере путь_назначения_на_компьютере
 </code></pre>
-<h3 id="применение-на-практике">Применение на практике</h3>
-<p>Как уже говорилось, программа bowtie2 написана под ОС Linux. Но при помощи Docker ее можно очень быстро запустить на компьютере. Ниже приведен совершенно стандартный алгоритм выравнивания fastq-файлов при помощи bowtie2 в Docker.</p>
+<h3 id="использование-контейнера-на-примере-bowtie2">Использование контейнера на примере <strong>bowtie2</strong></h3>
+<p>Как уже говорилось, программа <strong>bowtie2</strong> написана под ОС Linux. Но при помощи <strong>Docker</strong> ее можно очень быстро запустить на компьютере.</p>
 <p>Для данного примера из github-репозитория <a href="https://github.com/wzthu/Rbowtie2/tree/master/inst/extdata/bt2">Rbowtie2</a> были загружены экземпляры fastq-файлов (<code>reads_1.fastq</code> + <code>reads_2.fastq</code>) и fasta-референс генома фага лямбда (<code>lambda_virus.fa</code>). Создатели библитеки Rbowtie2 (для языка программирования R) предоставили эти данные для тестирования своей библиотеки на компьютере пользователей. Мы могли бы взять совершенно другие данные, так как это не принципиально. Эти файлы были загружены в директорию <code>C:\\Docker_control\\Bowtie2_example</code> со следующей структурой:</p>
 <pre><code>C:\Docker_control\Bowtie2_example\
     refs\
@@ -2279,13 +2282,13 @@ UBUNTU_CODENAME=jammy
         reads_2.fastq
 </code></pre>
 <p>Первое, что мы должны сделать - это выбрать образ для контейнера. В <strong>Docker Hub</strong> я выбрал репозиторий <code>biocontainers/bowtie2</code>, поскольку из него было больше всего скачиваний. После просмотра тэгов в репозитории я обнаружил, что тэг “latest” отсутствует. Поэтому указание <code>biocontainers/bowtie2</code> для скачивания образа приведет к ошибке. Поэтому я вручную выбрал тег <code>v2.3.4.3-1-deb_cv2</code>, поскольку у него был небольшой объем.</p>
-<p>Скачал образ заранее:</p>
+<p>Образ можно загрузить заранее (но не обязательно, так как это делается автоматически при первом обращении в команде <code>docker run</code>):</p>
 <pre><code>docker pull biocontainers/bowtie2:v2.3.4.3-1-deb_cv2
 </code></pre>
-<p>Теперь нужно проиндексировать FASTA-файл с референсным геномом вируса при помощи <a href="https://epigenlabprotocols.netlify.app/programs/bowtie2/#%D0%B8%D0%BD%D0%B4%D0%B5%D0%BA%D1%81%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B3%D0%B5%D0%BD%D0%BE%D0%BC%D0%B0-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-bowtie2-build">bowtie2-build</a>.</p>
+<p>Теперь нужно проиндексировать FASTA-файл с референсным геномом вируса при помощи инструмента <a href="https://epigenlabprotocols.netlify.app/programs/bowtie2/#%D0%B8%D0%BD%D0%B4%D0%B5%D0%BA%D1%81%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5-%D0%B3%D0%B5%D0%BD%D0%BE%D0%BC%D0%B0-%D1%81-%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E-bowtie2-build">bowtie2-build</a>.</p>
 <pre><code>docker run --rm -v //c/Docker_control/Bowtie2_example/refs/:/data/ -w /data biocontainers/bowtie2:v2.3.4.3-1-deb_cv2 bowtie2-build lambda_virus.fa lv
 </code></pre>
-<p>С помощью последней команды сделали следующее:</p>
+<p>С помощью последней команды мы сделали следующее:</p>
 <ol>
 <li>Запустили оболочку Linux внутри контейнера и привязали там директорию <code>/data</code> к папке <code>C:\\Docker_control\\Bowtie2_example\\</code></li>
 <li>Установили рабочую директорию <code>/data/refs/</code> при помощи параметра <code>-w /data/</code>. Это сделано для простоты.</li>
@@ -2324,7 +2327,7 @@ UBUNTU_CODENAME=jammy
 95.00% overall alignment rate
 </code></pre>
 <p>Sam-файл с выравниванием располагается в по адресу <code>C:\Docker_control\Bowtie2_example\lv-align.sam</code></p>
-<p>Стоит обратить внимание, что то же самое можно сделать, запустив интерактивный терминал внутри контейнера:</p>
+<p>Стоит обратить внимание, что то же самое можно сделать, запустив интерактивный терминал Linux внутри контейнера с программой <strong>bowtie2</strong>:</p>
 <pre><code>&gt;docker run -it --rm -v //c/Docker_control/Bowtie2_example/:/data/ biocontainers/bowtie2:v2.3.4.3-1-deb_cv2
 
 biodocker@f2e8661dab5d# cd /data/refs
@@ -2335,16 +2338,144 @@ biodocker@f2e8661dab5d# exit
 
 &gt;
 </code></pre>
-<p>Обратите внимание, что последняя команда, введенная в терминал была <code>exit</code>. Она позволяет покинуть терминал в Linux-системе.</p>
+<p>Последняя команда, введенная в терминал была <code>exit</code>. Она позволяет покинуть терминал в Linux-системе.</p>
+<h3 id="создание-собственных-контейнеров-и-образов">Создание собственных контейнеров и образов</h3>
+<p>Зачастую доступные в реестрах контейнеры имеют ограниченный функционал. Например, стандартный контейнер <code>iocontainers/bowtie2</code>, который был показан в предыдущем разделе, содержит только программу <code>bowtie2</code>, хотя анализ данных секвенирования не ограничивается выравниванием. В самом деле, после выравнивания sam-файлы требуется сортировать, конвертировать в формат bam и т.д. Для этого уже потребуется загрузить образ, содержащий программу <code>samtools</code> или еще больше. Так что число образов, с которыми придется работать может расти в геометрической прогрессии. Однако можно избежать размножения сущностей, если создать свой собственнй контейнер с необходимым функционалом.</p>
+<p>В следующем примере мы создадим собственный контейнер. Полученный контейнер будет содержать программы <code>fastqc</code>, <code>cutadapt</code>, <code>bowtie2</code>, <code>samtools</code> и <code>macs3</code>, что теоретически позволит осуществлять полный цикл анализа экспериментов ChIP-seq от проверки качества секвенированных библиотек до построения геномных профилей ChIP-seq.</p>
+<p>Перечисленные программы работают на ОС Linux, и для их работы нужны компоненты ядра данной операционной системы. Поэтому для создания своего контейнера мы просто возьмем образ этой ОС и установим внутри него все перечисленные программы. Удобнее всего это делать из терминала. Поэтому для начала загрузим контейнер с дистрибутивом Linux, например <code>ubuntu</code> в режиме терминала.</p>
+
+<div class="notices note" ><p>Чтобы не возникло проблем с загрузкой программ из интернета, нужно запустить командную строку в режиме администратора. Самый простой способ - нажать кнопку Пуск, в строке поиска ввести &ldquo;PowerShell&rdquo;, затем нажать правой кнопкой мыши на появившемся ярлыке и выбрать <code>Запуск от имени администратора</code>.</p>
+</div>
+
+<p>В окне терминала <strong>PowerShell</strong> запустим терминал ubuntu:</p>
+<pre><code>&gt;docker run -it ubuntu
+
+root@84fe65afe070:/#
+</code></pre>
+<p>Чтобы скачать программы в Ubuntu есть программа <code>apt-get</code>. После первого запуска контейнера ее нужно обновить.</p>
+<pre><code># apt-get update
+</code></pre>
+<p>Теперь установим <code>fastqc</code>. Во время установки apt-get запросит рарешение на заполнение дискового пространства. Нужно ввести заглавную Y и нажать ввод, либо ввести параметр <code>-y</code>.</p>
+<pre><code># apt-get install -y fastqc
+#
+</code></pre>
+<p>Во время установки в контейнер были загружены десятки разных зависимостей, включая язык программирования Python, Perl, Java. Все это зависимости, без которых fastqc откажется работать.</p>
+<p>Можем проверить, что fastqc работает:</p>
+<pre><code># fastqc --version
+FastQC v0.11.9
+</code></pre>
+<p>Таким же образом установим <code>bowte2</code></p>
+<pre><code># apt-get install -y bowtie2
+# bowtie2 --version
+/usr/bin/bowtie2-align-s version 2.4.4
+64-bit
+# apt-get install -y samtools
+# apt-get install -y cutadapt
+</code></pre>
+
+<div class="notices note" ><p>Для успешного запуска программ нужно убедиться, что бинарные исходники каждой программы лежат в директории, которая содержится в переменной $PATH. Если это не так, то нужно добавить расположение исходников в эту переменную, после чего нужно добавить команду <code>export PATH=$PATH:путь_к_директории_с_исходником</code> в файл .profile</p>
+</div>
+
+<p>Установка <code>macs3</code> происходит через менеджер пакетов Python pip. Сначала его нужно установить.</p>
+<pre><code># apt-get install pip
+# pip --version
+pip 22.0.2 from /usr/lib/python3/dist-packages/pip (python 3.10)
+</code></pre>
+<p>Все, можно установить macs3. Это займет некоторое время.</p>
+<pre><code># pip install -y macs3
+# macs3 --version
+macs3 3.0.0b1
+</code></pre>
+<p>Теперь можно покинуть контенер.</p>
+<pre><code># exit
+&gt;
+</code></pre>
+<p>Мы не дали контейнеру название. Узнать имя контейнера можно в <strong>Docker Desktop</strong> либо при помощи <code>docker ps -a</code></p>
+<pre><code>&gt; docker ps -a
+CONTAINER ID   IMAGE     COMMAND   CREATED          STATUS                     PORTS     NAMES
+c1db3012df97   ubuntu    &quot;bash&quot;    15 minutes ago   Exited (0) 7 seconds ago             stupefied_kilby
+</code></pre>
+<p>Далее мы можем сделать образ этого контейнера, чтобы впоследствии запускать его в виде отдельных команд. Делается это инструкцией <code>docker commit</code>. Синтаксис следующий:</p>
+<pre><code>docker commit [Параметры] название_контейнера [название_образа:тег]
+</code></pre>
+<p>В качестве названия образа обычно используют имя реестра. Мы не собираемся отправлять образ в реестр, так что можем назвать его как угодно.</p>
+<pre><code>&gt; docker commit stupefied_kilby chipseq_image:latest
+sha256:479c242b3d361024febdde132014b224c145dabd7b32f4cd6b9fe593eb85ccde
+</code></pre>
+<p>После завершения <code>docker commit</code> вывел идентификатор образа. Можем убедиться, что образ сохранился, заглянув в раздел <strong>Images</strong> программы <strong>Docker Desktop</strong>, либо с помощью команды <code>docker image ls</code></p>
+<pre><code>&gt; docker image ls
+REPOSITORY      TAG       IMAGE ID       CREATED              SIZE
+chipseq_image   latest    479c242b3d36   About a minute ago   1.35GB
+ubuntu          latest    216c552ea5ba   12 days ago          77.8MB
+</code></pre>
+<p>Стоит обратить внимание, что полученный таким образом образ тяжелее в 20 раз, чем изначальный образ ubuntu.
+Попробуем запустить контейнер для проверки:</p>
+<pre><code>&gt; docker run --rm chipseq_image bowtie2 --version
+
+/usr/bin/bowtie2-align-s version 2.4.4
+64-bit
+
+&gt; docker run --rm chipseq_image macs3
+
+usage: macs3 [-h] [--version]
+             {callpeak,bdgpeakcall,bdgbroadcall,bdgcmp,bdgopt,cmbreps,bdgdiff,filterdup,predictd,pileup,randsample,refinepeak,callvar,hmmratac}
+             ...
+macs3: error: the following arguments are required: subcommand
+
+&gt;
+</code></pre>
+<h3 id="создание-образов-при-помощи-dockerfile">Создание образов при помощи <strong>Dockerfile</strong></h3>
+<p>Создание образов напрямую из контейнера является достаточно простой процедурой. Однако автоматизировать этот процесс достаточно сложно, так как чтобы повторить эту процедуру на другом компьютере потребуется потратить ровно столько же времени (если не больше).</p>
+<p>Для того, чтобы сократить процедуру создания образов, создатели <strong>Docker</strong> заработали собственный язык сценариев, которые позволяет скомпилировать контейнер для образа в один шаг, просто предоставив <strong>Docker</strong> текстовый файл с набором инструкций. Этот файл сценария называют <code>Dockerfile</code>, без расширения, преффиксов и суффиксов.</p>
+<p>Здесь не будет обсуждаться сам язык сценариев для <em>Dockerfile</em>. Стоит сказать, что он интуитивно-понятный. Но вы можете обратиться к нескольким источникам, перечисленным в разделе <a href="https://epigenlabprotocols.netlify.app/programs/docker/#%D0%B4%D0%BE%D0%BA%D1%83%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%8F">Документация</a>.</p>
+<p>В предыдущем разделе был показан интерактивный способ создания контейнера. Ниже будет показан пример, как создать аналогичный контейнер (точнее обарз), при помощи <em>Dockerfile</em>.</p>
+<ul>
+<li>Содержимое <strong>Dockerfile</strong></li>
+</ul>
+<p>Чтобы сделать <strong>Dockerfile</strong> просто откроем текстовый редактор и введем следующий текст</p>
+<pre><code>FROM ubuntu:latest
+
+RUN apt-get -y update &amp;&amp; apt-get install -y fastqc bowtie2 samtools cutadapt pip &amp;&amp; pip install macs3
+</code></pre>
+<p>Сохраним Dockerfile в отдельной пустой папке. В моем случае это <code>C:\Docker_control\DockerfileExample</code>. Название текстового файла должно быть “Dockerfile” <strong>БЕЗ РАСШИРЕНИЯ</strong></p>
+<p>Обратите внимание, что после указателя <code>FROM</code> мы ввели название образа, который использовался для запуска контейнера <code>ubuntu</code>. После указателя <code>RUN</code> мы записали все команды, которые вводили в терминал для установки нужных программ. Между командами мы поставили двойной амперсанд (<code>&amp;&amp;</code>), как указание на то, что команды выполняются одна за другой последовательно. Мы также сократили число команд, воспользовавшись способностью <code>apt-get install</code> принимать название нескольких программ сразу.</p>
+<p>В терминале, открытом с правами администратора, нужно войти в директорию, где лежит Dockerfile. Это делается при помощи команды <code>cd</code>.</p>
+<pre><code>&gt; cd C:\Docker_control\DockerfileExample
+</code></pre>
+<p>Теперь запускаем команду <code>docker build</code></p>
+<pre><code>&gt; docker build -t chipseq_image_dockerfile .
+</code></pre>
+<p>Параметр <code>-t</code> указывает имя (обязательный аргумент) и тег (необязательный аргумент) образа, который мы создаем.</p>
+<p>Не забудьте поставить точку в конце. Это указатель на “конекст” (<em>context</em>) - адрес директории или URL, где находятся файлы, необходимые для сборки образа. Обычно контекст - это содержимое директории, в которой лежит Dockerfile. Точка означает, что контекстом является рабочая директория, в которой запущен <code>docker build</code>.</p>
+<p>Компиляция образа занимает несколько минут. После завершения мы можем убедиться, что образ существует:</p>
+<pre><code>&gt;docker image ls
+
+REPOSITORY                 TAG       IMAGE ID       CREATED         SIZE
+chipseq_image_dockerfile   latest    e36113c4d94d   6 minutes ago   1.35GB
+chipseq_image              latest    479c242b3d36   2 hours ago     1.35GB
+ubuntu                     latest    216c552ea5ba   12 days ago     77.8MB
+</code></pre>
+<p>По сути мы создали клон образа <code>chipseq_image</code>. Преимуществом <strong>Dockerfile</strong> является возможность автоматизировать процесс создания образов. Кроме того, его удобно хранить и распространять. Вы можете копировать <strong>Dockerfile</strong> на другой компьютер, чтобы использовать для создания образа. Каждый созданный образ будет занимать много места на жестком диске, но вы можете безопасно удалить образ и восстановить его в будущем при помощи записанных вами инструкций.</p>
+<h3 id="интеграция-образов-в-реестры">Интеграция образов в реестры</h3>
+<p>Созданные вами образы можно хранить в реестре <strong>Docker Hub</strong>. Познакомиться с тем, как образы загружаются в реестр можно по ссылкам ниже:</p>
+<p><a href="https://www.youtube.com/watch?v=LNAATmw3ImM">Видео урок</a></p>
+<p><a href="https://dker.ru/docs/docker-engine/get-started-with-docker/tag-push-pull-your-image/">Мануал на руссокм языке</a></p>
+<p><a href="https://docs.docker.com/docker-hub/">Документация от разработчиков</a></p>
+<p>Можно также создавать персональный реестр на устройстве с достаточным количеством постоянно памяти. Иронично, что для этого вам всего лишь потребуется запустить на устройстве контейнер <code>Docker Registry</code>.</p>
+<p><a href="https://winitpro.ru/index.php/2021/03/03/nastrojka-lokalnogo-docker-registry/">Создание персонального реестра</a></p>
+<p><a href="https://www.dmosk.ru/miniinstruktions.php?mini=docker-local-repo">Еще одна статья про персональные реестры</a></p>
+<p><a href="https://docs.docker.com/registry/deploying/">Мануал от разработчиков</a></p>
 <h3 id="литература">Литература</h3>
 <p><a href="https://drive.google.com/file/d/1BYH8Lh46ZWtInXYYRncr4oqjXhMMHa8n/view?usp=sharing">Милл Иан, Сейерс Эйдан Хобсон - Docker на практике (2020)</a></p>
 <p><a href="https://drive.google.com/file/d/136mEKfg2tM3alMeqSdD4vCt9iqheBSTb/view?usp=sharing">Эдриен Моуэт - Использование Docker (2017)</a></p>
 <h3 id="документация">Документация</h3>
-<p><a href="https://docs.docker.com/">Официальная документация</a></p>
-<p><a href="https://dker.ru/docs/">Русская версия документации</a></p>
+<p><a href="https://docs.docker.com/">Официальная документация Docker</a></p>
+<p><a href="https://dker.ru/docs/">Русская версия документации Docker</a></p>
 <p><a href="https://youtube.com/playlist?list=PLD5U-C5KK50XMCBkY0U-NLzglcRHzOwAg">Видеоуроки</a></p>
 <p><a href="https://tretyakov.net/post/ustanovit-docker-na-windows-10-wsl2/">Инструкция по установке на Windows с WSL2</a></p>
 <p><a href="https://ip-calculator.ru/blog/ask/ustanovka-docker-na-windows-10-home/">Еще одна инструкция по установке на Windows с WSL2</a></p>
+<p><a href="https://dker.ru/docs/docker-engine/engine-reference/dockerfile-reference/">Русскоязычное руководство по Dockerfile</a></p>
+<p><a href="https://docs.docker.com/engine/reference/builder/">Оригинальная документация по Dockerfile</a></p>
 
 
 <footer class="footline">
@@ -3344,19 +3475,19 @@ biodocker@f2e8661dab5d# exit
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1665989772"></script>
-    <script src="/js/perfect-scrollbar.min.js?1665989772"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1665989772"></script>
-    <script src="/js/jquery.sticky.js?1665989772"></script>
-    <script src="/js/featherlight.min.js?1665989772"></script>
-    <script src="/js/highlight.pack.js?1665989772"></script>
+    <script src="/js/clipboard.min.js?1666020333"></script>
+    <script src="/js/perfect-scrollbar.min.js?1666020333"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1666020333"></script>
+    <script src="/js/jquery.sticky.js?1666020333"></script>
+    <script src="/js/featherlight.min.js?1666020333"></script>
+    <script src="/js/highlight.pack.js?1666020333"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1665989772"></script>
-    <script src="/js/learn.js?1665989772"></script>
-    <script src="/js/hugo-learn.js?1665989772"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1666020333"></script>
+    <script src="/js/learn.js?1666020333"></script>
+    <script src="/js/hugo-learn.js?1666020333"></script>
     
         
-            <script src="/mermaid/mermaid.js?1665989772"></script>
+            <script src="/mermaid/mermaid.js?1666020333"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
