@@ -12,22 +12,22 @@
     <title>Docker :: Epigenetic and Genomics Protocols</title>
 
     
-    <link href="/css/nucleus.css?1665952019" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1665952019" rel="stylesheet">
-    <link href="/css/hybrid.css?1665952019" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1665952019" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1665952019" rel="stylesheet">
-    <link href="/css/auto-complete.css?1665952019" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1665952019" rel="stylesheet">
-    <link href="/css/theme.css?1665952019" rel="stylesheet">
-    <link href="/css/tabs.css?1665952019" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1665952019" rel="stylesheet">
+    <link href="/css/nucleus.css?1665989772" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1665989772" rel="stylesheet">
+    <link href="/css/hybrid.css?1665989772" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1665989772" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1665989772" rel="stylesheet">
+    <link href="/css/auto-complete.css?1665989772" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1665989772" rel="stylesheet">
+    <link href="/css/theme.css?1665989772" rel="stylesheet">
+    <link href="/css/tabs.css?1665989772" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1665989772" rel="stylesheet">
     
-    <link href="/css/theme-green.css?1665952019" rel="stylesheet">
+    <link href="/css/theme-green.css?1665989772" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1665952019"></script>
+    <script src="/js/jquery-3.3.1.min.js?1665989772"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -53,14 +53,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1665952019"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1665952019"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1665989772"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1665989772"></script>
 <script type="text/javascript">
     
         var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1665952019"></script>
+<script type="text/javascript" src="/js/search.js?1665989772"></script>
 
     
   </div>
@@ -1750,48 +1750,42 @@
 <ul>
 <li><strong>Docker Daemon</strong></li>
 </ul>
-<p>Основной движущей силой Docker является так называемый демон <strong>Docker Daemon</strong>. По определению <em>демон</em> (<em>daemon</em>) - это служебная программа, которая запускается UNIX-системой в фоновом режиме и напрямую не взаимодействует с пользователем (в Windows такие программы назваются <em>службами</em>). Функцией демона <strong>Docker</strong> ялвяется запуск, поддержка и хранение образов и контейнеро. По своей сути <strong>Docker Daemon</strong> является сервером, только при обращении к нему вы запускаете на компьютере не HTML-страницы или базу данных, а контейнеры. Запуск <strong>Docker Daemon</strong> производится при помощи программы <code>dockerd</code>.</p>
+<p>Основной движущей силой Docker является так называемый демон <strong>Docker Daemon</strong>. По определению <em>демон</em> (<em>daemon</em>) - это служебная программа, которая запускается UNIX-системой в фоновом режиме и напрямую не взаимодействует с пользователем (в Windows такие программы назваются <em>службами</em>). Функцией демона <strong>Docker</strong> ялвяется запуск, поддержка и хранение образов и контейнеров. По своей сути <strong>Docker Daemon</strong> является сервером, только при обращении к нему вы запускаете на компьютере не HTML-страницы или базу данных, а контейнеры. Запуск <strong>Docker Daemon</strong> производится при помощи программы <code>dockerd</code>.</p>
 <ul>
 <li><strong>Docker-клиент</strong></li>
 </ul>
 <p>Работа с контейнерами, включая их запуск, обращение к ним или останувку, происходит через Docker-клиент. По сути это набор программ и подпрограмм, которые позволяют пользователю обращаться к демону. Взаимодействие демона и клиента происходит при помощи REST API (интерфейс клиент-сервер). Существует два вид клиентов:</p>
+<p>** <strong>Docker Client</strong> используется для работы с программами, размещенными внутри одного контейнера, и вызывается программой <code>docker</code>. Собственно, с этим клиентом и мы и будем знакомиться ниже.</p>
+<p>** <strong>Docker Compose</strong> используется для работы с большими и сложными программами, для которых требуется запускать и обрабатывать множество контейнеров. Этот клиент вызывается программой <code>docker-compose</code>.</p>
 <ul>
-<li>
-<p><strong>Docker Client</strong> используется для работы с программами, размещенными внутри одного контейнера, и вызывается программой <code>docker</code>. Собственно, с этим клиентом и мы и будем знакомиться ниже.</p>
-</li>
-<li>
-<p><strong>Docker Compose</strong> используется для работы с большими и сложными программами, для которых требуется запускать и обрабатывать множество контейнеров. Этот клиент вызывается программой <code>docker-compose</code>.</p>
-</li>
-<li>
-<p>Движок <strong>Docker Engine</strong></p>
-</li>
+<li>Движок <strong>Docker Engine</strong></li>
 </ul>
-<p>Программы <code>Docker</code> и <code>Dockerd</code> образуют клиент-серверное приложение, так называемый движок <strong>Docker Engine</strong>.</p>
+<p>Программы <code>Docker</code> и <code>Dockerd</code> образуют клиент-серверное приложение, а общее название технологии, с помощью которой это приложение работает с контенерами, называется движок <strong>Docker</strong> (<strong>Docker Engine</strong>).</p>
 <ul>
 <li>Интерфейс командной строки <strong>Docker CLI</strong></li>
 </ul>
-<p>Работа с <strong>Docker</strong> большую часть времени проходит в командной строке. Большинство инструкций, которые пользователь может дать этой программе представляют собой текстовые команды. Соственно, такой стиль управления программой называется <code>Command Line Interface</code>. Набор текстовых инструкций, с помощью которых происходит управление <strong>Docker</strong> называют <em>Docker command line interface</em>, или <em>Docker CLI</em>.</p>
+<p>Работа с <strong>Docker</strong> большую часть времени проходит в командной строке. Большинство инструкций, которые пользователь может дать движку <strong>Docker</strong> представляют собой текстовые команды. Такой стиль управления программами называется <code>Command Line Interface</code>. Набор текстовых инструкций, с помощью которых происходит управление <strong>Docker</strong> называют <em>Docker command line interface</em>, или <em>Docker CLI</em>.</p>
 <ul>
 <li>Реестр <strong>Docker registry</strong></li>
 </ul>
-<p>Реестр <strong>Docker registry</strong> - это сервис, который хранит образы <strong>Docker</strong>. Наиболее известным реестром является <strong>Docker Hub</strong> - это общедоступный реестр, который может использовать каждый, и Docker по умолчанию настроен на поиск образов в Docker Hub. Но можно также запустить свой собственный частный реестр.</p>
+<p>Реестр <strong>Docker registry</strong> - это сервис, который хранит образы <strong>Docker</strong>. Наиболее известным реестром является <strong>Docker Hub</strong> - это бесплатный сервис, который может использовать каждый пользователь, и Docker по умолчанию настроен на поиск образов в Docker Hub. Но можно также запустить свой собственный частный реестр.</p>
 <ul>
 <li>Репозитории <strong>Docker</strong></li>
 </ul>
-<p>Репозиторием <strong>Docker Repository</strong> называют коллекцию образов, обладающих одним названием, но представляющих собой разные версии одного и того же приложения. Например, в репозитории <a href="https://hub.docker.com/_/python?tab=tags">Python</a> хранятся разные образы программы Python, в каждом из которых лежат разные версии интерпретатора. Идентификатор, указывающий на версию образа называется Тэгом (ярлыком, <code>Tag</code>). Тэг указывают после названия образа через двоеточие как дополнительный указатель на версию. По умолчанию Docker скачивает образы, с тэгом <code>latest</code>. Таким образом, если образ называется <code>python</code>, то это то же самое что <code>python:latest</code>. В указанном выше репозитории есть также версии <code>python:3.8-bullseye</code>, <code>python:3.10-bullseye</code> и куча других.</p>
+<p>Репозиторием <strong>Docker Repository</strong> называют коллекцию образов, обладающих одним названием, но представляющих собой разные версии одного и того же приложения. Например, в репозитории <a href="https://hub.docker.com/_/python?tab=tags">Python</a> хранятся разные образы программы Python, в каждом из которых лежат разные версии интерпретатора. Идентификатор, указывающий на версию образа называется Тэгом (ярлыком, <code>Tag</code>). Тэг указывают после названия образа через двоеточие как дополнительный указатель на версию. По умолчанию Docker скачивает образы, с тэгом <code>latest</code>. Таким образом, если образ называется <code>python</code>, то это то же самое что <code>python:latest</code>. В указанном выше репозитории есть также версии <code>python:3.8-bullseye</code>, <code>python:3.10-bullseye</code> и куча других. По сути, репозиторий <strong>Docker</strong> - это раздел внутри реестра.</p>
 <ul>
 <li>Приложение <strong>Docker Desktop</strong></li>
 </ul>
-<p><strong>Docker Desktop</strong> — это приложение с графическим интерфейсом для ОС Mac, Linux или Windows, которое позволяет создавать и совместно использовать контейнерные приложения и микросервисы. Оно позволяет вам управлять своими контейнерами, приложениями и образами прямо из окна приложения без необходимости использовать терминал. Однако интерфейс <strong>Docker Desktop</strong> очень минималистичен и не избавляет от работы в командной строке.</p>
+<p><strong>Docker Desktop</strong> — это приложение с графическим интерфейсом для ОС Mac, Linux или Windows, которое позволяет создавать и совместно использовать контейнерные приложения и микросервисы <strong>Docker</strong>. Оно позволяет вам управлять своими контейнерами, приложениями и образами без необходимости использовать терминал. Однако интерфейс <strong>Docker Desktop</strong> очень минималистичен и врд ли избавит вас от работы в командной строке.</p>
 <ul>
 <li>Расширения <strong>Docker Extensions</strong></li>
 </ul>
-<p>Расширения <strong>Docker</strong> представляют собой инструменты, созданные сторонними разработчиками, для увеличения фнукционала <strong>Docker Desktop</strong>.</p>
+<p>Расширения <strong>Docker</strong> представляют собой инструменты, созданные сторонними разработчиками для увеличения фнукционала <strong>Docker Desktop</strong>.</p>
 <ul>
 <li><strong>Dockerfile</strong></li>
 </ul>
-<p>Существует несколько стратегий для созднания образов. Самая интуитивно понятная - это создать образ напрямую из контейнера. Например, если вы запустили контейнер и внесли в него изменения, добавив или удалив программы, то из видоизмененного контейнера можно сделать образ. Однако это делает затруднительным распространение контейнеров между устройствами, требует загрузку образа в реестр.</p>
-<p>Вторая возможность - создать текстовый файл, который позволит <strong>Docker</strong> сконструировать контейнер по заданному в файле сценарию. Такие текстовые файлы назвают “Dockerfile” (без расширения), они почти ничего не весят и могут свободно переноситься между устройствами.</p>
+<p>Существует несколько стратегий для созднания образов. Самая интуитивно понятная - это создать образ напрямую из контейнера. Например, если вы запустили контейнер и внесли в него изменения, добавив или удалив программы, копировав внутрь новые файлы, то из видоизмененного контейнера можно сделать образ. Однако это делает затруднительным распространение контейнеров между устройствами, а для экономии пространства на компьютере требуется загружать образ в реестр.</p>
+<p>Вторая возможность - создать текстовый файл, который позволит <strong>Docker</strong> сконструировать контейнер по заданному внутри файлу сценарию. Такие текстовые файлы назвают “Dockerfile” (без расширения), они почти ничего не весят и могут свободно переноситься между устройствами.</p>
 <h3 id="установка-docker-desktop">Установка <strong>Docker Desktop</strong></h3>
 <p>Сторонние руководства по установке можно найти по ссылкам ниже:</p>
 <p>
@@ -1820,27 +1814,19 @@ WSL2</a></p>
 </div>
 Установка <strong>Docker Desktop</strong> происходит в несколько этапов.</p>
 <ol>
-<li>В <strong>BIOS</strong> включить виртуализацию. Для этого нужно перезагрузить
-компьютер, войти в <strong>BIOS</strong>, затем в одном из окон найти строчку,
-которая включает слова “Virtualization” (Intel Virtualization
-Technology, VT, Virtualization и пр.) и “Hyper-V”. Затем перевести в
-режим Enabled.</li>
+<li>В <strong>BIOS</strong> включить виртуализацию. Для этого нужно перезагрузить компьютер, войти в <strong>BIOS</strong>, затем в одном из окон найти опцию, которая включает слова “Virtualization” (Intel Virtualization Technology, VT, Virtualization и пр.) и “Hyper-V”. Затем перевести опцию в режим Enabled.</li>
 </ol>
 <p><img src="/Programs/Docker.files/bios.png?width=20pc" alt="Куда смотреть в BIOS?"></p>
 <ol start="2">
-<li>Скачать установщик <strong>Docker Desktop</strong> на сайте
-<a href="https://www.docker.com/">docker.com</a>. Во время установки следовать
-инструкциям.</li>
+<li>Скачать установщик <strong>Docker Desktop</strong> на сайте <a href="https://www.docker.com/">docker.com</a>. Во время установки следовать инструкциям.</li>
 </ol>
 <p><img src="/Programs/Docker.files/docker.png?width=20pc" alt="Официальный сайт"></p>
 <p>Если все работает, то после установки вы должны увидеть вот такое окно:</p>
 <p><img src="/Programs/Docker.files/Normal.png?width=20pc" alt="Когда все нормально"></p>
-<p>Но программа может выдать ошибки из-за неполной установки зависимостей.
-В таком случае будут видны такие ошибки:</p>
+<p>Но программа может выдать ошибки из-за неполной установки зависимостей. В таком случае будут видны такие ошибки:</p>
 <p><img src="/Programs/Docker.files/noWSL.png?width=20pc" alt="WSL2 is not installed"></p>
 <p><img src="/Programs/Docker.files/incomplete.png?width=20pc" alt="WSL2 installation is incomplete"></p>
-<p>Вообще в сообщении об ошибке уже написано, что делать, но если есть
-затруднения, то нужно сделать как указано ниже.</p>
+<p>Вообще в сообщении об ошибке уже написано, что делать, но если есть затруднения, то нужно сделать как указано ниже.</p>
 
 <div class="expand">
     <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
@@ -1858,11 +1844,7 @@ Technology, VT, Virtualization и пр.) и “Hyper-V”. Затем перев
 
     </div>
 </div>
-<p>Решением будет установка подсистемы Linux для Windows, как это описано в
-руководстве <a href="https://learn.microsoft.com/ru-ru/windows/wsl/install">здесь</a> и
-<a href="https://learn.microsoft.com/ru-ru/windows/wsl/install-manual">здесь</a>.
-На первый взгляд это кажется очень сложным, но на самом деле потребует
-только несколько раз войти в <strong>PowerShell</strong> и <strong>MicrosoftStore</strong>.</p>
+<p>Решением будет установка подсистемы Linux для Windows, как это описано в руководстве <a href="https://learn.microsoft.com/ru-ru/windows/wsl/install">здесь</a> и <a href="https://learn.microsoft.com/ru-ru/windows/wsl/install-manual">здесь</a>. На первый взгляд это кажется очень сложным, но на самом деле потребует только несколько раз войти в <strong>PowerShell</strong> и <strong>MicrosoftStore</strong>.</p>
 
 <div class="expand">
     <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
@@ -1894,9 +1876,9 @@ Technology, VT, Virtualization и пр.) и “Hyper-V”. Затем перев
     	</span>
     </div>
     <div class="expand-content" style="display: none;">
-        <p><img src="/Programs/Docker.files/additional.png?width=20pc&amp;classes=inline" alt="Поиск в меню Пуск">
-<img src="/Programs/Docker.files/others.png?width=20pc&amp;classes=inline" alt="Дополнительные компоненты">
-<img src="/Programs/Docker.files/components.png?width=20pc&amp;classes=inline" alt="Другие компоненты Windows"></p>
+        <p><img src="/Programs/Docker.files/additional.png?width=20pc&amp;classes=inline" alt="Поиск в меню Пуск"></p>
+<p><img src="/Programs/Docker.files/others.png?width=20pc&amp;classes=inline" alt="Дополнительные компоненты"></p>
+<p><img src="/Programs/Docker.files/components.png?width=20pc&amp;classes=inline" alt="Другие компоненты Windows"></p>
 
     </div>
 </div>
@@ -1917,8 +1899,7 @@ Technology, VT, Virtualization и пр.) и “Hyper-V”. Затем перев
     	</span>
     </div>
     <div class="expand-content" style="display: none;">
-        <p>Нажать комбинацию клавиш <code>Windows+R</code> и в появившемся окне ввести
-<em>powershell</em> или <em>cmd</em>, соответственно.</p>
+        <p>Нажать комбинацию клавиш <code>Windows+R</code> и в появившемся окне ввести <em>powershell</em> или <em>cmd</em>, соответственно.</p>
 
     </div>
 </div>
@@ -1934,9 +1915,7 @@ Technology, VT, Virtualization и пр.) и “Hyper-V”. Затем перев
     	</span>
     </div>
     <div class="expand-content" style="display: none;">
-        <p>Нажать клавишу Windows или кнопку Пуск на рабочем столе и в появившейся
-строке поиска ввести <em>powershell</em> или <em>Командная строка</em>,
-соответственно. Открыть приложение.</p>
+        <p>Нажать клавишу Windows или кнопку Пуск на рабочем столе и в появившейся строке поиска ввести <em>powershell</em> или <em>Командная строка</em>, соответственно. Открыть приложение.</p>
 
     </div>
 </div>
@@ -2345,7 +2324,7 @@ UBUNTU_CODENAME=jammy
 95.00% overall alignment rate
 </code></pre>
 <p>Sam-файл с выравниванием располагается в по адресу <code>C:\Docker_control\Bowtie2_example\lv-align.sam</code></p>
-<p>Стоит обратить внимание, что то же самое можно сделать, запустивь интерактивный терминал внутри контейнера:</p>
+<p>Стоит обратить внимание, что то же самое можно сделать, запустив интерактивный терминал внутри контейнера:</p>
 <pre><code>&gt;docker run -it --rm -v //c/Docker_control/Bowtie2_example/:/data/ biocontainers/bowtie2:v2.3.4.3-1-deb_cv2
 
 biodocker@f2e8661dab5d# cd /data/refs
@@ -2358,16 +2337,14 @@ biodocker@f2e8661dab5d# exit
 </code></pre>
 <p>Обратите внимание, что последняя команда, введенная в терминал была <code>exit</code>. Она позволяет покинуть терминал в Linux-системе.</p>
 <h3 id="литература">Литература</h3>
-<p><a href="https://drive.google.com/file/d/1BYH8Lh46ZWtInXYYRncr4oqjXhMMHa8n/view?usp=sharing">Милл Иан, Сейерс Эйдан Хобсон - Docker на практике (2020)</a>
-<a href="https://drive.google.com/file/d/136mEKfg2tM3alMeqSdD4vCt9iqheBSTb/view?usp=sharing">Эдриен Моуэт - Использование Docker (2017)</a></p>
+<p><a href="https://drive.google.com/file/d/1BYH8Lh46ZWtInXYYRncr4oqjXhMMHa8n/view?usp=sharing">Милл Иан, Сейерс Эйдан Хобсон - Docker на практике (2020)</a></p>
+<p><a href="https://drive.google.com/file/d/136mEKfg2tM3alMeqSdD4vCt9iqheBSTb/view?usp=sharing">Эдриен Моуэт - Использование Docker (2017)</a></p>
 <h3 id="документация">Документация</h3>
-<p><a href="https://docs.docker.com/">Официальная документация</a>
-<a href="https://dker.ru/docs/">Русская версия документации</a>
-<a href="https://youtube.com/playlist?list=PLD5U-C5KK50XMCBkY0U-NLzglcRHzOwAg">Видеоуроки</a>
-<a href="https://tretyakov.net/post/ustanovit-docker-na-windows-10-wsl2/">Инструкция по установке на Windows с
-WSL2</a>
-<a href="https://ip-calculator.ru/blog/ask/ustanovka-docker-na-windows-10-home/">Еще одна инструкция по установке на Windows с
-WSL2</a></p>
+<p><a href="https://docs.docker.com/">Официальная документация</a></p>
+<p><a href="https://dker.ru/docs/">Русская версия документации</a></p>
+<p><a href="https://youtube.com/playlist?list=PLD5U-C5KK50XMCBkY0U-NLzglcRHzOwAg">Видеоуроки</a></p>
+<p><a href="https://tretyakov.net/post/ustanovit-docker-na-windows-10-wsl2/">Инструкция по установке на Windows с WSL2</a></p>
+<p><a href="https://ip-calculator.ru/blog/ask/ustanovka-docker-na-windows-10-home/">Еще одна инструкция по установке на Windows с WSL2</a></p>
 
 
 <footer class="footline">
@@ -3367,19 +3344,19 @@ WSL2</a></p>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1665952020"></script>
-    <script src="/js/perfect-scrollbar.min.js?1665952020"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1665952020"></script>
-    <script src="/js/jquery.sticky.js?1665952020"></script>
-    <script src="/js/featherlight.min.js?1665952020"></script>
-    <script src="/js/highlight.pack.js?1665952020"></script>
+    <script src="/js/clipboard.min.js?1665989772"></script>
+    <script src="/js/perfect-scrollbar.min.js?1665989772"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1665989772"></script>
+    <script src="/js/jquery.sticky.js?1665989772"></script>
+    <script src="/js/featherlight.min.js?1665989772"></script>
+    <script src="/js/highlight.pack.js?1665989772"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1665952020"></script>
-    <script src="/js/learn.js?1665952020"></script>
-    <script src="/js/hugo-learn.js?1665952020"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1665989772"></script>
+    <script src="/js/learn.js?1665989772"></script>
+    <script src="/js/hugo-learn.js?1665989772"></script>
     
         
-            <script src="/mermaid/mermaid.js?1665952020"></script>
+            <script src="/mermaid/mermaid.js?1665989772"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
