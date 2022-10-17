@@ -831,11 +831,11 @@ Sam-файл с выравниванием располагается в по а
 
 ### Интеграция образов в реестры
 
-Созданные вами образы можно хранить в реестре **Docker Hub**. Познакомиться с тем, как образы загружаются в реестр можно по ссылкам ниже:
+Созданные вами образы можно хранить в реестре **Docker Hub**. Познакомиться с тем, как образы загружаются в реестр, можно по ссылкам ниже:
 
 [Видео урок](https://www.youtube.com/watch?v=LNAATmw3ImM)
 
-[Мануал на руссокм языке](https://dker.ru/docs/docker-engine/get-started-with-docker/tag-push-pull-your-image/)
+[Мануал на русском языке](https://dker.ru/docs/docker-engine/get-started-with-docker/tag-push-pull-your-image/)
 
 [Документация от разработчиков](https://docs.docker.com/docker-hub/)
 
