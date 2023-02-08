@@ -1,0 +1,31 @@
+{
+    "id": "752A0D53",
+    "path": "C:/Users/stasw/Desktop/GitHub/GenomicsLabProtocols_home_control/content/LabProtocols/ChIPEmryo.Rmd",
+    "project_path": "content/LabProtocols/ChIPEmryo.Rmd",
+    "type": "r_markdown",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1675844826596.0,
+    "source_on_save": false,
+    "relative_order": 5,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "16,37",
+        "scrollLine": "21",
+        "rmdVisualMode": "true",
+        "rmdVisualCollapsedChunks": "",
+        "rmdVisualModeLocation": "1248:1109.0909423828125",
+        "rmdVisualWrapConfigured": "true",
+        "docOutlineVisible": "1"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1675846721,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1675846721322,
+    "read_only": false,
+    "read_only_alternatives": []
+}
