@@ -102,6 +102,14 @@
   </url><url>
     <loc>/tags/lipofectamine-3000/</loc>
   </url><url>
+    <loc>/tags/macs/</loc>
+  </url><url>
+    <loc>/programs/macs/</loc>
+  </url><url>
+    <loc>/tags/macs2/</loc>
+  </url><url>
+    <loc>/tags/macs3/</loc>
+  </url><url>
     <loc>/tags/mgcl2/</loc>
   </url><url>
     <loc>/labreagents/buffers/mgcl2/</loc>
@@ -135,6 +143,8 @@
     <loc>/labreagents/buffers/pbs/</loc>
   </url><url>
     <loc>/tags/pd/</loc>
+  </url><url>
+    <loc>/tags/peal-calling/</loc>
   </url><url>
     <loc>/tags/peg/</loc>
   </url><url>
@@ -215,6 +225,8 @@
     <loc>/tags/%D0%B1%D1%83%D1%84%D0%B5%D1%80-y/</loc>
   </url><url>
     <loc>/labreagents/buffers/buffery/</loc>
+  </url><url>
+    <loc>/labprotocols/</loc>
   </url><url>
     <loc>/es-protocols/accutase/</loc>
   </url><url>
