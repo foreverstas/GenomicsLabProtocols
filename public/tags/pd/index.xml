@@ -7,6 +7,17 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language><atom:link href="/tags/pd/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>ChIP-seq эмбрионов дрозофилы</title>
+      <link>/labprotocols/chipemryo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/labprotocols/chipemryo/</guid>
+      <description>Протокол ChIP-seq 12 часовых эмбрионов дрозофилы.
+ Данный протокол был опробован для эксперимента ChIP-seq с замороженными в PBS 12-часовыми эмбрионами дрозофилы. В качестве антител использовали anti-H3K27me3 от Abclonal (A22006).
+ Продолжительность ChIP от начала фиксации до выделения ДНК занимает 3 дня. Причем остановить эксперимент возможно только в первый день. Поэтому необходимо предварительно с особой внимательностью распределить рабочее время. Второй и третий день эксперимента следует поставить не позже четверга, иначе придется работать в выходные.</description>
+    </item>
+    
+    <item>
       <title>Реактивы для мЭСК</title>
       <link>/es-protocols/esreagents/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
