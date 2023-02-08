@@ -4,7 +4,7 @@ author: "Romanov Stanislav"
 date: "10 09 2021"
 output: html_document
 lang: russian
-tags: ["CHIR", "PD", "2i", "LIF", "ES-cells"]
+tags: ["ChIP-seq", "ChIP", "Дрозофила", "эмбрионы", "Drosophila embryo"]
 ---
 
 ## Протокол ChIP-seq 12 часовых эмбрионов дрозофилы.

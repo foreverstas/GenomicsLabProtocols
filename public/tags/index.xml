@@ -98,6 +98,15 @@
     </item>
     
     <item>
+      <title>ChIP</title>
+      <link>/tags/chip/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/chip/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>ChIP-seq</title>
       <link>/tags/chip-seq/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -121,6 +130,15 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Drosophila embryo</title>
+      <link>/tags/drosophila-embryo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/drosophila-embryo/</guid>
       <description></description>
     </item>
     
@@ -602,6 +620,15 @@
     </item>
     
     <item>
+      <title>Дрозофила</title>
+      <link>/tags/%D0%B4%D1%80%D0%BE%D0%B7%D0%BE%D1%84%D0%B8%D0%BB%D0%B0/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%D0%B4%D1%80%D0%BE%D0%B7%D0%BE%D1%84%D0%B8%D0%BB%D0%B0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>ИПТГ</title>
       <link>/tags/%D0%B8%D0%BF%D1%82%D0%B3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -998,20 +1025,29 @@
     </item>
     
     <item>
-      <title>Этанол</title>
-      <link>/tags/%D1%8D%D1%82%D0%B0%D0%BD%D0%BE%D0%BB/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/%D1%8D%D1%82%D0%B0%D0%BD%D0%BE%D0%BB/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>стоки</title>
       <link>/tags/%D1%81%D1%82%D0%BE%D0%BA%D0%B8/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/tags/%D1%81%D1%82%D0%BE%D0%BA%D0%B8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>эмбрионы</title>
+      <link>/tags/%D1%8D%D0%BC%D0%B1%D1%80%D0%B8%D0%BE%D0%BD%D1%8B/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%D1%8D%D0%BC%D0%B1%D1%80%D0%B8%D0%BE%D0%BD%D1%8B/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Этанол</title>
+      <link>/tags/%D1%8D%D1%82%D0%B0%D0%BD%D0%BE%D0%BB/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%D1%8D%D1%82%D0%B0%D0%BD%D0%BE%D0%BB/</guid>
       <description></description>
     </item>
     

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ChIP on Epigenetic and Genomics Protocols</title>
+    <link>/tags/chip/</link>
+    <description>Recent content in ChIP on Epigenetic and Genomics Protocols</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language><atom:link href="/tags/chip/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ChIP-seq эмбрионов дрозофилы</title>
+      <link>/labprotocols/chipemryo/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/labprotocols/chipemryo/</guid>
+      <description>Протокол ChIP-seq 12 часовых эмбрионов дрозофилы.  Данный протокол был опробован для эксперимента ChIP-seq с замороженными в PBS 12-часовыми эмбрионами дрозофилы. В качестве антител использовали anti-H3K27me3 от Abclonal (A22006). Обратите внимание, что дехорионизация и удаление вителлиновой оболочки в данном протоколе не делается, поскольку на данной стадии число эмбриональных ядер очень велико. Кроме того, здесь не обсуждается процедура сбора эмбрионов. В разделе &amp;ldquo;Источники&amp;rdquo; можно найти литературу по этому поводу.
+ Процедура ChIP включает несколько этапов.</description>
+    </item>
+    
+  </channel>
+</rss>
