@@ -10,4 +10,4 @@ lang: russian
 
 В этом разделе будут публиковаться протоколы и полезные советы для работы с хроматином.
 
-![](/LabProtocols/_index.files/image.png)
+![](/LabProtocols/_index.files/image.jpg)
