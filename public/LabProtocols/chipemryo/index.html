@@ -12,22 +12,22 @@
     <title>ChIP-seq эмбрионов дрозофилы :: Epigenetic and Genomics Protocols</title>
 
     
-    <link href="/css/nucleus.css?1676020956" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1676020956" rel="stylesheet">
-    <link href="/css/hybrid.css?1676020956" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1676020956" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1676020956" rel="stylesheet">
-    <link href="/css/auto-complete.css?1676020956" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1676020956" rel="stylesheet">
-    <link href="/css/theme.css?1676020956" rel="stylesheet">
-    <link href="/css/tabs.css?1676020956" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1676020956" rel="stylesheet">
+    <link href="/css/nucleus.css?1676136893" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1676136893" rel="stylesheet">
+    <link href="/css/hybrid.css?1676136893" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1676136893" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1676136893" rel="stylesheet">
+    <link href="/css/auto-complete.css?1676136893" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1676136893" rel="stylesheet">
+    <link href="/css/theme.css?1676136893" rel="stylesheet">
+    <link href="/css/tabs.css?1676136893" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1676136893" rel="stylesheet">
     
-    <link href="/css/theme-green.css?1676020956" rel="stylesheet">
+    <link href="/css/theme-green.css?1676136893" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1676020956"></script>
+    <script src="/js/jquery-3.3.1.min.js?1676136893"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -53,14 +53,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1676020956"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1676020956"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1676136893"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1676136893"></script>
 <script type="text/javascript">
     
         var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1676020956"></script>
+<script type="text/javascript" src="/js/search.js?1676136893"></script>
 
     
   </div>
@@ -3149,6 +3149,20 @@ Y-X=320 мкл</th>
 <p><strong>Вариант номер два.</strong> Найти в интернете опубликованные профили ChIP-seq. Можно обратиться, к базам данных <a href="https://www.ncbi.nlm.nih.gov/geo/">GEO</a>, <a href="https://www.encodeproject.org/">ENCODE</a>, modENCODE или <a href="https://ngsqc.org/navi/index.php">NGSQC</a>. По этим профилям определить локусы с самым высоким обогащением изучаемой метки, и локусы с самым низким. Затем подобрать праймеры на несколько локусов вручную с помощью Primer-BLAST</p>
 <p><strong>Вариант номер три.</strong> Обратиться к коммерчески доступным вариантам праймеров. Например, <a href="https://www.activemotif.com/catalog/763/chip-control-qpcr-primer-sets">ActiveMotif</a> предоставляет наборы праймеров для контроля результатов ChIP-seq. Последовательности праймеров заданы в сопроводительных документах.</p>
 <p><strong>Вариант номер четыре.</strong> В интернете можно найти базы данных, собирающие последовательности праймеров для <a href="https://doi.org/10.1093/nar/gky813">ChIP</a> или других экспериментов.</p>
+
+<div class="notices info" ><p>Нужно помнить, что некоторые факторы активно взаимодействуют с мобильными элементами. Праймеры на них могут быть хорошим контролем.</p>
+</div>
+
+<ul>
+<li><em>Я выделил ДНК, но фрагменты длиннее 1 кб. Мой эксперимент испорчен?</em></li>
+</ul>
+<p>Недостаточная фрагментация может возникнуть по нескольким причином. Во-первых, если концентрация хроматина на момент соникирования превышена, то эффективность фрагментации падает, и нужно больше циклов соникирования, чтобы добиться оптимального распределения фрагментов по длине. Во-вторых, фрагментация эухроматина и гетерохроматина происходит с разной эффективностью, поскольку открытая ДНК гораздо легче разрывается ультразвуком. По этой причине иммунопреципитация белков, ассоциированных с гетерохроматином приводит к осаждению фрагментов большей длины.</p>
+<p>Фрагменты ДНК длинее 1 кб с большой вероятностью будут утрачены в ходе пробоподготовки, поэтому в ситуации, когда большая доля фрагментов лежит выше этой отметки, стоит перед пробоподготовкой провести дополнительный раунд соникирования. Подобрать нужную продолжительность соникирования можно в контрольном эксперименте с обработкой нескольких аликвот Input ультразвуком разной продолжительности.</p>
+<ul>
+<li><em>Я выделил ДНК, но фрагменты короче 100 пар. Мой эксперимент испорчен?</em></li>
+</ul>
+<p>Слишком короткие фрагменты (&lt;50 пн) будут потеряны при пробоподготовке. Такой фрагментный состав может возникнуть по нескольким причинам: недофиксация, слишком большая продолжительность соникирования и загрязнение нуклеазами.</p>
+<p>Причиной недофиксации может являться испорченный формальдегид (нужно убедиться, что в использованном формальдегиде не выпал осадок)</p>
 <ul>
 <li><em>Я сделал qPCR, все ли у меня в порядке?</em></li>
 </ul>
@@ -4232,19 +4246,19 @@ Y-X=320 мкл</th>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1676020956"></script>
-    <script src="/js/perfect-scrollbar.min.js?1676020956"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1676020956"></script>
-    <script src="/js/jquery.sticky.js?1676020956"></script>
-    <script src="/js/featherlight.min.js?1676020956"></script>
-    <script src="/js/highlight.pack.js?1676020956"></script>
+    <script src="/js/clipboard.min.js?1676136893"></script>
+    <script src="/js/perfect-scrollbar.min.js?1676136893"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1676136893"></script>
+    <script src="/js/jquery.sticky.js?1676136893"></script>
+    <script src="/js/featherlight.min.js?1676136893"></script>
+    <script src="/js/highlight.pack.js?1676136893"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1676020956"></script>
-    <script src="/js/learn.js?1676020956"></script>
-    <script src="/js/hugo-learn.js?1676020956"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1676136893"></script>
+    <script src="/js/learn.js?1676136893"></script>
+    <script src="/js/hugo-learn.js?1676136893"></script>
     
         
-            <script src="/mermaid/mermaid.js?1676020956"></script>
+            <script src="/mermaid/mermaid.js?1676136893"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
