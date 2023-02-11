@@ -1,0 +1,4283 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.88.1" />
+    <meta name="description" content="Epigenetic and Genomics Protocols">
+<meta name="author" content="Stanislav Romanov">
+
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+
+    <title>ChIP-seq эмбрионов дрозофилы :: Epigenetic and Genomics Protocols</title>
+
+    
+    <link href="/css/nucleus.css?1676137473" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1676137473" rel="stylesheet">
+    <link href="/css/hybrid.css?1676137473" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1676137473" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1676137473" rel="stylesheet">
+    <link href="/css/auto-complete.css?1676137473" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1676137473" rel="stylesheet">
+    <link href="/css/theme.css?1676137473" rel="stylesheet">
+    <link href="/css/tabs.css?1676137473" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1676137473" rel="stylesheet">
+    
+    <link href="/css/theme-green.css?1676137473" rel="stylesheet">
+    
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1676137473"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/labprotocols/chipembryo/">
+    <nav id="sidebar" class="">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <!DOCTYPE html><html><head><meta charset='utf-8'><title>Converted document</title></head><body><div><img alt='' src='data:image/png;base64,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'/></div></body>
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1676137473"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1676137473"></script>
+<script type="text/javascript">
+    
+        var baseurl = "\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1676137473"></script>
+
+    
+  </div>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/" title="Растворы и реактивы" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/">
+          Растворы и реактивы
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/enzymes/" title="Растворы ферментов" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/enzymes/">
+          Растворы ферментов
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/enzymes/proteinasek/" title="Протеиназа К" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/enzymes/proteinasek/">
+          Протеиназа К
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/enzymes/rnasea/" title="РНКаза А" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/enzymes/rnasea/">
+          РНКаза А
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/labreagents/sephadex/" title="Sephadex-G50" class="dd-item ">
+        <a href="/labreagents/sephadex/">
+        Sephadex-G50
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/buffers/" title="Стоковые растворы" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/buffers/">
+          Стоковые растворы
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/buffers/%D1%81acl2/" title="CaCl2" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/buffers/%D1%81acl2/">
+          CaCl2
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/buffers/edta/" title="EDTA" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/buffers/edta/">
+          EDTA
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/buffers/egta/" title="EGTA" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/buffers/egta/">
+          EGTA
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/buffers/hepes/" title="HEPES" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/buffers/hepes/">
+          HEPES
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/buffers/iptg/" title="IPTG" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/buffers/iptg/">
+          IPTG
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/buffers/kcl/" title="KCl" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/buffers/kcl/">
+          KCl
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/buffers/licl/" title="LiCl" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/buffers/licl/">
+          LiCl
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/buffers/mgcl2/" title="MgCl2" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/buffers/mgcl2/">
+          MgCl2
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/buffers/nacl/" title="NaCl" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/buffers/nacl/">
+          NaCl
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/buffers/naoac/" title="NaOAc" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/buffers/naoac/">
+          NaOAc
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/buffers/naoh/" title="NaOH" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/buffers/naoh/">
+          NaOH
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/buffers/nh4oac/" title="NH4OAc" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/buffers/nh4oac/">
+          NH4OAc
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/buffers/pbs/" title="PBS" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/buffers/pbs/">
+          PBS
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/buffers/peg/" title="PEG" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/buffers/peg/">
+          PEG
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/buffers/tae/" title="TAE" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/buffers/tae/">
+          TAE
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/buffers/tbe/" title="TBE" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/buffers/tbe/">
+          TBE
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/buffers/te/" title="TE" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/buffers/te/">
+          TE
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/buffers/tris/" title="Tris" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/buffers/tris/">
+          Tris
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/buffers/xgal/" title="X-Gal" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/buffers/xgal/">
+          X-Gal
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/buffers/buffere/" title="Буфер E (EB)" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/buffers/buffere/">
+          Буфер E (EB)
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/buffers/bufferl/" title="Буфер L" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/buffers/bufferl/">
+          Буфер L
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/buffers/bufferm/" title="Буфер M" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/buffers/bufferm/">
+          Буфер M
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/buffers/buffern/" title="Буфер N" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/buffers/buffern/">
+          Буфер N
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/buffers/bufferr/" title="Буфер R" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/buffers/bufferr/">
+          Буфер R
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/buffers/bufferw/" title="Буфер W" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/buffers/bufferw/">
+          Буфер W
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/buffers/buffery/" title="Буфер Y" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/buffers/buffery/">
+          Буфер Y
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/buffers/nap/" title="Натрий фосфат 0.5M (pH 8.5)" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/buffers/nap/">
+          Натрий фосфат 0.5M (pH 8.5)
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/buffers/oligos/" title="Олигонуклеотиды" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/buffers/oligos/">
+          Олигонуклеотиды
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labreagents/buffers/phenol/" title="Фенол:Хлороформ" class="dd-item
+        
+        
+        
+        ">
+      <a href="/labreagents/buffers/phenol/">
+          Фенол:Хлороформ
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/projects/" title="Проекты" class="dd-item
+        
+        
+        
+        ">
+      <a href="/projects/">
+          Проекты
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/bioinformatics/" title="Биоинформатика" class="dd-item
+        
+        
+        
+        ">
+      <a href="/bioinformatics/">
+          Биоинформатика
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/labprotocols/" title="Геномные протоколы" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/labprotocols/">
+          Геномные протоколы
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/labprotocols/chipembryo/" title="ChIP-seq эмбрионов дрозофилы" class="dd-item active">
+        <a href="/labprotocols/chipembryo/">
+        ChIP-seq эмбрионов дрозофилы
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/celltechniques/" title="Манипуляции с клетками" class="dd-item
+        
+        
+        
+        ">
+      <a href="/celltechniques/">
+          Манипуляции с клетками
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/celltechniques/lipofection/" title="Трансфекция с липофектамином" class="dd-item ">
+        <a href="/celltechniques/lipofection/">
+        Трансфекция с липофектамином
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/cloning/" title="Молекулярное клонирование" class="dd-item
+        
+        
+        
+        ">
+      <a href="/cloning/">
+          Молекулярное клонирование
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/cloning/top10/" title="Приготовление электрокомпетентных клеток TOP10" class="dd-item ">
+        <a href="/cloning/top10/">
+        Приготовление электрокомпетентных клеток TOP10
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/dnaextaction/" title="Очистка ДНК и РНК" class="dd-item
+        
+        
+        
+        ">
+      <a href="/dnaextaction/">
+          Очистка ДНК и РНК
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/dnaextaction/ampure/" title="Очистка на магнитных шарах" class="dd-item ">
+        <a href="/dnaextaction/ampure/">
+        Очистка на магнитных шарах
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/dnaextaction/sephadex/" title="Очистка секвенирующих реакций сефадексом" class="dd-item ">
+        <a href="/dnaextaction/sephadex/">
+        Очистка секвенирующих реакций сефадексом
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/dnaextaction/ethextr/" title="Переосаждение ДНК этанолом" class="dd-item ">
+        <a href="/dnaextaction/ethextr/">
+        Переосаждение ДНК этанолом
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/dnaextaction/isoextr/" title="Переосаждение изопропанолом" class="dd-item ">
+        <a href="/dnaextaction/isoextr/">
+        Переосаждение изопропанолом
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/dnaextaction/phenolchl/" title="Фенол-хлороформная экстракция" class="dd-item ">
+        <a href="/dnaextaction/phenolchl/">
+        Фенол-хлороформная экстракция
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/dnaextaction/peg/" title="Экстракция c PEG" class="dd-item ">
+        <a href="/dnaextaction/peg/">
+        Экстракция c PEG
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/pcrtechnique/" title="ПЦР" class="dd-item
+        
+        
+        
+        ">
+      <a href="/pcrtechnique/">
+          ПЦР
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/pcrtechnique/inhibitors/" title="" class="dd-item ">
+        <a href="/pcrtechnique/inhibitors/">
+        
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/programs/" title="Программы" class="dd-item
+        
+        
+        
+        ">
+      <a href="/programs/">
+          Программы
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/programs/bowtie2/" title="Bowtie2" class="dd-item ">
+        <a href="/programs/bowtie2/">
+        Bowtie2
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/programs/docker/" title="Docker" class="dd-item ">
+        <a href="/programs/docker/">
+        Docker
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/programs/higlass/" title="Higlass" class="dd-item ">
+        <a href="/programs/higlass/">
+        Higlass
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/programs/macs/" title="MACS" class="dd-item ">
+        <a href="/programs/macs/">
+        MACS
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/es-protocols/" title="Протоколы для мЭСК" class="dd-item
+        
+        
+        
+        ">
+      <a href="/es-protocols/">
+          Протоколы для мЭСК
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/es-protocols/esmedium/" title="ES-среда" class="dd-item ">
+        <a href="/es-protocols/esmedium/">
+        ES-среда
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/es-protocols/accutase/" title="Диссоциация ES-клеток Аккутазой" class="dd-item ">
+        <a href="/es-protocols/accutase/">
+        Диссоциация ES-клеток Аккутазой
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/es-protocols/esreagents/" title="Реактивы для мЭСК" class="dd-item ">
+        <a href="/es-protocols/esreagents/">
+        Реактивы для мЭСК
+        
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+      <section id="shortcuts">
+        <h3>More</h3>
+        <ul>
+          
+              <li>
+                  <a class="padding" href="https://github.com/foreverstas/GenomicsLabProtocols/"><i class='fab fa-fw fa-github'></i> GitHub repo</a>
+              </li>
+          
+              <li>
+                  <a class="padding" href="/credits"><i class='fas fa-fw fa-bullhorn'></i> Credits</a>
+              </li>
+          
+        </ul>
+      </section>
+    
+
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                  
+                  
+                  
+                  <div id="top-github-link">
+                    <a class="github-link" title='Edit this page' href="https://github.com/foreverstas/GenomicsLabProtocols/edit/master/content/LabProtocols/ChIPEmbryo.md" target="blank">
+                      <i class="fas fa-code-branch"></i>
+                      <span id="top-github-link-text">Edit this page</span>
+                    </a>
+                  </div>
+                  
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>Home</a> > <a href='/labprotocols/'>Геномные протоколы</a> > ChIP-seq эмбрионов дрозофилы
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents">
+  <ul>
+    <li><a href="#протокол-chip-seq-12-часовых-эмбрионов-дрозофилы">Протокол ChIP-seq 12 часовых эмбрионов дрозофилы.</a></li>
+    <li><a href="#чеклист">Чеклист</a></li>
+    <li><a href="#буферные-растворы">Буферные растворы</a></li>
+    <li><a href="#1-день"><strong>1 день</strong></a>
+      <ul>
+        <li><a href="#фиксация-замороженных-эмбрионов"><strong>Фиксация замороженных эмбрионов</strong></a></li>
+        <li><a href="#подготовка-антител--преблокирование-опционально"><strong>Подготовка антител (+ преблокирование, опционально).</strong></a></li>
+        <li><a href="#фрагментация-хроматина"><strong>Фрагментация хроматина</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#день-2"><strong>День 2</strong></a>
+      <ul>
+        <li><a href="#отмывка-хроматина-лизис--декросслинкирование"><strong>Отмывка хроматина, лизис + декросслинкирование</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#день-3"><strong>День 3</strong></a>
+      <ul>
+        <li><a href="#очистка-днк"><strong>Очистка ДНК</strong></a></li>
+        <li><a href="#контроль-качества"><strong>Контроль качества</strong></a></li>
+      </ul>
+    </li>
+    <li><a href="#faq"><strong>F.A.Q.</strong></a></li>
+    <li><a href="#источники">Источники</a></li>
+  </ul>
+</nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+<div class="tags">
+
+  <a class="tag-link" href="/tags/chip-seq">ChIP-seq</a>
+
+  <a class="tag-link" href="/tags/chip">ChIP</a>
+
+  <a class="tag-link" href="/tags/%D0%B4%D1%80%D0%BE%D0%B7%D0%BE%D1%84%D0%B8%D0%BB%D0%B0">Дрозофила</a>
+
+  <a class="tag-link" href="/tags/%D1%8D%D0%BC%D0%B1%D1%80%D0%B8%D0%BE%D0%BD%D1%8B">эмбрионы</a>
+
+  <a class="tag-link" href="/tags/drosophila-embryo">Drosophila embryo</a>
+
+</div>
+
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              ChIP-seq эмбрионов дрозофилы
+            </h1>
+          
+
+        
+
+
+<h2 id="протокол-chip-seq-12-часовых-эмбрионов-дрозофилы">Протокол ChIP-seq 12 часовых эмбрионов дрозофилы.</h2>
+<p>
+<div class="notices note" ><p>Данный протокол был опробован для эксперимента ChIP-seq с замороженными в PBS 12-часовыми эмбрионами дрозофилы. В качестве антител использовали anti-H3K27me3 от Abclonal (A22006). Обратите внимание, что дехорионизация и удаление вителлиновой оболочки в данном протоколе не делается, поскольку на данной стадии число эмбриональных ядер очень велико. Кроме того, здесь не обсуждается процедура сбора эмбрионов. В разделе &ldquo;Источники&rdquo; можно найти литературу по этому поводу.</p>
+</div>
+
+
+<div class="notices info" ><p>Процедура ChIP включает несколько этапов. На первом этапе (первый день) образец отмывается, фиксируются формальдегидом и гомогенизируются. После фиксации клеточные ядра отмываются буферами для отмывки, затем ресуспендирются в буфере для соникирования и подвергаются обработке ультразвуком. После фрагментации нужное количество хроматина смешивается с антителами на магнитных шарах в буфере для иммунопреципитации. После 16-часового осаждения на антителах (второй день), хроматин отмывается буферами с постепенным увеличением ионной силы. На последнем этапе осажденный хроматин ресуспендируется в буфере для элюции, обрабатывается протеиназой и РНКазой и декросслинкируется 16 часов. Затем ДНК очищается фенол-хлороформным методом (третий день).</p>
+</div>
+
+
+<div class="notices warning" ><p>Продолжительность ChIP от начала фиксации до выделения ДНК занимает 3 дня. Причем остановить эксперимент возможно только в первый день. Поэтому необходимо предварительно с особой внимательностью распределить рабочее время. Второй день эксперимента следует поставить не позже четверга, иначе придется работать в выходные.</p>
+</div>
+</p>
+<h2 id="чеклист">Чеклист</h2>
+<p>
+<div class="notices warning" ><p>Перед началом эксперимента следует проверить наличие всех инструментов, реактивов и расходников из списка.</p>
+</div>
+
+
+<div class="expand">
+    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
+        <span>
+        
+    	
+    	Развернуть
+    	
+    	</span>
+    </div>
+    <div class="expand-content" style="display: none;">
+        <p><strong>Реактивы для отмывок, фиксации и иммунопреципитации:</strong></p>
+<ul>
+<li>
+<p>Стерильная mQ в банках (не замороженная)</p>
+</li>
+<li>
+<p>PBS (свежий, стерильный)</p>
+</li>
+<li>
+<p>Tween-20</p>
+</li>
+<li>
+<p>Triton X-100</p>
+</li>
+<li>
+<p>10% BSA в mQ (только для блокирования антител, хранить замороженным)</p>
+</li>
+<li>
+<p>KCl 1М</p>
+</li>
+<li>
+<p>NaCl 5М</p>
+</li>
+<li>
+<p>MgCl<sub>2</sub> 1М</p>
+</li>
+<li>
+<p>LiCl 6M</p>
+</li>
+<li>
+<p>2.5 М глицин (хранить замороженным, после размораживания ставить в лед)</p>
+</li>
+<li>
+<p>SDS 10% (хранить при КТ)</p>
+</li>
+<li>
+<p>NaDOC 10% (хранить при КТ без доступа света)</p>
+</li>
+<li>
+<p>NP-40 10% (можно заменить на IGEPAL)</p>
+</li>
+<li>
+<p>HEPES 1М, pH 7.5 (хранить без доступа света при +4 градусах)</p>
+</li>
+<li>
+<p>EDTA 0.5М pH 8.0</p>
+</li>
+<li>
+<p>EGTA 0.5М pH 8.0</p>
+</li>
+</ul>
+<p><strong>Ингибиторы протеаз:</strong></p>
+<ul>
+<li>
+<p>DTT 1M раствор в mQ</p>
+</li>
+<li>
+<p>PMSF 1M ратсвор в DMSO</p>
+</li>
+<li>
+<p>1 раствор коктейля ингибиторов (Protinase Inhibitor Cocktail, PIC) сOmplete Mini, EDTA-free 11836170001 или аналоги</p>
+</li>
+</ul>
+<p><strong>Реактивы для выделения ДНК фенол-хлороформным методом:</strong></p>
+<ul>
+<li>
+<p>Протеиназа К (раствор 20 мг/мл)</p>
+</li>
+<li>
+<p>РНКаза A (10 мг/мл)</p>
+</li>
+<li>
+<p>Фенол:Хлороформ насыщенный TrisHCl pH8.0</p>
+</li>
+<li>
+<p>Хлороформ</p>
+</li>
+<li>
+<p>Изопропанол</p>
+</li>
+<li>
+<p>Этанол 70%</p>
+</li>
+<li>
+<p>Гликоген 20 мг/мл</p>
+</li>
+<li>
+<p>EB или любой другой буфер для элюции ДНК с колонок (можно использовать стерильную воду mQ, но только не подвергавшуюся заморозке)</p>
+</li>
+</ul>
+<p><strong>Расходники, инструменты и реактивы для контроля качества</strong></p>
+<ul>
+<li>
+<p>Магнитные шарыMagna ChIP Protein A+G Magnetic Beads (#15-663) или аналоги</p>
+</li>
+<li>
+<p>Роторная мешалка</p>
+</li>
+<li>
+<p>Программируемый термошекер</p>
+</li>
+<li>
+<p>Гомогенизатор Dounce на 1-2 мл</p>
+</li>
+<li>
+<p>Соникатор BioruptorPico + пробирки 600 мкл для BiuruptorPico</p>
+</li>
+<li>
+<p>Флуориметр Qubit + набор реактивов Qubit dsDNA+пробирки для Qubit</p>
+</li>
+<li>
+<p>Носы с фильтрами на 20 и 200 мкл</p>
+</li>
+<li>
+<p>Носы на 1000 мкл</p>
+</li>
+<li>
+<p>Эппендорфы на 1.5 мл</p>
+</li>
+<li>
+<p>RealTime амплификатор + cмеси для qPCR с SYBR + ДНК-стандарт для ChiP-qPCR (геномная ДНК из диплоидных клеток) + 2.5 мкМ праймеры для ChIP-qPCR</p>
+</li>
+</ul>
+
+    </div>
+</div></p>
+<h2 id="буферные-растворы">Буферные растворы</h2>
+<p>
+<div class="notices info" ><p>Растворы готовятся непосредственно перед экспериментом, чтобы избежать зароста.</p>
+</div>
+
+
+<div class="notices info" ><p>Все растворы нужно готовить с запасом не менее 10%.</p>
+</div>
+
+
+<div class="notices info" ><p>Перед использованием к большинству растворов примешивается рабочая концентрация протеазных ингибиторов. Этого можно не делать в случае с контрольными экспериментами, когда проверяется только фрагментация или выход ДНК в Input. Состав ингибиторов может сильно варьировать в зависимости от типа материлов и вида антител. Например, при работе с ТФ и меткой H3K27ac важно добавлять к растворам бутират, ингибирующий деацетилазы гистонов. В данном протоколе все рецепты написаны с указанием DTT, PMSF и коомерческого коктейля ингибиторов PIC. Последний достаточно доргой, поэтому добавляется только на тех этапах, где продолжительность действия протеаз на хроматин больше 1 часа. Важно понимать, что добавление любого из ингибиторов опционально и может вообще не повлиять на выход ДНК.</p>
+</div>
+
+
+<div class="expand">
+    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
+        <span>
+        
+    	
+    	Рецепты растворов
+    	
+    	</span>
+    </div>
+    <div class="expand-content" style="display: none;">
+        <ol>
+<li><strong>PBS+0.05%Tween</strong> (альтернатива <strong>Blocking Buffer</strong>).</li>
+</ol>
+<ul>
+<li><em>Используется для отмывки магнитных шаров и связывания с антителами, если преблокирование антител НЕ требуется.</em></li>
+<li>PBS - обладает физиологичным значением pH и осмотической силой, что позволяет сохранять активность белков и антител.</li>
+<li>Tween-20 является слабым нейтральным детергентом, который предотвращает слипание магнитных частиц.</li>
+<li><em>Расход ~5 мл на образец (одна реплика</em> <em>AB+ и одна реплика AB-).</em></li>
+<li><em>Расход рассчитывается исходя из того, что на одну порцию магнитных частиц тратится 2 мл на отмывки и 200 мкл на связывание с антителами.</em></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Компонент</th>
+<th>Стоковая конц.</th>
+<th>Рабочая конц.</th>
+<th>5 мл</th>
+<th>10 мл</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PBS</td>
+<td>1x</td>
+<td>~1x</td>
+<td>4.98 мл</td>
+<td>9.95 мл</td>
+</tr>
+<tr>
+<td>Tween-20</td>
+<td>100%</td>
+<td>0.5%</td>
+<td>25 мкл</td>
+<td>50 мкл</td>
+</tr>
+</tbody>
+</table>
+<ol start="2">
+<li><strong>Blocking Buffer</strong> (альтернатива <strong>PBS+0.05%Tween</strong>)</li>
+</ol>
+<ul>
+<li><em>Используется для отмывки магнитных шаров и связывания с антителами, если требуется преблокирование антител.</em></li>
+<li>Бычий сывороточный альбумин связывается с шариками и конститутивными фрагментами антител, предотвращая низкоафинные взаимодействия с компонентами хроматина и увеличивая специфичность преципитации.</li>
+<li><em>Расход ~5 мл на образец (одна реплика</em> <em>AB+</em> и одна реплика <em>AB-).</em></li>
+<li><em>Расход рассчитывается исходя из того, что на одну порцию магнитных частиц тратится 2 мл на отмывки и 200 мкл на связывание с антителами.</em></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Компонент</th>
+<th>Стоковая конц.</th>
+<th>Рабочая конц.</th>
+<th>5 мл</th>
+<th>10 мл</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PBS</td>
+<td>1x</td>
+<td>~1x</td>
+<td>4.73 мл</td>
+<td>9.45 мл</td>
+</tr>
+<tr>
+<td>Tween-20</td>
+<td>100%</td>
+<td>0.5%</td>
+<td>25 мкл</td>
+<td>50 мкл</td>
+</tr>
+<tr>
+<td>BSA в mQ</td>
+<td>10%</td>
+<td>0.5%</td>
+<td>250 мкл</td>
+<td>500 мкл</td>
+</tr>
+</tbody>
+</table>
+<ol start="3">
+<li><strong>Buffer A1</strong></li>
+</ol>
+<ul>
+<li><em>Используется для фиксации эмбрионов и отмывки после фиксации.</em></li>
+<li><em>Буфер представляет собой стандартный раствор для фиксации эмбрионов дрозофилы, чей состав был оптимизирован в работе <a href="https://books.google.ru/books?hl=ru&amp;lr=&amp;id=mfxQEAAAQBAJ&amp;oi=fnd&amp;pg=PA21&amp;ots=p8h18dsauN&amp;sig=eMN_9WbiOPem7DNSnu3sKxxSL4U&amp;redir_esc=y#v=onepage&amp;q&amp;f=false">Cavalli et al. 1999</a>. В оригинальном протоколе буфер не содержал тритон, и фиксация целых эмбрионов происходила успешно при концентрациях формальдегида 1.8% в течение 15 минут. Позже, в работе <a href="https://doi.org/10.1016/j.ydbio.2004.05.020">Chanas et al, 2004</a>, было предложено модифицировать буфер добавлением тритона и проводить фиксацию одновременно с гомогенизацией в Dounce, однако продолжительность фиксации и концентрация формальдегида не были изменены. Очевидно, что тритон и гомогенизация пермеабилзует ядра, поэтому неудивительно, что 10-минутная фиксация 1% формальдегидом работает совершенно нормально в случае иммунопреципитации H3K27me3.</em></li>
+<li><em>Расход на 1 образец: 1 мл на отмывку перед фиксацией, 1 мл на фиксацию и 2 мл на отмывки после фиксации.</em></li>
+<li><em>Отмывку перед фиксацией и ресуспендирование перед добавлением формальдегида делать раствором комнатной температуры. Отмывки после фиксации делать раствором, охлажденным во льду.</em></li>
+<li><em>DTT</em> <em>добавлять после</em> <em>mQ</em>, иначе он выпадает в осадок.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Компонент</th>
+<th>Стоковая конц.</th>
+<th>Рабочая конц.</th>
+<th>2.5мл</th>
+<th>5мл</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>KCl</td>
+<td>1 М</td>
+<td>60 мМ</td>
+<td>150 мкл</td>
+<td>300 мкл</td>
+</tr>
+<tr>
+<td>NaCl</td>
+<td>5 М</td>
+<td>15 мМ</td>
+<td>7.5 мкл</td>
+<td>15 мкл</td>
+</tr>
+<tr>
+<td>MgCl<sub>2</sub></td>
+<td>1 М</td>
+<td>4 мМ</td>
+<td>10 мкл</td>
+<td>20 мкл</td>
+</tr>
+<tr>
+<td>HEPES, pH 7.5</td>
+<td>1 М</td>
+<td>15 мМ</td>
+<td>37.5 мкл</td>
+<td>75 мкл</td>
+</tr>
+<tr>
+<td>Triton X-100</td>
+<td>100%</td>
+<td>0.5%</td>
+<td>12.5 мкл</td>
+<td>25 мкл</td>
+</tr>
+<tr>
+<td>DTT</td>
+<td>1 М</td>
+<td>0.5 мМ</td>
+<td>1.25 мкл</td>
+<td>25 мкл</td>
+</tr>
+<tr>
+<td>PMSF</td>
+<td>1 М</td>
+<td>1 мМ</td>
+<td>2.5 мкл</td>
+<td>5 мкл</td>
+</tr>
+<tr>
+<td>mQ</td>
+<td>10%</td>
+<td>0.5%</td>
+<td>2.28 мл</td>
+<td>4.56 мл</td>
+</tr>
+</tbody>
+</table>
+<ol start="4">
+<li><strong>Wash Buffer 1</strong></li>
+</ol>
+<ul>
+<li><em>Используется для отмывки клеток после фиксации.</em></li>
+<li><em>Это стандартный гипотонический буфер, используемый для экстракции фиксированных ядер. Tris - стандартный буфер с оптимальным буферным диапазоном вблизи pH 8. EDTA - хелатирующий агент, который с одинаковой эффективностью связывает дивалентные катионы Ca и Mg. Оба катиона играют важную роль в поддержании межклеточных взаимодействий и различных нуклеаз, поэтому EDTA не только облегчает диссоциацию клеток, но и защищает ДНК от деградации. EGTA - еще один хелатирующий агент с высоким сродством к кальцию. Triton-X100 - это стандартный неионный детергент, необходимый для разрушения клеточных мембран и высвобождения ядер.</em></li>
+<li><em>Расход: ~1 мл на отмывку одного образца.</em></li>
+<li><em>DTT</em> <em>добавлять после</em> <em>mQ, иначе он выпадает в осадок.</em></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Компонент</th>
+<th>Стоковая конц.</th>
+<th>Рабочая конц.</th>
+<th>1.5мл</th>
+<th>2.5 мл</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TrisHCl, pH 8.0</td>
+<td>1 М</td>
+<td>10 мМ</td>
+<td>15 мкл</td>
+<td>25 мкл</td>
+</tr>
+<tr>
+<td>EDTA</td>
+<td>0.5 М</td>
+<td>10 мМ</td>
+<td>30 мкл</td>
+<td>50 мкл</td>
+</tr>
+<tr>
+<td>EGTA</td>
+<td>0.5 М</td>
+<td>0.5 мМ</td>
+<td>1.5 мкл</td>
+<td>2.5 мкл</td>
+</tr>
+<tr>
+<td>Triton X-100</td>
+<td>100%</td>
+<td>0.25%</td>
+<td>3.75 мкл</td>
+<td>6.25 мкл</td>
+</tr>
+<tr>
+<td>DTT</td>
+<td>1 М</td>
+<td>0.5 мМ</td>
+<td>0.75 мкл</td>
+<td>1.25 мкл</td>
+</tr>
+<tr>
+<td>PMSF</td>
+<td>1 М</td>
+<td>1 мМ</td>
+<td>1.5 мкл</td>
+<td>2.5 мкл</td>
+</tr>
+<tr>
+<td>mQ</td>
+<td>10%</td>
+<td>0.5%</td>
+<td>1.45 мл</td>
+<td>2.41мл</td>
+</tr>
+</tbody>
+</table>
+<ol start="5">
+<li><strong>Wash Buffer 2</strong>.</li>
+</ol>
+<ul>
+<li><em>Используется для финальной отмывки клеток после фиксации.</em></li>
+<li><em>Буфер содержит гипертоническую концентрацию NaCl, что, по-видимому, подавляет ионные взаимодействия между белками (увеличивает специфичность взаимодействий) и стабилизирует размер ядер в ядерном экстракте.</em></li>
+<li><em>Расход: ~1 мл на отмывку одного образца.</em></li>
+<li><em>DTT</em> <em>добавлять после</em> <em>mQ, иначе он выпадает в осадок.</em></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Компонент</th>
+<th>Стоковая конц.</th>
+<th>Рабочая конц.</th>
+<th>1.5мл</th>
+<th>2.5 мл</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TrisHCl, pH 8.0</td>
+<td>1 М</td>
+<td>10 мМ</td>
+<td>15 мкл</td>
+<td>25 мкл</td>
+</tr>
+<tr>
+<td>EDTA</td>
+<td>0.5 М</td>
+<td>1 мМ</td>
+<td>3 мкл</td>
+<td>5 мкл</td>
+</tr>
+<tr>
+<td>EGTA</td>
+<td>0.5 М</td>
+<td>0.5 мМ</td>
+<td>1.5 мкл</td>
+<td>2.5 мкл</td>
+</tr>
+<tr>
+<td>NaCl</td>
+<td>5 M</td>
+<td>200 мМ</td>
+<td>60 мкл</td>
+<td>100 мкл</td>
+</tr>
+<tr>
+<td>DTT</td>
+<td>1 М</td>
+<td>0.5 мМ</td>
+<td>0.75 мкл</td>
+<td>1.25 мкл</td>
+</tr>
+<tr>
+<td>PMSF</td>
+<td>1 М</td>
+<td>1 мМ</td>
+<td>1.5 мкл</td>
+<td>2.5 мкл</td>
+</tr>
+<tr>
+<td>mQ</td>
+<td>10%</td>
+<td>0.5%</td>
+<td>1.42 мл</td>
+<td>2.37 мл</td>
+</tr>
+</tbody>
+</table>
+<ol start="6">
+<li><strong>Sonication Buffer (+1xPIC)</strong>.</li>
+</ol>
+<ul>
+<li><em>Используется фрагментации хроматина.</em></li>
+<li>Это стандартный раствор для фрагментации ДНК. По сути представляет собой TE с SDS. Считается, что SDS увеличивает эффективность фрагментации хроматина, поэтому раньше фрагментацию проводили в растворах от 0.5% до 1%, хотя проверки показывают, что это не совсем так (см. <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4731078/">Pchelintsev et al. 2016</a>), возможно, из-за увеличения эффективности соникаторов. Известно, что концентрации SDS выше 0.1% приводят к денатурации антител. Поэтому раньше приходилось после фрагментации сильно разводить хроматин.</li>
+<li><em>Расход: ~1 мл на отмывку осадка и 100-1000 мкл на ресуспендирование хроматина перед фрагментацией.</em></li>
+<li><em>DTT</em> <em>добавлять после mQ, иначе он выпадает в осадок.</em></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Компонент</th>
+<th>Стоковая конц.</th>
+<th>Рабочая конц.</th>
+<th>1 мл</th>
+<th>2 мл</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TrisHCl, pH 8.0</td>
+<td>1 М</td>
+<td>10 мМ</td>
+<td>10 мкл</td>
+<td>20 мкл</td>
+</tr>
+<tr>
+<td>EDTA</td>
+<td>0.5 М</td>
+<td>1 мМ</td>
+<td>2 мкл</td>
+<td>4 мкл</td>
+</tr>
+<tr>
+<td>SDS</td>
+<td>10%</td>
+<td>0.1%</td>
+<td>10 мкл</td>
+<td>20 мкл</td>
+</tr>
+<tr>
+<td>DTT</td>
+<td>1 М</td>
+<td>0.5 мМ</td>
+<td>0.5 мкл</td>
+<td>1 мкл</td>
+</tr>
+<tr>
+<td>PMSF</td>
+<td>1 М</td>
+<td>1 мМ</td>
+<td>1 мкл</td>
+<td>2 мкл</td>
+</tr>
+<tr>
+<td>mQ (без PIC)</td>
+<td></td>
+<td></td>
+<td>977 мкл(834 мкл)</td>
+<td>1.95 мл(1.67 мл)</td>
+</tr>
+<tr>
+<td>PIC</td>
+<td>7x</td>
+<td>1x</td>
+<td>142 мкл</td>
+<td>284 мкл</td>
+</tr>
+</tbody>
+</table>
+<ol start="7">
+<li><strong>Immunoprecipitation buffer (150 mM/300 mM NaCl)</strong></li>
+</ol>
+<ul>
+<li><em>Используется для отмывки хроматина.</em></li>
+<li><em>Это совершенно стандартный буфер для иммунопреципитации. HEPES - популярный буферный агент с низкой биологической активностью (в отличие от Tris не образует комплексы с ионами металлов). EDTA связывает кальций и ингибирует ДНКазы. 150 мМ NaCl обеспечивает физиологическую концентрацию натрия, что обеспечивает правильную структуру белков и делает возможным связывание антител с мишенями. 300 мМ NaCl создает повышенную ионную силу, что приводит к разрушению слабых белок-белковых взаимодействий и позволяет увеличить специфичность иммунопреципитации на стадии отмывок. SDS и деоксихолат натрия (NaDOC) являются сильными ионными детергентами и часто используются при приготовлении лизатов для эффективного высвобождения белков и последующего связывания с антителами. Triton-X100 - это распространенный неионный детергент, который помогает высвобождать белки и благодаря своим свойствам нейтрализует негативный эффект SDS на антитела.</em></li>
+<li><em>Расход: каждый используется в объеме ~1 мл на одну аликвоту магнитных шаров.</em></li>
+<li><em>DTT</em> <em>и</em> <em>NaDOC</em> <em>добавлять</em> <em>после mQ, иначе они выпадают в осадок.</em></li>
+</ul>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 20%" />
+<col style="width: 18%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Компонент</th>
+<th>Стоковая конц.</th>
+<th>Рабочая конц.</th>
+<th>1.5 мл</th>
+<th>2.5мл</th>
+<th>4.5 мл</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>HEPES, pH 8.0</td>
+<td>1 М</td>
+<td>50 мМ</td>
+<td>75мкл</td>
+<td>125 мкл</td>
+<td>225 мкл</td>
+</tr>
+<tr class="even">
+<td>EDTA</td>
+<td>0.5 М</td>
+<td>1 мМ</td>
+<td>3 мкл</td>
+<td>5мкл</td>
+<td>9мкл</td>
+</tr>
+<tr class="odd">
+<td>NaCl</td>
+<td>5 M</td>
+<td><p>150 мМ</p>
+<p>(300 мМ)</p></td>
+<td><p>45 мкл</p>
+<p>(90 мкл)</p></td>
+<td><p>75мкл</p>
+<p>(150 мкл)</p></td>
+<td><p>135 мкл</p>
+<p>(270 мкл)</p></td>
+</tr>
+<tr class="even">
+<td>Triton-X100</td>
+<td>100%</td>
+<td>1%</td>
+<td>15 мкл</td>
+<td>25 мкл</td>
+<td>45 мкл</td>
+</tr>
+<tr class="odd">
+<td>NaDOC</td>
+<td>10%</td>
+<td>0.1%</td>
+<td>15 мкл</td>
+<td>25 мкл</td>
+<td>45 мкл</td>
+</tr>
+<tr class="even">
+<td>SDS</td>
+<td>10%</td>
+<td>0.1%</td>
+<td>15 мкл</td>
+<td>25 мкл</td>
+<td>45 мкл</td>
+</tr>
+<tr class="odd">
+<td>DTT</td>
+<td>1 М</td>
+<td>0.5 мМ</td>
+<td>0.75 мкл</td>
+<td>1.25 мкл</td>
+<td>2.25 мкл</td>
+</tr>
+<tr class="even">
+<td>PMSF</td>
+<td>1 М</td>
+<td>1 мМ</td>
+<td>1.5 мкл</td>
+<td>2.5 мкл</td>
+<td>4.5 мкл</td>
+</tr>
+<tr class="odd">
+<td><p>mQ, 150 мМ</p>
+<p>(для 300 мМ)</p></td>
+<td></td>
+<td></td>
+<td><p>1.33 мл</p>
+<p>(1.29 мл)</p></td>
+<td><p>2.22 мл</p>
+<p>(2.15 мл)</p></td>
+<td><p>3.99 мл</p>
+<p>(3.86 мл)</p></td>
+</tr>
+</tbody>
+</table>
+<ol start="8">
+<li><strong>DOC</strong> <strong>buffer</strong></li>
+</ol>
+<ul>
+<li><em>Используется для отмывки хроматина.</em></li>
+<li><em>Это стандартный буфер для отмывки хроматина после иммунопреципитации. В данном случае вместо NaCl добавляют LiCl. Считается, что замена соли улучшает эффективность отмывки и увеличивает специфичность ChIP. Добавление NP-40, мягкого неионного детергента, также увеличивает эффективность отмывки и улучшает специфичность преципитации.</em></li>
+<li><em>Расход: используется в объеме ~1 мл на одну аликвоту магнитных шаров.</em></li>
+<li><em>DTT</em> <em>и</em> <em>NaDOC</em> <em>добавлять после mQ, иначе он выпадают в осадок.</em></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Компонент</th>
+<th>Стоковая конц.</th>
+<th>Рабочая конц.</th>
+<th>1.5 мл</th>
+<th>2.5мл</th>
+<th>4.5 мл</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>LiCl</td>
+<td>6 М</td>
+<td>250 мМ</td>
+<td>62.5 мкл</td>
+<td>104.2 мкл</td>
+<td>187.5 мкл</td>
+</tr>
+<tr>
+<td>TrisHCl, pH 8.0</td>
+<td>1 М</td>
+<td>10 мМ</td>
+<td>15 мкл</td>
+<td>25 мкл</td>
+<td>45 мкл</td>
+</tr>
+<tr>
+<td>EDTA</td>
+<td>0.5 М</td>
+<td>1 мМ</td>
+<td>3</td>
+<td>5 мкл</td>
+<td>9 мкл</td>
+</tr>
+<tr>
+<td>NP-40</td>
+<td>10%</td>
+<td>0.5%</td>
+<td>75</td>
+<td>125 мкл</td>
+<td>225 мкл</td>
+</tr>
+<tr>
+<td>NaDOC</td>
+<td>10%</td>
+<td>0.5%</td>
+<td>75 мкл</td>
+<td>125 мкл</td>
+<td>225 мкл</td>
+</tr>
+<tr>
+<td>DTT</td>
+<td>1 М</td>
+<td>0.5 мМ</td>
+<td>0.75 мкл</td>
+<td>1.25 мкл</td>
+<td>2.25 мкл</td>
+</tr>
+<tr>
+<td>PMSF</td>
+<td>1 М</td>
+<td>1 мМ</td>
+<td>1.5 мкл</td>
+<td>2.5 мкл</td>
+<td>4.5 мкл</td>
+</tr>
+<tr>
+<td>mQ</td>
+<td></td>
+<td></td>
+<td>1.27 мл</td>
+<td>2.11 мл</td>
+<td>3.80 мл</td>
+</tr>
+</tbody>
+</table>
+<ol start="9">
+<li><strong>TE buffer</strong></li>
+</ol>
+<ul>
+<li><em>Используется для финальной отмывки хроматина.</em></li>
+<li><em>С помощью TE удаляются остатки детергентов в других соединений, которые могут понизить эффективность ферментативных реакций.</em></li>
+<li><em>Расход: используется в объеме ~2 мл на одну аликвоту магнитных шаров.</em></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Компонент</th>
+<th>Стоковая конц.</th>
+<th>Рабочая конц.</th>
+<th>2.5мл</th>
+<th>5 мл</th>
+<th>10 мл</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TrisHCl, pH 8.0</td>
+<td>1 М</td>
+<td>10 мМ</td>
+<td>25 мкл</td>
+<td>50 мкл</td>
+<td>100 мкл</td>
+</tr>
+<tr>
+<td>EDTA</td>
+<td>0.5 М</td>
+<td>1 мМ</td>
+<td>5 мкл</td>
+<td>10 мкл</td>
+<td>20 мкл</td>
+</tr>
+<tr>
+<td>mQ</td>
+<td></td>
+<td></td>
+<td>2.97 мл</td>
+<td>4.94 мл</td>
+<td>9.88 мл</td>
+</tr>
+</tbody>
+</table>
+<ol start="10">
+<li><strong>Elution buffer</strong></li>
+</ol>
+<ul>
+<li><em>Не путать с <strong>EB</strong>.</em></li>
+<li><em>Используется для лизиса ДНК на магнитных шарах.</em></li>
+<li><em>Расход: используется в объеме 300 мкл на одну аликвоту магнитных шаров и ~300 мкл на</em> <em>Input.</em></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Компонент</th>
+<th>Стоковая конц.</th>
+<th>Рабочая конц.</th>
+<th>1 мл</th>
+<th>1.5 мл</th>
+<th>2 мл</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NaHCO<sub>3</sub>, pH 8.0</td>
+<td>1 М</td>
+<td>100 мМ</td>
+<td>100 мкл</td>
+<td>150 мкл</td>
+<td>200 мкл</td>
+</tr>
+<tr>
+<td>SDS</td>
+<td>10%</td>
+<td>1%</td>
+<td>100 мкл</td>
+<td>150 мкл</td>
+<td>200 мкл</td>
+</tr>
+<tr>
+<td>mQ</td>
+<td></td>
+<td></td>
+<td>800 мкл</td>
+<td>1200мкл</td>
+<td>1600мкл</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+</div></p>
+<h2 id="1-день"><strong>1 день</strong></h2>
+<h3 id="фиксация-замороженных-эмбрионов"><strong>Фиксация замороженных эмбрионов</strong></h3>
+
+<div class="expand">
+    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
+        <span>
+        
+    	
+    	Чеклист
+    	
+    	</span>
+    </div>
+    <div class="expand-content" style="display: none;">
+        <ul>
+<li><em>Перед началом включить центрифугу с охлаждением</em></li>
+<li><em>Приготовить</em> <strong>буфер</strong> <strong>А1</strong> <em>из расчета &gt;5 мл на образец (~2 мл поставить в лед, остальное нагреть до КТ)</em></li>
+<li><em>Нагреть</em> <strong>PBS</strong> <em>до комнатной температуры (~1-2 мл на образец)</em></li>
+<li><em>Подготовить</em> <strong>37% формальдегид</strong> <em>комнатной температуры</em></li>
+<li><em>Разморозить</em> <strong>2.5М глицин</strong> <em>и поставить в лед</em></li>
+<li><em>Приготовить гомогенизатор</em> <em>Dounce</em> <em>на 2 мл</em></li>
+<li><em>Приготовить</em> <strong>Wash</strong> <strong>Buffer</strong> <strong>I</strong> <em>и</em> <strong>Wash</strong> <strong>Buffer</strong> <strong>II</strong> <em>из расчета 1-2 мл на образец и поставить в лед</em></li>
+<li><em>Приготовить</em> <strong>Sonication</strong> <strong>Buffer</strong> <em>из расчета 1 мл на образец и поставить в лед</em></li>
+</ul>
+
+    </div>
+</div>
+<ol>
+<li>15-50 мкл замороженных эмбрионов разморозить и отмыть в <strong>PBS</strong>. Осадить центрифугированием 2000g 5 минут, КТ. Удалить супернатант полностью.</li>
+<li>Отмыть эмбрионы в 1 мл <strong>буфера А1</strong> комнатной температуры. Осадить центрифугированием 2000g 5 минут, КТ.</li>
+<li>Ресуспендировать эмбрионы в 1 мл <strong>буфера А1</strong> комнатной температуры. Перенести 973 мкл эмбрионов в гомогенизатор Dounce (2 мл). Добавить 27.7 мкл <strong>37% формальдегида</strong>. Начать отсчитывать время фиксации. В течение четырех минут растирать пестиком (~15 медленных движений без пузырения).</li>
+</ol>
+
+<div class="notices info" ><p>Рабочая концентрация формальдегида - 1%.</p>
+</div>
+
+<ol start="4">
+<li>Сразу перенести гомогенизат в эппендорф и поставить на мешалку (КТ). По окончании 10 минут фиксации поставить добавить 120 мкл <strong>2.5 М холодного глицина</strong> (финальная концентрация глицина получится 250 мМ), перемешать и поставить в ледна пять минут.</li>
+</ol>
+
+<div class="notices warning" ><p>Перед добавлением глицина нужно проверить объем фиксируемого материала. Если меньше 1 мл, то объем глицина нужно уменьшить пропорционально.</p>
+</div>
+
+<ol start="5">
+<li>Центрифугировать 2-5 минут при 2000g 4<sup>о</sup>С. Удалить супернатант, не задевая осадок.</li>
+<li>Промыть осадок пипетированием в 1 мл холодного <strong>буфера А1</strong>. Снова центрифугировать 2-5 минут при 2000g 4<sup>о</sup>С.</li>
+<li>Повторить отмывку холодным <strong>буфером А1</strong>. Снова центрифугировать 2-5 минут при 2000g 4<sup>о</sup>С. Удалить супернатант, не задевая осадок.</li>
+</ol>
+
+<div class="notices warning" ><p>Осадок можно заморозить в кельвинаторе. После отмывки его можно фрагментировать. Это снизит выход ChIP.</p>
+</div>
+
+<ol start="8">
+<li>Пипетировать осадок в 1 мл <strong>Wash</strong> <strong>Solution I</strong> <strong>+ ингибиторы.</strong> Инкубировать во льду 10 минут при постоянном перемешивании. Центрифугировать 2-5 минут при 2000g 4<sup>о</sup>С. Удалить супернатант, не задевая осадок.</li>
+<li>Пипетировать осадок в 1 мл <strong>Wash</strong> <strong>Solution II + ингибиторы.</strong> Инкубировать во льду 5 минут при постоянном перемешивании. Центрифугировать 2-5 минут при 2000g 4<sup>о</sup>С. Удалить супернатант полностью, не задевая осадок.</li>
+<li>Аккуратно промыть осадок в 1 мл <strong>Sonication</strong> <strong>buffer</strong>. Буфер наносить по стенке, чтобы не повредить осадок. Сразу удалить буффер, не задевая осадок.</li>
+</ol>
+<p>
+<div class="notices tip" ><p>Осадок можно заморозить в кельвинаторе. Но это с большой вероятностью несколько снизит эффективнось иммунопреципитации.</p>
+</div>
+
+
+<div class="notices warning" ><p>Далее хроматин подвергается соникированию. Если иммунопреципитация ставится в тот же день, то нужно заранее поставить подготовку антител (пункты 11-14). Нужно учитывать, что суммарно это занимает не менее 2 часов.</p>
+</div>
+</p>
+<h3 id="подготовка-антител--преблокирование-опционально"><strong>Подготовка антител (+ преблокирование, опционально).</strong></h3>
+<p>
+<div class="notices warning" ><p>При работе с шарами MagnacChIP A+G нужно избегать интенсивного встряхивания на шейкере.</p>
+</div>
+
+
+<div class="notices info" ><p>Если блокировать антитела не обязательно, то все этапы проводят с PBS+0.5% Tween. В противном случае необходимо использовать Blocking Buffer. Приготовить выбранный буфер из расчета 1.5 мл на аликвоту шариков. 1 мл поставить в лед, остальное довести до комнатной температуры.</p>
+</div>
+
+
+<div class="notices warning" ><p>Как показал опыт, при КТ антитела сохраняют активность вплоть до 6 часов. Поэтому нет ничего страшного, если процедура замешивания антител с шариками затянется более 2 часов.</p>
+</div>
+
+
+<div class="expand">
+    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
+        <span>
+        
+    	
+    	Чеклист
+    	
+    	</span>
+    </div>
+    <div class="expand-content" style="display: none;">
+        <ul>
+<li><em>Этот этап делают за 2 часа до начала иммунопреципитации</em></li>
+<li><em>Убедиться, что количество антител достаточно для работы</em></li>
+</ul>
+
+    </div>
+</div></p>
+<ol start="11">
+<li>Отобрать по 10-20 мкл <strong>MagnaСhIP</strong> <strong>A+G</strong> на AB+ и AB- в отдельные эппендорфы. Промыть в 500 мкл <strong>PBS+0.5%</strong> <strong>Tween</strong> или <strong>Blocking</strong> <strong>Buffer</strong> комнатной температуры. Перемешивать 5 минут при КТ на роторной мешалке. Поставить на 1 минуту на магнитный штатив и удалить супернатант.</li>
+</ol>
+<p>
+<div class="notices info" ><p>Магнитные частицы имеют свойство слипаться друг с другом и со стенками пробирок, если в растворе отсутствует детергент. По этой причине для отмывки шаров в раствор обязательно нужно добавить Tween-20.</p>
+</div>
+
+
+<div class="notices warning" ><p>При вращении мешалки жидкость в пробирке должна обязательно переливаться от дна к крышке, иначе шарики осядут на стенки. Tween необходим, чтобы шарики не слипались.</p>
+</div>
+</p>
+<ol start="12">
+<li>Повторить отмывку в 500 мкл <strong>PBS+0.5% Tween</strong> или <strong>Blocking</strong> <strong>Buffer</strong> <strong>комнатной температуры</strong>. Перемешивать 5 минут при КТ на роторной мешалке. Поставить на 1 минуту на магнитный штатив и удалить супернатант.</li>
+<li>Ресуспендировать шары в 200 мкл мкл <strong>PBS+0.5% Tween</strong> или <strong>Blocking</strong> <strong>Buffer</strong> комнатной температуры. Добавить выбранное количество антител (обычно мы используем 1 мкг) к пробирке для AB+. К AB- антитела не добавлять! Поставить на роторную мешалку на 2 часа при КТ.</li>
+<li><strong>Этот шаг делается непосредственно перед иммунопреципитацией, когда хроматин будет разведен в</strong> <strong>Immunoprecipitation</strong> <strong>buffer (пункт 20)!</strong> Дважды отмыть шарики с присоединенными антителамив 500 мклледяного <strong>PBS+0.5% Tween</strong> или <strong>Blocking Buffer</strong> аналогично пункту 11. После окончательной отмывки удалить супернатант полностью. Незамедлительно приступить к иммунопреципитации.</li>
+</ol>
+<h3 id="фрагментация-хроматина"><strong>Фрагментация хроматина</strong></h3>
+
+<div class="expand">
+    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
+        <span>
+        
+    	
+    	Чеклист
+    	
+    	</span>
+    </div>
+    <div class="expand-content" style="display: none;">
+        <ul>
+<li><em>Перед началом включить соникатор BioraptorPico для охлаждения. Предварительно заменить в нем воду на свежий дистиллят, если прошлая замена прошла более недели назад</em></li>
+<li><em>С этого момента все манипуляции с хроматином проводятся ледяными растворами и на +4 градусах Цельсия</em></li>
+<li><em>Приготовить <strong>SonicationBuffer+1xPIC</strong> из расчета 100 мкл на 1 мкг ДНК (не менее 200 мкл на образец) и поставить в лед</em></li>
+<li><em>Подготовить 600 мкл пробирки для фрагментации хроматина</em></li>
+<li><em>Подготовить растворы для приготовления <strong>preImmunoprecipitationbuffer</strong> (см пункт 21)</em></li>
+</ul>
+
+    </div>
+</div>
+<ol start="15">
+<li>Ресуспендировать осадок в ледяном <strong>Sonication</strong> <strong>buffer</strong> <strong>+ PIC</strong> из расчета ~1 мкг хроматина на 100 мкл (300 мкл на 25-50 мкл эмбрионов).</li>
+<li>Расфасовать по 100 мкл в 600мкл пробирки для соникирования. Осадить, чтобы капли жидкости не остались на стенках и поставить в лед для максимального охлаждения.</li>
+<li>Фрагментировать в режиме 30 cек. ON - 30 сек OFF в течение 16 циклов.</li>
+</ol>
+<p>
+<div class="notices warning" ><p>При озвучивании жидкость разбрызгивается по стенкам пробирки, поэтому процесс соникирования стоит разделить на два этапа, чтобы в промежутке между ними осадить капли со стенок пробирки при помощи центрифуги.</p>
+</div>
+
+
+<div class="notices info" ><p>В результате соникирования размер фрагментов ДНК должен достичь промежутка 100-1000 пн с медианой в области 200-300 пар. Допускается небольшой хвост из фрагментов длинее 1 кб. Фрагментный состав итогового продукта зависит от продолжительности соникирования и степени фиксации. В данном протоколе фиксация проводится в 1% формальдегиде в течении 10 минут при КТ. По опыту, для достижения необходимого фрагментного состава при таких вводных потребуется где-то 16-20 циклов в режиме 30'&lsquo;ON - 30'&lsquo;OFF. В общем случае, продолжительность фрагментации определяется заранее в предварительном эксперименте.</p>
+</div>
+</p>
+<ol start="18">
+<li>Объединить озвученный хроматин в эппендорфе. Центрифугировать на максимальных оборотах 5 минут при 4<sup>о</sup>С. Перенести супернатант в чистую пробирку. Поставить в лед. Тщательно измерить объем полученного хроматина. Довести до нужного объема добавлением ледяного <strong>Sonication</strong> <strong>buffer + PIC</strong>.</li>
+</ol>
+
+<div class="notices tip" ><p>Озвученный хроматин можно заморозить в кельвинаторе. Но это несколько снизит выход ChIP.</p>
+</div>
+
+<ol start="19">
+<li>Рассчитать объем хроматина для AB+, AB- и Input. В инпут подбирается объем, достаточный для выделения 100-500 нг ДНК. На 300 мкл соникированного хроматина достаточно взять 14 мкл на Input, 140 мкл на AB+, 140 мкл на AB-.</li>
+</ol>
+<p>
+<div class="notices info" ><p>Судя по рекоммендациям из протоколов ChIP-seq, максимально точно определить концентрацию ДНК в фрагментированном хроматине можно с помощью Qubit. Однако обычные прикидочные подсчеты, как правило, работают очень хорошо.</p>
+</div>
+
+
+<div class="notices tip" ><p>Объем AB + и AB - должны быть равны. Разделять аликвоты AB + и AB - нужно будет только после пункта 21.</p>
+</div>
+</p>
+<ol start="20">
+<li>Записать долю объема Input от AB+ в процентах. Заморозить Input в морозильной камере.</li>
+<li>Довести состав раствора с хроматином в AB+ и AB- до <strong>Immunoprecipitation</strong> <strong>buffer</strong> <strong>(150 mM NaCl)+PIC</strong>, добавив соответствующий объем ледяного <strong>preImmunoprecipitation Buffer</strong>. Для приготовления последнего нужно знать объем AB+ плюс AB- (<strong>X</strong>) и суммарный объем, в котором будет проходить реакция с шариками и хроматином (<strong>Y</strong>). К <strong>X</strong> мкл хроматина в <strong>Sonication Buffer</strong> нужно добавить <strong>Y - X</strong> мкл <strong>preImmunoprecipitation Buffer</strong>. Чтобы прописать состав <strong>preImmunoprecipitation Buffer</strong> мы учитываем, что некоторые компоненты уже присутствуют в <strong>Sonication Buffer</strong>.</li>
+</ol>
+
+<div class="notices tip" ><p>Удобно проводить иммунопреципитацию в объеме 300 мкл. Так что нужно довести суммарный объем фрагментированного хроматина до Y=600 мкл. Если фрагментация проводилась в объеме 300 мкл, то после извлечения Input (14 мкл) удобно, чтобы объем хроматина для AB+ составлял 140 мкл, то есть всего мы возьмем 280 мкл на AB+ и AB- (X=280).</p>
+</div>
+
+<p><strong>preImmunoprecipitation Buffer</strong></p>
+<table>
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 15%" />
+<col style="width: 14%" />
+<col style="width: 19%" />
+<col style="width: 22%" />
+<col style="width: 13%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Компонент</th>
+<th>Стоковая конц.</th>
+<th>Рабочая конц.</th>
+<th>Целевой объем, мкл</th>
+<th>Сколько добавить, мкл</th>
+<th><p>Y=600 мкл</p>
+<p>X=280 мкл</p>
+Y-X=320 мкл</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>HEPES, pH8.0</td>
+<td>1 М</td>
+<td>50 мМ</td>
+<td>Y</td>
+<td>50*Y/1000</td>
+<td>30 мкл</td>
+</tr>
+<tr class="even">
+<td>EDTA</td>
+<td>0.5 М</td>
+<td>1 мМ</td>
+<td>Y-X</td>
+<td>1*(Y-X)/500</td>
+<td>0.64 мкл</td>
+</tr>
+<tr class="odd">
+<td>NaCl</td>
+<td>5 M</td>
+<td>150 мМ</td>
+<td>Y</td>
+<td>150*Y/5000</td>
+<td>18 мкл</td>
+</tr>
+<tr class="even">
+<td>NaDOC</td>
+<td>10%</td>
+<td>0.1%</td>
+<td>Y</td>
+<td>0.1*Y/10</td>
+<td>6 мкл</td>
+</tr>
+<tr class="odd">
+<td>SDS</td>
+<td>10%</td>
+<td>0.1%</td>
+<td>Y-X</td>
+<td>0.1*(Y-X)/10</td>
+<td>3.2 мкл</td>
+</tr>
+<tr class="even">
+<td>Triton-X100</td>
+<td>100%</td>
+<td>1%</td>
+<td>Y</td>
+<td>1*Y/100</td>
+<td>6 мкл</td>
+</tr>
+<tr class="odd">
+<td>DTT</td>
+<td>1 М</td>
+<td>0.5 мМ</td>
+<td>Y-X</td>
+<td>0.5*(Y-X)/1000</td>
+<td>0.16 мкл</td>
+</tr>
+<tr class="even">
+<td>PMSF</td>
+<td>1 М</td>
+<td>1 мМ</td>
+<td>Y-X</td>
+<td>1*(Y-X)/1000</td>
+<td>0.32 мкл</td>
+</tr>
+<tr class="odd">
+<td>PIC</td>
+<td>7x</td>
+<td>1x</td>
+<td>Y-X</td>
+<td>1*(Y-X)/7</td>
+<td>45.1 мкл</td>
+</tr>
+<tr class="even">
+<td>mQ</td>
+<td></td>
+<td></td>
+<td></td>
+<td>Довести до Y-X</td>
+<td>210.6 мкл</td>
+</tr>
+</tbody>
+</table>
+
+<div class="notices warning" ><p>preImmunoprecipitation buffer готовится с запасом! Чтобы сделать запас 10 процентов, нужно все вычисленные объемы умножить на 1.1</p>
+</div>
+
+<ol start="22">
+<li><strong>К этому моменту должны быть отмыты антитела на магнитных шариках (пункт 13).</strong> Перенести сначала половину фрагментированного хроматина в <strong>Immunoprecipitation</strong> <strong>buffer</strong> к шарам с антителами (AB+), затем оставшуюся часть к шарам без антител (AB-). Перемешать хроматин и шарики перемешиванием. Поставить пробирки на роторную мешалку и оставить вращаться в холодильнике или в холодной комнате (при +4<sup>о</sup>С) на 16 часов.</li>
+</ol>
+
+<div class="notices warning" ><p>Обязательно проследить, чтобы пробирки не выпали из мешалки, и чтобы при вращении жидкость в каждой пробирке переливалась со дна на крышку.</p>
+</div>
+
+<h2 id="день-2"><strong>День 2</strong></h2>
+<h3 id="отмывка-хроматина-лизис--декросслинкирование"><strong>Отмывка хроматина, лизис + декросслинкирование</strong></h3>
+
+<div class="expand">
+    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
+        <span>
+        
+    	
+    	Чеклист
+    	
+    	</span>
+    </div>
+    <div class="expand-content" style="display: none;">
+        <ul>
+<li><em>Подготовить <strong>Immunoprecipitation buffer (150 mM NaCl)</strong> из расчета 1 мл на аликвоту шариков и поставить в лед</em></li>
+<li><em>Подготовить <strong>Immunoprecipitation buffer (300 mM NaCl)</strong> из расчета 1 мл на аликвоту шариков и поставить в лед</em></li>
+<li><em>Подготовить <strong>DOC buffer</strong> из расчета 1 мл на аликвоту шариков и поставить в лед</em></li>
+<li><em>Подготовить <strong>TE</strong> из расчета 2 мл на аликвоту шариков и поставить в лед</em></li>
+<li><em>Подготовить <strong>Elution buffer</strong> из расчета 300 мкл на аликвоту шариков + 300 мкл на Input , поставить на КТ</em></li>
+<li><em>Подготовить <strong>1МTrisHCl pH8.0</strong> , <strong>5МNaCl</strong> и <strong>0.5М ЭДТА</strong></em></li>
+<li><em>Убедиться в достаточном количестве <strong>RNAse A</strong> и <strong>протеиназыK</strong></em></li>
+<li><em>Убедиться в наличии программируемого термошейкера</em></li>
+<li><em>Перед элюцией с шаров разморозить Input и поставить в лед</em></li>
+</ul>
+
+    </div>
+</div>
+<ol start="23">
+<li>Промыть шары дважды в 500 мкл ледяного <strong>Immunoprecipitation buffer (150 mM NaCl ).</strong></li>
+</ol>
+
+<div class="notices tip" ><p>Для отмывок пробирки с шариками скручиваются, переносятся на магнитный штатив на минуту, после чего супернатант удаляется и заменяется буфером для отмывки. После замены буфера пробирки возвращяются на роторную мешалку на 5 минут при 4 градусах.</p>
+</div>
+
+<ol start="24">
+<li>Промыть дважды в 500 мкл ледяного <strong>Immunoprecipitation buffer c 300 мМ NaCl.</strong></li>
+<li>Промыть дважды в 500 мкл ледяного <strong>DOC buffer.</strong></li>
+<li>Промыть дважды в 1 мл ледяного <strong>TE</strong>.</li>
+</ol>
+
+<div class="notices warning" ><p>Из-за отсутствия детергентов в ТЕ, магнитные шарики будут прилипать к стенкам пробирок. Поэтому нужно аккуратно удалять супернатант, чтобы не захватить шарики.</p>
+</div>
+
+<ol start="27">
+<li>Ресуспендировать шары в 300 мкл <strong>Elution buffer</strong> комнатной температуры**.**</li>
+<li>Разморозить Input и довести до 300 мкл с помощью <strong>Elution buffer</strong> комнатной температуры.</li>
+</ol>
+<p>
+<div class="notices warning" ><p>Дальнейшие реакции проводятся без охлаждения.</p>
+</div>
+
+
+<div class="notices info" ><p>Далее Input , AB+ и AB- обрабатываются параллельно.</p>
+</div>
+</p>
+<ol start="29">
+<li>Добавить 2-6 мкл <strong>РНКазы 10 мг/мл.</strong> Инкубировать 30 минут при 37 градусах в термошейкере.</li>
+<li>Добавить 12 мкл <strong>1 M TrisHCl pH 8.0</strong> , 6 мкл <strong>0.5 М EDTA pH 8.0</strong> и 14 мкл <strong>5М NaCl</strong>.</li>
+</ol>
+
+<div class="notices info" ><p>Итоговая концентрация NaCl ~200 мМ. Соль нужна для последующего переосаждения ДНК спиртом.</p>
+</div>
+
+<ol start="31">
+<li>Добавить 2.5 мкл <strong>протеиназы К 20 мг/мл.</strong> Инкубировать в термошейкере 3 часа при 55<sup>о</sup>С (лизис белков), затем 16 часов при 64<sup>о</sup>С (декросслинкирование).</li>
+</ol>
+
+<div class="notices tip" ><p>После завершения программы образец можно охладить до 4-10 градусов, однако это приведет к выпадению SDS в осадок. Растворить SDS можно нагреванием до 37 по Цельсию</p>
+</div>
+
+<h2 id="день-3"><strong>День 3</strong></h2>
+<h3 id="очистка-днк"><strong>Очистка ДНК</strong></h3>
+
+<div class="expand">
+    <div class="expand-label" style="cursor: pointer;" onclick="$h = $(this);$h.next('div').slideToggle(100,function () {$h.children('i').attr('class',function () {return $h.next('div').is(':visible') ? 'fas fa-chevron-down' : 'fas fa-chevron-right';});});">
+        <i style="font-size:x-small;" class="fas fa-chevron-right"></i>
+        <span>
+        
+    	
+    	Чеклист
+    	
+    	</span>
+    </div>
+    <div class="expand-content" style="display: none;">
+        <ul>
+<li><em>Перед началом включить центрифугу с охлаждением на 4<sup>о</sup>С</em></li>
+<li><em>Убедиться в достаточном количестве <strong>фенол:хлороформа</strong> , <strong>хлороформа</strong> , <strong>изопропанола</strong> и <strong>70% этанола</strong></em></li>
+<li><em>Убедиться в наличии гликогена или другого подходящего соосадителя</em></li>
+</ul>
+
+    </div>
+</div>
+<ol start="32">
+<li>
+<p>Лизат с магнитными частицами (AB+ и AB-) поместить на магнитный штатив на 1 минуту. Полностью перенести лизат в новую пробирку. Не забыть правильно подписать.</p>
+</li>
+<li>
+<p>Добавить к лизатам равный объем <strong>фенол:хлороформа</strong>. Перемешать до образования эмульсии. Центрифугировать 5-10 минут при 13000g на КТ.</p>
+</li>
+<li>
+<p>Перенести верхнюю фазу в чистый эппендорф. Добавить равный объем <strong>хлороформа</strong>. Аккуратно перемешать переворачиванием 10-13 раз. Центрифугировать 5-10 минут при 13000g на КТ.</p>
+</li>
+</ol>
+
+<div class="notices tip" ><p>Хлороформ обладает сильной текучестью, поэтому чтобы он не вытекал из носика под действием силы тяжести, чистый носик нужно смочить в хлороформе пипетированием.</p>
+</div>
+
+<ol start="35">
+<li>Перенести верхнюю водную фазу в чистую пробирку. Добавить 1.5 объема <strong>изопропанола</strong>. Добавить 1 мкл <strong>гликогена 20 мг/мл</strong>. Перемешать и поместить в морозильную камеру или кельвинатор на 20-30 минут. Центрифугировать 20 минут при 13000 g в центрифуге с охлаждением.</li>
+</ol>
+
+<div class="notices tip" ><p>Обратить внимание на появление осадка. Если осадок не появился, значит нужно добавить гликоген еще раз и снова центрифугировать.</p>
+</div>
+
+<ol start="36">
+<li>Не задевая осадок, удалить супернатант.</li>
+</ol>
+
+<div class="notices tip" ><p>Лучше не выливать супернатант, а перенести в чистый эппендорф на случай, если выход ДНК в AB+ и Input неожиданно окажется нулевым.</p>
+</div>
+
+<ol start="37">
+<li>Промыть осадок <strong>70% этанолом</strong>. Центрифугировать 5 минут при 13000g в центрифуге с охлаждением. Полностью удалить этанол, не задевая осадок.</li>
+</ol>
+
+<div class="notices tip" ><p>Если не удалось удалить этанол со стенок, нужно центрифугировать пробирку повторно и попытаться снова.</p>
+</div>
+
+<ol start="38">
+<li>Высушить осадок от спирта в течение 5 минут при КТ.</li>
+<li>Ресуспендировать осадок в 20 мкл <strong>mQ</strong> или <strong>EB.</strong></li>
+</ol>
+
+<div class="notices tip" ><p>Лучше не использовать mQ, который был расфасован и заморожен. Из-за сдвига pH продолжительность хранения ДНК в такой воде значительно снижается.</p>
+</div>
+
+<ol start="40">
+<li><strong>ДНК можно заморозить !!!</strong></li>
+</ol>
+<h3 id="контроль-качества"><strong>Контроль качества</strong></h3>
+<ol start="42">
+<li>Измерить концентрацию ДНК в AB+, AB- и Input при помощи Qubit с использованием набора реагентов dsDNA HS согласно схеме ниже.</li>
+</ol>
+<p>
+<div class="notices tip" ><p>На каждый образец необходимо приготовить 200 мкл 1xTE + 1xDye. Далее 199 мкл данного раствора перенести в специальную пробирку для Qubit и добавить 1 мкл образца.</p>
+</div>
+
+
+<div class="notices tip" ><p>При необходимости приготовить разведения стандартов (всего два стандарта: 0 нг/мкл и 10 нг/мкл. Для этого 10 мкл каждого стандарта смешивается с 190 мкл 1xTE + 1xDye.</p>
+</div>
+</p>
+<p><img src="/LabProtocols/ChipEmbryo.files/Qubit.png?width=30pc" alt=""></p>
+<ol start="43">
+<li>Провести фрагментный анализ ДНК в Input при помощи электрофореза в 1.5% TAE-агарозе, 20-25 минут, 10 В/см, длина геля – 10 см (две стандартных дорожки). Этидий добавлять в гель перед заливкой. На форез необходимо добавить 50-150 нг ДНК. <strong>После нанесения на дорожку в образце</strong> <strong>Input</strong> <strong>должно остаться не менее 100 нг ДНК! В противном случае форез не ставить!</strong> Идеальное распределение по длине показано на диаграммах ниже.</li>
+</ol>
+<p><img src="/LabProtocols/ChipEmbryo.files/2.jpg?width=20pc" alt=""></p>
+<p><img src="/LabProtocols/ChipEmbryo.files/3.png?width=20pc" alt=""></p>
+<ol start="44">
+<li>C каждым полученным образцом провести qPCR для идентификации уровня обогащения в “+” и “–”-локусах (positive и negative control, соответственно). Степень обогащения оценивать по сравнению с Input. Для этого нужно измерить по каждому локусу отношение начальных концентраций ДНК в AB+ и AB- к Input при помощи формулы: X*C<sub>AB+</sub>/C<sub>Input</sub> и X*C<sub>AB-</sub>/C<sub>Input</sub>, где X – это доля Input по отношению к объему AB+ или AB- (образец IP и Mock, соответсвенно). Пример идеального эксперимента показан на диаграммах ниже:</li>
+</ol>
+<p><img src="/LabProtocols/ChipEmbryo.files/4.png?width=20pc" alt=""></p>
+<p><img src="/LabProtocols/ChipEmbryo.files/5.png?width=20pc" alt=""></p>
+
+<div class="notices warning" ><p>Во время всех проверок объем ДНК будет постепенно уменьшаться. Для успешной пробоподготовки библиотек с последующим секвенированием количество ДНК в AB+ и Input должно составлять не менее 10 нг. В идеале &gt;100нг. Это должен быть неприкосновенный запас!</p>
+</div>
+
+<h2 id="faq"><strong>F.A.Q.</strong></h2>
+<ul>
+<li><em>Какой выход ожидается в AB+?</em></li>
+</ul>
+<p>Заранее без предварительных экспериментов предсказать сложно, но можно оценить это. Если речь о ТФ, то нужно посчитать, сколько у него сайтов связывания и умножить на 250 (средняя длина фрагмента ДНК в ChIP-seq) и поделить на длину генома в bp. Если исследуется гистоновая модификация, то нужно оценить, сколько процентов генома занято ею. Эту информацию можно подчерпнуть из опубликованных экспериментов ChIP-seq, либо из результатов иммуноокрашивания хромосом.</p>
+<p>Например, если в геноме дрозофилы 10000 сайтов связывания ТФ, то высадить получится не более 1.8% (10000*250/1.4x10<sup>7</sup>) от стартового количества ДНК. Если на старте иммунопреципитации взято 10 мкг геномки, то получится осадить 180 нг ДНК. В реальности получиться может как меньше, так и больше. Во-первых, в ChIP-seq даже у хороших антител 30-70% всех фрагментов, выравненных на геном, оказываются за пределами сайтов связывания. Во-вторых, только некоторые локусы в геноме заняты белком во всех клетках. В-третьих, для полного осаждения ДНК необходимо подобрать правильное количество антител. Емкость антител может различаться между фасовками, и ее можно определить в контрольном эксперименте с заведомо превышенным количеством хроматина на старте.</p>
+
+<div class="notices info" ><p>В эксперименте с антителами против H3K27me3 от Abclonal (A22006, брали 1 мкг антител) нам удалось получить 300 нг ДНК в AB+ при стартовом количестве эмбрионов 25 и 50 мкл. Такого количества было достаточно для пробоподготовки, qPCR и даже для электрофореза.</p>
+</div>
+
+<ul>
+<li><em>Какой выход ожидается в AB-?</em></li>
+</ul>
+<p>В идеальном эксперименте в образце AB- должно выделяться минимальное количество ДНК (в 1000-100000 раз меньше, чем в AB+), либо вообще ничего. Это говорит о том, что магнитные частицы и пластик пробирки не взаимодействуют с хроматином. Если же в ходе эксперимента хроматин осаждается на шарах, то перед иммунопреципитацией необходимо провести дополнительную очистку хроматина шариками без антител. Для этого отмытые шарики (без антител) добавляют к фрагментированному хроматину на 1-3 часа, после чего шарики удаляются и ставится иммунопреципитация.</p>
+
+<div class="notices info" ><p>После преблокирования 10 мкл магнитных частиц Dinabeads Protein A+G c Blocking Buffer выход в AB- в эксперименте с 25-50 мкл эмбрионов был нулевым (количество ДНК было недостаточно для измерения на Qubit). Эксперименты без преблокирования шариков мы делали на мышиных ЭСК, но здесь выход в AB- был 1-2 нг на 500 тысяч клеток (~5 мкг хроматина).</p>
+</div>
+
+<ul>
+<li><em>Какой выход ожидается в Input?</em></li>
+</ul>
+<p>Чтобы понять это, перед началом эксперимента необходимо оценить стартовое количество ДНК. Например, путем предварительного эксперимента было посчитано, что из 15 мкл 12-часовых эмбрионов можно выделить 12 мкг геномной ДНК. Значит, если на эксперимент взяли 50 мкл эмбрионов, то на старте будет 40 мкг ДНК. Допустим, во время отмывок и фиксаций потери объема составили 10%. Значит, после фрагментации должно остаться около 36 мкг ДНК. Если весь хроматин разделили на AB+ и AB- поровну, а на Input взяли 10% от объема AB+, то в Input стоит ожидать ~1.5 мкг ДНК. Обычно, поскольку эффективность экстракции ядер во время отмывок ниже 100%, в ходе фрагментирования часть хроматина остается в осадке, а также из-за потерь во время преципитации нуклеиновых кислот выход ДНК в Input несколько ниже, так что высадить 50% от этого количества будет совершенно нормальным. Если же выход ниже 10%, то причиной может быть недофиксация, загрязнение нуклеазами и большие потери на каком-то из этапов работы. Все это может говорить о неудачном эксперименте ChIP.</p>
+
+<div class="notices info" ><p>В ходе иммунопреципитации H3K27me3 с ~50 мкл эмбрионов на старте мы выделили 1 мкг ДНК в Input. При количестве эмбрионов ~25 мкл было получено 500 нг.</p>
+</div>
+
+<ul>
+<li><em>Сколько эмбрионов мне нужно взять на успешный эксперимент?</em></li>
+</ul>
+<p>Данный протокол был опробован для эксперимента с иммунопреципитацией модифицированного гистона H3K27me3. Вполне достаточным оказалось взять 25 мкл эмбрионов.
+Правило, по которому выбирают стартовое количество материала, следующее: при изучении транскрипционных факторов, на один эксперимент (одна реплика и контроль AB-) берут эквивалент ~70 мкг ДНК (эквивалент 7 млн клеток человека). Для гистонов или белков, обладающих широким распространением по геному, количество стартового материала в 7-10 раз ниже (эквивалент 1 млн клеток человека).</p>
+<ul>
+<li><em>Я выделил ДНК и померил ее количество. Достаточно ли ее для пробоподготовки библиотек?</em></li>
+</ul>
+<p>По-хорошему, для пробоподготовки требуется не менее 10 нг ДНК. В идеале, чем больше - тем лучше. Если выход в Input не является проблемой, то с AB+ все гораздо сложнее. Пользуясь данным протоколом, нам удавалось получать 300 нг на одну иммунопреципитацию с антителами против H3K27me3 (Abclonal). Однако нужно понимать, что большой выход может быть результатом сильного неспецифичного связывания антител. Исключить такую возможность можно с помощью qPCR с несколькими отрицательными контролями.</p>
+<ul>
+<li><em>У меня маленький выход ДНК в AB+, что мне делать?</em></li>
+</ul>
+<p>Выход ДНК зависит главным образом от четырех факторов: содержания белка в хроматине, эффективности фиксации, количества стартового материала на момент добавления антител, и количества самих антител.</p>
+<p>Если маленький выход не связан с низким количеством стартового материла, то причина может заключаться в недофиксации. Как правило, продолжительность и жесткость фиксации определяют в контрольном эксперименте. Важно понимать, что эксперименты с транскрипционными факторами, которые функционируют в составе мультисубъединичных комплексов требуют тщательной оптимизации на стадии кросслинкирования, поскольку недостаточная фиксация приведет к потере белка из комплексов с ДНК.</p>
+<p>Количество антител для иммунопреципитации определяется их емкостью. Хорошие антитела обладают отличной емкостью (сотни нанограмм ДНК на мкг антител). В большинстве случаев выход сильно ниже. Тогда нужно добавить больше антител. Однако, если суммарная емкость антител превышает количество метки в образце, то это приводит к увеличению неспецифичных сигналов в qPCR и, в конечном итоге, в итоговом профиле ChIP-seq. Желательно провести предварительный эксперимент для определения правильного соотношения антител к хроматину.</p>
+<ul>
+<li><em>У меня нет праймеров для qPCR, где мне их найти?</em></li>
+</ul>
+<p><strong>Вариант номер один.</strong> Найти в интернете публикации, где делался ChIP-qPCR с выбранными антителами.</p>
+<p><strong>Вариант номер два.</strong> Найти в интернете опубликованные профили ChIP-seq. Можно обратиться, к базам данных <a href="https://www.ncbi.nlm.nih.gov/geo/">GEO</a>, <a href="https://www.encodeproject.org/">ENCODE</a>, modENCODE или <a href="https://ngsqc.org/navi/index.php">NGSQC</a>. По этим профилям определить локусы с самым высоким обогащением изучаемой метки, и локусы с самым низким. Затем подобрать праймеры на несколько локусов вручную с помощью Primer-BLAST</p>
+<p><strong>Вариант номер три.</strong> Обратиться к коммерчески доступным вариантам праймеров. Например, <a href="https://www.activemotif.com/catalog/763/chip-control-qpcr-primer-sets">ActiveMotif</a> предоставляет наборы праймеров для контроля результатов ChIP-seq. Последовательности праймеров заданы в сопроводительных документах.</p>
+<p><strong>Вариант номер четыре.</strong> В интернете можно найти базы данных, собирающие последовательности праймеров для <a href="https://doi.org/10.1093/nar/gky813">ChIP</a> или других экспериментов.</p>
+
+<div class="notices info" ><p>Нужно помнить, что некоторые факторы активно взаимодействуют с мобильными элементами. Праймеры на них могут быть хорошим контролем.</p>
+</div>
+
+<ul>
+<li><em>Я выделил ДНК, но фрагменты длиннее 1 кб. Мой эксперимент испорчен?</em></li>
+</ul>
+<p>Недостаточная фрагментация может возникнуть по нескольким причином. Во-первых, если концентрация хроматина на момент соникирования превышена, то эффективность фрагментации падает, и нужно больше циклов соникирования, чтобы добиться оптимального распределения фрагментов по длине. Во-вторых, сниженная эффективность фрамгентации может быть вызвана оверфиксацией. Возможно, стоит снизить продолжителность фиксации. Во-третьих, фрагментация эухроматина и гетерохроматина происходит с разной эффективностью, поскольку открытая ДНК гораздо легче разрывается ультразвуком. По этой причине иммунопреципитация белков, ассоциированных с гетерохроматином, приводит к осаждению фрагментов большей длины.</p>
+<p>Фрагменты ДНК длинее 1 кб с большой вероятностью будут утрачены в ходе пробоподготовки, поэтому в ситуации, когда большая доля фрагментов лежит выше этой отметки, стоит перед пробоподготовкой провести дополнительный раунд соникирования. Подобрать нужную продолжительность соникирования можно в контрольном эксперименте с обработкой нескольких аликвот Input ультразвуком разной продолжительности.</p>
+<ul>
+<li><em>Я выделил ДНК, но фрагменты короче 100 пар. Мой эксперимент испорчен?</em></li>
+</ul>
+<p>Слишком короткие фрагменты (&lt;50 пн) будут потеряны при пробоподготовке. Кроме того, секвенировать короткие фрагменты может быть крайне расточительным, поскольку в настоящее время длина прочтений на разных секвенирующих платформах превышает 70 bp. Если длина прочтений сильно превышает длину фрагментов с адаптерами, то во-первых, полученные прочтения будут содержать последовательности адаптеров и их придется обрезать, чтобы нормально выровнить на геном (это расточительно), а во-вторых, если при запуске секвенатора много кластеров будут обрываться до завернения программы, это приведет к сбою работы секвенатора и испорченному запуску. Поэтому следует избегать секвенировать библиотеки со слишком коротким фрагментным составом.</p>
+<p>Такой проблема может возникнуть по нескольким причинам: недофиксация, слишком большая продолжительность соникирования и загрязнение нуклеазами.</p>
+<p>Причиной недофиксации может являться испорченный формальдегид (нужно убедиться, что в использованном формальдегиде не выпал осадок) либо слишком большое количество стартового материала.</p>
+<p>Чтобы решить проблему оверфрагментации, нужно снизить продолжительность соникирования.</p>
+<p>Загрязнение нуклеазами решается стандартными методами.</p>
+<ul>
+<li><em>Я сделал qPCR, все ли у меня в порядке?</em></li>
+</ul>
+<p>В проверочном qPCR определяется выход ДНК в AB+ и AB- относительно максимально возможного. Максимальный выход измеряется при помощи Input. Если объем Input составлял 10% от AB+ (и AB-), то концентрацию ДНК в Input по каждому локусу делят на 10/100. Это и будет максимальный выход, который вы ожидали.</p>
+<p>В эксперименте используют праймеры, соответсвующие локусам с высоким обогащением исследуемого фактора (известный сайт связывания ТФ, или локус внутри домена H3K27me3). В качестве негативного контроля используются праймеры на локусы, в котором метка отсутствует (антипики в экспериментах ChIP-seq).</p>
+<p>В AB+ выход в “+”-локусах не обязательно должен быть максимальным. Строго говоря, если количество хроматина в эксперименте превышало емкость антител, то получить максимальный выход невозможно. По этой причине нужно в первую очередь ориентироваться на соотношение сигнала в “+” и “-”-локусах. Чем оно выше - тем более высокие отличия между специфичным и неспецифичным сигналом будут получен в эксперименте. Строго говоря, это отношение является показателем качества антител. Для хороших антител это соотношение должно превышать 5-10 раз. На профилях ChIP-seq это отношение можно увидеть, сравнив высоту пиков в “+” и “-”-локусах.</p>
+
+<div class="notices warning" ><p>Увеличенный сигнал в негативном контроле может говорить об избытке антител.</p>
+</div>
+
+<p>Важно понимать, что распределение метки в геноме сильно зависит от типа клеток, генотипа и условий содержания. По этой причине не стоит отчаиваться, если негативный контроль дает повышенный сигнал. Перед тем как отбраковывать эксперимент, нужно проверить, может ли повышенный сиганл в “-”-локусе быть следствием биологических процессов. Чтобы понять это, стоит подбирать для проверки не один “-”-контоль, а несколько.</p>
+<p>В образце AB- сингал в “+” и “-” локусах предупреждает о наличии фона на будущем профиле ChIP-seq (низкое отношение сигнал/шум). Высокий фон приводит к низкой разрешающей способности ChIP-seq, к потере сайтов связывания или появлению ложно-положительных сайтов. Фактически, на “шумных” профилях ChIP-seq сайты связывания с низким уровнем обогащения неразличимы на окружающем фоне, а локусы с большим уровнем шума, наоборот, будут выглядеть как сайты связывания. Как правило, уровень фона на зависит от положения в геноме, так что в AB- в “+” и “-”-локусах виден приблизительно одинаковый уровень обогащения. Если уровень обогащения в AB- равен 10%, то в ChIP-seq профиле сайты связывания с аналогичным уровнем обогащения будут неразличимы на общем фоне. Более того, сайты, в которых исследуемая метка отсутсвует, будут демонстрировать такой же уровень обогащения. В хороших экспериментах, уровень фона должен быть на 3-4 порядка ниже уровня сигнала в “+”-контроле AB+ или, еще лучше, вообще отсутсвовать.</p>
+
+<div class="notices info" ><p>Высокий фон возникает из-за интенсивных неспецифических взаимодействий между компонентами хроматина и поверхностью магнитных частиц или пластика. Уменьшить фон можно различными способами: понизив стартовое количество или концентрацию хроматина при иммунопреципитации, уменьшив количество шариков, блокированием шариков с BSA, преинкубацией хроматина на магнитных шарах без антител, увеличив количество отмывок, увеличив концентрацию солей в отмывочных буферах. Судя по опыту, магнитные частицы Dinabeads Protein A+G плохо взаимодействуют с хроматином эмбрионов, особенно после преблокирования. Поэтому сильных проблем здесь не должно возникнуть.</p>
+</div>
+
+<ul>
+<li><em>Я хочу отсеквенировать образцы и уже выделил ДНК, что делать дальше?</em></li>
+</ul>
+<p>Если выход иммунопреципитации составляет ~100 нг и больше, то для пробоподготовки можно использовать наборы по типу <strong>TruSeq Nano DNA</strong>. Если выход составляет от 1 до 10 нг, желательно пользоваться наборами <strong>Nextera</strong>.</p>
+<p>Если сделать пробоподготовку библиотек своими силами не вариант, то можно обратиться к коммерческим организаций. Например, услуги по пробоподготовке предлагает <a href="https://sesana.ru/">Геномед</a>.</p>
+<h2 id="источники">Источники</h2>
+<ul>
+<li>
+<p>Протокол <a href="https://drive.google.com/file/d/14Bk5g3WstdoTv0SjFh_2a25gzvSPToky/view?usp=share_link">Loubiere et al. 2017</a> ChIP-seq цельных эмбрионов дрозофилы. Обратите внимание, что в протоколе немного отличаются составы буферов, кроме того, здесь дается подробное описание процедуры сбора эмбрионов.</p>
+</li>
+<li>
+<p>Протокол <a href="https://link.springer.com/protocol/10.1007/978-1-4939-6380-5_3">Loser et al. 2016</a>.</p>
+</li>
+<li>
+<p>Протокол <a href="https://books.google.com/books?hl=ru&amp;lr=&amp;id=mfxQEAAAQBAJ&amp;oi=fnd&amp;pg=PA21&amp;ots=p8h18dsauN&amp;sig=eMN_9WbiOPem7DNSnu3sKxxSL4U">Cavalli et al. 1999</a>.</p>
+</li>
+<li>
+<p>Развернутые инструкции по оптимизации ChIP от <a href="https://www.cellsignal.com/learn-and-support/troubleshooting/chip-troubleshooting-guide">Cell Signals</a>.</p>
+</li>
+<li>
+<p>Иммунопреципитация хроматина: оптимизация, количественный анализ и нормализация данных <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2077865/">Haring et al. 2007</a>.</p>
+</li>
+<li>
+<p>Рекоммендации <a href="https://www.abcam.com/protocols/chip-troubleshooting-tips">abcam</a>, <a href="https://www.sigmaaldrich.com/RU/en/technical-documents/technical-article/protein-biology/protein-and-nucleic-acid-interactions/chip-troubleshooting-tips">Merk</a> и <a href="https://www.antibody-creativebiolabs.com/troubleshooting-of-chromatin-immunoprecipitation.htm">Creative Biolabs</a> по исправлению проблем.</p>
+</li>
+</ul>
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+		
+			<a class="nav nav-prev" href="/labprotocols/" title="Геномные протоколы"> <i class="fa fa-chevron-left"></i></a>
+		
+		
+			<a class="nav nav-next" href="/celltechniques/" title="Манипуляции с клетками" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+	
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1676137473"></script>
+    <script src="/js/perfect-scrollbar.min.js?1676137473"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1676137473"></script>
+    <script src="/js/jquery.sticky.js?1676137473"></script>
+    <script src="/js/featherlight.min.js?1676137473"></script>
+    <script src="/js/highlight.pack.js?1676137473"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1676137473"></script>
+    <script src="/js/learn.js?1676137473"></script>
+    <script src="/js/hugo-learn.js?1676137473"></script>
+    
+        
+            <script src="/mermaid/mermaid.js?1676137473"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    
+
+  </body>
+</html>
+
