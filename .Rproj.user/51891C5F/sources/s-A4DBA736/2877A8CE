@@ -1,19 +1,19 @@
 {
-    "id": "B0F8CFF1",
+    "id": "2877A8CE",
     "path": "C:/Users/stasw/Desktop/GitHub/GenomicsLabProtocols_home_control/content/Programs/Bowtie2.Rmd",
     "project_path": "content/Programs/Bowtie2.Rmd",
     "type": "r_markdown",
-    "hash": "1685117493",
+    "hash": "0",
     "contents": "",
     "dirty": false,
-    "created": 1666190555272.0,
+    "created": 1678950624706.0,
     "source_on_save": false,
-    "relative_order": 3,
+    "relative_order": 2,
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "16,37",
-        "scrollLine": "0"
+        "cursorPosition": "15,0",
+        "scrollLine": "14"
     },
     "folds": "",
     "lastKnownWriteTime": 1663631455,

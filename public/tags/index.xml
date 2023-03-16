@@ -6,13 +6,40 @@
     <description>Recent content in Tags on Epigenetic and Genomics Protocols</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Mon, 13 Sep 2021 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 16 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MPRA</title>
+      <link>/tags/mpra/</link>
+      <pubDate>Thu, 16 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/mpra/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Sephadex</title>
       <link>/tags/sephadex/</link>
-      <pubDate>Mon, 13 Sep 2021 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 16 Mar 2023 00:00:00 +0000</pubDate>
       
       <guid>/tags/sephadex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>STARR-seq</title>
+      <link>/tags/starr-seq/</link>
+      <pubDate>Thu, 16 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/starr-seq/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Очистка сефадексом</title>
+      <link>/tags/%D0%BE%D1%87%D0%B8%D1%81%D1%82%D0%BA%D0%B0-%D1%81%D0%B5%D1%84%D0%B0%D0%B4%D0%B5%D0%BA%D1%81%D0%BE%D0%BC/</link>
+      <pubDate>Thu, 16 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/%D0%BE%D1%87%D0%B8%D1%81%D1%82%D0%BA%D0%B0-%D1%81%D0%B5%D1%84%D0%B0%D0%B4%D0%B5%D0%BA%D1%81%D0%BE%D0%BC/</guid>
       <description></description>
     </item>
     
@@ -22,15 +49,6 @@
       <pubDate>Mon, 13 Sep 2021 00:00:00 +0000</pubDate>
       
       <guid>/tags/sephadex-g-50/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Очистка сефадексом</title>
-      <link>/tags/%D0%BE%D1%87%D0%B8%D1%81%D1%82%D0%BA%D0%B0-%D1%81%D0%B5%D1%84%D0%B0%D0%B4%D0%B5%D0%BA%D1%81%D0%BE%D0%BC/</link>
-      <pubDate>Mon, 13 Sep 2021 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/%D0%BE%D1%87%D0%B8%D1%81%D1%82%D0%BA%D0%B0-%D1%81%D0%B5%D1%84%D0%B0%D0%B4%D0%B5%D0%BA%D1%81%D0%BE%D0%BC/</guid>
       <description></description>
     </item>
     
