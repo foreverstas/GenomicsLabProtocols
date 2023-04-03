@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>STAR on Epigenetic and Genomics Protocols</title>
+    <link>/tags/star/</link>
+    <description>Recent content in STAR on Epigenetic and Genomics Protocols</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Wed, 22 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/star/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>STAR</title>
+      <link>/programs/star/</link>
+      <pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/programs/star/</guid>
+      <description>Назначение STAR Процесс выравнивания отсеквенированных последовательностей состоит из выбора подходящего эталонного генома для картирования полученных прочтений и выравнивания прочтений с использованием одного из нескольких инструментов. В отличие от других ChIP-seq или секвенирования генома, прочтения RNA-seq содержат сплайсированные последовательности. Это означает, что прямое сопоставление прочтений с референсом путем выравнивания ридов по всей длине сделает невозможным картирование большинства фрагментов. Это свойство транскриптов учитывается несколькими элайнерами, среди которых наиболее популярны STAR, HISAT2 или TopHat.</description>
+    </item>
+    
+  </channel>
+</rss>
