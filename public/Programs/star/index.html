@@ -12,22 +12,22 @@
     <title>STAR :: Epigenetic and Genomics Protocols</title>
 
     
-    <link href="/css/nucleus.css?1680851167" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1680851167" rel="stylesheet">
-    <link href="/css/hybrid.css?1680851167" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1680851167" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1680851167" rel="stylesheet">
-    <link href="/css/auto-complete.css?1680851167" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1680851167" rel="stylesheet">
-    <link href="/css/theme.css?1680851167" rel="stylesheet">
-    <link href="/css/tabs.css?1680851167" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1680851167" rel="stylesheet">
+    <link href="/css/nucleus.css?1680866876" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1680866876" rel="stylesheet">
+    <link href="/css/hybrid.css?1680866876" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1680866876" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1680866876" rel="stylesheet">
+    <link href="/css/auto-complete.css?1680866876" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1680866876" rel="stylesheet">
+    <link href="/css/theme.css?1680866876" rel="stylesheet">
+    <link href="/css/tabs.css?1680866876" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1680866876" rel="stylesheet">
     
-    <link href="/css/theme-green.css?1680851167" rel="stylesheet">
+    <link href="/css/theme-green.css?1680866876" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1680851167"></script>
+    <script src="/js/jquery-3.3.1.min.js?1680866876"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -53,14 +53,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1680851167"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1680851167"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1680866876"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1680866876"></script>
 <script type="text/javascript">
     
         var baseurl = "\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1680851167"></script>
+<script type="text/javascript" src="/js/search.js?1680866876"></script>
 
     
   </div>
@@ -1900,7 +1900,7 @@
         <li><a href="#вывод-профиля-покрытия-в-формате-wiggle-или-bedgraph">Вывод профиля покрытия в формате Wiggle или BedGraph</a></li>
         <li><a href="#фильтрация-выравниваний">Фильтрация выравниваний</a></li>
         <li><a href="#вывод-сплайс-сайтов-в-sjouttab">Вывод сплайс сайтов в <code>SJ.out.tab</code></a></li>
-        <li><a href="#фильтрация-слайс-сайтов">Фильтрация слайс-сайтов</a></li>
+        <li><a href="#фильтрация-сплайс-сайтов">Фильтрация сплайс-сайтов</a></li>
         <li><a href="#оценка-выравниваний">Оценка выравниваний</a></li>
         <li><a href="#параметры-выравнивания-и-поиска-затравочной-подстроки">Параметры выравнивания и поиска затравочной подстроки</a></li>
         <li><a href="#работа-со-спаренными-ридами">Работа со спаренными ридами</a></li>
@@ -2410,7 +2410,7 @@ STAR --genomeLoad Remove --genomeDir $STARINDEX
 
     </div>
 </div>
-<p>Филтровать данные для этого файла можно при помощи параметра <code>--outSJfilter</code>. Подробности в разделе <strong>Фильтрация слайс-сайтов</strong>.</p>
+<p>Филтровать данные для этого файла можно при помощи параметра <code>--outSJfilter</code>. Подробности в разделе <strong>Фильтрация сплайс-сайтов</strong>.</p>
 <p>Если хотите сохранить эту таблицу в файл с другим названием, можно восопльзоваться опцией <code>--sjdbFileChrStartEnd /путь/к/сплайс_сайтам.tab</code></p>
 <p>Для более чувствительного поиска сплайс-сайтов в STAR реализован режим двойного выравнивания (2-pass mode). Его можно включить при помощи опции <code>--twopassMode Basic</code>. В этом случае программа сначала выравнит заданное параметром <code>twopass1readsN</code> число ридов, чтобы предварительно подобрать сайты сплайсинга, а затем проведет 2й раунд (2nd pass) выравнивания, в котором уже все риды будут выравнены на
 геном с учетом положения ранее выявленных сайтов сплайсинга. Если двойное выравнивание включено, то обнаруженные на первом этапе сайты сплайсинга (в доволнение к имеющимся в GTF-файле) будут считаться аннотированными (6 колонка в файле). Подробности режима двойного выравнивания можно прочитать в разделе <strong>Двухкратное картирование ридов для аннотации сайтов сплайсинга.</strong></p>
@@ -2696,7 +2696,7 @@ STAR --genomeLoad Remove --genomeDir $STARINDEX
 </tbody>
 </table>
 <h3 id="режим-работы-программы">Режим работы программы</h3>
-<table>
+<table style="width:100%;">
 <colgroup>
 <col style="width: 26%" />
 <col style="width: 35%" />
@@ -2771,7 +2771,7 @@ scRNA-seq без перевыравнивания при помощи <strong>ST
 <td><code>--genomeLoad</code></td>
 <td><code>NoSharedMemory</code></td>
 <td><p><strong>строка</strong></p>
-<p>Порядок действий с <a href="http%20s://ru.w%20%20ikipedia.org/wiki/%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%D1%8F%D0%B5%D0%BC%D0%B0%D1%8F_%D0%BF%D0%B0%D0%BC%D1%8F%D1%82%D1%8C">разделяемой
+<p>Порядок действий с <a href="http%20s://ru.w%20%20%20ikipedia.org/wiki/%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%D1%8F%D0%B5%D0%BC%D0%B0%D1%8F_%D0%BF%D0%B0%D0%BC%D1%8F%D1%82%D1%8C">разделяемой
 памятью</a>
 при использовании файлов генома. Разделяемая память позволяет нескольким запущенным программам STAR обращаться к одному
 разделу памяти, сократив время запуска программы. Используется только в режиме <code>alignReads</code>, когда планируется делать
@@ -2851,8 +2851,8 @@ log<sub>2</sub>[max(<em>L</em>/<em>N</em>,<em>l</em>)]).</p></td>
 <td><code>14</code></td>
 <td><p><strong>целое число</strong></p>
 <p>Длина преиндексированной строки в дереве суффиксов <em>(SA)</em>. Обычно между 10 и 15. Более длинные строки
-требуют больше памяти, но ускоряют поиск. Для маленьких геномов (меньше 1Gb) должнобыть уменьшено согласно
-формуле:</p>
+требуют больше памяти, но ускоряют поиск. Для маленьких геномов (меньше 1Gb) должнобыть уменьшено
+согласно формуле:</p>
 <p>min(14, log<sub>2</sub>(<em>L</em>)/2 - 1), где <em>L</em> - длина генома.</p></td>
 </tr>
 <tr class="odd">
@@ -2981,7 +2981,7 @@ log<sub>2</sub>[max(<em>L</em>/<em>N</em>,<em>l</em>)]).</p></td>
 </tbody>
 </table>
 <h3 id="добавление-геномных-вариантов">Добавление геномных вариантов</h3>
-<table>
+<table style="width:100%;">
 <colgroup>
 <col style="width: 26%" />
 <col style="width: 35%" />
@@ -3007,9 +3007,9 @@ log<sub>2</sub>[max(<em>L</em>/<em>N</em>,<em>l</em>)]).</p></td>
 <h3 id="вводные-файлы-для-профиля-покрытия">Вводные файлы для профиля покрытия</h3>
 <table>
 <colgroup>
-<col style="width: 23%" />
-<col style="width: 23%" />
-<col style="width: 52%" />
+<col style="width: 24%" />
+<col style="width: 24%" />
+<col style="width: 51%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -3115,9 +3115,9 @@ log<sub>2</sub>[max(<em>L</em>/<em>N</em>,<em>l</em>)]).</p></td>
 <h3 id="параметры-прочтений">Параметры прочтений</h3>
 <table>
 <colgroup>
-<col style="width: 20%" />
-<col style="width: 20%" />
-<col style="width: 59%" />
+<col style="width: 21%" />
+<col style="width: 21%" />
+<col style="width: 56%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -3157,8 +3157,8 @@ log<sub>2</sub>[max(<em>L</em>/<em>N</em>,<em>l</em>)]).</p></td>
 <p><code>--readFilesIn file1.fq.gz,file 2.fq.gz,file3.fq.gz</code> (односторонние прочтения разделены на три файла)</p>
 <p><code>--readFilesIn file1_R1.fq.gz file1_R2.fq.gz</code> (спаренные риды, по одному файлу каждого)</p>
 <p><code>--readFilesIn file1_R1.fq.gz,file2_R1.fq file1_R2.fq.gz,file2_R2.fq</code> (спаренные риды, несколько файлов)</p>
-<p>Если файлов с ридами много (указаны через запятые), то в файл выравнивания можно добавить специальный атрибут <code>ID:</code> в файл с выравниванием. Для этого нужно воспользоваться опцией <code>--outSAMattrRGline</code>, предоставив ей список названий
-для групп ридов через пр обел-запятую-пробел:</p>
+<p>Если файлов с ридами много (указаны через запятые), то в файл выравнивания можно добавить специальный атрибут <code>ID:</code> в файл с выравниванием. Для этого нужно воспользоваться опцией <code>--outSAMattrRGline</code>, предоставив ей
+список названий для групп ридов через пр обел-запятую-пробел:</p>
 <p><code>--readFilesIn file1.fq.fz,file 2.fq.gz,file3.fq.gz</code></p>
 <p><code>--outSAMattrRGline ID:sample1 , ID:sample2 , ID:sample3</code></p>
 <p>В примере выравниваются три файла, риды из каждого будут помечены. Обратите внимание, префикс <code>ID:</code> указан перед названием группы, а записи для образцов разделены не запятой, а запятой с пробелами с двух сторон.</p></td>
@@ -3183,8 +3183,8 @@ log<sub>2</sub>[max(<em>L</em>/<em>N</em>,<em>l</em>)]).</p></td>
 <td><code>-</code></td>
 <td><p><strong>строка</strong></p>
 <p>Команда, которую STAR должен запустить в командной строке перед загрузкой файлов с прочтениями.</p>
-<p>STAR не умеет работать со зжатыми файлами. Чтобы открыть их, ему необходимо написать команду, при помощи которой он сможет деархивировать файлы. Эта команда должна сгенерировать из входных файлов текст, который будет отправлен в
-<code>STDOUT</code>.</p>
+<p>STAR не умеет работать со зжатыми файлами. Чтобы открыть их, ему необходимо написать команду, при помощи которой он сможет деархивировать файлы. Эта команда должна сгенерировать из входных файлов текст, который будет
+отправлен в <code>STDOUT</code>.</p>
 <p>Для чтения файлов <code>.fastq.gz</code>, в этой опции нужно указать <code>--readFilesCommand zcat</code> <sup><strong>1</strong></sup> или <code>--readFilesCommand gunzip -c</code> <sup><strong>2</strong></sup>.</p>
 <p>Для чтения файлов <code>.fastq.bz</code>, в этой опции нужно указать <code>--readFilesCommand bzcat</code> <sup><strong>1</strong></sup> или <code>--readFilesCommand bunzip2 -c</code> <sup><strong>2</strong></sup>.</p>
 <p><strong>1 -</strong> команда <code>zcat</code> или <code>bzcat</code> считывает сжатый текстовый файл и выводит в <code>STDOUT</code>, то есть на экран терминала.</p>
@@ -3212,23 +3212,23 @@ log<sub>2</sub>[max(<em>L</em>/<em>N</em>,<em>l</em>)]).</p></td>
 <td><code>--readNameSeparator</code></td>
 <td><code>/</code></td>
 <td><p><strong>строка</strong></p>
-<p>Символ в названии ридов (в FASTQ-файлах это строка, начинающаяся с <code>@</code>, в FASTA - строка, начинающаяся с <code>&gt;</code>), по которому будут обрезаться названия ридов в итоговом файле с выравниваниями. Если в названии ридов есть пробел, то после
-него название ридов всегда будут обрываться.</p></td>
+<p>Символ в названии ридов (в FASTQ-файлах это строка, начинающаяся с <code>@</code>, в FASTA - строка, начинающаяся с <code>&gt;</code>), по которому будут обрезаться названия ридов в итоговом файле с выравниваниями. Если в названии ридов есть
+пробел, то после него название ридов всегда будут обрываться.</p></td>
 </tr>
 <tr class="even">
 <td><code>--readQualityScoreBase</code></td>
 <td><code>33</code></td>
 <td><p><strong>неотрицательное целое число</strong></p>
-<p>Базовое значение для кодировки <a href="https://en.wikipedia.org/wiki/Phred_quality_score">Phred -score</a>. Символ с этим номером в таблице ASCII будет восприниматься как Phred=0. Для запусков Illumina использовать 33. Для запусков Solexa -
-64.</p></td>
+<p>Базовое значение для кодировки <a href="https://en.wikipedia.org/wiki/Phred_quality_score">Phred -score</a>. Символ с этим номером в таблице ASCII будет восприниматься как Phred=0. Для запусков Illumina использовать 33. Для запусков
+Solexa - 64.</p></td>
 </tr>
 </tbody>
 </table>
 <h3 id="обрезака-ридов">Обрезака ридов</h3>
 <table>
 <colgroup>
-<col style="width: 26%" />
-<col style="width: 23%" />
+<col style="width: 25%" />
+<col style="width: 24%" />
 <col style="width: 49%" />
 </colgroup>
 <thead>
@@ -3417,7 +3417,7 @@ BAM-файл <code>BAM_Unsorted</code>, сортированный по коор
 <colgroup>
 <col style="width: 23%" />
 <col style="width: 23%" />
-<col style="width: 53%" />
+<col style="width: 52%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -3476,8 +3476,8 @@ Cufflinks экспериментов, приготовленных по прот
 <p><code>jM</code> - интронный мотив для всех экзонных стыков. 0:неканоничный; 1:GT/AG, 2: CT/AC, 3: GC/AG, 4: CT/GC, 5: AT/AC, 6: GT/AT. Если использовалась база аннотированных сплайс-сайтов, то к каждому мотиву
 добавляется 20;</p>
 <p><code>jI</code> - старт и конец интронов (системе отсчета +1);</p>
-<p><code>XS</code> - цепь референса, на которую выравнился рид согласно <code>- -outSAMstrandField</code>;</p>
-<p><code>MC</code> - <a href="htt%20%20ps://%%2020%20%20%20dri%20ve5%20.com/usearc%20%20%20%20h/manual/cigar.html">C I GAR</a> строка для спаренного рида;</p>
+<p><code>XS</code> - цепь референса, на которую выравнился рид согласно <code>--outSAMstrandField</code>;</p>
+<p><code>MC</code> - <a href="https://jef.works/blog/2017/03/28/CIGAR-strings-for-dummies/">CIGAR</a> строка для спаренного рида;</p>
 <p><code>ch</code> - помечает все сегменты всех химерных выравниваний для<br />
 <code>--chimOutType WithinBAM</code>;</p>
 <p><code>cN</code> - число оснований, которые были удалены с 5’ и 3’-концов.</p>
@@ -3559,15 +3559,15 @@ Cufflinks экспериментов, приготовленных по прот
 флагов.</p>
 <p>Подробнее про флаги можно прочитать в разделе про<br />
 <code>--outSAMprimaryFlag</code>.</p>
-<p>Поскольку в двоичной форме с любой цифрой можно проводить логические операции, то флаги можно модифицировать. STAR позволяет конвертировать флаги в итоговом выравнивании с помощью операций AND и OR. Например,
-можно модифицировать флаг 00 с помощью операции 01 AND 10. Получится 00. Или можно выполнить операцию 01 OR 10 - получится 11.</p></td>
+<p>Поскольку в двоичной форме с любой цифрой можно проводить логические операции, то флаги можно модифицировать. STAR позволяет конвертировать флаги в итоговом выравнивании с помощью операций AND и OR.
+Например, можно модифицировать флаг 00 с помощью операции 01 AND 10. Получится 00. Или можно выполнить операцию 01 OR 10 - получится 11.</p></td>
 </tr>
 <tr class="even">
 <td><code>--outSAMflagAND</code></td>
 <td><code>65535</code></td>
 <td><p><strong>целое число от 0 до 65535</strong></p>
-<p>Изменяет флаги в SAM-файле при помощи операции AND. После того, как STAR сформирует выравнивания, раздел FLAG SAM-файла будет сложет с заданным числом. Может пригодится для фильтрации выравниваний на основе
-флагов.</p>
+<p>Изменяет флаги в SAM-файле при помощи операции AND. После того, как STAR сформирует выравнивания, раздел FLAG SAM-файла будет сложет с заданным числом. Может пригодится для фильтрации выравниваний на
+основе флагов.</p>
 <p>Подробнее про флаги можно прочитать в разделе про<br />
 <code>--outSAMprimaryFlag</code>.</p>
 <p>Подробнее про операции над флагами можно прочитать в разделе про<br />
@@ -3852,7 +3852,7 @@ RAMPAGE</a>.</p></td>
 </tr>
 </tbody>
 </table>
-<h3 id="фильтрация-слайс-сайтов">Фильтрация слайс-сайтов</h3>
+<h3 id="фильтрация-сплайс-сайтов">Фильтрация сплайс-сайтов</h3>
 <table>
 <colgroup>
 <col style="width: 26%" />
@@ -4285,9 +4285,9 @@ STARlong.</p></td>
 <h3 id="работа-с-химерными-выравниваниями">Работа с химерными выравниваниями</h3>
 <table>
 <colgroup>
-<col style="width: 22%" />
-<col style="width: 22%" />
-<col style="width: 54%" />
+<col style="width: 23%" />
+<col style="width: 23%" />
+<col style="width: 53%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -4374,8 +4374,8 @@ STARlong.</p></td>
 <td><code>--chimMultimapScoreRange</code></td>
 <td><code>1</code></td>
 <td><p><strong>целое неотрицательное число</strong></p>
-<p>Устанавливает, на сколько оценка за химерное выравнивание может быть ниже максимального значения, чтобы вывести для данного рида множественные выравнивания. Работает только если задано значение <code>--chimMultimapNmax</code>
-больше 1.</p></td>
+<p>Устанавливает, на сколько оценка за химерное выравнивание может быть ниже максимального значения, чтобы вывести для данного рида множественные выравнивания. Работает только если задано значение
+<code>--chimMultimapNmax</code> больше 1.</p></td>
 </tr>
 <tr class="odd">
 <td><code>--chimNonchimScoreDropMin</code></td>
@@ -4495,9 +4495,9 @@ STARlong.</p></td>
 <h3 id="параметры-starsolo-для-анализа-cingle-cell-rna-seq">Параметры STARsolo (для анализа cingle cell RNA-seq)</h3>
 <table>
 <colgroup>
-<col style="width: 21%" />
-<col style="width: 21%" />
-<col style="width: 57%" />
+<col style="width: 22%" />
+<col style="width: 22%" />
+<col style="width: 54%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -4514,8 +4514,8 @@ STARlong.</p></td>
 <p>Тип single-cell RNA-seq эксперимента.</p>
 <p><code>CB_UMI_Simple</code> - UMI и клеточный баркод имеют фиксированную длину и находятся во 2м риде. Это типично для Drop-seq и 10xChromium.</p>
 <p><code>CB_UMI_Complex</code> - множество клеточных баркодов разной длины, один UMI фиксированной длины и одна адаптерная последовательность фиксированной длины во 2м риде (inDrop и ddSeq).</p>
-<p><code>CB_samTagOut</code> - выводить клеточный баркод в тэгах CR и CB SAM-файла. Не производить подсчет UMI. Эта опция работает с <code>--outSAMtype BAM Unsorted</code> или <code>SortedByCoordinate</code>. Файл с полседовательностью клеточным баркода
-добавляется при помощи опции</p>
+<p><code>CB_samTagOut</code> - выводить клеточный баркод в тэгах CR и CB SAM-файла. Не производить подсчет UMI. Эта опция работает с <code>--outSAMtype BAM Unsorted</code> или <code>SortedByCoordinate</code>. Файл с полседовательностью клеточным
+баркода добавляется при помощи опции</p>
 <p><code>--readFilesIn cDNA_read1 СellBC_read</code> в случае односторонних прочтений,</p>
 <p><code>--readFilesIn cDNA_read1 cDNA_read2 СellBC_read</code> в случае двусторонних прочтений.</p>
 <p><code>SmartSeq</code> - каждая клетка приведена в отдельном FASTQ-файле (двусторонние или односторонние). Баркоды соответствуют группам ридов. UMI отсутствуют. Выравнивания дедуплицируются в соответствии с началом и концом
@@ -4606,8 +4606,8 @@ STARlong.</p></td>
 <p>Указывает, каким образом сопоставлять клеточный баркод с белым списком.</p>
 <p><code>Exact</code> - только точные совпадения разрешены</p>
 <p><code>1MM</code> - только одно совпадение с белым списком с 1 заменой разрешено. Разрешенные клеточные баркоды должны иметь как минимум один рид с точным совпадением.</p>
-<p><code>1MM_multi</code> - множественные совпадения с белым списком разрешены при наличии 1 замены. Вычисление апостериорной вероятности используется для выбора одного из совпадений. Разрешенные клеточные баркоды должны иметь как минимум
-один рид с полным совпадением. Эта опция лучше всего соотносится с параметрами <a href="htt%20ps://%20su%20pport%20.10xgen%20o%20m%20%20%20ics%20.com/%20s%20ingle-ce%20ll%20-gen%20e%%2020-exp%20ressio%20n/%20sof%20twa%20re/%20pipelines/l%20%20%20%20atest/installation">CellRanger 2.2
+<p><code>1MM_multi</code> - множественные совпадения с белым списком разрешены при наличии 1 замены. Вычисление апостериорной вероятности используется для выбора одного из совпадений. Разрешенные клеточные баркоды должны иметь
+как минимум один рид с полным совпадением. Эта опция лучше всего соотносится с параметрами <a href="htt%20ps://%20su%20pport%20.10xgen%20o%20m%20%20%20ics%20.com/%20s%20ingle-ce%20ll%20-gen%20e%%2020-exp%20ressio%20n/%20sof%20twa%20re/%20pipelines/l%20%20%20%20atest/installation">CellRanger 2.2
 .0</a>.</p>
 <p><code>1MM_multi_pseudocounts</code> - то же, что и <code>1MM_multi</code>, но псевдокаунт 1 добавлен ко всем баркодам в белом списке.</p>
 <p><code>1MM_multi_Nbase_pseudocounts</code> - то же, что <code>1MM_multi_pseudocounts</code>, но множественное совпадение разрешено для баркодов с Nками. Эта опция лучше всего соотносится с <a href="https://support.10xgenomics.com/single-cell-gene-expression/software/release-notes/3-0">CellRanger 3.0
@@ -4619,7 +4619,8 @@ STARlong.</p></td>
 <td><code>--soloInputSAMattrBarcodeSeq</code></td>
 <td><code>-</code></td>
 <td><p><strong>строка</strong></p>
-<p>Указывает на аттрибуты в SAM-файле, которые будут использоваться для пометки последовательности баркодов. Опция необходима в режиме STARSolo c параметром <code>--readsFileType SAM [SE/PE]</code>, когда риды берутся из SAM-файлов.</p>
+<p>Указывает на аттрибуты в SAM-файле, которые будут использоваться для пометки последовательности баркодов. Опция необходима в режиме STARSolo c параметром <code>--readsFileType SAM [SE/PE]</code>, когда риды берутся из
+SAM-файлов.</p>
 <p>Например, для 10xСell Ranger или STARsolo BAM-файлов, используются</p>
 <p><code>--soloInputSAMattrBarcodeSeq CR UR</code></p></td>
 </tr>
@@ -4650,8 +4651,8 @@ STARlong.</p></td>
 <p><code>SJ</code> - суммирование будет происходить по сайтам сплайсинга, отчет будет выводиться в <code>SJ.out.tab</code>;</p>
 <p><code>GeneFull</code> - суммирование будет происходить по всему гену, включая интроны и экзоны (аля пре-мРНК).</p>
 <p><code>GeneFull_ExonOverIntron</code> - суммироваться будут все риды, перекрывающиеся с геном в интронах и экзонах, но предпочтение отдается ридам, которые перекрываются с экзонами на 100%.</p>
-<p><code>GeneFull_Ex50pAS</code> - суммироваться будут риды, перекрывающиеся с геном в интронах и экзонах, но приортитет будет отдаваться ридам, которые на &gt;50% перекрываются с экзонами. Риды, которые на 100% перекрываются с экзонами, но
-лежат в антисмысловом направлении, учитываться не будут.</p></td>
+<p><code>GeneFull_Ex50pAS</code> - суммироваться будут риды, перекрывающиеся с геном в интронах и экзонах, но приортитет будет отдаваться ридам, которые на &gt;50% перекрываются с экзонами. Риды, которые на 100% перекрываются с
+экзонами, но лежат в антисмысловом направлении, учитываться не будут.</p></td>
 </tr>
 <tr class="even">
 <td><code>--soloMultiMappers</code></td>
@@ -4660,11 +4661,11 @@ STARlong.</p></td>
 <p>Метод подсчета ридов со множественными выравниваниями. Если 100 ридов выравнивается сразу на 3 гена, то данная опция подскажет, как распределить их между генами.</p>
 <p><code>Unique</code> - считать только риды, которые выравниваются только на один ген.</p>
 <p><code>Uniform</code> - равномерно распределить риды со множественными выравниваниями по всем генам. Если 300 ридов выравнилось на 3 гена, то каждый ген получит к имеющимуся числу UMI плюс 100.</p>
-<p><code>Rescue</code> - распределить добавочное число UMI пропорционально сумме уникальных и равномерно распределенных выравниваний. Если 300 ридов выравнилось на 3 гена, они имеют число уникальных выравниваний 100, 200 и 300, то в сумме
-имеем 900 ридов, при этом в среднем на ген добавляется 100 ридов с множественным выравниванием. В таком случае первый ген получит 300*(100+100)/(900) ридов из 300. Второй получит 300*(200+100)/900 из 300, а третий получит
-300*(300+100)/900.</p>
-<p><code>PropUnique</code> - распределить UMI пропорционально числу уникально картированных ридов. Если таковых в гене нет, то распределить равномерно. Если на четыре гена выравнилось уникальных ридов 0, 0, 100 и 200, то 400 ридов со
-множественным выравниванием будут распределены следующим образом: по 100 на каждый с нелувым значением, 67 на ген со значением 100 и 133 на ген со значением 200.</p>
+<p><code>Rescue</code> - распределить добавочное число UMI пропорционально сумме уникальных и равномерно распределенных выравниваний. Если 300 ридов выравнилось на 3 гена, они имеют число уникальных выравниваний 100, 200 и 300,
+то в сумме имеем 900 ридов, при этом в среднем на ген добавляется 100 ридов с множественным выравниванием. В таком случае первый ген получит 300*(100+100)/(900) ридов из 300. Второй получит 300*(200+100)/900 из
+300, а третий получит 300*(300+100)/900.</p>
+<p><code>PropUnique</code> - распределить UMI пропорционально числу уникально картированных ридов. Если таковых в гене нет, то распределить равномерно. Если на четыре гена выравнилось уникальных ридов 0, 0, 100 и 200, то 400
+ридов со множественным выравниванием будут распределены следующим образом: по 100 на каждый с нелувым значением, 67 на ген со значением 100 и 133 на ген со значением 200.</p>
 <p><code>EM</code>- UMI с множественными выравниваниями распределеются при помощи EM-алгоритма (максимального ожидания).</p></td>
 </tr>
 <tr class="odd">
@@ -4688,7 +4689,8 @@ STARlong.</p></td>
 <p><code>MultiGeneUMI</code> - базовая фильтрация плюс удаление UMI с низкой представленностью, которые картируются более чем на один ген.</p>
 <p><code>MultiGeneUMI_All</code> - базовая фильтрация плюс удаление всех UMI, которые картируются на более чем один ген.</p>
 <p><code>MultiGeneUMI_CR</code> - базовая фильтрация плюс удаление UMI с низкой представленностью, которые картируются более чем на один ген. Алгоритм приведен в соответсвтие с <a href="htt%20ps://su%20p%20p%20%20%20ort%20.10xg%20e%20nomics.c%20om%20/sin%20g%%2020le-c%20ell-ge%20ne%20-ex%20pre%20ssi%20on/software%20%20%20%20/release-notes/3-0">CellRanger &gt;
-3.0.0</a>. Работает только с параметром <code>--s oloUMIdedup 1MM_CR</code>.</p></td>
+3.0.0</a>. Работает только с параметром
+<code>--s oloUMIdedup 1MM_CR</code>.</p></td>
 </tr>
 <tr class="odd">
 <td><code>--soloOutFileNames</code></td>
@@ -4707,8 +4709,8 @@ STARlong.</p></td>
 <p>Тип алгоритма фильтрации клеток и параметры.</p>
 <p><code>None</code> - не фильтровать клетки.</p>
 <p><code>TopCells &lt;N&gt;</code> - выводить только N клеток, которые имеют максимальную сумму прочтений по UMI.</p>
-<p><code>CellRanger2.2 &lt;N M m&gt;</code> - использовать алгоритм фильтрации CellRanger 2.2. Параметр N соответствует <code>nExpectedCells</code>, M соответствует <code>maxPercentile</code>, m соответсвует <code>maxMinRatio</code> в CellRanger. Если параметры не указывать,
-то это аналогично записи <code>CellRanger2.2 3000 0.99 10</code>.</p>
+<p><code>CellRanger2.2 &lt;N M m&gt;</code> - использовать алгоритм фильтрации CellRanger 2.2. Параметр N соответствует <code>nExpectedCells</code>, M соответствует <code>maxPercentile</code>, m соответсвует <code>maxMinRatio</code> в CellRanger. Если параметры не
+указывать, то это аналогично записи <code>CellRanger2.2 3000 0.99 10</code>.</p>
 <p><code>EmptyDrops_CR &lt;список из 10 параметров&gt;</code> - аналоги алгоритма<br />
 <a href="https://genomebiology.biomedcentral.com/articles/10.1186/s13059-019-1662-y">EmptyDrops</a> в CellRanger.<br />
 Всего здесь принимается 10 параметров.</p>
@@ -5845,19 +5847,19 @@ STARlong.</p></td>
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1680851168"></script>
-    <script src="/js/perfect-scrollbar.min.js?1680851168"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1680851168"></script>
-    <script src="/js/jquery.sticky.js?1680851168"></script>
-    <script src="/js/featherlight.min.js?1680851168"></script>
-    <script src="/js/highlight.pack.js?1680851168"></script>
+    <script src="/js/clipboard.min.js?1680866876"></script>
+    <script src="/js/perfect-scrollbar.min.js?1680866876"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1680866876"></script>
+    <script src="/js/jquery.sticky.js?1680866876"></script>
+    <script src="/js/featherlight.min.js?1680866876"></script>
+    <script src="/js/highlight.pack.js?1680866876"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1680851168"></script>
-    <script src="/js/learn.js?1680851168"></script>
-    <script src="/js/hugo-learn.js?1680851168"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1680866876"></script>
+    <script src="/js/learn.js?1680866876"></script>
+    <script src="/js/hugo-learn.js?1680866876"></script>
     
         
-            <script src="/mermaid/mermaid.js?1680851168"></script>
+            <script src="/mermaid/mermaid.js?1680866876"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

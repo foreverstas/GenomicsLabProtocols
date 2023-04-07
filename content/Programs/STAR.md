@@ -1653,8 +1653,8 @@ Cufflinks экспериментов, приготовленных по прот
 <p><code>jM</code> - интронный мотив для всех экзонных стыков. 0:неканоничный; 1:GT/AG, 2: CT/AC, 3: GC/AG, 4: CT/GC, 5: AT/AC, 6: GT/AT. Если использовалась база аннотированных сплайс-сайтов, то к каждому мотиву
 добавляется 20;</p>
 <p><code>jI</code> - старт и конец интронов (системе отсчета +1);</p>
-<p><code>XS</code> - цепь референса, на которую выравнился рид согласно <code>- -outSAMstrandField</code>;</p>
-<p><code>MC</code> - <a href="htt%20%20ps://%%2020%20%20%20dri%20ve5%20.com/usearc%20%20%20%20h/manual/cigar.html">C I GAR</a> строка для спаренного рида;</p>
+<p><code>XS</code> - цепь референса, на которую выравнился рид согласно <code>--outSAMstrandField</code>;</p>
+<p><code>MC</code> - <a href="https://jef.works/blog/2017/03/28/CIGAR-strings-for-dummies/">CIGAR</a> строка для спаренного рида;</p>
 <p><code>ch</code> - помечает все сегменты всех химерных выравниваний для<br />
 <code>--chimOutType WithinBAM</code>;</p>
 <p><code>cN</code> - число оснований, которые были удалены с 5’ и 3’-концов.</p>
