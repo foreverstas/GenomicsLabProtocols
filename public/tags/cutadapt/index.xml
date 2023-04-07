@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cutadapt on Epigenetic and Genomics Protocols</title>
+    <link>/tags/cutadapt/</link>
+    <description>Recent content in Cutadapt on Epigenetic and Genomics Protocols</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 04 Apr 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/cutadapt/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Cutadapt</title>
+      <link>/programs/cutadapt/</link>
+      <pubDate>Tue, 04 Apr 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/programs/cutadapt/</guid>
+      <description>Назначение Cutadapt Для амплификации молекул ДНК перед секвенированием к молекулам с обоих сторон прикрепляются адаптеры - универсальные последовательности, предназначенные для отжига праймеров и затравок для секвенирования. Если длина фрагмента ДНК, встроенного между адаптерами, меньше длины прочтения, то последовательность адаптера неизбежно войдет в состав осеквенированного рида. Cutadapt изначально создавался как инструмент, предназначенный для удаления адаптеров из прочтений. Со временем спектр возможностей Cutadapt многократно расширился, сделав эту программу одним из самых популярных приложений в биоинформатике.</description>
+    </item>
+    
+  </channel>
+</rss>
